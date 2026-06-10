@@ -26,21 +26,15 @@ export default function App() {
         (p.title?.toLowerCase().includes(q)) ||
         (p.authors?.toLowerCase().includes(q)) ||
         p.keywords.some(k => k.toLowerCase().includes(q)) ||
-        p.simulants.some(s => s.toLowerCase().includes(q)) ||
-        p.url.toLowerCase().includes(q)
+        p.simulants.some(s => s.toLowerCase().includes(q))
       )
     }
 
-    if (category !== 'all') {
-      result = result.filter(p => p.category === category)
-    }
-
-    if (simulant !== 'all') {
-      result = result.filter(p => p.simulants.includes(simulant))
-    }
+    if (category !== 'all') result = result.filter(p => p.category === category)
+    if (simulant !== 'all')  result = result.filter(p => p.simulants.includes(simulant))
 
     result.sort((a, b) => {
-      if (sortBy === 'year') return (b.year ?? 0) - (a.year ?? 0)
+      if (sortBy === 'year')  return (b.year ?? 0) - (a.year ?? 0)
       return (b.added_at ?? '') > (a.added_at ?? '') ? 1 : -1
     })
 
@@ -48,9 +42,22 @@ export default function App() {
   }, [search, category, simulant, sortBy])
 
   return (
-    <div className="min-h-screen bg-[#0f1117] text-slate-200">
+    <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
       <Header />
-      <main className="max-w-5xl mx-auto px-4 py-8">
+
+      {/* Hero band */}
+      <div style={{ background: 'var(--color-bg-dim)', borderBottom: '1px solid var(--color-border)' }}>
+        <div className="max-w-5xl mx-auto px-6 py-8">
+          <h1 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--color-text)' }}>
+            Research Publications
+          </h1>
+          <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>
+            Every published paper featuring Space Resource Technologies simulants — auto-updated weekly.
+          </p>
+        </div>
+      </div>
+
+      <main className="max-w-5xl mx-auto px-6 py-8">
         <StatsBar papers={papers} simulants={simulants} />
         <FilterBar
           search={search} setSearch={setSearch}
@@ -59,20 +66,23 @@ export default function App() {
           sortBy={sortBy} setSortBy={setSortBy}
           simulants={simulants}
         />
-        <div className="mt-2 mb-4 text-sm text-slate-400">
-          {filtered.length} paper{filtered.length !== 1 ? 's' : ''} found
+
+        <div className="mb-4 text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
+          {filtered.length} result{filtered.length !== 1 ? 's' : ''}
         </div>
-        <div className="space-y-3">
+
+        <div className="space-y-2">
           {filtered.map(paper => (
             <PaperCard key={paper.id} paper={paper} />
           ))}
           {filtered.length === 0 && (
-            <div className="text-center py-16 text-slate-500">
-              No papers match your filters.
+            <div className="text-center py-20 text-sm" style={{ color: 'var(--color-muted)' }}>
+              No publications match your filters.
             </div>
           )}
         </div>
       </main>
+
       <Footer papersCount={papers.length} />
     </div>
   )

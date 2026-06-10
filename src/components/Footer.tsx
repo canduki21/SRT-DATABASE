@@ -2,16 +2,21 @@ interface Props { papersCount: number }
 
 export default function Footer({ papersCount }: Props) {
   return (
-    <footer className="border-t border-slate-800 mt-16 py-8">
-      <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
-        <div>
-          {papersCount} papers · Space Resource Technologies · Auto-updated weekly via Semantic Scholar
+    <footer style={{ borderTop: '1px solid var(--color-border)', marginTop: '4rem' }}>
+      <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="text-xs" style={{ color: 'var(--color-muted)' }}>
+          <span style={{ color: 'var(--color-accent)', fontWeight: 700 }}>{papersCount}</span> publications ·{' '}
+          <a href="https://spaceresourcetech.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            spaceresourcetech.com
+          </a>{' '}
+          · Auto-updated weekly via Semantic Scholar
         </div>
         <a
           href="https://github.com/canduki21/SRT-DATABASE/actions"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-slate-300 transition-colors"
+          className="text-xs transition-colors hover:text-white"
+          style={{ color: 'var(--color-muted)' }}
         >
           View workflow runs →
         </a>
