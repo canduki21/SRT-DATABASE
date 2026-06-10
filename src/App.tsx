@@ -54,7 +54,7 @@ export default function App() {
             Research Publications
           </h1>
           <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>
-            Every published paper featuring Space Resource Technologies simulants — auto-updated weekly.
+            Every published paper featuring Space Resource Technologies simulants.
           </p>
         </div>
       </div>
