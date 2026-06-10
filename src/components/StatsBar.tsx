@@ -6,9 +6,6 @@ interface Props {
 }
 
 export default function StatsBar({ papers, simulants }: Props) {
-  const byCategory: Record<string, number> = {}
-  for (const p of papers) byCategory[p.category] = (byCategory[p.category] ?? 0) + 1
-
   const years = papers.map(p => p.year).filter(Boolean) as number[]
   const maxYear = years.length ? Math.max(...years) : new Date().getFullYear()
 
@@ -19,23 +16,19 @@ export default function StatsBar({ papers, simulants }: Props) {
 
   return (
     <div className="mb-8">
-      {/* Hero stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-        {[
-          { val: papers.length, label: 'Publications', sub: `through ${maxYear}` },
-          { val: papers.filter(p => p.simulants.length > 0).length, label: 'With Products', sub: 'tagged entries' },
-          { val: simulants.length, label: 'Products', sub: 'SRT simulants' },
-          { val: papers.filter(p => p.source === 'auto-fetch').length, label: 'Auto-fetched', sub: 'via Semantic Scholar' },
-        ].map(({ val, label, sub }) => (
-          <div key={label} className="rounded-lg p-4 text-center" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
-            <div className="text-3xl font-bold" style={{ color: 'var(--color-accent)' }}>{val}</div>
-            <div className="text-sm font-semibold mt-1" style={{ color: 'var(--color-text)' }}>{label}</div>
-            <div className="text-xs mt-0.5" style={{ color: 'var(--color-muted)' }}>{sub}</div>
-          </div>
-        ))}
+      <div className="grid grid-cols-2 gap-3 mb-4">
+        <div className="rounded-lg p-4 text-center" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
+          <div className="text-3xl font-bold" style={{ color: 'var(--color-accent)' }}>{papers.length}</div>
+          <div className="text-sm font-semibold mt-1" style={{ color: 'var(--color-text)' }}>Publications</div>
+          <div className="text-xs mt-0.5" style={{ color: 'var(--color-muted)' }}>through {maxYear}</div>
+        </div>
+        <div className="rounded-lg p-4 text-center" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
+          <div className="text-3xl font-bold" style={{ color: 'var(--color-accent)' }}>{simulants.length}</div>
+          <div className="text-sm font-semibold mt-1" style={{ color: 'var(--color-text)' }}>Products</div>
+          <div className="text-xs mt-0.5" style={{ color: 'var(--color-muted)' }}>SRT simulants</div>
+        </div>
       </div>
 
-      {/* Most cited simulants */}
       <div className="rounded-lg px-5 py-4" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
         <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-muted)' }}>
           Most cited products

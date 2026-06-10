@@ -123,14 +123,6 @@ export default function PaperCard({ paper }: Props) {
 
         {/* Right side: auto badge + external link */}
         <div className="flex-shrink-0 flex flex-col items-end gap-2">
-          {paper.source === 'auto-fetch' && (
-            <span
-              className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded"
-              style={{ background: 'rgba(200,122,65,0.2)', color: 'var(--color-accent)', border: '1px solid rgba(200,122,65,0.3)' }}
-            >
-              AUTO
-            </span>
-          )}
           <a
             href={paper.url}
             target="_blank"
