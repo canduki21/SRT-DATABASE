@@ -6,6 +6,7 @@ import Header from './components/Header'
 import StatsBar from './components/StatsBar'
 import FilterBar from './components/FilterBar'
 import PaperCard from './components/PaperCard'
+import AISearch from './components/AISearch'
 import Footer from './components/Footer'
 
 const papers = papersRaw as Paper[]
@@ -66,6 +67,7 @@ export default function App() {
       </div>
 
       <main className="max-w-5xl mx-auto px-6 py-8">
+        <AISearch papers={papers} />
         <StatsBar papers={papers} simulants={simulants} />
         <FilterBar
           search={search} setSearch={setSearch}
