@@ -1,0 +1,16 @@
+[
+  { "id": "LHS-1",     "name": "Lunar Highlands Simulant",                   "abbr": "LHS-1",     "category": "lunar",    "variations": ["LHS-2"] },
+  { "id": "LHS-1E",    "name": "Lunar Highlands Engineering Grade Simulant",  "abbr": "LHS-1E",    "category": "lunar",    "variations": [] },
+  { "id": "LHS-1D",    "name": "Lunar Highlands Dust Simulant",               "abbr": "LHS-1D",    "category": "lunar",    "variations": [] },
+  { "id": "LHS-1-25A", "name": "Lunar Highlands Agglutinated Simulant",       "abbr": "LHS-1-25A", "category": "lunar",    "variations": [] },
+  { "id": "LMS-1",     "name": "Lunar Mare Simulant",                         "abbr": "LMS-1",     "category": "lunar",    "variations": ["LMS-2"] },
+  { "id": "LMS-1E",    "name": "Lunar Mare Engineering Grade Simulant",        "abbr": "LMS-1E",    "category": "lunar",    "variations": [] },
+  { "id": "LMS-1D",    "name": "Lunar Mare Dust Simulant",                    "abbr": "LMS-1D",    "category": "lunar",    "variations": [] },
+  { "id": "LSP-2",     "name": "Lunar South Pole Simulant",                   "abbr": "LSP-2",     "category": "lunar",    "variations": [] },
+  { "id": "MGS-1",     "name": "Mars Global Simulant",                        "abbr": "MGS-1",     "category": "martian",  "variations": [] },
+  { "id": "MGS-1C",    "name": "Mars Global Clay Simulant",                   "abbr": "MGS-1C",    "category": "martian",  "variations": [] },
+  { "id": "MGS-1S",    "name": "Mars Global Sulfate Simulant",                "abbr": "MGS-1S",    "category": "martian",  "variations": [] },
+  { "id": "JEZ-1",     "name": "Jezero Delta Simulant",                       "abbr": "JEZ-1",     "category": "martian",  "variations": [] },
+  { "id": "CI-E",      "name": "Carbonaceous Chondrite Engineering Simulant", "abbr": "CI-E",      "category": "asteroid", "variations": [] },
+  { "id": "CM-E",      "name": "Carbonaceous Chondrite Engineering Simulant", "abbr": "CM-E",      "category": "asteroid", "variations": [] }
+]
