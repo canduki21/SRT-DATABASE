@@ -2,7 +2,7 @@ name: Fetch New Papers
 
 on:
   schedule:
-    - cron: '0 8 * * 1'   # every Monday at 8am UTC
+    - cron: '0 6 * * *'   # daily at 6am UTC
   workflow_dispatch:        # allow manual trigger from GitHub UI
 
 permissions:
