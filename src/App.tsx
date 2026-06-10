@@ -1,18 +1,33 @@
 import { useState, useMemo } from 'react'
 import papersRaw from './data/papers.json'
 import simulantsRaw from './data/simulants.json'
-import type { Paper, Simulant } from './types'
+import characterizationRaw from './data/characterization.json'
+import type { Paper, Simulant, Measurement } from './types'
 import Header from './components/Header'
 import StatsBar from './components/StatsBar'
 import FilterBar from './components/FilterBar'
 import PaperCard from './components/PaperCard'
 import AISearch from './components/AISearch'
+import PropertiesDB from './components/PropertiesDB'
+import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
 const papers = papersRaw as Paper[]
 const simulants = simulantsRaw as Simulant[]
+const measurements = characterizationRaw as Measurement[]
+
+type Tab = 'publications' | 'properties' | 'newsletter'
+
+const TABS: { id: Tab; label: string; icon: string }[] = [
+  { id: 'publications', label: 'Publications', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' },
+  { id: 'properties',   label: 'Properties',   icon: 'M3 10h18M3 14h18M10 3v18' },
+  { id: 'newsletter',   label: 'Newsletter',   icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
+]
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState<Tab>('publications')
+
+  // Publications state
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState<string>('all')
   const [simulant, setSimulant] = useState<string>('all')
@@ -39,7 +54,7 @@ export default function App() {
     if (application !== 'all') result = result.filter(p => (p.applications ?? []).includes(application))
 
     result.sort((a, b) => {
-      if (sortBy === 'year')  return (b.year ?? 0) - (a.year ?? 0)
+      if (sortBy === 'year') return (b.year ?? 0) - (a.year ?? 0)
       return (b.added_at ?? '') > (a.added_at ?? '') ? 1 : -1
     })
 
@@ -58,94 +73,133 @@ export default function App() {
       <div style={{ background: 'var(--color-bg-dim)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="max-w-5xl mx-auto px-6 py-8">
           <h1 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--color-text)' }}>
-            Research Publications
+            Research Database
           </h1>
           <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>
-            Every published paper featuring Space Resource Technologies simulants.
+            Publications, characterization data, and research digest for all SRT simulants.
           </p>
+
+          {/* Tab bar */}
+          <div className="flex gap-1 mt-5 rounded-lg p-1 self-start inline-flex" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
+            {TABS.map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-semibold transition-all"
+                style={activeTab === tab.id
+                  ? { background: 'var(--color-accent)', color: '#fff' }
+                  : { color: 'var(--color-muted)' }
+                }
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={tab.icon} />
+                </svg>
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       <main className="max-w-5xl mx-auto px-6 py-8">
-        <AISearch papers={papers} />
-        <StatsBar papers={papers} simulants={simulants} />
-        <FilterBar
-          search={search} setSearch={setSearch}
-          category={category} setCategory={setCategory}
-          simulant={simulant} setSimulant={setSimulant}
-          application={application} setApplication={setApplication}
-          sortBy={sortBy} setSortBy={setSortBy}
-          simulants={simulants}
-        />
 
-        <div className="mb-4 text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
-          {filtered.length} result{filtered.length !== 1 ? 's' : ''}
-        </div>
+        {/* ── PUBLICATIONS TAB ── */}
+        {activeTab === 'publications' && (
+          <>
+            <AISearch papers={papers} />
+            <StatsBar papers={papers} simulants={simulants} />
+            <FilterBar
+              search={search} setSearch={setSearch}
+              category={category} setCategory={setCategory}
+              simulant={simulant} setSimulant={setSimulant}
+              application={application} setApplication={setApplication}
+              sortBy={sortBy} setSortBy={setSortBy}
+              simulants={simulants}
+            />
 
-        <div className="space-y-2">
-          {paginated.map(paper => (
-            <PaperCard key={paper.id} paper={paper} />
-          ))}
-          {filtered.length === 0 && (
-            <div className="text-center py-20 text-sm" style={{ color: 'var(--color-muted)' }}>
-              No publications match your filters.
+            <div className="mb-4 text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
+              {filtered.length} result{filtered.length !== 1 ? 's' : ''}
             </div>
-          )}
-        </div>
 
-        {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-8">
-            <button
-              onClick={() => setPage(p => Math.max(1, p - 1))}
-              disabled={page === 1}
-              className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
-              style={{
-                background: 'var(--color-surface)',
-                border: '1px solid var(--color-border)',
-                color: page === 1 ? 'var(--color-muted)' : 'var(--color-text)',
-                cursor: page === 1 ? 'default' : 'pointer',
-                opacity: page === 1 ? 0.4 : 1,
-              }}
-            >
-              ← Prev
-            </button>
-
-            <div className="flex gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => (
-                <button
-                  key={n}
-                  onClick={() => setPage(n)}
-                  className="w-9 h-9 rounded-lg text-sm font-semibold transition-all"
-                  style={n === page
-                    ? { background: 'var(--color-accent)', color: '#fff', border: '1px solid var(--color-accent)' }
-                    : { background: 'var(--color-surface)', color: 'var(--color-muted)', border: '1px solid var(--color-border)' }
-                  }
-                >
-                  {n}
-                </button>
+            <div className="space-y-2">
+              {paginated.map(paper => (
+                <PaperCard key={paper.id} paper={paper} />
               ))}
+              {filtered.length === 0 && (
+                <div className="text-center py-20 text-sm" style={{ color: 'var(--color-muted)' }}>
+                  No publications match your filters.
+                </div>
+              )}
             </div>
 
-            <button
-              onClick={() => setPage(p => Math.min(totalPages, p + 1))}
-              disabled={page === totalPages}
-              className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
-              style={{
-                background: 'var(--color-surface)',
-                border: '1px solid var(--color-border)',
-                color: page === totalPages ? 'var(--color-muted)' : 'var(--color-text)',
-                cursor: page === totalPages ? 'default' : 'pointer',
-                opacity: page === totalPages ? 0.4 : 1,
-              }}
-            >
-              Next →
-            </button>
-          </div>
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2 mt-8">
+                <button
+                  onClick={() => setPage(p => Math.max(1, p - 1))}
+                  disabled={page === 1}
+                  className="px-4 py-2 rounded-lg text-sm font-semibold"
+                  style={{
+                    background: 'var(--color-surface)',
+                    border: '1px solid var(--color-border)',
+                    color: page === 1 ? 'var(--color-muted)' : 'var(--color-text)',
+                    cursor: page === 1 ? 'default' : 'pointer',
+                    opacity: page === 1 ? 0.4 : 1,
+                  }}
+                >
+                  ← Prev
+                </button>
+
+                <div className="flex gap-1">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => (
+                    <button
+                      key={n}
+                      onClick={() => setPage(n)}
+                      className="w-9 h-9 rounded-lg text-sm font-semibold"
+                      style={n === page
+                        ? { background: 'var(--color-accent)', color: '#fff', border: '1px solid var(--color-accent)' }
+                        : { background: 'var(--color-surface)', color: 'var(--color-muted)', border: '1px solid var(--color-border)' }
+                      }
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                  disabled={page === totalPages}
+                  className="px-4 py-2 rounded-lg text-sm font-semibold"
+                  style={{
+                    background: 'var(--color-surface)',
+                    border: '1px solid var(--color-border)',
+                    color: page === totalPages ? 'var(--color-muted)' : 'var(--color-text)',
+                    cursor: page === totalPages ? 'default' : 'pointer',
+                    opacity: page === totalPages ? 0.4 : 1,
+                  }}
+                >
+                  Next →
+                </button>
+              </div>
+            )}
+
+            {totalPages > 1 && (
+              <div className="mt-3 text-center text-xs" style={{ color: 'var(--color-muted)' }}>
+                Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
+              </div>
+            )}
+          </>
         )}
 
-        <div className="mt-3 text-center text-xs" style={{ color: 'var(--color-muted)' }}>
-          Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
-        </div>
+        {/* ── PROPERTIES TAB ── */}
+        {activeTab === 'properties' && (
+          <PropertiesDB measurements={measurements} papers={papers} />
+        )}
+
+        {/* ── NEWSLETTER TAB ── */}
+        {activeTab === 'newsletter' && (
+          <Newsletter papers={papers} />
+        )}
+
       </main>
 
       <Footer papersCount={papers.length} />

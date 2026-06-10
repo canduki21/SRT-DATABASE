@@ -12,6 +12,18 @@ export interface Paper {
   applications?: string[];
 }
 
+export interface Measurement {
+  id: string
+  simulant: string
+  category: 'physical' | 'mechanical' | 'thermal' | 'optical' | 'electrical' | 'mineralogy'
+  property: string
+  value: number | string
+  unit: string
+  condition: string | null
+  paper_id: string | null
+  year: number | null
+}
+
 export interface Simulant {
   id: string;
   name: string;
