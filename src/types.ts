@@ -9,6 +9,7 @@ export interface Paper {
   category: 'lunar' | 'martian' | 'asteroid' | 'multi' | 'general';
   source: 'spreadsheet' | 'auto-fetch' | 'manual';
   added_at?: string;
+  applications?: string[];
 }
 
 export interface Simulant {

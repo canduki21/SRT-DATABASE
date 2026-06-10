@@ -20,6 +20,16 @@ const SIM_CHIP: Record<string, { bg: string; color: string }> = {
   asteroid: { bg: 'rgba(200,122,65,0.15)',  color: '#e09057' },
 }
 
+const APP_LABELS: Record<string, string> = {
+  construction:    'Construction',
+  geotechnical:    'Geotechnical',
+  isru:            'ISRU',
+  biology:         'Biology',
+  characterization:'Characterization',
+  dust_mitigation: 'Dust Mitigation',
+  radiation:       'Radiation',
+}
+
 function hostLabel(url: string) {
   try { return new URL(url).hostname.replace('www.', '') } catch { return '' }
 }
@@ -91,6 +101,21 @@ export default function PaperCard({ paper }: Props) {
                   </span>
                 )
               })}
+            </div>
+          )}
+
+          {/* Application tags */}
+          {(paper.applications ?? []).filter(a => a !== 'other').length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1">
+              {(paper.applications ?? []).filter(a => a !== 'other').map(a => (
+                <span
+                  key={a}
+                  className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded"
+                  style={{ background: 'rgba(200,122,65,0.1)', color: 'var(--color-accent)', border: '1px solid rgba(200,122,65,0.25)' }}
+                >
+                  {APP_LABELS[a] ?? a}
+                </span>
+              ))}
             </div>
           )}
 

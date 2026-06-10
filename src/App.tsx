@@ -15,6 +15,7 @@ export default function App() {
   const [search, setSearch] = useState('')
   const [category, setCategory] = useState<string>('all')
   const [simulant, setSimulant] = useState<string>('all')
+  const [application, setApplication] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'year' | 'added'>('year')
 
   const filtered = useMemo(() => {
@@ -30,8 +31,9 @@ export default function App() {
       )
     }
 
-    if (category !== 'all') result = result.filter(p => p.category === category)
-    if (simulant !== 'all')  result = result.filter(p => p.simulants.includes(simulant))
+    if (category !== 'all')    result = result.filter(p => p.category === category)
+    if (simulant !== 'all')    result = result.filter(p => p.simulants.includes(simulant))
+    if (application !== 'all') result = result.filter(p => (p.applications ?? []).includes(application))
 
     result.sort((a, b) => {
       if (sortBy === 'year')  return (b.year ?? 0) - (a.year ?? 0)
@@ -39,7 +41,7 @@ export default function App() {
     })
 
     return result
-  }, [search, category, simulant, sortBy])
+  }, [search, category, simulant, application, sortBy])
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
@@ -63,6 +65,7 @@ export default function App() {
           search={search} setSearch={setSearch}
           category={category} setCategory={setCategory}
           simulant={simulant} setSimulant={setSimulant}
+          application={application} setApplication={setApplication}
           sortBy={sortBy} setSortBy={setSortBy}
           simulants={simulants}
         />

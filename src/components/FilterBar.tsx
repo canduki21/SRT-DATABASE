@@ -7,6 +7,8 @@ interface Props {
   setCategory: (v: string) => void
   simulant: string
   setSimulant: (v: string) => void
+  application: string
+  setApplication: (v: string) => void
   sortBy: 'year' | 'added'
   setSortBy: (v: 'year' | 'added') => void
   simulants: Simulant[]
@@ -19,10 +21,23 @@ const CATEGORIES = [
   { value: 'asteroid', label: 'Asteroid' },
 ]
 
+const APPLICATIONS = [
+  { value: 'all',             label: 'All Applications' },
+  { value: 'characterization',label: 'Characterization' },
+  { value: 'geotechnical',    label: 'Geotechnical' },
+  { value: 'isru',            label: 'ISRU / Resource Extraction' },
+  { value: 'construction',    label: 'Construction & Manufacturing' },
+  { value: 'biology',         label: 'Biology & Agriculture' },
+  { value: 'dust_mitigation', label: 'Dust Mitigation' },
+  { value: 'radiation',       label: 'Radiation Shielding' },
+  { value: 'other',           label: 'Other' },
+]
+
 export default function FilterBar({
   search, setSearch,
   category, setCategory,
   simulant, setSimulant,
+  application, setApplication,
   sortBy, setSortBy,
   simulants,
 }: Props) {
@@ -96,6 +111,23 @@ export default function FilterBar({
               <option key={s.id} value={s.id}>{s.abbr} — {s.name}</option>
             ))}
           </optgroup>
+        </select>
+
+        {/* Application select */}
+        <select
+          value={application}
+          onChange={e => setApplication(e.target.value)}
+          className="rounded-lg px-3 py-2 text-xs font-semibold outline-none cursor-pointer"
+          style={{
+            background: 'var(--color-surface)',
+            border: '1px solid var(--color-border)',
+            color: 'var(--color-text)',
+            fontFamily: 'inherit',
+          }}
+        >
+          {APPLICATIONS.map(a => (
+            <option key={a.value} value={a.value}>{a.label}</option>
+          ))}
         </select>
 
         {/* Sort — pushed right */}

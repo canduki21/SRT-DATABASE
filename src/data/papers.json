@@ -17,7 +17,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
@@ -44,7 +47,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "35236f4f-3309-42bc-b4ea-01cec1216715",
@@ -55,7 +61,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f453adb1-00b5-4eab-b803-2c2eab1f0637",
@@ -77,7 +86,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru"
+    ]
   },
   {
     "id": "d6e9877d-9ad4-4ccf-994e-9635cc8ed42e",
@@ -101,7 +114,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "e3516382-40fd-4d3a-bf32-2bb68167e20c",
@@ -123,7 +139,11 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -140,7 +160,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "07830af2-a195-4701-934a-156249598ca8",
@@ -159,7 +182,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "dust_mitigation",
+      "radiation"
+    ]
   },
   {
     "id": "0d5812fc-39ae-4ab0-8f6e-ca4978fceb88",
@@ -180,7 +208,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "249ae29a-2ee9-4669-a46b-fbd0a1506d12",
@@ -191,7 +222,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "1692be41-cc0e-4f99-9581-cd249457bcad",
@@ -212,7 +246,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical"
+    ]
   },
   {
     "id": "d5c1da0d-d8f9-4772-8ad9-52ffdc28a4c6",
@@ -230,7 +268,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "c726f71d-cecf-4354-81ea-9e9b17560f77",
@@ -241,7 +283,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "923b354f-86d0-402a-ac9f-65050f1499c9",
@@ -255,7 +300,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "24fc3fd2-b231-4b1c-a5f1-589c2c522ff0",
@@ -276,7 +324,11 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "biology"
+    ]
   },
   {
     "id": "ce41e78d-8bff-4f47-a6c0-5fd1673a604b",
@@ -295,7 +347,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -316,7 +371,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "cf193106-4403-411e-892f-6cec5bacc3ef",
@@ -340,7 +399,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "characterization"
+    ]
   },
   {
     "id": "388ab18b-e783-474c-85a7-3f3027fb4cea",
@@ -351,7 +414,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "4c72dbd2-d936-417e-b81e-f7edf0febfaa",
@@ -376,7 +442,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "ee9ca221-085a-4891-92db-94bad400e435",
@@ -387,7 +456,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "816da120-bfa2-45dc-9f7c-c9f53d80f9cb",
@@ -413,7 +485,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical"
+    ]
   },
   {
     "id": "bed25f54-c00e-47e0-90dd-090359f86096",
@@ -437,7 +513,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "dust_mitigation"
+    ]
   },
   {
     "id": "37504d31-63aa-440c-b74a-63246e79e0e5",
@@ -464,7 +543,12 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "1a66790e-da51-4571-a23e-0193512dfa8a",
@@ -489,7 +573,11 @@
       "MMS-1"
     ],
     "category": "multi",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "5ec78eff-33b3-4132-8c64-e367563fa5d6",
@@ -500,7 +588,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "76bc366b-51ea-4960-a8e4-f58711518e38",
@@ -528,7 +619,13 @@
       "MMS-1"
     ],
     "category": "multi",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru",
+      "biology",
+      "characterization"
+    ]
   },
   {
     "id": "120725af-a5e1-4d73-b628-8d21d65fd1ad",
@@ -548,7 +645,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical"
+    ]
   },
   {
     "id": "9736104f-04ee-4b2b-a00a-c828a6d2a39f",
@@ -559,7 +660,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "3666fbcc-ea24-49e3-85f2-a2c3cfcfcdc3",
@@ -583,7 +687,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "8b125cfb-219c-494c-b54b-a7eccbb6c97b",
@@ -609,7 +716,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "8eb7e87f-f36b-409e-aa1a-ad1d28d93eaa",
@@ -620,7 +731,11 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "42b8e937-1651-47b0-8a86-b953a1af65c1",
@@ -631,7 +746,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f93d5793-2ea4-4527-a1ed-9e4262470aed",
@@ -642,7 +760,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "591f5cda-8144-4364-89c9-d2c75ba34865",
@@ -664,7 +785,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "46c63291-ae68-4d12-90b1-5da0e8a044f9",
@@ -688,7 +812,11 @@
     ],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
@@ -699,7 +827,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "b8fa6cf3-e55f-4dc3-ad85-ca2ccbb94256",
@@ -710,7 +841,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "44ff77af-31d0-487b-9cc4-7caa2cad68e2",
@@ -737,7 +871,12 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "biology",
+      "characterization"
+    ]
   },
   {
     "id": "70b5e705-39ab-431d-af69-7a4b6ca04ef9",
@@ -757,7 +896,10 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "ace89412-b154-41e7-b36c-c7667dbfbb61",
@@ -784,7 +926,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "53003051-1aa3-42c5-8087-f22b7efcd5e2",
@@ -804,7 +950,11 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "7efc52cc-88bc-4d82-8067-2b06539982ea",
@@ -815,7 +965,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "c801036f-5447-4a3a-8548-75f3c8ecd76c",
@@ -839,7 +992,10 @@
       "JEZ-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
@@ -856,7 +1012,10 @@
       "JEZ-1"
     ],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "47c49ccc-a433-4204-949d-930cef758e22",
@@ -883,7 +1042,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "0c92727c-b6c8-49c5-bb3d-9b77b2d0cd78",
@@ -906,7 +1069,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "9f8f21ff-1137-4b8a-ba9d-c4664ee03d6d",
@@ -935,7 +1101,10 @@
       "MGS-1"
     ],
     "category": "multi",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "a885ed6e-96e7-456b-81c7-2aa7550567a8",
@@ -959,7 +1128,12 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
@@ -970,7 +1144,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "5a59e803-7307-4b69-8ecb-f4545a6710e7",
@@ -981,7 +1158,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "b4559199-76da-4c9c-9401-8aa05ed5c2bc",
@@ -1008,7 +1188,10 @@
       "JEZ-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
@@ -1019,7 +1202,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "5a37a627-e92e-4717-a27a-53174b6a02a9",
@@ -1030,7 +1216,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "3d3df0e3-14f1-44ee-903b-2423c727700b",
@@ -1041,7 +1230,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "7e6ec65c-bc6d-4997-956e-f1e2f9930a51",
@@ -1052,7 +1244,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "b13ea59b-a73c-4bc3-b1c5-3d96b0532d04",
@@ -1063,7 +1258,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "aad38e45-d4c0-4498-a8f8-76e1d1922ada",
@@ -1087,7 +1285,12 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru",
+      "radiation"
+    ]
   },
   {
     "id": "d04a6ae5-76d5-42b2-b201-36dbc85cd3cd",
@@ -1116,7 +1319,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "9640fbfb-af7a-4ea2-8d8b-1e9c2b0aeea9",
@@ -1140,7 +1347,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "7626334b-39b5-428c-a3b0-35f2e5cba3e2",
@@ -1168,7 +1378,10 @@
       "MMS-2"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "ab975a81-eb41-4264-b637-5655f997bf2c",
@@ -1197,7 +1410,10 @@
       "JEZ-1"
     ],
     "category": "multi",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
@@ -1208,7 +1424,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "5f2614e4-464b-48db-beb3-fed574646645",
@@ -1219,7 +1438,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "e1f37617-5f18-4a08-b815-794bcf52cb77",
@@ -1230,7 +1452,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "044b7ab1-b724-4749-a4eb-4a7c5fa89857",
@@ -1241,7 +1466,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "a3fefd62-2103-49bd-a9bb-b1a6c1a69b73",
@@ -1252,7 +1480,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "ee3b5ea1-9175-472d-bc1b-10c1c8bdea74",
@@ -1272,7 +1503,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f7c8cf95-f337-46e4-bbcb-bd4e64e84154",
@@ -1296,7 +1530,11 @@
     ],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "biology"
+    ]
   },
   {
     "id": "bd2eb27a-f337-4ba2-8e74-3933ee186d08",
@@ -1307,7 +1545,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "b4e5cf1d-12d9-4128-9aa8-90967472aa90",
@@ -1318,7 +1559,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "aca20496-e3d8-4798-b150-ce32f888b62f",
@@ -1329,7 +1573,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "0e2a83a9-3300-4d1d-bbd8-3f8ac0e819ed",
@@ -1353,7 +1600,11 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru"
+    ]
   },
   {
     "id": "eebe59ad-6959-46fc-a619-958c98cad804",
@@ -1364,7 +1615,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "d634c978-3bda-4afb-b741-805a4b174a36",
@@ -1390,7 +1644,12 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru",
+      "radiation"
+    ]
   },
   {
     "id": "51410e91-bc5d-4f75-825c-584f16d69579",
@@ -1414,7 +1673,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "3940b046-08d2-47a0-acc5-cb0961e8abf7",
@@ -1425,7 +1687,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "82a28d61-e5c5-4fbf-8ebd-10564528a47a",
@@ -1436,7 +1701,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f550e2da-543d-488e-a4f3-ff55cbb31fc5",
@@ -1447,7 +1715,10 @@
     "keywords": [],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "ff335b98-0c56-4d4f-ab25-4c1f3a3dda05",
@@ -1473,7 +1744,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "a3891cd8-9467-4a19-b54f-706305bba291",
@@ -1500,7 +1774,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru"
+    ]
   },
   {
     "id": "9cafbaaa-c1b2-4878-bfcf-01eb292cf664",
@@ -1511,7 +1789,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "radiation"
+    ]
   },
   {
     "id": "c3c36c06-dd58-4c7f-a08c-76f26cd0fc0a",
@@ -1537,7 +1818,13 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru",
+      "characterization",
+      "radiation"
+    ]
   },
   {
     "id": "34b264e5-945c-4ead-b92b-d10d32ab7705",
@@ -1548,7 +1835,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "e3e0204d-af85-44ea-9c6a-c5db98af76af",
@@ -1569,7 +1859,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "8a1991c3-1246-49f1-9c68-08a3eef3488c",
@@ -1593,7 +1886,12 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "3df92df2-1851-453e-b6b9-aa22b054c3fc",
@@ -1604,7 +1902,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "40e3614a-8441-4e80-9e3b-e0ed44cbf9dd",
@@ -1630,7 +1931,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "bfc69445-f4e8-4cc5-95d0-f3db0da06ca1",
@@ -1641,7 +1946,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "573cf43b-3bd5-4a12-8e33-9af3bb6c4482",
@@ -1663,7 +1971,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "characterization"
+    ]
   },
   {
     "id": "fe4de242-a8af-4deb-9998-e87a935d7920",
@@ -1676,7 +1988,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "532e88b8-1574-408a-96ef-9f13c677a8d6",
@@ -1687,7 +2002,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "ac77ba3a-b4af-4f12-9fbf-89a0a1819ff1",
@@ -1707,7 +2025,11 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "4a081d01-941d-42be-9c7b-195c48792bd2",
@@ -1735,7 +2057,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "14b38def-90e5-4920-bbbf-4cbb98833f64",
@@ -1758,7 +2083,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "a38e0c64-a622-4c24-b081-ec08ab0eda42",
@@ -1774,7 +2102,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "25233e99-cc0c-4d2f-b28b-a2322d9cc4d2",
@@ -1796,7 +2127,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "fa29b71d-da66-4ac0-a90e-52688c309ea0",
@@ -1819,7 +2155,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "1a6e3ca5-cfa8-4332-a92d-edd0ea202275",
@@ -1840,7 +2180,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "biology",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "279ac560-64dc-4403-9200-ed4ebde47ec7",
@@ -1851,7 +2196,11 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "90546e7a-f33d-407f-9507-c1225acf4e84",
@@ -1875,7 +2224,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "biology",
+      "characterization"
+    ]
   },
   {
     "id": "3978e8dd-9050-4f03-826b-44e16ca3a0ec",
@@ -1899,7 +2253,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "biology",
+      "characterization"
+    ]
   },
   {
     "id": "dc98420f-188e-4d83-aa2b-6821ab92cea9",
@@ -1923,7 +2282,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "3e270d03-8a5f-4156-ad4c-de18f8c33e75",
@@ -1947,7 +2309,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "radiation"
+    ]
   },
   {
     "id": "8cf943ed-a060-4d7f-8320-2ada5031e216",
@@ -1973,7 +2339,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "radiation"
+    ]
   },
   {
     "id": "6d07c974-f784-40f9-9e6f-c90595d33482",
@@ -1997,7 +2367,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "1fc3f243-d168-45b5-b92e-240ad62b8ec1",
@@ -2016,7 +2389,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "radiation"
+    ]
   },
   {
     "id": "67f77d2e-1b0b-4204-9de5-ebf2a02e458c",
@@ -2040,7 +2417,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "biology"
+    ]
   },
   {
     "id": "08892a1b-d3e7-461e-9088-52df9d8caa37",
@@ -2068,7 +2449,10 @@
       "MMS-2"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "biology"
+    ]
   },
   {
     "id": "055f55c8-ef03-4ef7-a2b4-9f4f7c570403",
@@ -2094,7 +2478,11 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "biology"
+    ]
   },
   {
     "id": "a370e383-3c06-437b-8bc8-cab06e54f454",
@@ -2120,7 +2508,10 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "5d0d290e-339c-4a40-b3bc-bd9b427e7332",
@@ -2145,7 +2536,10 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "51f795fb-b2bb-4c36-9807-d51bc6076ef3",
@@ -2156,7 +2550,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "6946c7d2-b104-4d55-9704-f4e2b1254582",
@@ -2180,7 +2577,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "1413b752-fd40-40d1-a401-5d09916db853",
@@ -2204,7 +2604,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "8b8d6cdb-3c64-4589-8026-6c4fd29036f9",
@@ -2215,7 +2618,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "00a00b0f-e11c-46ad-aaa3-e8444f1a7b70",
@@ -2234,7 +2640,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "a5c7b43d-3abc-45fb-9e2d-204e4689e14e",
@@ -2253,7 +2662,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "5ce7ca1e-8906-4627-82ec-20c05a74f82c",
@@ -2276,7 +2688,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "4e8fb3ee-2f07-452b-9fcc-bb7bbee354f1",
@@ -2300,7 +2715,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "7f3c15e0-40fd-4bfc-a630-640fc724db2c",
@@ -2320,7 +2738,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "44795040-f0af-420d-900d-1d6b62a32774",
@@ -2344,7 +2765,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "3ddd87ef-5849-45e8-9824-a4d9f62ad6a9",
@@ -2355,7 +2779,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "8557dd0e-8fbf-4870-a8af-479809ced516",
@@ -2379,7 +2806,12 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru",
+      "dust_mitigation"
+    ]
   },
   {
     "id": "e049480e-e0d1-4389-95cd-e83736518c54",
@@ -2390,7 +2822,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "d91c5410-407d-425b-ab65-cf16481bfb09",
@@ -2401,7 +2836,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "605bdb3f-9289-4b76-bb73-f5a970f3d784",
@@ -2427,7 +2865,12 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "65ac5b98-5970-408a-98bf-81098165bcfc",
@@ -2451,7 +2894,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "6b71495b-0fcc-4331-bdc4-a702eb8145e2",
@@ -2462,7 +2908,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "e0c8aa3d-d4e0-42bc-9afc-17f26b1b3b10",
@@ -2486,7 +2935,12 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "8302e8f5-50e1-4b3c-b52f-069294077995",
@@ -2497,7 +2951,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "8a5fd33f-cfd0-4395-9240-1aaf3a6b1cf7",
@@ -2508,7 +2965,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "9963942d-3656-46c9-a139-7f778d802f27",
@@ -2532,7 +2992,11 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "ed045aa2-b5e7-4039-b55e-ab86d2fbd571",
@@ -2558,7 +3022,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "7ab81a7d-8819-457e-ae41-04f132d15676",
@@ -2587,7 +3055,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "0923a7ab-b896-4471-9aa2-b32aad611682",
@@ -2616,7 +3087,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "9726606b-8f03-44c6-b7f3-378078a5cce5",
@@ -2642,7 +3116,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization",
+      "radiation"
+    ]
   },
   {
     "id": "194d17b4-ec92-44fc-98c4-fc359521081b",
@@ -2669,7 +3147,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction"
+    ]
   },
   {
     "id": "e8eb9e4e-99cd-44f9-8c49-ee9b8ed83a2b",
@@ -2696,7 +3177,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "c9ad73a0-4146-400a-b0c0-02bf2daabf8e",
@@ -2720,7 +3205,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "5d3d35a0-79b2-4a0f-a7d5-b5f789ef1eac",
@@ -2744,7 +3232,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "133f4cdf-036f-491c-b07d-51f420c0ba6f",
@@ -2770,7 +3261,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru"
+    ]
   },
   {
     "id": "cba9445f-7ab9-4975-9735-2406c93984cd",
@@ -2797,7 +3291,11 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "b1705eae-ebdb-49ef-a290-863375d06622",
@@ -2823,7 +3321,11 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "biology"
+    ]
   },
   {
     "id": "bf21e63f-43d4-4ea5-bbda-48b4f5cc0c44",
@@ -2850,7 +3352,10 @@
       "JEZ-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "8882badc-230b-4223-bad6-1e1d60a33b7d",
@@ -2878,7 +3383,10 @@
       "MGS-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "199c1e49-b67e-4431-825b-0378c7eff411",
@@ -2902,7 +3410,11 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "isru"
+    ]
   },
   {
     "id": "5589389e-fedd-462f-9b1b-e6d6170649be",
@@ -2913,7 +3425,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "fd86a723-1e77-4b83-8895-be2468f9adfe",
@@ -2938,7 +3453,12 @@
       "MMS-2"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "62e11f41-2d49-4011-aa02-467495c81111",
@@ -2962,7 +3482,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "characterization"
+    ]
   },
   {
     "id": "00ea4cce-054c-45fe-8674-7b025dbcdd1f",
@@ -2973,7 +3496,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "355c2911-422b-473a-aaf9-728870e964c2",
@@ -2993,7 +3519,11 @@
       "JEZ-1"
     ],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "characterization"
+    ]
   },
   {
     "id": "4b44f52c-0d91-4fd2-a030-6d27d5cff1c4",
@@ -3004,7 +3534,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "98cf0bd0-630f-4596-85bf-08961aa454d9",
@@ -3024,7 +3557,10 @@
     ],
     "simulants": [],
     "category": "asteroid",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f221f226-e474-4fb8-ba70-910efc30234e",
@@ -3048,7 +3584,10 @@
     ],
     "simulants": [],
     "category": "martian",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "0fbca92d-24ed-4096-95ac-d426647f6d63",
@@ -3068,7 +3607,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "d07a8143-18f2-446e-82d9-778f7f38ffb6",
@@ -3094,7 +3636,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "b9b0b00d-5d5f-4e77-b423-bfa2f3fb8d48",
@@ -3107,7 +3652,10 @@
     ],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f35c3e12-9a27-431b-8c51-cb95f22c5d7f",
@@ -3125,7 +3673,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "fdc7d67d-2e0e-4d7e-bcff-716e47293587",
@@ -3151,7 +3702,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   },
   {
     "id": "0c5033a8-ae6f-485d-b4b9-3b9fff06b697",
@@ -3170,7 +3725,10 @@
     ],
     "simulants": [],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "f07dd2fc-6b79-4df8-8205-5028a2b8bf86",
@@ -3197,7 +3755,10 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical"
+    ]
   },
   {
     "id": "42f8ebd5-e43d-4bb3-a5fe-341dffed32df",
@@ -3224,7 +3785,11 @@
       "LHS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "construction",
+      "geotechnical"
+    ]
   },
   {
     "id": "1b87f76e-8fb5-40be-aa08-c43df081224e",
@@ -3247,7 +3812,11 @@
       "LMS-1D"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "isru",
+      "characterization"
+    ]
   },
   {
     "id": "3710f789-0193-4da1-9be2-1734978640e3",
@@ -3258,7 +3827,10 @@
     "keywords": [],
     "simulants": [],
     "category": "general",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "other"
+    ]
   },
   {
     "id": "365f0046-f144-434a-8b10-7f1ec2e0e833",
@@ -3285,6 +3857,10 @@
       "LMS-1"
     ],
     "category": "lunar",
-    "source": "spreadsheet"
+    "source": "spreadsheet",
+    "applications": [
+      "geotechnical",
+      "characterization"
+    ]
   }
 ]
