@@ -17,7 +17,6 @@ const CATEGORIES = [
   { value: 'lunar',    label: 'Lunar' },
   { value: 'martian',  label: 'Martian' },
   { value: 'asteroid', label: 'Asteroid' },
-  { value: 'multi',    label: 'Multi' },
 ]
 
 export default function FilterBar({
