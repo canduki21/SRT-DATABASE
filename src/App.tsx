@@ -17,6 +17,8 @@ export default function App() {
   const [simulant, setSimulant] = useState<string>('all')
   const [application, setApplication] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'year' | 'added'>('year')
+  const [page, setPage] = useState(1)
+  const PAGE_SIZE = 15
 
   const filtered = useMemo(() => {
     let result = [...papers]
@@ -40,8 +42,12 @@ export default function App() {
       return (b.added_at ?? '') > (a.added_at ?? '') ? 1 : -1
     })
 
+    setPage(1)
     return result
   }, [search, category, simulant, application, sortBy])
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE)
+  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
@@ -75,7 +81,7 @@ export default function App() {
         </div>
 
         <div className="space-y-2">
-          {filtered.map(paper => (
+          {paginated.map(paper => (
             <PaperCard key={paper.id} paper={paper} />
           ))}
           {filtered.length === 0 && (
@@ -83,6 +89,60 @@ export default function App() {
               No publications match your filters.
             </div>
           )}
+        </div>
+
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2 mt-8">
+            <button
+              onClick={() => setPage(p => Math.max(1, p - 1))}
+              disabled={page === 1}
+              className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
+              style={{
+                background: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                color: page === 1 ? 'var(--color-muted)' : 'var(--color-text)',
+                cursor: page === 1 ? 'default' : 'pointer',
+                opacity: page === 1 ? 0.4 : 1,
+              }}
+            >
+              ← Prev
+            </button>
+
+            <div className="flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => (
+                <button
+                  key={n}
+                  onClick={() => setPage(n)}
+                  className="w-9 h-9 rounded-lg text-sm font-semibold transition-all"
+                  style={n === page
+                    ? { background: 'var(--color-accent)', color: '#fff', border: '1px solid var(--color-accent)' }
+                    : { background: 'var(--color-surface)', color: 'var(--color-muted)', border: '1px solid var(--color-border)' }
+                  }
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+              disabled={page === totalPages}
+              className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
+              style={{
+                background: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                color: page === totalPages ? 'var(--color-muted)' : 'var(--color-text)',
+                cursor: page === totalPages ? 'default' : 'pointer',
+                opacity: page === totalPages ? 0.4 : 1,
+              }}
+            >
+              Next →
+            </button>
+          </div>
+        )}
+
+        <div className="mt-3 text-center text-xs" style={{ color: 'var(--color-muted)' }}>
+          Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
         </div>
       </main>
 
