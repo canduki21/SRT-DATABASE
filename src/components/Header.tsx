@@ -6,16 +6,16 @@ export default function Header() {
           <img
             src="https://spaceresourcetech.com/cdn/shop/files/SRT_Abbreviation_and_Logo_100x.png"
             alt="Space Resource Technologies"
-            className="h-10 object-contain"
+            className="h-16 object-contain"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none'
             }}
           />
           <div>
-            <div style={{ color: 'var(--color-text)', fontWeight: 700, fontSize: '1.1rem', letterSpacing: '0.03em' }}>
+            <div style={{ color: 'var(--color-text)', fontWeight: 700, fontSize: '1.4rem', letterSpacing: '0.03em' }}>
               SPACE RESOURCE TECHNOLOGIES
             </div>
-            <div style={{ color: 'var(--color-accent)', fontSize: '0.7rem', letterSpacing: '0.15em', fontWeight: 600, textTransform: 'uppercase' }}>
+            <div style={{ color: 'var(--color-accent)', fontSize: '0.85rem', letterSpacing: '0.15em', fontWeight: 600, textTransform: 'uppercase' }}>
               Research Publication Database
             </div>
           </div>

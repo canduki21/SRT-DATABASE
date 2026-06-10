@@ -20,5 +20,6 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: 'Titillium Web', sans-serif;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
 }
