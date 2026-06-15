@@ -10,6 +10,7 @@ import PaperCard from './components/PaperCard'
 import AISearch from './components/AISearch'
 import PropertiesDB from './components/PropertiesDB'
 import Footer from './components/Footer'
+import SubmitPaperForm from './components/SubmitPaperForm'
 
 const papers = papersRaw as Paper[]
 const simulants = simulantsRaw as Simulant[]
@@ -115,6 +116,8 @@ export default function App() {
               simulants={simulants}
             />
 
+            <SubmitPaperForm simulants={simulants} papers={papers} />
+
             <div className="mb-4 text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
               {filtered.length} result{filtered.length !== 1 ? 's' : ''}
             </div>
@@ -185,6 +188,7 @@ export default function App() {
                 Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
               </div>
             )}
+
           </>
         )}
 

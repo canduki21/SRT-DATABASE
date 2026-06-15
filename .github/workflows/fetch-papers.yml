@@ -21,7 +21,7 @@ jobs:
       - name: Fetch new papers from Semantic Scholar
         id: fetch
         run: |
-          python scripts/fetch_new_papers.py >> $GITHUB_OUTPUT 2>&1
+          python scripts/fetch_new_papers.py >> $GITHUB_OUTPUT
 
       - name: Rebuild site
         uses: actions/setup-node@v4
