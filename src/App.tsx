@@ -78,6 +78,19 @@ export default function App() {
             Publications, characterization data, and research digest for all SRT simulants.
           </p>
 
+          {/* Disclaimer */}
+          <div className="mt-4 flex items-start gap-2 rounded-lg px-4 py-3 text-sm"
+            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
+            <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: 'var(--color-accent)' }}>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+                d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20A10 10 0 0012 2z" />
+            </svg>
+            <p style={{ color: 'var(--color-muted)' }}>
+              This database contains <span className="font-semibold" style={{ color: 'var(--color-text)' }}>800+ peer-reviewed publications</span> referencing SRT simulants.
+              All listed research is publicly available — access full papers through your institution's library or open-access repositories such as NASA ADS, arXiv, or Google Scholar.
+            </p>
+          </div>
+
           {/* Tab bar */}
           <div className="flex gap-1 mt-5 rounded-lg p-1 self-start inline-flex" style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
             {TABS.map(tab => (
