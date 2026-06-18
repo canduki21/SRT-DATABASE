@@ -64,7 +64,7 @@ export default function App() {
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
+    <div style={{ background: 'var(--color-bg)', color: 'var(--color-text)' }}>
       {/* Hero band */}
       <div style={{ background: 'var(--color-bg-dim)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="max-w-5xl mx-auto px-6 py-8">
@@ -211,6 +211,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
