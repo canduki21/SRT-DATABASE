@@ -154,19 +154,23 @@ export default function App() {
                 </button>
 
                 <div className="flex gap-1">
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => (
-                    <button
-                      key={n}
-                      onClick={() => setPage(n)}
-                      className="w-9 h-9 rounded-lg text-sm font-semibold"
-                      style={n === page
-                        ? { background: 'var(--color-accent)', color: '#fff', border: '1px solid var(--color-accent)' }
-                        : { background: 'var(--color-surface)', color: 'var(--color-muted)', border: '1px solid var(--color-border)' }
-                      }
-                    >
-                      {n}
-                    </button>
-                  ))}
+                  {(() => {
+                    const groupStart = Math.floor((page - 1) / 10) * 10 + 1
+                    const groupEnd = Math.min(groupStart + 9, totalPages)
+                    return Array.from({ length: groupEnd - groupStart + 1 }, (_, i) => groupStart + i).map(n => (
+                      <button
+                        key={n}
+                        onClick={() => setPage(n)}
+                        className="w-9 h-9 rounded-lg text-sm font-semibold"
+                        style={n === page
+                          ? { background: 'var(--color-accent)', color: '#fff', border: '1px solid var(--color-accent)' }
+                          : { background: 'var(--color-surface)', color: 'var(--color-muted)', border: '1px solid var(--color-border)' }
+                        }
+                      >
+                        {n}
+                      </button>
+                    ))
+                  })()}
                 </div>
 
                 <button
