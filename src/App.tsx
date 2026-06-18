@@ -3,7 +3,6 @@ import papersRaw from './data/papers.json'
 import simulantsRaw from './data/simulants.json'
 import characterizationRaw from './data/characterization.json'
 import type { Paper, Simulant, Measurement } from './types'
-import Header from './components/Header'
 import StatsBar from './components/StatsBar'
 import FilterBar from './components/FilterBar'
 import PaperCard from './components/PaperCard'
@@ -66,8 +65,6 @@ export default function App() {
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
-      <Header />
-
       {/* Hero band */}
       <div style={{ background: 'var(--color-bg-dim)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="max-w-5xl mx-auto px-6 py-8">
@@ -210,6 +207,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
