@@ -32,7 +32,7 @@ export default function App() {
   const [application, setApplication] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'year' | 'added'>('year')
   const [page, setPage] = useState(1)
-  const PAGE_SIZE = 5
+  const [pageSize, setPageSize] = useState(5)
 
   const filtered = useMemo(() => {
     let result = [...papers]
@@ -60,8 +60,8 @@ export default function App() {
     return result
   }, [search, category, simulant, application, sortBy])
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE)
-  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+  const totalPages = Math.ceil(filtered.length / pageSize)
+  const paginated = filtered.slice((page - 1) * pageSize, page * pageSize)
 
   return (
     <div style={{ background: 'var(--color-bg)', color: 'var(--color-text)' }}>
@@ -121,8 +121,21 @@ export default function App() {
 
             <SubmitPaperForm simulants={simulants} papers={papers} />
 
-            <div className="mb-4 text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
-              {filtered.length} result{filtered.length !== 1 ? 's' : ''}
+            <div className="mb-4 flex items-center justify-between gap-4">
+              <div className="text-xs font-semibold uppercase tracking-widest" style={{ color: 'var(--color-muted)' }}>
+                {filtered.length} result{filtered.length !== 1 ? 's' : ''}
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs" style={{ color: 'var(--color-muted)' }}>Per page</span>
+                <select
+                  value={pageSize}
+                  onChange={e => { setPageSize(Number(e.target.value)); setPage(1) }}
+                  className="text-xs font-semibold rounded-lg px-2 py-1"
+                  style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', color: 'var(--color-text)', cursor: 'pointer' }}
+                >
+                  {[5, 10, 25, 50].map(n => <option key={n} value={n}>{n}</option>)}
+                </select>
+              </div>
             </div>
 
             <div className="space-y-2">
@@ -192,7 +205,7 @@ export default function App() {
 
             {totalPages > 1 && (
               <div className="mt-3 text-center text-xs" style={{ color: 'var(--color-muted)' }}>
-                Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
+                Page {page} of {totalPages} · showing {(page - 1) * pageSize + 1}–{Math.min(page * pageSize, filtered.length)} of {filtered.length}
               </div>
             )}
 
@@ -211,6 +224,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
