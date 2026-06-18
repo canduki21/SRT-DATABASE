@@ -12,6 +12,21 @@
   }
   #srt-pub * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  /* Disclaimer */
+  #srt-pub .srt-disclaimer {
+    display: flex; align-items: flex-start; gap: 10px;
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: #8f8d8d;
+    line-height: 1.5;
+  }
+  #srt-pub .srt-disclaimer svg { flex-shrink: 0; margin-top: 1px; color: #c87a41; }
+  #srt-pub .srt-disclaimer strong { color: #fafafa; }
+
   /* Stats */
   #srt-pub .srt-stats {
     display: grid;
@@ -167,6 +182,28 @@
     color: #8f8d8d; font-size: 0.9rem;
   }
 
+  /* Pagination */
+  #srt-pub .srt-pagination {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; margin-top: 24px; flex-wrap: wrap;
+  }
+  #srt-pub .srt-page-btn {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    color: #8f8d8d;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8rem; font-weight: 700;
+    padding: 8px 14px; border-radius: 8px;
+    cursor: pointer; transition: border-color 0.15s, color 0.15s;
+  }
+  #srt-pub .srt-page-btn:hover:not(:disabled) { border-color: #c87a41; color: #fafafa; }
+  #srt-pub .srt-page-btn:disabled { opacity: 0.35; cursor: default; }
+  #srt-pub .srt-page-btn.active { background: #c87a41; border-color: #c87a41; color: #fff; }
+  #srt-pub .srt-page-info {
+    font-size: 0.7rem; color: #8f8d8d; text-align: center;
+    margin-top: 10px;
+  }
+
   @media (max-width: 600px) {
     #srt-pub .srt-stats { grid-template-columns: 1fr 1fr; }
     #srt-pub .srt-filter-row { flex-direction: column; align-items: flex-start; }
@@ -174,6 +211,17 @@
 </style>
 
 <div id="srt-pub">
+
+  <!-- Disclaimer -->
+  <div class="srt-disclaimer">
+    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+        d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+    </svg>
+    <span>There's <strong>800+ peer-reviewed publications</strong> referencing SRT simulants.
+    All listed research is publicly available — access full papers through your institution's library or open-access repositories such as NASA ADS, arXiv, or Google Scholar.</span>
+  </div>
+
   <div class="srt-stats" id="srt-stats-grid"></div>
   <div class="srt-sims" id="srt-sims-bar"></div>
 
@@ -192,21 +240,24 @@
 
   <div class="srt-count" id="srt-count"></div>
   <div class="srt-list" id="srt-list"></div>
+  <div id="srt-pagination"></div>
+  <div class="srt-page-info" id="srt-page-info"></div>
 </div>
 
 <script>
 (function() {
   const DATA_URL = 'https://raw.githubusercontent.com/canduki21/SRT-DATABASE/main/src/data/papers.json';
   const SIMS_URL = 'https://raw.githubusercontent.com/canduki21/SRT-DATABASE/main/src/data/simulants.json';
+  const PAGE_SIZE = 15;
 
   const LUNAR  = new Set(['LHS-1','LHS-2','LHS-1E','LHS-1D','LHS-1-25A','LSP-2','LMS-1','LMS-2','LMS-1E','LMS-1D']);
   const MART   = new Set(['MGS-1','MGS-1C','MGS-1S','JEZ-1','MMS-1','MMS-2']);
   const AST    = new Set(['CI-E','CM-E']);
 
   function simChipClass(id) {
-    if (LUNAR.has(id))  return 'chip-lunar';
-    if (MART.has(id))   return 'chip-martian';
-    if (AST.has(id))    return 'chip-asteroid';
+    if (LUNAR.has(id)) return 'chip-lunar';
+    if (MART.has(id))  return 'chip-martian';
+    if (AST.has(id))   return 'chip-asteroid';
     return 'chip-asteroid';
   }
 
@@ -216,8 +267,9 @@
 
   let allPapers = [], allSims = [];
   let search = '', category = 'all', simulant = 'all';
+  let currentPage = 1;
 
-  function filtered() {
+  function getFiltered() {
     let r = allPapers;
     if (search) {
       const q = search.toLowerCase();
@@ -270,28 +322,42 @@
       <button class="srt-tab${category===c?' active':''}" data-cat="${c}">${c==='all'?'All':c.charAt(0).toUpperCase()+c.slice(1)}</button>
     `).join('');
     document.querySelectorAll('#srt-cat-tabs .srt-tab').forEach(btn => {
-      btn.addEventListener('click', () => { category = btn.dataset.cat; render(); });
+      btn.addEventListener('click', () => { category = btn.dataset.cat; currentPage = 1; render(); });
     });
 
     const sel = document.getElementById('srt-sim-select');
-    const groups = { lunar: allSims.filter(s=>s.category==='lunar'), martian: allSims.filter(s=>s.category==='martian'), asteroid: allSims.filter(s=>s.category==='asteroid') };
+    const groups = {
+      lunar:    allSims.filter(s=>s.category==='lunar'),
+      martian:  allSims.filter(s=>s.category==='martian'),
+      asteroid: allSims.filter(s=>s.category==='asteroid')
+    };
     sel.innerHTML = `<option value="all">All Products</option>` +
       Object.entries(groups).map(([g, sims]) =>
         `<optgroup label="── ${g.charAt(0).toUpperCase()+g.slice(1)}">` +
         sims.map(s=>`<option value="${s.id}"${simulant===s.id?' selected':''}>${s.abbr} — ${s.name}</option>`).join('') +
         `</optgroup>`
       ).join('');
-    sel.addEventListener('change', () => { simulant = sel.value; render(); });
+    sel.addEventListener('change', () => { simulant = sel.value; currentPage = 1; render(); });
   }
 
   function renderList() {
-    const papers = filtered();
+    const papers = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(papers.length / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const page  = papers.slice(start, start + PAGE_SIZE);
+
     document.getElementById('srt-count').textContent = `${papers.length} result${papers.length!==1?'s':''}`;
+
     if (!papers.length) {
       document.getElementById('srt-list').innerHTML = '<div class="srt-empty">No publications match your filters.</div>';
+      document.getElementById('srt-pagination').innerHTML = '';
+      document.getElementById('srt-page-info').textContent = '';
       return;
     }
-    document.getElementById('srt-list').innerHTML = papers.map(p => `
+
+    document.getElementById('srt-list').innerHTML = page.map(p => `
       <a class="srt-card" href="${p.url}" target="_blank" rel="noopener noreferrer">
         <span class="srt-cat-pill cat-${p.category||'general'}">${p.category||'—'}</span>
         <div class="srt-card-body">
@@ -310,6 +376,41 @@
         </div>
       </a>
     `).join('');
+
+    // Pagination buttons
+    if (totalPages > 1) {
+      let btns = `<button class="srt-page-btn" id="srt-prev" ${currentPage===1?'disabled':''}>← Prev</button>`;
+      const range = [];
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          range.push(i);
+        } else if (range[range.length-1] !== '…') {
+          range.push('…');
+        }
+      }
+      btns += range.map(n => n === '…'
+        ? `<span style="color:#8f8d8d;padding:0 4px">…</span>`
+        : `<button class="srt-page-btn${n===currentPage?' active':''}" data-page="${n}">${n}</button>`
+      ).join('');
+      btns += `<button class="srt-page-btn" id="srt-next" ${currentPage===totalPages?'disabled':''}>Next →</button>`;
+      document.getElementById('srt-pagination').innerHTML = `<div class="srt-pagination">${btns}</div>`;
+
+      document.getElementById('srt-prev').addEventListener('click', () => { currentPage--; render(); scrollToTop(); });
+      document.getElementById('srt-next').addEventListener('click', () => { currentPage++; render(); scrollToTop(); });
+      document.querySelectorAll('#srt-pagination [data-page]').forEach(btn => {
+        btn.addEventListener('click', () => { currentPage = +btn.dataset.page; render(); scrollToTop(); });
+      });
+
+      document.getElementById('srt-page-info').textContent =
+        `Page ${currentPage} of ${totalPages} · showing ${start+1}–${Math.min(start+PAGE_SIZE, papers.length)} of ${papers.length}`;
+    } else {
+      document.getElementById('srt-pagination').innerHTML = '';
+      document.getElementById('srt-page-info').textContent = '';
+    }
+  }
+
+  function scrollToTop() {
+    document.getElementById('srt-pub').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function render() {
@@ -317,7 +418,11 @@
     renderList();
   }
 
-  document.getElementById('srt-search').addEventListener('input', e => { search = e.target.value; render(); });
+  document.getElementById('srt-search').addEventListener('input', e => {
+    search = e.target.value;
+    currentPage = 1;
+    render();
+  });
 
   Promise.all([fetch(DATA_URL).then(r=>r.json()), fetch(SIMS_URL).then(r=>r.json())])
     .then(([papers, sims]) => {
@@ -327,7 +432,8 @@
       render();
     })
     .catch(() => {
-      document.getElementById('srt-list').innerHTML = '<div class="srt-empty">Failed to load publications. Please try again later.</div>';
+      document.getElementById('srt-list').innerHTML =
+        '<div class="srt-empty">Failed to load publications. Please try again later.</div>';
     });
 })();
 </script>
