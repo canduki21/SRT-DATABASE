@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import papersRaw from './data/papers.json'
 import simulantsRaw from './data/simulants.json'
 import characterizationRaw from './data/characterization.json'
@@ -62,6 +62,13 @@ export default function App() {
 
   const totalPages = Math.ceil(filtered.length / pageSize)
   const paginated = filtered.slice((page - 1) * pageSize, page * pageSize)
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      window.parent.postMessage({ type: 'srt-resize', height: document.documentElement.scrollHeight }, '*')
+    }, 50)
+    return () => clearTimeout(t)
+  })
 
   return (
     <div style={{ background: 'var(--color-bg)', color: 'var(--color-text)' }}>
@@ -224,6 +231,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
