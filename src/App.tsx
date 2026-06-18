@@ -71,13 +71,6 @@ export default function App() {
       {/* Hero band */}
       <div style={{ background: 'var(--color-bg-dim)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="max-w-5xl mx-auto px-6 py-8">
-          <h1 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--color-text)' }}>
-            Research Database
-          </h1>
-          <p className="mt-1 text-sm" style={{ color: 'var(--color-muted)' }}>
-            Publications, characterization data, and research digest for all SRT simulants.
-          </p>
-
           {/* Disclaimer */}
           <div className="mt-4 flex items-start gap-2 rounded-lg px-4 py-3 text-sm"
             style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
@@ -217,6 +210,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
