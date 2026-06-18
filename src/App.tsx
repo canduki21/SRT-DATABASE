@@ -86,7 +86,7 @@ export default function App() {
                 d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20A10 10 0 0012 2z" />
             </svg>
             <p style={{ color: 'var(--color-muted)' }}>
-              This database contains <span className="font-semibold" style={{ color: 'var(--color-text)' }}>800+ peer-reviewed publications</span> referencing SRT simulants.
+              There's <span className="font-semibold" style={{ color: 'var(--color-text)' }}>800+ peer-reviewed publications</span> referencing SRT simulants.
               All listed research is publicly available — access full papers through your institution's library or open-access repositories such as NASA ADS, arXiv, or Google Scholar.
             </p>
           </div>
@@ -217,3 +217,4 @@ export default function App() {
     </div>
   )
 }
+
