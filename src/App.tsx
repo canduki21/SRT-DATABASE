@@ -206,10 +206,11 @@ export default function App() {
 
       </main>
 
-      <Footer papersCount={papers.length} />
+      <Footer />
     </div>
   )
 }
+
 
 
 
