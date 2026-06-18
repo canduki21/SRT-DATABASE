@@ -32,7 +32,7 @@ export default function App() {
   const [application, setApplication] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'year' | 'added'>('year')
   const [page, setPage] = useState(1)
-  const PAGE_SIZE = 15
+  const PAGE_SIZE = 5
 
   const filtered = useMemo(() => {
     let result = [...papers]
@@ -207,6 +207,7 @@ export default function App() {
     </div>
   )
 }
+
 
 
 
