@@ -196,6 +196,12 @@ export default function App() {
               </div>
             )}
 
+            {totalPages > 1 && (
+              <div className="mt-3 text-center text-xs" style={{ color: 'var(--color-muted)' }}>
+                Page {page} of {totalPages} · showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length}
+              </div>
+            )}
+
           </>
         )}
 
@@ -211,5 +217,6 @@ export default function App() {
     </div>
   )
 }
+
 
 
