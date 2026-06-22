@@ -579,6 +579,20 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "f0819f15-b129-442f-b669-fb9a416031ff",
+    "title": "Molecular adaptation of sweet potato to Martian soil simulant: insights from mRNA and long non-coding RNA analyses.",
+    "authors": "S. Chinreddy, Karthik Chinnannan, Purushothaman Natarajan et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jare.2026.04.050",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-06-22"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -1710,6 +1724,34 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "a7427529-a659-4384-be2d-a41e6acc2229",
+    "title": "Effect of perchlorate on biocementation capable bacteria and Martian bricks",
+    "authors": "Swati Dubey, Shubhanshu Shukla, Nitin Gupta et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1101/2025.02.24.639804",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-06-22"
+  },
+  {
+    "id": "9bc8ff0d-f5a7-4c12-ad41-cd7988d30d15",
+    "title": "Investigating potential Martian habitats: survival of the halotolerant yeast Debaryomyces hansenii in deliquescence-driven brines",
+    "authors": "Shivani Nundoo, F. Fischer, Dirk Schulze-Makuch et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1017/S1473550425100189",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-06-22"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -8488,5 +8530,20 @@
     "applications": [
       "other"
     ]
+  },
+  {
+    "id": "f0bada4b-d44a-42fa-b032-37b3dd0e019e",
+    "title": "Microbial engineering of soil structure: Insights from synthetic Mars simulant soils",
+    "authors": "Han Wang",
+    "year": null,
+    "url": "https://doi.org/10.33540/893",
+    "keywords": [],
+    "simulants": [
+      "MGS-1",
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-06-22"
   }
 ]
