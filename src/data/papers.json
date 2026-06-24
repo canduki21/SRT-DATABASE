@@ -593,6 +593,30 @@
     "added_at": "2026-06-22"
   },
   {
+    "id": "1bd8d30b-e43b-40a4-8970-29b5e74868db",
+    "title": "Low-Voltage, Repairable EDS Coating for Lunar Dust Mitigation on EVA Spacesuit Textiles",
+    "authors": "Keerthana Srinivasan, Sasha Przybylski, R. Sahu et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/AERO66936.2026.11519831",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-24"
+  },
+  {
+    "id": "fed48c7e-ff3d-4ed2-8242-574f64ab8dee",
+    "title": "Maize (Zea mays L.) survival on Mars depends on regolith’s chemical composition rather than reduced gravity or lack of magnetic field",
+    "authors": "G. Servetto, Paolo Botta, G. Rossi et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41598-026-50840-4",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-06-24"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -1752,6 +1776,20 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-22"
+  },
+  {
+    "id": "b913f279-4fec-402a-b793-862a31784604",
+    "title": "Additive Manufacturing of PEEK/Lunar Regolith Composites for Sustainable Lunar Manufacturing",
+    "authors": "Mohammad Azami, Pierre-Lucas Aubin-Fournier, M. Hojjati et al.",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2508.00894",
+    "keywords": [],
+    "simulants": [
+      "LMS-1D"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-24"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -7023,6 +7061,18 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "2864c0db-2f0a-4563-bc35-0c9d2a3682c7",
+    "title": "Developing a new controllable lunar dust simulant: BHLD20",
+    "authors": "Haoyang Sun, Min Yi, Zhi-gang Shen et al.",
+    "year": 2017,
+    "url": "https://doi.org/10.1016/J.PSS.2017.04.010",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-24"
+  },
+  {
     "id": "eebe59ad-6959-46fc-a619-958c98cad804",
     "title": "Simulating regolith ejecta due to gas impingement",
     "authors": "Chambers et al",
@@ -7289,6 +7339,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "286d9a7a-d452-4711-9110-5cc63440ced6",
+    "title": "Effect of Simulant Type on the Absorptance and Emittance of Dusted Thermal Control Surfaces in a Simulated Lunar Environment",
+    "authors": "J. Gaier",
+    "year": 2010,
+    "url": "https://doi.org/10.2514/6.2010-6111",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-24"
   },
   {
     "id": "25cc7e59-0bd4-46b1-9820-176ca5eb17b4",
