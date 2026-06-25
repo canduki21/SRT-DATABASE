@@ -617,6 +617,20 @@
     "added_at": "2026-06-24"
   },
   {
+    "id": "d32dfe4e-f0a8-4f73-914c-b3b7757ecdaf",
+    "title": "An Optimization to Increase Bacterial DNA Yield in a Lunar Regolith Simulant",
+    "authors": "Jéssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.2478/gsr-2026-0002",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -1790,6 +1804,87 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-24"
+  },
+  {
+    "id": "51d501b3-7001-4968-9bbe-502250c6df8c",
+    "title": "Mechanical properties of Sintered Lunar Regolith Simulant LHS-1 when moulded under different temperatures and time at constant pressure",
+    "authors": "J. Stevens",
+    "year": 2025,
+    "url": "https://doi.org/10.70156/1754-2383.1538",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "5f9bf15a-b755-4114-8949-e2f3d3a3b6fc",
+    "title": "The Efficacy of Removal of LHS-1 Lunar Dust Simulant from NOMEX Utilizing Electrostatic and Mechanical Technologies",
+    "authors": "E. Merritt, Tiffany Nguyen, Owen Peay et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1109/WERC66199.2025.11143796",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "533e609e-09ab-4a42-a217-958bda0f7d44",
+    "title": "Genotype selection and microbial partnerships influence chickpea establishment in lunar regolith simulant",
+    "authors": "Jessica Atkin, H. Skabelund, Elizabeth Pierson et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3389/fspas.2025.1670807",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "41a96220-b92f-4cef-9ac9-0a7828f9351e",
+    "title": "Abrasion Behaviour of Natural and Composite Polytetrafluoroethylene Seal Materials Against Stainless Steel in Lunar Regolith Conditions",
+    "authors": "György Barkó, G. Kalácska, Tamás Bálint et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3390/lubricants13020043",
+    "keywords": [],
+    "simulants": [
+      "LHS-1",
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "0e665a5e-3f34-487d-b64e-889ab37df231",
+    "title": "Investigation of the Thermal Conductivity of Dry and Icy Lunar Regolith Simulants",
+    "authors": "Henning Wache, Luca Kiewiet, Paul Zabel et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1029/2025JE009084",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "4d77fda5-e7a2-4f99-9039-de72f8df75ef",
+    "title": "Spectral Properties of Ilmenite, Hematite, and Spinel: Implications for Upcoming Lunar Exploration Missions",
+    "authors": "A. Camon, M. Lemelin",
+    "year": 2025,
+    "url": "https://doi.org/10.3847/PSJ/adee0c",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -3283,6 +3378,32 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "9ee011a8-800c-42cd-981d-0240924fd235",
+    "title": "Discrete Element Modeling of LHS-1 Lunar Highlands Simulant and Cone Penetrometer-Regolith Interactions",
+    "authors": "Jesus Badal, Qiushi Chen, Liang Zhang et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1061/9780784485736.005",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
+    "id": "b6271645-6d59-4928-b69f-5653fd17e16f",
+    "title": "Multi-step thermal design of microwave vacuum heating to basaltic regolith simulant towards lunar base construction",
+    "authors": "Kunihiko Kato, Takashi Shirai",
+    "year": 2024,
+    "url": "https://doi.org/10.1038/s41598-024-79504-x",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -4683,6 +4804,20 @@
     "applications": [
       "other"
     ]
+  },
+  {
+    "id": "79a256d7-2eef-437e-b860-d9f9f23c2d2d",
+    "title": "Characterization and Discrete Element Modeling of LHS-1 Lunar Highlands Simulant",
+    "authors": "Zakia Tasnim, Qiushi Chen, Jesus Badal et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1061/9780784484692.008",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-25"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
