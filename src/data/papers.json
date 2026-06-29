@@ -631,6 +631,24 @@
     "added_at": "2026-06-25"
   },
   {
+    "id": "d72dfd19-8acf-47c6-98e5-ae4e8d71e3ea",
+    "title": "Finite-Element Modeling of Additively Manufactured Regolith-Filled Polyether–Ether–Ketone (PEEK)",
+    "authors": "Mohammad Azami, Pierre-Lucas Aubin-Fournier, Krzysztof Skonieczny",
+    "year": 2026,
+    "url": "https://www.preprints.org/manuscript/b5af9738dc4913de4ce1daed5d0c8944/v1",
+    "keywords": [
+      "PEEK",
+      "additive manufacturing",
+      "regolith",
+      "finite element modeling",
+      "3D printing"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "manual",
+    "added_at": "2026-06-29"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
