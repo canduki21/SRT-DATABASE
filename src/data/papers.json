@@ -637,13 +637,18 @@
     "year": 2026,
     "url": "https://www.preprints.org/manuscript/b5af9738dc4913de4ce1daed5d0c8944/v1",
     "keywords": [
-      "PEEK",
+      "in-space manufacturing",
+      "lunar-based manufacturing",
       "additive manufacturing",
-      "regolith",
+      "PEEK",
       "finite element modeling",
-      "3D printing"
+      "LMS-1D",
+      "regolith composite",
+      "stiffness"
     ],
-    "simulants": [],
+    "simulants": [
+      "LMS-1D"
+    ],
     "category": "lunar",
     "source": "manual",
     "added_at": "2026-06-29"
