@@ -1910,6 +1910,32 @@
     "added_at": "2026-06-25"
   },
   {
+    "id": "8b121a9d-e558-4209-a05d-5f6d44489de8",
+    "title": "Thermally Induced Polymeric Bonding of LMS-1 Lunar Regolith Simulant",
+    "authors": "Ranya A. Zina, T. Grippi, Julio R. Valdes",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.asr.2025.01.042",
+    "keywords": [],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-30"
+  },
+  {
+    "id": "6e7b1577-dd1a-472b-b997-5dd3928ab56e",
+    "title": "Dielectric Properties of Dense Ceramic Films Made by Dry Aerosol Deposition of Lunar Regolith Simulant. Part 1: Lunar Mare.",
+    "authors": "Robert Borrego, P. Fuierer",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.actaastro.2025.10.061",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-30"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -3425,6 +3451,18 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-25"
+  },
+  {
+    "id": "dda56af6-3583-4266-8839-d5f9da8f03c3",
+    "title": "Development of Korean Lunar Highland Soil Simulant\n (KIGAM-L1)",
+    "authors": "T. Kang, Eojin Kim, K. J. Kim",
+    "year": 2024,
+    "url": "https://doi.org/10.52912/jsta.2024.4.2.121",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-30"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -5732,6 +5770,20 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "23393486-952d-42d4-ab8a-8222607c2568",
+    "title": "Mineral Heterogeneity Of Lunar Sub-Milligram Basaltic Clasts And Its Effect On The Production Rates Of Cosmogenic Nuclides",
+    "authors": "Huaiyu He",
+    "year": 2022,
+    "url": "https://doi.org/10.46770/as.2022.013",
+    "keywords": [],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-30"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -7497,6 +7549,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "65d600dd-17b1-4210-acf4-87cd4ba2ed8b",
+    "title": "Properties of TJ-1 Lunar Soil Simulant",
+    "authors": "Ming-ming Jiang, Liqing Li, Yugang Sun",
+    "year": 2012,
+    "url": "https://doi.org/10.1061/(ASCE)AS.1943-5525.0000129",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-06-30"
   },
   {
     "id": "286d9a7a-d452-4711-9110-5cc63440ced6",
