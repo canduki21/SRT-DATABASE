@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { fetchPaperMetadata } from '../lib/paperMetadata'
+import { supabase } from '../lib/supabase'
 import type { Paper, Simulant } from '../types'
-
-const GITHUB_REPO = 'canduki21/SRT-DATABASE'
 
 const CATEGORIES = ['lunar', 'martian', 'asteroid', 'multi', 'general'] as const
 
@@ -62,7 +61,8 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
   const [selSims,  setSelSims]  = useState<string[]>([])
   const [selApps,  setSelApps]  = useState<string[]>([])
 
-  const [submitted, setSubmitted] = useState(false)
+  const [submitting,   setSubmitting]   = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   // ── fetch metadata ──────────────────────────────────────────────────────────
   async function handleFetch() {
@@ -92,36 +92,34 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
     }
   }
 
-  // ── build GitHub issue URL ──────────────────────────────────────────────────
-  function buildIssueUrl() {
-    const lines = [
-      `**URL:** ${url.trim()}`,
-      title.trim()    ? `**Title:** ${title.trim()}`              : null,
-      authors.trim()  ? `**Authors:** ${authors.trim()}`          : null,
-      year            ? `**Year:** ${year}`                       : null,
-      abstract.trim() ? `**Abstract:** ${abstract.trim()}`        : null,
-      keywords.trim() ? `**Keywords:** ${keywords.trim()}`        : null,
-      `**Category:** ${category}`,
-      selSims.length  ? `**Simulants:** ${selSims.join(', ')}`    : null,
-      selApps.length  ? `**Applications:** ${selApps.join(', ')}` : null,
-    ].filter(Boolean).join('\n\n')
-
-    const issueTitle = title.trim()
-      ? `[Paper submission] ${title.trim()}`
-      : `[Paper submission] ${url.trim()}`
-
-    return (
-      `https://github.com/${GITHUB_REPO}/issues/new` +
-      `?title=${encodeURIComponent(issueTitle)}` +
-      `&body=${encodeURIComponent(lines)}` +
-      `&labels=paper-submission`
-    )
+  // ── submit ──────────────────────────────────────────────────────────────────
+  async function handleSubmit() {
+    if (!url.trim() || !supabase) return
+    setSubmitting(true)
+    try {
+      const { error } = await supabase.from('paper_submissions').insert({
+        url:          url.trim(),
+        title:        title.trim()    || null,
+        authors:      authors.trim()  || null,
+        year:         year ? parseInt(year) : null,
+        abstract:     abstract.trim() || null,
+        keywords:     keywords.split(',').map(k => k.trim()).filter(Boolean),
+        category,
+        simulants:    selSims,
+        applications: selApps,
+      })
+      setSubmitStatus(error ? 'error' : 'success')
+    } catch {
+      setSubmitStatus('error')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   function reset() {
     setUrl(''); setTitle(''); setAuthors(''); setYear(''); setAbstract('')
     setKeywords(''); setCategory('general'); setSelSims([]); setSelApps([])
-    setFetchMsg(''); setFetched(false); setSubmitted(false)
+    setFetchMsg(''); setFetched(false); setSubmitStatus('idle')
   }
 
   function toggleSim(s: string) {
@@ -141,7 +139,7 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
     <div style={{ marginTop: 32, marginBottom: 40 }}>
       {/* Trigger */}
       <button
-        onClick={() => { setOpen(o => !o); setSubmitted(false) }}
+        onClick={() => { setOpen(o => !o); setSubmitStatus('idle') }}
         style={{
           width: '100%',
           padding: '14px 20px',
@@ -187,14 +185,19 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
           }}
         >
           {/* Success / copied states */}
-          {submitted && (
+          {submitStatus === 'success' && (
             <div style={{ padding: '16px 20px', background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', borderRadius: 8, marginBottom: 20, color: '#4ade80', fontSize: 14 }}>
-              GitHub issue opened — finish submitting it in the new tab.
+              Thank you! Your submission has been received and is under review.
               <button onClick={reset} style={{ marginLeft: 16, fontSize: 12, color: 'var(--color-muted)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>Submit another</button>
             </div>
           )}
+          {submitStatus === 'error' && (
+            <div style={{ padding: '16px 20px', background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 8, marginBottom: 20, color: '#f87171', fontSize: 14 }}>
+              Submission failed. Please try again.
+            </div>
+          )}
 
-          {!submitted && (
+          {submitStatus !== 'success' && (
             <>
               <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--color-muted)', lineHeight: 1.6 }}>
                 Paste the paper's URL or DOI below. We'll try to auto-populate the fields — you can edit anything before submitting.
@@ -420,27 +423,25 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
                     >
                       Reset
                     </button>
-                    <a
-                      href={url.trim() && !duplicate ? buildIssueUrl() : undefined}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => { if (url.trim() && !duplicate) setSubmitted(true) }}
+                    <button
+                      type="button"
+                      onClick={handleSubmit}
+                      disabled={submitting || !url.trim() || !!duplicate || !supabase}
                       style={{
-                        display: 'inline-block',
                         padding: '8px 24px',
-                        background: url.trim() && !duplicate ? 'var(--color-accent)' : 'rgba(200,122,65,0.3)',
+                        background: 'var(--color-accent)',
+                        border: 'none',
                         borderRadius: 8,
                         color: '#fff',
                         fontWeight: 700,
                         fontSize: 13,
                         fontFamily: 'inherit',
-                        textDecoration: 'none',
-                        cursor: url.trim() && !duplicate ? 'pointer' : 'default',
-                        pointerEvents: url.trim() && !duplicate ? 'auto' : 'none',
+                        cursor: submitting || !url.trim() || !supabase ? 'default' : 'pointer',
+                        opacity: !url.trim() || !supabase ? 0.5 : 1,
                       }}
                     >
-                      Submit Paper
-                    </a>
+                      {submitting ? 'Submitting…' : 'Submit Paper'}
+                    </button>
                   </div>
                 </div>
               )}
