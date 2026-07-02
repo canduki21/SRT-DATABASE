@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { fetchPaperMetadata } from '../lib/paperMetadata'
-import { supabase } from '../lib/supabase'
 import type { Paper, Simulant } from '../types'
+
+const GITHUB_REPO = 'canduki21/SRT-DATABASE'
 
 const CATEGORIES = ['lunar', 'martian', 'asteroid', 'multi', 'general'] as const
 
@@ -25,7 +26,7 @@ const CAT_COLOR: Record<string, string> = {
 
 interface Props { simulants: Simulant[]; papers: Paper[] }
 
-type SubmitState = 'idle' | 'success' | 'error' | 'copied'
+type SubmitState = 'idle' | 'success' | 'error'
 
 function inputStyle(focus = false) {
   return {
@@ -93,29 +94,37 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
   }
 
   // ── submit ──────────────────────────────────────────────────────────────────
-  async function handleSubmit() {
+  function handleSubmit() {
     if (!url.trim()) return
     setSubmitting(true)
-    const payload = {
-      url:          url.trim(),
-      title:        title.trim() || null,
-      authors:      authors.trim() || null,
-      year:         year ? parseInt(year) : null,
-      abstract:     abstract.trim() || null,
-      keywords:     keywords.split(',').map(k => k.trim()).filter(Boolean),
-      category,
-      simulants:    selSims,
-      applications: selApps,
-    }
 
-    if (supabase) {
-      const { error } = await supabase.from('paper_submissions').insert(payload)
-      setSubmitStatus(error ? 'error' : 'success')
-    } else {
-      await navigator.clipboard.writeText(JSON.stringify(payload, null, 2))
-      setSubmitStatus('copied')
+    const lines = [
+      `**URL:** ${url.trim()}`,
+      title.trim()    ? `**Title:** ${title.trim()}`       : null,
+      authors.trim()  ? `**Authors:** ${authors.trim()}`   : null,
+      year            ? `**Year:** ${year}`                : null,
+      abstract.trim() ? `**Abstract:** ${abstract.trim()}` : null,
+      keywords.trim() ? `**Keywords:** ${keywords.trim()}` : null,
+      `**Category:** ${category}`,
+      selSims.length  ? `**Simulants:** ${selSims.join(', ')}`      : null,
+      selApps.length  ? `**Applications:** ${selApps.join(', ')}`   : null,
+    ].filter(Boolean).join('\n\n')
+
+    const issueTitle = title.trim() ? `[Paper submission] ${title.trim()}` : `[Paper submission] ${url.trim()}`
+    const issueUrl =
+      `https://github.com/${GITHUB_REPO}/issues/new` +
+      `?title=${encodeURIComponent(issueTitle)}` +
+      `&body=${encodeURIComponent(lines)}` +
+      `&labels=paper-submission`
+
+    try {
+      window.open(issueUrl, '_blank', 'noopener,noreferrer')
+      setSubmitStatus('success')
+    } catch {
+      setSubmitStatus('error')
+    } finally {
+      setSubmitting(false)
     }
-    setSubmitting(false)
   }
 
   function reset() {
@@ -189,23 +198,17 @@ export default function SubmitPaperForm({ simulants, papers }: Props) {
           {/* Success / copied states */}
           {submitStatus === 'success' && (
             <div style={{ padding: '16px 20px', background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)', borderRadius: 8, marginBottom: 20, color: '#4ade80', fontSize: 14 }}>
-              Thank you! Your submission has been received and is under review.
-              <button onClick={reset} style={{ marginLeft: 16, fontSize: 12, color: 'var(--color-muted)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>Submit another</button>
-            </div>
-          )}
-          {submitStatus === 'copied' && (
-            <div style={{ padding: '16px 20px', background: 'rgba(200,122,65,0.1)', border: '1px solid rgba(200,122,65,0.3)', borderRadius: 8, marginBottom: 20, color: 'var(--color-accent)', fontSize: 14 }}>
-              Submission copied to clipboard as JSON. Share it with the database admin to get your paper added.
+              A GitHub issue was opened with your paper details — finish submitting it there.
               <button onClick={reset} style={{ marginLeft: 16, fontSize: 12, color: 'var(--color-muted)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>Submit another</button>
             </div>
           )}
           {submitStatus === 'error' && (
             <div style={{ padding: '16px 20px', background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 8, marginBottom: 20, color: '#f87171', fontSize: 14 }}>
-              Submission failed. Please try again or contact the database admin.
+              Could not open GitHub. <a href={`https://github.com/${GITHUB_REPO}/issues/new`} target="_blank" rel="noopener noreferrer" style={{ color: '#f87171' }}>Open manually →</a>
             </div>
           )}
 
-          {submitStatus !== 'success' && submitStatus !== 'copied' && (
+          {submitStatus !== 'success' && (
             <>
               <p style={{ margin: '0 0 20px', fontSize: 13, color: 'var(--color-muted)', lineHeight: 1.6 }}>
                 Paste the paper's URL or DOI below. We'll try to auto-populate the fields — you can edit anything before submitting.
