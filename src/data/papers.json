@@ -654,6 +654,48 @@
     "added_at": "2026-06-29"
   },
   {
+    "id": "2636987e-000c-41b8-ba68-43baef0dad2d",
+    "title": "Lunar Regolith Sampling by Combining Electrostatic Force Generation and Vibration",
+    "authors": "Serena R. M. Pirrone, A. Shanbhag, Trunal Patil et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s11214-026-01286-7",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "5092fc56-8a2a-4ae5-95ae-ca59b1400a0b",
+    "title": "Vibrationally aided flow of lunar regolith simulants in a hopper-based conveying device",
+    "authors": "Marcello Lappa, Peter Watson, S. V. Bonnieu",
+    "year": 2026,
+    "url": "https://doi.org/10.1122/8.0001055",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "2b5d9c09-5bec-4806-a3bb-2e2b0a202e7b",
+    "title": "Behavior Analysis of Charged Lunar Regolith Simulants Lifted by Metal Wheel in Vacuum Environment",
+    "authors": "Tadashi Matsuura, Hiroaki Kawamura, Shinichiro Noda et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/AERO66936.2026.11519912",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3463,6 +3505,20 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-30"
+  },
+  {
+    "id": "e1ccf471-150b-43dc-a571-08b93cdd84c9",
+    "title": "The effectiveness of microwave heating as an ISRU extraction technique on different arrangements of icy lunar regolith.",
+    "authors": "James D. Cole, Simon Sheridan, Sungwoo Lim et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.pss.2024.106011",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
