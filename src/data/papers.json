@@ -696,6 +696,30 @@
     "added_at": "2026-07-03"
   },
   {
+    "id": "eb6f5627-8396-46af-85ae-c8d3b69a8de8",
+    "title": "Timescales of CM carbonaceous chondrite aqueous alteration determined by kinetic modelling",
+    "authors": "Robin L. Haller, Martin R. Lee, M. E. Hodson",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.gca.2026.04.022",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "03c52bb6-0297-46d4-98d8-84910a27c356",
+    "title": "Development of a Method to Measure Seven Metal Stable Isotope Ratios in Small Carbonaceous Chondrite Samples",
+    "authors": "M. Auro, Sune G. Nielsen, A. Heard et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1111/ggr.70051",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -1976,6 +2000,30 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-30"
+  },
+  {
+    "id": "024afa24-d778-48b1-aa9a-763cd511b6a6",
+    "title": "Near‐ and mid‐infrared spectral diversity in the Aguas Zarcas carbonaceous chondrite and implications for inferring aqueous processes on primitive asteroids using remote sensing",
+    "authors": "C. Schultz, R. E. Milliken, J. Boesenberg et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.14339",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "5e02d694-98e1-4877-9813-9f868834a9fe",
+    "title": "VIS‐to‐MIR reflectance and Raman spectroscopy of the CM2 NWA 12184 carbonaceous chondrite",
+    "authors": "A. Galiano, F. Dirri, M. Ferrari et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.14315",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -3545,6 +3593,54 @@
     "added_at": "2026-07-04"
   },
   {
+    "id": "13b7113b-a7ce-4303-8de3-f3fa1f2595d9",
+    "title": "The Aguas Zarcas carbonaceous chondrite meteorite: Brecciation and aqueous alteration on the parent body",
+    "authors": "I. Kouvatsis, J. Cartwright, W. E. Hames",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14219",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "81bcad84-b4e9-40e0-bb7c-2f265df27e8c",
+    "title": "A high-resolution in situ X-ray diffraction study of mineral transitions due to post-hydration heating in CM chondrite meteorites",
+    "authors": "L. Jenkins, A. King, Martin R. Lee et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1186/s40623-024-02116-2",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "286aff85-c7f5-4544-a1d8-5b982bf246dd",
+    "title": "Petrofabrics in the CM chondrite Kolang: Evidence for non‐spherical chondrules in the protoplanetary disk",
+    "authors": "L. Jenkins, Martin R. Lee, L. Daly et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14297",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "d18f057b-5148-45db-a98b-267de97329f7",
+    "title": "Brecciation at the grain scale within the lithologies of the Winchcombe Mighei‐like carbonaceous chondrite",
+    "authors": "Luke Daly, M. Suttle, Martin R. Lee et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14164",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -4971,6 +5067,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-07-04"
+  },
+  {
+    "id": "6a34ab50-2ed4-49ae-83bb-84269d266b1f",
+    "title": "Extended time scales of carbonaceous chondrite aqueous alteration evidenced by a xenolith in LaPaz Icefield 02239 (CM2)",
+    "authors": "Martin R. Lee, C. Floyd, Pierre-Etienne Martin et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1111/maps.13978",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
@@ -6758,6 +6866,18 @@
     "added_at": "2026-07-04"
   },
   {
+    "id": "809ceaab-3368-46e0-8b71-b0ce887e0328",
+    "title": "Abundant extraterrestrial amino acids in the primitive CM carbonaceous chondrite Asuka 12236",
+    "authors": "D. Glavin, H. Mclain, J. Dworkin et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1111/maps.13560",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -7055,6 +7175,18 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-07-04"
+  },
+  {
+    "id": "e4d8e9c4-59cb-4cf9-bb24-7cdc0b00d22b",
+    "title": "The CM carbonaceous chondrite regolith Diepenveen",
+    "authors": "M. Langbroek, P. Jenniskens, L. Kriegsman et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1111/maps.13297",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
