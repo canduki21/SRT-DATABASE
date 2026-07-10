@@ -2026,6 +2026,20 @@
     "added_at": "2026-07-05"
   },
   {
+    "id": "a69cdd41-d8bd-4afc-8f39-0a781d5bc650",
+    "title": "Effect of perchlorate on biocementation capable bacteria and Martian bricks",
+    "authors": "Swati Dubey, Shubhanshu Shukla, Nitin Gupta et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1371/journal.pone.0340252",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-10"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
