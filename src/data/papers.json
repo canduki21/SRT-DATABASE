@@ -654,6 +654,306 @@
     "added_at": "2026-06-29"
   },
   {
+    "id": "85d2071d-c6de-43d2-9ce6-a58406d8bd24",
+    "title": "Vibrationally aided flow of lunar regolith simulants in a hopper-based conveying device",
+    "authors": "Marcello Lappa, Peter Watson, S. V. Bonnieu",
+    "year": 2026,
+    "url": "https://doi.org/10.1122/8.0001055",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "e741ac9d-4b59-4bf7-8018-d4e7417fd12e",
+    "title": "Behavior Analysis of Charged Lunar Regolith Simulants Lifted by Metal Wheel in Vacuum Environment",
+    "authors": "Tadashi Matsuura, Hiroaki Kawamura, Shinichiro Noda et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/AERO66936.2026.11519912",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "ce321a25-9467-4349-9136-fe7e70da0b69",
+    "title": "Lunar Regolith Sampling by Combining Electrostatic Force Generation and Vibration",
+    "authors": "Serena R. M. Pirrone, A. Shanbhag, Trunal Patil et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s11214-026-01286-7",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "4e209e73-8958-4187-ab76-f4857d74c758",
+    "title": "Vertical Lunar Regolith Conveyor (VLRC) Testing Results",
+    "authors": "Jonathan Gleeson, Jenna Fothergill, J. G. Mantovani et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.64631/xrik2774",
+    "keywords": [
+      "Regolith",
+      "Conveyor belt",
+      "Reflection (computer programming)",
+      "Feature (linguistics)",
+      "Calibration"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "eaa6aa4b-a07c-41c9-aa53-b93656641bda",
+    "title": "Mineralogical characterization of an Apollo 16 sample and lunar simulants through Mid-Infrared spectral analysis",
+    "authors": "Mariarca D’Aniello, Océane Barraud, Giulia Alemanno et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5194/epsc2026-948",
+    "keywords": [
+      "Felsic",
+      "Mafic",
+      "Lunar soil",
+      "Spectral slope",
+      "Analytical Chemistry (journal)",
+      "Grain size",
+      "Mineral",
+      "Characterization (materials science)",
+      "Spectroscopy"
+    ],
+    "simulants": [
+      "LHS-1D",
+      "LHS-1",
+      "LMS-1D",
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "c81cd995-22b2-4588-b20e-9a7481585bbb",
+    "title": "Electrolytic Oxygen Extraction and Metal Production from NEU-2 Lunar Regolith Simulant in Cryolite-Based Molten Salt Using Fe-Ni Inert Anode",
+    "authors": "Jie Zhang, Aimin Liu, Yuan Zhao et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s11837-026-08421-3",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "70f7535d-2ab4-47db-8669-1e88b1658ab4",
+    "title": "Cathodic Reduction Process in Low-Temperature Electro-Deoxidation for Metal Extraction from NEU-2 Lunar Regolith Simulant",
+    "authors": "Yun-hong Zhou, Jingyu Li, K. Xie et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.electacta.2026.148680",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "31e4721a-5102-42b4-afde-b1d8611f1ffb",
+    "title": "Lunar regolith simulant for cultivation of plants: seed germination and early growth study of plant vitality",
+    "authors": "Štěpán Krejčí, Hector A. Stavrakakis, P. Coufalík et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1017/S1473550426100275",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "85697c5d-7056-467b-9542-f174b78b770a",
+    "title": "Towards in situ de-risking of lunar granular materials handling: Design, manufacture, and initial testing and initial validation of a rotating drum breadboard suitable for vacuum conditions and eventual lunar gravity parabolic flight",
+    "authors": "Marko Pratnekar, Vivek Garg, Christopher Ogunlesi et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.21203/rs.3.rs-9672389/v1",
+    "keywords": [
+      "Regolith",
+      "Payload (computing)",
+      "Drum",
+      "Angle of repose",
+      "Breadboard",
+      "Granular material",
+      "Martian"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "ee37dc9e-5379-4311-a8a3-790f603c8ae0",
+    "title": "Experimental determination of gamma-ray attenuation coefficients of lunar regolith simulants for habitat shielding applications",
+    "authors": "P. E. Srokosz, Janusz Kobaka, Jacek Katzer",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.cscm.2026.e06240",
+    "keywords": [
+      "Regolith",
+      "Attenuation",
+      "Electromagnetic shielding",
+      "Habitat"
+    ],
+    "simulants": [
+      "LHS-1",
+      "LMS-1",
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "5bdf09fc-354f-47e1-b654-257442c5fee6",
+    "title": "Vibrational Circular Dichroism of Organics in Planetary Analog Minerals: Laboratory Constraints for Chiral Detection in Small Body Environments",
+    "authors": "Mariya Krasteva, John Carter, Jean-Valère Naubron et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5194/epsc2026-1169",
+    "keywords": [
+      "Chirality (physics)",
+      "Murchison meteorite",
+      "Homochirality",
+      "Vibrational circular dichroism",
+      "Circular dichroism",
+      "Meteorite",
+      "Solar System",
+      "Enantiomer",
+      "Spectroscopy"
+    ],
+    "simulants": [
+      "MGS-1C",
+      "MGS-1",
+      "CM-E"
+    ],
+    "category": "multi",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "46879b2d-b5dd-4e3e-b438-66fb62fa476b",
+    "title": "Assessing the cementitious reactivity of lunar and Martian regolith simulants for extraterrestrial construction",
+    "authors": "Matias Leon-Miquel, Brandon S. Byers, Qingxu Jin",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s44453-026-00047-8",
+    "keywords": [
+      "Regolith",
+      "Martian",
+      "Cementitious",
+      "Inert",
+      "Portlandite",
+      "Martian soil",
+      "Mars Exploration Program",
+      "Pozzolan"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "8d655678-9b56-459c-a9c9-51404f10b501",
+    "title": "Rheological characterization and additive manufacturing suitability of lunar and Martian regolith simulants",
+    "authors": "Wesley Combs, C. Fred Higgs",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.powtec.2026.122480",
+    "keywords": [
+      "Regolith",
+      "Rheology",
+      "Characterization (materials science)",
+      "Martian"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "396a529b-0d3d-4200-bded-1fa177a43004",
+    "title": "Mineral Weathering Experiments for Terrestrial Planetary Analogs in a Continuous‐Flow Reactor",
+    "authors": "J. Weber, Eduardo Martinez, Rachel Y. Sheppard et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1155/gfl/6180315",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "5822ef34-f517-424e-b2d2-0190d6eece9a",
+    "title": "Methanogens on Asteroids?",
+    "authors": "Isabella Reimer",
+    "year": 2026,
+    "url": "https://scholarworks.uark.edu/hnrcsturpc26/14",
+    "keywords": [
+      "Carbon dioxide",
+      "Mars Exploration Program",
+      "Pellets",
+      "Nutrient",
+      "Methanogenesis",
+      "Martian soil"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "7a2635c0-59a1-465a-98e7-3143b4ef464f",
+    "title": "Support to MMX mission: Impact cratering and exogenous material contamination on Phobos simulants ",
+    "authors": "Chrysa Avdellidou, Emelia Branagan-Harris, Vassi Spathis et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5194/epsc2026-1147",
+    "keywords": [
+      "Martian",
+      "Mars Exploration Program",
+      "Impact crater",
+      "Ejecta",
+      "Regolith",
+      "Martian surface",
+      "Meteoroid",
+      "Committee on Space Research"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "9dfda52c-d81f-4a8f-af10-7beb5a74f896",
+    "title": "Influence of low gravity on the penetration resistance of lunar regolith",
+    "authors": "Jun Chen, Ruilin Li, Shigen Fu",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41526-026-00562-8",
+    "keywords": [
+      "Penetration (warfare)",
+      "Regolith",
+      "Penetration test",
+      "Gravitational acceleration",
+      "Penetration depth",
+      "Cone penetration test",
+      "Offset (computer science)"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -1934,6 +2234,195 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-30"
+  },
+  {
+    "id": "23500376-9685-439b-89aa-395c7f51bba8",
+    "title": "Laser additive manufacturing of lunar regolith simulant: New insights from in situ synchrotron X-ray imaging",
+    "authors": "Caterina Iantaffi, Chu Lun Alex Leung, George Maddison et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.addma.2025.104711",
+    "keywords": [
+      "Materials science",
+      "Regolith",
+      "Synchrotron",
+      "In situ",
+      "Astrobiology",
+      "Laser",
+      "Optics",
+      "Meteorology"
+    ],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "1f2ae0f2-508f-46f7-b577-d4ce59d4fcdf",
+    "title": "Microwave sintering of HUST-2 lunar highland regolith simulant: Effects on microstructure evolution, mechanical and thermal properties",
+    "authors": "Zekai Wang, Zuchen Zheng, Linxuan Jiang et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.conbuildmat.2025.140391",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "6abebc72-f87a-47b0-8033-e6aa4956dac8",
+    "title": "Biomining of lunar regolith simulant EAC-1 A with the fungus Penicillium simplicissimum",
+    "authors": "João Figueira, Stella Koch, D. W. Müller et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1186/s40694-025-00201-z",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "36a6fa90-f445-466e-bb49-d24b4a67578a",
+    "title": "Positive effects and mechanisms of simulated lunar low-magnetic environment on earthworm-improved lunar soil simulant as a cultivation substrate",
+    "authors": "Sihan Hou, Zhongfu Wang, Yuting Zhu et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.actaastro.2025.09.080",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "07c85789-147b-4929-9b50-24459f9d00d8",
+    "title": "Electrochemical Oxygen Evolution from Lunar Regolith Simulant by La-Based Perovskite Oxide Electrode",
+    "authors": "Seiya Tanaka, Yuta Suzuki, Yasuhiro Fukunaka et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1149/ma2025-02673242mtgabs",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "b5847478-5268-446a-9bda-004595660f33",
+    "title": "Properties of novel LX lunar regolith simulant system - the base simulants: Part 2",
+    "authors": "Joel Patzwald, Rafael Kleba-Ehrhardt, T. Griemsmann et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.pss.2025.106189",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "6b51cd24-1c34-4247-bf8a-85686b7280d8",
+    "title": "Exploring Life Detection on Mars: Understanding Challenges in DNA Amplification in Martian Regolith Analogue After Fe Ion Irradiation",
+    "authors": "Alessia Cassaro, Claudia Pacelli, Silvano Onofri",
+    "year": 2025,
+    "url": "https://doi.org/10.3390/life15050716",
+    "keywords": [
+      "Regolith",
+      "Astrobiology",
+      "Mars Exploration Program",
+      "Martian",
+      "Life on Mars",
+      "Exploration of Mars",
+      "Environmental DNA",
+      "DNA",
+      "Chemistry",
+      "Materials science",
+      "Biology",
+      "Biochemistry"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "481ad904-d20b-4b12-a8a4-be3b9316c2b3",
+    "title": "Planetary Protection of Planet Mars – Potential risks of contamination by sulphate-reducing organisms from Earth?",
+    "authors": "Gibis, F., Beblo-Vranesevic, K., Rettberg, P. et al.",
+    "year": 2025,
+    "url": "https://elib.dlr.de/213548/",
+    "keywords": [
+      "Mars Exploration Program",
+      "Martian",
+      "Desiccation",
+      "Planet",
+      "Habitability",
+      "Exploration of Mars",
+      "Regolith",
+      "Atmosphere (unit)"
+    ],
+    "simulants": [
+      "MGS-1S"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "59543aea-c412-4b92-ab70-9af891436513",
+    "title": "Anaerobic digestion of cyanobacterial biomass for plant fertilizer production on mars.",
+    "authors": "Tiago P. Ramalho, A. Siol, Sven Kerzenmacher et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.biortech.2025.132383",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "a877dcaf-d4c1-4970-99dd-e86ab62ae6e2",
+    "title": "Concept and preliminary structural analysis of a crater-covering dome for future lunar habitats",
+    "authors": "M. Mrozek, Dawid Mrozek, Mateusz Smolana et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1038/s41598-025-07901-x",
+    "keywords": [
+      "Impact crater",
+      "Dome (geology)",
+      "Astrobiology",
+      "Habitat",
+      "Geology",
+      "Far side of the Moon",
+      "Earth science",
+      "Paleontology",
+      "Biology",
+      "Ecology",
+      "Geophysics"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "36107496-ed24-4a13-b196-5f78715f70c9",
+    "title": "Sample Science Traceability Matrix for <i>Perseverance</i> ’s Mars Sample Return Collection",
+    "authors": "María‐Paz Zorzano, Andrew D. Czaja, Tanja Bosak et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1177/15311074251382585",
+    "keywords": [
+      "Mars Exploration Program",
+      "Sample (material)",
+      "Set (abstract data type)",
+      "Traceability",
+      "Matrix (chemical analysis)",
+      "Martian",
+      "Suite"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -3465,6 +3954,44 @@
     "added_at": "2026-06-30"
   },
   {
+    "id": "f3ff6dab-f062-4600-aabc-5b38d0796288",
+    "title": "The effectiveness of microwave heating as an ISRU extraction technique on different arrangements of icy lunar regolith.",
+    "authors": "James D. Cole, Simon Sheridan, Sungwoo Lim et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.pss.2024.106011",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "91d98695-b058-4c8b-b7a7-8dced63f912f",
+    "title": "Assessment of toxicity changes induced by exposure of human cells to lunar dust simulant",
+    "authors": "Jintao Wang, Ming Lei, Yuan Xue et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1038/s41598-024-69259-w",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "01578c26-cabc-471f-9850-c1ae84f54ffb",
+    "title": "Corrigendum to “Np-Fe0 addition affects the microstructure and composition of the microwave-sintered lunar soil simulant CLRS-2” [Adv. Space Res. 73(1) (2024) 945–957]",
+    "authors": "Tian Zhang, Hong Tang, Xiongyao Li et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.asr.2024.08.070",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -4881,6 +5408,79 @@
     "added_at": "2026-06-25"
   },
   {
+    "id": "048dd2f1-8c85-4237-b91c-d4b1783f47f6",
+    "title": "Np-Fe0 addition affects the microstructure and composition of the microwave-sintered lunar soil simulant CLRS-2",
+    "authors": "Tian Zhang, Hong Tang, Xiongyao Li et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.asr.2023.08.029",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "9712c0a8-b058-4e2d-a193-1b5d1af23017",
+    "title": "Improving the Quality of Lunar Regolith Simulant Soil for Future Food Security",
+    "authors": "Thitiwat Jirasirichot, T. Tulyananda, Ponchanok Datmanee et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.55003/cast.2023.06.23.008",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "50c85e04-bede-4a1c-88dc-6563449da491",
+    "title": "Circularly Polarized Lunar Regolith Simulant Antenna for Future Communication and Remote Sensing in Lunar Environment",
+    "authors": "S. Pramono, J. Sumantyo, M. H. Ibrahim et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/LAWP.2023.3307585",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "cde13bc9-0d4e-45e1-81de-c0fc8f19f1ca",
+    "title": "Circularly Polarized Lunar Regolith Simulant Antenna for Future Lunar Communication",
+    "authors": "S. Pramono, A. Takahashi, C. E. Santosa et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/APSAR58496.2023.10389167",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
+    "id": "f3b3f6ab-9e5f-4ea6-9571-373c73a436e0",
+    "title": "A potential application for life-related organics detection on Mars by diffuse reflectance infrared spectroscopy",
+    "authors": "Wang Liu, Zhongchen Wu, Wenxi Chen et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.heliyon.2023.e13560",
+    "keywords": [
+      "Mars Exploration Program",
+      "Martian",
+      "Astrobiology",
+      "Martian surface",
+      "Life on Mars",
+      "Infrared",
+      "Spectroscopy",
+      "Diffuse reflectance infrared fourier transform",
+      "Diffuse reflection",
+      "Organic matter",
+      "Attenuated total reflection",
+      "Exploration of Mars"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -5784,6 +6384,18 @@
     "added_at": "2026-06-30"
   },
   {
+    "id": "d37460bc-ca6f-475d-ae30-435137efd474",
+    "title": "Determination of Thermal Effusivity of Lunar Regolith Simulant Particle Using Thermal Microscopy",
+    "authors": "R. Endo, Yuto Suganuma, Kazuki Endo et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1007/s10765-022-03031-y",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -6311,6 +6923,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "51ca857e-8624-4c46-8652-f305f595d79d",
+    "title": "Preparation and evaluation of geopolymer based on BH-2 lunar regolith simulant under lunar surface temperature and vacuum condition",
+    "authors": "Siqi Zhou, Zhanning Yang, Rong-tang Zhang et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/J.ACTAASTRO.2021.08.039",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
@@ -6903,6 +7527,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "95ec99a5-e632-4b3a-8b5d-dfa607e2a7a3",
+    "title": "Investigation on Wetting and Melting Behavior of Lunar Regolith Simulant for Additive Manufacturing Application",
+    "authors": "M. Fateri, Sebastian Pitikaris, M. Sperl",
+    "year": 2019,
+    "url": "https://doi.org/10.1007/S12217-019-9674-5",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-11"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
