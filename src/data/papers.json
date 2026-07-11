@@ -654,6 +654,72 @@
     "added_at": "2026-06-29"
   },
   {
+    "id": "2636987e-000c-41b8-ba68-43baef0dad2d",
+    "title": "Lunar Regolith Sampling by Combining Electrostatic Force Generation and Vibration",
+    "authors": "Serena R. M. Pirrone, A. Shanbhag, Trunal Patil et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s11214-026-01286-7",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "5092fc56-8a2a-4ae5-95ae-ca59b1400a0b",
+    "title": "Vibrationally aided flow of lunar regolith simulants in a hopper-based conveying device",
+    "authors": "Marcello Lappa, Peter Watson, S. V. Bonnieu",
+    "year": 2026,
+    "url": "https://doi.org/10.1122/8.0001055",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "2b5d9c09-5bec-4806-a3bb-2e2b0a202e7b",
+    "title": "Behavior Analysis of Charged Lunar Regolith Simulants Lifted by Metal Wheel in Vacuum Environment",
+    "authors": "Tadashi Matsuura, Hiroaki Kawamura, Shinichiro Noda et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/AERO66936.2026.11519912",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "eb6f5627-8396-46af-85ae-c8d3b69a8de8",
+    "title": "Timescales of CM carbonaceous chondrite aqueous alteration determined by kinetic modelling",
+    "authors": "Robin L. Haller, Martin R. Lee, M. E. Hodson",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.gca.2026.04.022",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "03c52bb6-0297-46d4-98d8-84910a27c356",
+    "title": "Development of a Method to Measure Seven Metal Stable Isotope Ratios in Small Carbonaceous Chondrite Samples",
+    "authors": "M. Auro, Sune G. Nielsen, A. Heard et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1111/ggr.70051",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "85d2071d-c6de-43d2-9ce6-a58406d8bd24",
     "title": "Vibrationally aided flow of lunar regolith simulants in a hopper-based conveying device",
     "authors": "Marcello Lappa, Peter Watson, S. V. Bonnieu",
@@ -2234,6 +2300,44 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-06-30"
+  },
+  {
+    "id": "024afa24-d778-48b1-aa9a-763cd511b6a6",
+    "title": "Near‐ and mid‐infrared spectral diversity in the Aguas Zarcas carbonaceous chondrite and implications for inferring aqueous processes on primitive asteroids using remote sensing",
+    "authors": "C. Schultz, R. E. Milliken, J. Boesenberg et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.14339",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "5e02d694-98e1-4877-9813-9f868834a9fe",
+    "title": "VIS‐to‐MIR reflectance and Raman spectroscopy of the CM2 NWA 12184 carbonaceous chondrite",
+    "authors": "A. Galiano, F. Dirri, M. Ferrari et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.14315",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "a69cdd41-d8bd-4afc-8f39-0a781d5bc650",
+    "title": "Effect of perchlorate on biocementation capable bacteria and Martian bricks",
+    "authors": "Swati Dubey, Shubhanshu Shukla, Nitin Gupta et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1371/journal.pone.0340252",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-10"
   },
   {
     "id": "23500376-9685-439b-89aa-395c7f51bba8",
@@ -3954,6 +4058,92 @@
     "added_at": "2026-06-30"
   },
   {
+    "id": "e1ccf471-150b-43dc-a571-08b93cdd84c9",
+    "title": "The effectiveness of microwave heating as an ISRU extraction technique on different arrangements of icy lunar regolith.",
+    "authors": "James D. Cole, Simon Sheridan, Sungwoo Lim et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.pss.2024.106011",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-03"
+  },
+  {
+    "id": "a08bcd79-72a3-450c-8d45-fc9e535b2d6d",
+    "title": "Laser Irradiation of Carbonaceous Chondrite Simulants: Space-weathering Implications for C-complex Asteroids",
+    "authors": "A. López-Oquendo, Mark J. Loeffler, D. Trilling",
+    "year": 2024,
+    "url": "https://doi.org/10.3847/PSJ/ad4028",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "de3ac766-29dc-4b55-a2e6-9ef01068f535",
+    "title": "Extent of alteration, paleomagnetic history, and infrared spectral properties of the Tarda ungrouped carbonaceous chondrite",
+    "authors": "H. Bates, R. Aspin, C. Fu et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14224",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "13b7113b-a7ce-4303-8de3-f3fa1f2595d9",
+    "title": "The Aguas Zarcas carbonaceous chondrite meteorite: Brecciation and aqueous alteration on the parent body",
+    "authors": "I. Kouvatsis, J. Cartwright, W. E. Hames",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14219",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "81bcad84-b4e9-40e0-bb7c-2f265df27e8c",
+    "title": "A high-resolution in situ X-ray diffraction study of mineral transitions due to post-hydration heating in CM chondrite meteorites",
+    "authors": "L. Jenkins, A. King, Martin R. Lee et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1186/s40623-024-02116-2",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "286aff85-c7f5-4544-a1d8-5b982bf246dd",
+    "title": "Petrofabrics in the CM chondrite Kolang: Evidence for non‐spherical chondrules in the protoplanetary disk",
+    "authors": "L. Jenkins, Martin R. Lee, L. Daly et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14297",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
+    "id": "d18f057b-5148-45db-a98b-267de97329f7",
+    "title": "Brecciation at the grain scale within the lithologies of the Winchcombe Mighei‐like carbonaceous chondrite",
+    "authors": "Luke Daly, M. Suttle, Martin R. Lee et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14164",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "f3ff6dab-f062-4600-aabc-5b38d0796288",
     "title": "The effectiveness of microwave heating as an ISRU extraction technique on different arrangements of icy lunar regolith.",
     "authors": "James D. Cole, Simon Sheridan, Sungwoo Lim et al.",
@@ -5408,6 +5598,30 @@
     "added_at": "2026-06-25"
   },
   {
+    "id": "e16df998-be9d-4d59-9129-121aa962336d",
+    "title": "Calcium‐aluminum‐rich inclusion found in the Ivuna CI chondrite: Are CI chondrites a good proxy for the bulk composition of the solar system?",
+    "authors": "David R. Frank, G. Huss, M. Zolensky et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1111/maps.14083",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "6a34ab50-2ed4-49ae-83bb-84269d266b1f",
+    "title": "Extended time scales of carbonaceous chondrite aqueous alteration evidenced by a xenolith in LaPaz Icefield 02239 (CM2)",
+    "authors": "Martin R. Lee, C. Floyd, Pierre-Etienne Martin et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1111/maps.13978",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "048dd2f1-8c85-4237-b91c-d4b1783f47f6",
     "title": "Np-Fe0 addition affects the microstructure and composition of the microwave-sintered lunar soil simulant CLRS-2",
     "authors": "Tian Zhang, Hong Tang, Xiongyao Li et al.",
@@ -6384,6 +6598,18 @@
     "added_at": "2026-06-30"
   },
   {
+    "id": "5ab693c8-0b4d-4ac3-b239-42917dbb7e47",
+    "title": "Evidence for impact shock and regolith transportation on CM, CI, and CV chondrite parent asteroids",
+    "authors": "M. Zolensky, T. Mikouchi, K. Hagiya et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1111/maps.13909",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
     "id": "d37460bc-ca6f-475d-ae30-435137efd474",
     "title": "Determination of Thermal Effusivity of Lunar Regolith Simulant Particle Using Thermal Microscopy",
     "authors": "R. Endo, Yuto Suganuma, Kazuki Endo et al.",
@@ -6925,6 +7151,30 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "a6788a5e-4547-45eb-8cab-2cc12b4917d3",
+    "title": "Organic matter in carbonaceous chondrite lithologies of Almahata Sitta: Incorporation of previously unsampled carbonaceous chondrite lithologies into ureilitic regolith",
+    "authors": "Y. Kebukawa, M. Zolensky, C. Goodrich et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1111/maps.13713",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "4f84de5c-6f15-4b37-bfae-cd7cf62e9d61",
+    "title": "Nanoscale mineralogy and organic structure in Orgueil (CI) and EET 92042 (CR) carbonaceous chondrites studied with AFM‐IR spectroscopy",
+    "authors": "Van T. H. Phan, R. Rebois, P. Beck et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1111/maps.13773",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
     "id": "51ca857e-8624-4c46-8652-f305f595d79d",
     "title": "Preparation and evaluation of geopolymer based on BH-2 lunar regolith simulant under lunar surface temperature and vacuum condition",
     "authors": "Siqi Zhou, Zhanning Yang, Rong-tang Zhang et al.",
@@ -7242,6 +7492,30 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "e72a0012-cea8-466d-9e40-2a34034fc306",
+    "title": "The isotopic composition of volatiles in the unique Bench Crater carbonaceous chondrite impactor found in the Apollo 12 regolith",
+    "authors": "K. Joy, R. Tartèse, S. Messenger et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.epsl.2020.116265",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "809ceaab-3368-46e0-8b71-b0ce887e0328",
+    "title": "Abundant extraterrestrial amino acids in the primitive CM carbonaceous chondrite Asuka 12236",
+    "authors": "D. Glavin, H. Mclain, J. Dworkin et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1111/maps.13560",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -7527,6 +7801,30 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "b18b213f-007d-4007-bfd2-174cdc33286c",
+    "title": "The diversity of CM carbonaceous chondrite parent bodies explored using Lewis Cliff 85311",
+    "authors": "Martin R. Lee, B. E. Cohen, A. King et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1016/J.GCA.2019.07.027",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
+    "id": "e4d8e9c4-59cb-4cf9-bb24-7cdc0b00d22b",
+    "title": "The CM carbonaceous chondrite regolith Diepenveen",
+    "authors": "M. Langbroek, P. Jenniskens, L. Kriegsman et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1111/maps.13297",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-07-05"
   },
   {
     "id": "95ec99a5-e632-4b3a-8b5d-dfa607e2a7a3",
@@ -8236,6 +8534,18 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "af0658e7-2021-4b69-a85d-8c927b0d597d",
+    "title": "Ca-carbonate in the Orgueil (CI) carbonaceous chondrite: Mineralogy, microstructure and implications for parent body history",
+    "authors": "Martin R. Lee, Kirsty Nicholson",
+    "year": 2009,
+    "url": "https://doi.org/10.1016/J.EPSL.2009.01.038",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
     "id": "ed149731-a162-4531-a6b5-a5f738af5c2f",
     "title": "Impact‐induced hydrothermal activity on early Mars",
     "authors": "O. Abramov, D. A. Kring",
@@ -8336,6 +8646,18 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "6ec29beb-845a-4878-99d7-61c85bd5cdef",
+    "title": "Mineralogy of Tagish Lake: An ungrouped type 2 carbonaceous chondrite",
+    "authors": "M. Zolensky, Keiko Nakamura, M. Gounelle et al.",
+    "year": 2002,
+    "url": "https://doi.org/10.1111/j.1945-5100.2002.tb00852.x",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
+  },
+  {
     "id": "dc4f93ad-ad06-4b93-b69f-16ab679a2f80",
     "title": "Overview of the Mars Global Surveyor mission",
     "authors": "A. L. Albee, R. E. Arvidson, F. D. Palluconi et al.",
@@ -8384,6 +8706,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "37e3573b-0478-4c8d-b528-3f10bd17e77a",
+    "title": "Systematics of Ti isotopes in carbonaceous chondrite whole‐rock samples",
+    "authors": "S. Niemeyer",
+    "year": 1985,
+    "url": "https://doi.org/10.1029/GL012I010P00733",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-07-04"
   },
   {
     "id": "bec91524-8634-4801-9181-b1db3dde4bc6",
