@@ -1020,6 +1020,20 @@
     "added_at": "2026-07-11"
   },
   {
+    "id": "a6253870-0599-434a-bbe5-590b36961451",
+    "title": "Regolith-Induced Abrasion as a Critical Challenge for Lunar Materials: Experimental Insights on Fiber Reinforced Composites and Polyethylene",
+    "authors": "Marta Balestra",
+    "year": 2026,
+    "url": "https://doi.org/10.21741/9781644904251-217",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-13"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
