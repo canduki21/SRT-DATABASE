@@ -70,6 +70,54 @@
     padding: 1px 8px; border-radius: 999px;
   }
 
+  /* ── Paper of the Week ── */
+  #srt-pub .srt-highlight {
+    position: relative;
+    background: linear-gradient(135deg, #0a2535 0%, #001219 100%);
+    border: 1px solid rgba(200,122,65,0.35);
+    border-radius: 8px;
+    padding: 22px 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  #srt-pub .srt-highlight-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #c87a41, rgba(200,122,65,0.25));
+  }
+  #srt-pub .srt-highlight-label {
+    display: flex; align-items: center; gap: 7px;
+    margin-bottom: 12px;
+  }
+  #srt-pub .srt-highlight-label-text {
+    color: #c87a41;
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  #srt-pub .srt-highlight-title {
+    font-size: 1rem; font-weight: 700; line-height: 1.45;
+    margin-bottom: 8px;
+  }
+  #srt-pub .srt-highlight-title a {
+    color: #fafafa; text-decoration: none; transition: color 0.15s;
+  }
+  #srt-pub .srt-highlight-title a:hover { color: #c87a41; }
+  #srt-pub .srt-highlight-meta {
+    font-size: 0.78rem; color: #8f8d8d; margin-bottom: 14px;
+  }
+  #srt-pub .srt-highlight-meta .hl-year { color: #c87a41; font-weight: 700; }
+  #srt-pub .srt-highlight-footer {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  #srt-pub .srt-highlight-link {
+    margin-left: auto;
+    color: #c87a41; font-size: 0.8rem; font-weight: 700;
+    text-decoration: none; transition: opacity 0.15s;
+  }
+  #srt-pub .srt-highlight-link:hover { opacity: 0.75; }
+
   /* Filters */
   #srt-pub .srt-filters { margin-bottom: 16px; display: flex; flex-direction: column; gap: 10px; }
   #srt-pub .srt-search-wrap { position: relative; }
@@ -223,7 +271,10 @@
   </div>
 
   <div class="srt-stats" id="srt-stats-grid"></div>
-  <div class="srt-sims" id="srt-sims-bar"></div>
+  <div class="srt-sims"  id="srt-sims-bar"></div>
+
+  <!-- Paper of the Week -->
+  <div id="srt-highlight"></div>
 
   <div class="srt-filters">
     <div class="srt-search-wrap">
@@ -239,7 +290,7 @@
   </div>
 
   <div class="srt-count" id="srt-count"></div>
-  <div class="srt-list" id="srt-list"></div>
+  <div class="srt-list"  id="srt-list"></div>
   <div id="srt-pagination"></div>
   <div class="srt-page-info" id="srt-page-info"></div>
 </div>
@@ -312,6 +363,41 @@
             <span class="srt-sim-name">${s.abbr}</span>
             <span class="srt-sim-count">${s.count}</span>
           </div>`).join('')}
+      </div>
+    `;
+  }
+
+  function renderHighlight() {
+    const el = document.getElementById('srt-highlight');
+    if (!el || !allPapers.length) return;
+
+    // Same paper all week — rotates automatically every 7 days
+    const weekNum = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+    const p = allPapers[weekNum % allPapers.length];
+
+    const chips = (p.simulants || []).map(s =>
+      `<span class="srt-chip ${simChipClass(s)}">${s}</span>`
+    ).join('');
+
+    el.innerHTML = `
+      <div class="srt-highlight">
+        <div class="srt-highlight-bar"></div>
+        <div class="srt-highlight-label">
+          <span style="font-size:15px;line-height:1;">⭐</span>
+          <span class="srt-highlight-label-text">Paper of the Week</span>
+        </div>
+        <div class="srt-highlight-title">
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer">${p.title || 'Untitled'}</a>
+        </div>
+        <div class="srt-highlight-meta">
+          ${p.authors ? `<span>${p.authors}</span>` : ''}
+          ${p.year ? ` &middot; <span class="hl-year">${p.year}</span>` : ''}
+        </div>
+        <div class="srt-highlight-footer">
+          <span class="srt-cat-pill cat-${p.category || 'general'}">${p.category || '—'}</span>
+          ${chips ? `<div class="srt-chips">${chips}</div>` : ''}
+          <a class="srt-highlight-link" href="${p.url}" target="_blank" rel="noopener noreferrer">Read paper →</a>
+        </div>
       </div>
     `;
   }
@@ -429,6 +515,7 @@
       allPapers = papers.sort((a,b) => (b.year||0)-(a.year||0));
       allSims   = sims;
       renderStats();
+      renderHighlight();
       render();
     })
     .catch(() => {

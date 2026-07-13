@@ -10,6 +10,7 @@ import AISearch from './components/AISearch'
 import PropertiesDB from './components/PropertiesDB'
 import Footer from './components/Footer'
 import SubmitPaperForm from './components/SubmitPaperForm'
+import HighlightOfWeek from './components/HighlightOfWeek'
 
 const papers = papersRaw as Paper[]
 const simulants = simulantsRaw as Simulant[]
@@ -117,6 +118,7 @@ export default function App() {
           <>
             <AISearch papers={papers} />
             <StatsBar papers={papers} simulants={simulants} />
+            <HighlightOfWeek papers={papers} />
             <FilterBar
               search={search} setSearch={setSearch}
               category={category} setCategory={setCategory}
