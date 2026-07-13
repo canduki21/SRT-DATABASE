@@ -116,9 +116,9 @@ export default function App() {
         {/* ── PUBLICATIONS TAB ── */}
         {activeTab === 'publications' && (
           <>
+            <HighlightOfWeek papers={papers} />
             <AISearch papers={papers} />
             <StatsBar papers={papers} simulants={simulants} />
-            <HighlightOfWeek papers={papers} />
             <FilterBar
               search={search} setSearch={setSearch}
               category={category} setCategory={setCategory}
