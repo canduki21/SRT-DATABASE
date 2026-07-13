@@ -1,0 +1,526 @@
+<!-- SRT Publications Database — paste into a Shopify custom page (HTML editor) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  #srt-pub {
+    font-family: 'Titillium Web', sans-serif;
+    background: #001219;
+    color: #fafafa;
+    padding: 32px 24px;
+    border-radius: 8px;
+  }
+  #srt-pub * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* Disclaimer */
+  #srt-pub .srt-disclaimer {
+    display: flex; align-items: flex-start; gap: 10px;
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: #8f8d8d;
+    line-height: 1.5;
+  }
+  #srt-pub .srt-disclaimer svg { flex-shrink: 0; margin-top: 1px; color: #c87a41; }
+  #srt-pub .srt-disclaimer strong { color: #fafafa; }
+
+  /* Stats */
+  #srt-pub .srt-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  #srt-pub .srt-stat {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  #srt-pub .srt-stat-val  { font-size: 2rem; font-weight: 700; color: #c87a41; }
+  #srt-pub .srt-stat-lbl  { font-size: 0.85rem; font-weight: 600; margin-top: 4px; }
+  #srt-pub .srt-stat-sub  { font-size: 0.7rem; color: #8f8d8d; margin-top: 2px; }
+
+  /* Top simulants bar */
+  #srt-pub .srt-sims {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+  #srt-pub .srt-sims-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8f8d8d;
+    margin-bottom: 10px;
+  }
+  #srt-pub .srt-sims-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  #srt-pub .srt-sim-item { display: flex; align-items: center; gap: 6px; }
+  #srt-pub .srt-sim-name { font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #c87a41; }
+  #srt-pub .srt-sim-count {
+    font-size: 0.7rem; font-weight: 700;
+    background: rgba(200,122,65,0.15); color: #c87a41;
+    padding: 1px 8px; border-radius: 999px;
+  }
+
+  /* ── Paper of the Week ── */
+  #srt-pub .srt-highlight {
+    position: relative;
+    background: linear-gradient(135deg, #0a2535 0%, #001219 100%);
+    border: 1px solid rgba(200,122,65,0.35);
+    border-radius: 8px;
+    padding: 22px 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  #srt-pub .srt-highlight-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #c87a41, rgba(200,122,65,0.25));
+  }
+  #srt-pub .srt-highlight-label {
+    display: flex; align-items: center; gap: 7px;
+    margin-bottom: 12px;
+  }
+  #srt-pub .srt-highlight-label-text {
+    color: #c87a41;
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  #srt-pub .srt-highlight-title {
+    font-size: 1rem; font-weight: 700; line-height: 1.45;
+    margin-bottom: 8px;
+  }
+  #srt-pub .srt-highlight-title a {
+    color: #fafafa; text-decoration: none; transition: color 0.15s;
+  }
+  #srt-pub .srt-highlight-title a:hover { color: #c87a41; }
+  #srt-pub .srt-highlight-meta {
+    font-size: 0.78rem; color: #8f8d8d; margin-bottom: 14px;
+  }
+  #srt-pub .srt-highlight-meta .hl-year { color: #c87a41; font-weight: 700; }
+  #srt-pub .srt-highlight-footer {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  #srt-pub .srt-highlight-link {
+    margin-left: auto;
+    color: #c87a41; font-size: 0.8rem; font-weight: 700;
+    text-decoration: none; transition: opacity 0.15s;
+  }
+  #srt-pub .srt-highlight-link:hover { opacity: 0.75; }
+
+  /* Filters */
+  #srt-pub .srt-filters { margin-bottom: 16px; display: flex; flex-direction: column; gap: 10px; }
+  #srt-pub .srt-search-wrap { position: relative; }
+  #srt-pub .srt-search-icon {
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    color: #8f8d8d; pointer-events: none;
+  }
+  #srt-pub .srt-search {
+    width: 100%;
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    color: #fafafa;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.875rem;
+    padding: 10px 16px 10px 38px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  #srt-pub .srt-search:focus { border-color: #c87a41; }
+  #srt-pub .srt-search::placeholder { color: #8f8d8d; }
+
+  #srt-pub .srt-filter-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  #srt-pub .srt-tabs {
+    display: flex; gap: 4px;
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px; padding: 4px;
+  }
+  #srt-pub .srt-tab {
+    background: none; border: none; cursor: pointer;
+    color: #8f8d8d;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    padding: 6px 12px; border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+  }
+  #srt-pub .srt-tab.active { background: #c87a41; color: #fff; }
+  #srt-pub .srt-select {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    color: #fafafa;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.75rem; font-weight: 600;
+    padding: 8px 12px; border-radius: 8px;
+    outline: none; cursor: pointer;
+  }
+
+  /* Results count */
+  #srt-pub .srt-count {
+    font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #8f8d8d; margin-bottom: 12px;
+  }
+
+  /* Paper cards */
+  #srt-pub .srt-list { display: flex; flex-direction: column; gap: 8px; }
+  #srt-pub .srt-card {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    border-radius: 8px; padding: 16px 20px;
+    display: flex; gap: 12px;
+    transition: border-color 0.15s;
+    text-decoration: none;
+  }
+  #srt-pub .srt-card:hover { border-color: rgba(200,122,65,0.5); }
+
+  #srt-pub .srt-cat-pill {
+    flex-shrink: 0; margin-top: 3px;
+    font-size: 0.6rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    padding: 2px 8px; border-radius: 4px;
+    height: fit-content;
+  }
+  #srt-pub .cat-lunar    { background: rgba(59,130,246,0.12);  color: #7db5f5; border: 1px solid rgba(59,130,246,0.3); }
+  #srt-pub .cat-martian  { background: rgba(239,68,68,0.12);   color: #f97474; border: 1px solid rgba(239,68,68,0.3); }
+  #srt-pub .cat-asteroid { background: rgba(200,122,65,0.12);  color: #e09057; border: 1px solid rgba(200,122,65,0.3); }
+  #srt-pub .cat-general  { background: rgba(143,141,141,0.1);  color: #adadad; border: 1px solid rgba(143,141,141,0.25); }
+  #srt-pub .cat-multi    { background: rgba(168,85,247,0.12);  color: #c084fc; border: 1px solid rgba(168,85,247,0.3); }
+
+  #srt-pub .srt-card-body { flex: 1; min-width: 0; }
+  #srt-pub .srt-card-title {
+    font-size: 0.95rem; font-weight: 600; line-height: 1.4;
+    color: #fafafa; margin-bottom: 6px;
+  }
+  #srt-pub .srt-card-title.untitled { color: #8f8d8d; font-style: italic; font-size: 0.85rem; }
+  #srt-pub .srt-card-meta {
+    font-size: 0.75rem; color: #8f8d8d;
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;
+  }
+  #srt-pub .srt-card-meta .year { color: #c87a41; font-weight: 700; }
+  #srt-pub .srt-card-meta .authors { color: rgba(250,250,250,0.6); }
+  #srt-pub .srt-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  #srt-pub .srt-chip {
+    font-family: monospace; font-size: 0.7rem; font-weight: 700;
+    padding: 2px 10px; border-radius: 999px;
+  }
+  #srt-pub .chip-lunar    { background: rgba(59,130,246,0.15);  color: #7db5f5; }
+  #srt-pub .chip-martian  { background: rgba(239,68,68,0.15);   color: #f97474; }
+  #srt-pub .chip-asteroid { background: rgba(200,122,65,0.15);  color: #e09057; }
+
+  #srt-pub .srt-card-link {
+    flex-shrink: 0; color: #8f8d8d;
+    display: flex; align-items: flex-start; padding-top: 2px;
+  }
+
+  #srt-pub .srt-empty {
+    text-align: center; padding: 60px 0;
+    color: #8f8d8d; font-size: 0.9rem;
+  }
+
+  /* Pagination */
+  #srt-pub .srt-pagination {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; margin-top: 24px; flex-wrap: wrap;
+  }
+  #srt-pub .srt-page-btn {
+    background: #022e4b;
+    border: 1px solid rgba(143,141,141,0.25);
+    color: #8f8d8d;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8rem; font-weight: 700;
+    padding: 8px 14px; border-radius: 8px;
+    cursor: pointer; transition: border-color 0.15s, color 0.15s;
+  }
+  #srt-pub .srt-page-btn:hover:not(:disabled) { border-color: #c87a41; color: #fafafa; }
+  #srt-pub .srt-page-btn:disabled { opacity: 0.35; cursor: default; }
+  #srt-pub .srt-page-btn.active { background: #c87a41; border-color: #c87a41; color: #fff; }
+  #srt-pub .srt-page-info {
+    font-size: 0.7rem; color: #8f8d8d; text-align: center;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 600px) {
+    #srt-pub .srt-stats { grid-template-columns: 1fr 1fr; }
+    #srt-pub .srt-filter-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<div id="srt-pub">
+
+  <!-- Disclaimer -->
+  <div class="srt-disclaimer">
+    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+        d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+    </svg>
+    <span>There's <strong>800+ peer-reviewed publications</strong> referencing SRT simulants.
+    All listed research is publicly available — access full papers through your institution's library or open-access repositories such as NASA ADS, arXiv, or Google Scholar.</span>
+  </div>
+
+  <div class="srt-stats" id="srt-stats-grid"></div>
+  <div class="srt-sims"  id="srt-sims-bar"></div>
+
+  <!-- Paper of the Week -->
+  <div id="srt-highlight"></div>
+
+  <div class="srt-filters">
+    <div class="srt-search-wrap">
+      <svg class="srt-search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input class="srt-search" id="srt-search" type="text" placeholder="Search by title, author, or product…">
+    </div>
+    <div class="srt-filter-row">
+      <div class="srt-tabs" id="srt-cat-tabs"></div>
+      <select class="srt-select" id="srt-sim-select"></select>
+    </div>
+  </div>
+
+  <div class="srt-count" id="srt-count"></div>
+  <div class="srt-list"  id="srt-list"></div>
+  <div id="srt-pagination"></div>
+  <div class="srt-page-info" id="srt-page-info"></div>
+</div>
+
+<script>
+(function() {
+  const DATA_URL = 'https://raw.githubusercontent.com/canduki21/SRT-DATABASE/main/src/data/papers.json';
+  const SIMS_URL = 'https://raw.githubusercontent.com/canduki21/SRT-DATABASE/main/src/data/simulants.json';
+  const PAGE_SIZE = 15;
+
+  const LUNAR  = new Set(['LHS-1','LHS-2','LHS-1E','LHS-1D','LHS-1-25A','LSP-2','LMS-1','LMS-2','LMS-1E','LMS-1D']);
+  const MART   = new Set(['MGS-1','MGS-1C','MGS-1S','JEZ-1','MMS-1','MMS-2']);
+  const AST    = new Set(['CI-E','CM-E']);
+
+  function simChipClass(id) {
+    if (LUNAR.has(id)) return 'chip-lunar';
+    if (MART.has(id))  return 'chip-martian';
+    if (AST.has(id))   return 'chip-asteroid';
+    return 'chip-asteroid';
+  }
+
+  function hostLabel(url) {
+    try { return new URL(url).hostname.replace('www.',''); } catch { return ''; }
+  }
+
+  let allPapers = [], allSims = [];
+  let search = '', category = 'all', simulant = 'all';
+  let currentPage = 1;
+
+  function getFiltered() {
+    let r = allPapers;
+    if (search) {
+      const q = search.toLowerCase();
+      r = r.filter(p =>
+        (p.title||'').toLowerCase().includes(q) ||
+        (p.authors||'').toLowerCase().includes(q) ||
+        (p.simulants||[]).some(s => s.toLowerCase().includes(q)) ||
+        (p.keywords||[]).some(k => k.toLowerCase().includes(q))
+      );
+    }
+    if (category !== 'all') r = r.filter(p => p.category === category);
+    if (simulant !== 'all') r = r.filter(p => (p.simulants||[]).includes(simulant));
+    return r;
+  }
+
+  function renderStats() {
+    const years = allPapers.map(p=>p.year).filter(Boolean);
+    const maxYear = years.length ? Math.max(...years) : new Date().getFullYear();
+    document.getElementById('srt-stats-grid').innerHTML = `
+      <div class="srt-stat">
+        <div class="srt-stat-val">${allPapers.length}</div>
+        <div class="srt-stat-lbl">Publications</div>
+        <div class="srt-stat-sub">through ${maxYear}</div>
+      </div>
+      <div class="srt-stat">
+        <div class="srt-stat-val">${allSims.length}</div>
+        <div class="srt-stat-lbl">Products</div>
+        <div class="srt-stat-sub">SRT simulants</div>
+      </div>
+    `;
+
+    const top = allSims
+      .map(s => ({ ...s, count: allPapers.filter(p=>(p.simulants||[]).includes(s.id)).length }))
+      .sort((a,b) => b.count - a.count).slice(0, 8);
+    document.getElementById('srt-sims-bar').innerHTML = `
+      <div class="srt-sims-label">Most cited products</div>
+      <div class="srt-sims-row">
+        ${top.map(s=>`
+          <div class="srt-sim-item">
+            <span class="srt-sim-name">${s.abbr}</span>
+            <span class="srt-sim-count">${s.count}</span>
+          </div>`).join('')}
+      </div>
+    `;
+  }
+
+  function renderHighlight() {
+    const el = document.getElementById('srt-highlight');
+    if (!el || !allPapers.length) return;
+
+    // Same paper all week — rotates automatically every 7 days
+    const weekNum = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+    const p = allPapers[weekNum % allPapers.length];
+
+    const chips = (p.simulants || []).map(s =>
+      `<span class="srt-chip ${simChipClass(s)}">${s}</span>`
+    ).join('');
+
+    el.innerHTML = `
+      <div class="srt-highlight">
+        <div class="srt-highlight-bar"></div>
+        <div class="srt-highlight-label">
+          <span style="font-size:15px;line-height:1;">⭐</span>
+          <span class="srt-highlight-label-text">Paper of the Week</span>
+        </div>
+        <div class="srt-highlight-title">
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer">${p.title || 'Untitled'}</a>
+        </div>
+        <div class="srt-highlight-meta">
+          ${p.authors ? `<span>${p.authors}</span>` : ''}
+          ${p.year ? ` &middot; <span class="hl-year">${p.year}</span>` : ''}
+        </div>
+        <div class="srt-highlight-footer">
+          <span class="srt-cat-pill cat-${p.category || 'general'}">${p.category || '—'}</span>
+          ${chips ? `<div class="srt-chips">${chips}</div>` : ''}
+          <a class="srt-highlight-link" href="${p.url}" target="_blank" rel="noopener noreferrer">Read paper →</a>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderFilters() {
+    const cats = ['all','lunar','martian','asteroid'];
+    document.getElementById('srt-cat-tabs').innerHTML = cats.map(c => `
+      <button class="srt-tab${category===c?' active':''}" data-cat="${c}">${c==='all'?'All':c.charAt(0).toUpperCase()+c.slice(1)}</button>
+    `).join('');
+    document.querySelectorAll('#srt-cat-tabs .srt-tab').forEach(btn => {
+      btn.addEventListener('click', () => { category = btn.dataset.cat; currentPage = 1; render(); });
+    });
+
+    const sel = document.getElementById('srt-sim-select');
+    const groups = {
+      lunar:    allSims.filter(s=>s.category==='lunar'),
+      martian:  allSims.filter(s=>s.category==='martian'),
+      asteroid: allSims.filter(s=>s.category==='asteroid')
+    };
+    sel.innerHTML = `<option value="all">All Products</option>` +
+      Object.entries(groups).map(([g, sims]) =>
+        `<optgroup label="── ${g.charAt(0).toUpperCase()+g.slice(1)}">` +
+        sims.map(s=>`<option value="${s.id}"${simulant===s.id?' selected':''}>${s.abbr} — ${s.name}</option>`).join('') +
+        `</optgroup>`
+      ).join('');
+    sel.addEventListener('change', () => { simulant = sel.value; currentPage = 1; render(); });
+  }
+
+  function renderList() {
+    const papers = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(papers.length / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const page  = papers.slice(start, start + PAGE_SIZE);
+
+    document.getElementById('srt-count').textContent = `${papers.length} result${papers.length!==1?'s':''}`;
+
+    if (!papers.length) {
+      document.getElementById('srt-list').innerHTML = '<div class="srt-empty">No publications match your filters.</div>';
+      document.getElementById('srt-pagination').innerHTML = '';
+      document.getElementById('srt-page-info').textContent = '';
+      return;
+    }
+
+    document.getElementById('srt-list').innerHTML = page.map(p => `
+      <a class="srt-card" href="${p.url}" target="_blank" rel="noopener noreferrer">
+        <span class="srt-cat-pill cat-${p.category||'general'}">${p.category||'—'}</span>
+        <div class="srt-card-body">
+          <div class="srt-card-title${p.title?'':' untitled'}">${p.title || 'Untitled — click to view paper'}</div>
+          <div class="srt-card-meta">
+            ${p.authors ? `<span class="authors">${p.authors}</span>` : ''}
+            ${p.year    ? `<span class="year">${p.year}</span>` : ''}
+            <span>${hostLabel(p.url)}</span>
+          </div>
+          ${p.simulants&&p.simulants.length ? `<div class="srt-chips">${p.simulants.map(s=>`<span class="srt-chip ${simChipClass(s)}">${s}</span>`).join('')}</div>` : ''}
+        </div>
+        <div class="srt-card-link">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </div>
+      </a>
+    `).join('');
+
+    // Pagination buttons
+    if (totalPages > 1) {
+      let btns = `<button class="srt-page-btn" id="srt-prev" ${currentPage===1?'disabled':''}>← Prev</button>`;
+      const range = [];
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          range.push(i);
+        } else if (range[range.length-1] !== '…') {
+          range.push('…');
+        }
+      }
+      btns += range.map(n => n === '…'
+        ? `<span style="color:#8f8d8d;padding:0 4px">…</span>`
+        : `<button class="srt-page-btn${n===currentPage?' active':''}" data-page="${n}">${n}</button>`
+      ).join('');
+      btns += `<button class="srt-page-btn" id="srt-next" ${currentPage===totalPages?'disabled':''}>Next →</button>`;
+      document.getElementById('srt-pagination').innerHTML = `<div class="srt-pagination">${btns}</div>`;
+
+      document.getElementById('srt-prev').addEventListener('click', () => { currentPage--; render(); scrollToTop(); });
+      document.getElementById('srt-next').addEventListener('click', () => { currentPage++; render(); scrollToTop(); });
+      document.querySelectorAll('#srt-pagination [data-page]').forEach(btn => {
+        btn.addEventListener('click', () => { currentPage = +btn.dataset.page; render(); scrollToTop(); });
+      });
+
+      document.getElementById('srt-page-info').textContent =
+        `Page ${currentPage} of ${totalPages} · showing ${start+1}–${Math.min(start+PAGE_SIZE, papers.length)} of ${papers.length}`;
+    } else {
+      document.getElementById('srt-pagination').innerHTML = '';
+      document.getElementById('srt-page-info').textContent = '';
+    }
+  }
+
+  function scrollToTop() {
+    document.getElementById('srt-pub').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function render() {
+    renderFilters();
+    renderList();
+  }
+
+  document.getElementById('srt-search').addEventListener('input', e => {
+    search = e.target.value;
+    currentPage = 1;
+    render();
+  });
+
+  Promise.all([fetch(DATA_URL).then(r=>r.json()), fetch(SIMS_URL).then(r=>r.json())])
+    .then(([papers, sims]) => {
+      allPapers = papers.sort((a,b) => (b.year||0)-(a.year||0));
+      allSims   = sims;
+      renderStats();
+      renderHighlight();
+      render();
+    })
+    .catch(() => {
+      document.getElementById('srt-list').innerHTML =
+        '<div class="srt-empty">Failed to load publications. Please try again later.</div>';
+    });
+})();
+</script>
