@@ -1034,6 +1034,18 @@
     "added_at": "2026-07-13"
   },
   {
+    "id": "94d8c631-c1b2-4e89-93ed-b8c0e50a7d1a",
+    "title": "Probabilistic Meteoroid Hazard Analysis for Lunar South Pole Infrastructure Design",
+    "authors": "Maria S. Palacios, Julian D. Calonge, Sandra Villamizar et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3390/aerospace13070603",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-14"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -2541,6 +2553,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-07-11"
+  },
+  {
+    "id": "3021d4a8-9ea9-4335-94ab-58ce87823ec8",
+    "title": "Surface Backscattering Analysis of Lunar South Pole Using Chandrayaan-2 DFSAR Dataset",
+    "authors": "Poorva Singh, Vinay Kumar, Shashi Kumar",
+    "year": 2025,
+    "url": "https://doi.org/10.1109/InGARSS67683.2025.11583870",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-14"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
