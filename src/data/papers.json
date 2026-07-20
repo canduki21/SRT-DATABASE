@@ -2567,6 +2567,21 @@
     "added_at": "2026-07-14"
   },
   {
+    "id": "d5a262e2-d284-47fe-8e0d-7e3479e95ad4",
+    "title": "Regolith as a Refuge: Differential Survival of Bacteriophage Qβ in Mars Analog Environments",
+    "authors": "Miguel Arribas Tiemblo, Alicia Rodríguez-Moreno, F. Gómez et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1177/15311074261459203",
+    "keywords": [],
+    "simulants": [
+      "MGS-1",
+      "MMS-2"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-07-20"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
