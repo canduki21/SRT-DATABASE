@@ -1046,6 +1046,20 @@
     "added_at": "2026-07-14"
   },
   {
+    "id": "8fc621e4-322c-4afa-ae67-7ec01bf3c2cb",
+    "title": "Advanced spectroscopic investigation of lunar highland simulant (LHS-1) geopolymer for in-situ resource utilization",
+    "authors": "Yanchen Oinam, Federico Pederson, Geun U. Ryu et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.matdes.2026.116464",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-07-25"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
