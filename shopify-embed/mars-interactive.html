@@ -1,0 +1,38 @@
+<!-- Martian Simulant Explorer — paste into Shopify Theme Customizer → Custom Liquid section -->
+<!-- Place this section ABOVE the product grid on the mars-simulants collection page -->
+
+<style>
+  .srt-mars-banner {
+    width: 100%;
+    background: #05060f;
+    overflow: hidden;
+    border-radius: 0;
+    line-height: 0;
+  }
+  .srt-mars-banner iframe {
+    width: 100%;
+    height: 680px;
+    border: none;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .srt-mars-banner iframe {
+      height: 520px;
+    }
+  }
+  @media (max-width: 480px) {
+    .srt-mars-banner iframe {
+      height: 420px;
+    }
+  }
+</style>
+
+<div class="srt-mars-banner">
+  <iframe
+    src="https://srt-database.vercel.app/mars-interactive.html"
+    scrolling="no"
+    loading="lazy"
+    title="Martian Simulant Explorer — Space Resource Technologies"
+    allowfullscreen
+  ></iframe>
+</div>
