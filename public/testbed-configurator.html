@@ -280,26 +280,6 @@ input[type=range]::-webkit-slider-thumb {
 #hint.visible { opacity:1; }
 #hint p { font-size:14px; color:var(--muted); }
 
-/* Feature toggles */
-.feature-row {
-  display: flex; align-items: center; gap: 10px;
-  padding: 7px 8px; border-radius: 7px; cursor: pointer;
-  transition: background 0.15s; margin-bottom: 3px;
-}
-.feature-row:hover { background: rgba(255,255,255,0.05); }
-.feature-row.active { background: var(--orange2); }
-.feature-check {
-  width: 15px; height: 15px; flex-shrink: 0;
-  border-radius: 3px; border: 1.5px solid rgba(255,255,255,0.2);
-  background: var(--input-bg);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 9px; color: #fff; transition: all 0.15s;
-}
-.feature-row.active .feature-check::after { content: '✓'; }
-.feature-row.active .feature-check { background: var(--orange); border-color: var(--orange); }
-.feature-name { font-size: 12px; color: rgba(255,255,255,0.75); }
-.feature-sub  { font-size: 10px; color: var(--muted); margin-top: 1px; }
-
 @media (max-width:700px) {
   :root { --sidebar:100%; }
   .layout { flex-direction:column; }
@@ -383,25 +363,6 @@ input[type=range]::-webkit-slider-thumb {
       <div id="sim-list"></div>
     </div>
 
-    <!-- Features -->
-    <div>
-      <div class="section-label">Features</div>
-      <div id="feature-list">
-        <div class="feature-row" data-feature="door">
-          <div class="feature-check"></div>
-          <div><div class="feature-name">Access Door</div><div class="feature-sub">Hinged panel, front wall</div></div>
-        </div>
-        <div class="feature-row" data-feature="curtains">
-          <div class="feature-check"></div>
-          <div><div class="feature-name">Dust Curtains</div><div class="feature-sub">PVC strip curtains, front opening</div></div>
-        </div>
-        <div class="feature-row" data-feature="stairs">
-          <div class="feature-check"></div>
-          <div><div class="feature-name">Entry Stairs</div><div class="feature-sub">Aluminum step platform, right side</div></div>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <!-- ── 3D Viewport ── -->
@@ -457,7 +418,6 @@ const state = {
   D:         30,
   fill:      20,
   simulant:  SIMULANTS[0],
-  features:  { door: false, curtains: false, stairs: false },
 };
 
 /* ── Unit helpers ── */
@@ -598,17 +558,8 @@ function buildScene() {
   mkPanel(0.004, D-2*ex, W-2*ex, -(L/2-ex), 0, 0);        // left wall
   mkPanel(0.004, D-2*ex, W-2*ex,  (L/2-ex), 0, 0);        // right wall
 
-  // Front wall — split around door opening if door is on
-  const doorW = state.features.door ? Math.min(L * 0.42, Math.max(0.38, D * 0.72)) : 0;
-  if (!state.features.door) {
-    mkPanel(L-2*ex, D-2*ex, 0.004, 0, 0, W/2-ex);
-  } else {
-    const side = (L - 2*ex - doorW) / 2;
-    if (side > 0.001) {
-      mkPanel(side, D-2*ex, 0.004, -(doorW/2 + side/2), 0, W/2-ex);
-      mkPanel(side, D-2*ex, 0.004,  (doorW/2 + side/2), 0, W/2-ex);
-    }
-  }
+  // Front wall
+  mkPanel(L-2*ex, D-2*ex, 0.004, 0, 0, W/2-ex);
 
   // ── Simulant fill ──
   if (F > 0.001) {
@@ -628,88 +579,7 @@ function buildScene() {
     grp.add(topEdge);
   }
 
-  // ── Optional features ──
-  if (state.features.door)     buildDoor(L, W, D, ex, doorW, alMat);
-  if (state.features.curtains) buildCurtains(L, W, D, ex);
-  if (state.features.stairs)   buildStairs(L, W, D, ex, alMat);
-
   controls.target.set(0, 0, 0);
-}
-
-/* ── Feature: access door ── */
-function buildDoor(L, W, D, ex, dw, alMat) {
-  const dh = D - 2*ex;
-  const pivot = new THREE.Group();
-  pivot.position.set(-dw/2, 0, W/2 - ex);
-  pivot.rotation.y = -Math.PI * 0.22; // ~40° open
-  grp.add(pivot);
-
-  const doorPanelMat = new THREE.MeshStandardMaterial({
-    color: 0xc0d8ee, transparent: true, opacity: 0.28, side: THREE.DoubleSide, roughness: 0.08
-  });
-  function dbeam(w, h, d, x, y, z) {
-    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), alMat);
-    m.position.set(x, y, z); m.castShadow = true; pivot.add(m);
-  }
-  dbeam(ex, dh, ex, ex/2,      0,  0);          // left stile
-  dbeam(ex, dh, ex, dw - ex/2, 0,  0);          // right stile
-  dbeam(dw, ex, ex, dw/2,  dh/2 - ex/2, 0);    // top rail
-  dbeam(dw, ex, ex, dw/2, -dh/2 + ex/2, 0);    // bottom rail
-  const dp = new THREE.Mesh(new THREE.BoxGeometry(dw - ex, dh - ex, 0.004), doorPanelMat);
-  dp.position.set(dw/2, 0, 0);
-  pivot.add(dp);
-}
-
-/* ── Feature: dust curtains ── */
-function buildCurtains(L, W, D, ex) {
-  const mat = new THREE.MeshStandardMaterial({
-    color: 0xa8c4de, transparent: true, opacity: 0.35, side: THREE.DoubleSide, roughness: 0.6
-  });
-  const availW = L - 2*ex;
-  const stripCount = Math.max(5, Math.round(availW / 0.18));
-  const sw = availW / stripCount;
-  for (let i = 0; i < stripCount; i++) {
-    const x = -L/2 + ex + sw * (i + 0.5);
-    const sway = Math.sin(i * 1.3) * 0.015;
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(sw * 0.88, D - 2*ex), mat);
-    m.position.set(x, 0, W/2 - ex + sway);
-    grp.add(m);
-  }
-}
-
-/* ── Feature: entry stairs ── */
-function buildStairs(L, W, D, ex, alMat) {
-  const stairMat = new THREE.MeshStandardMaterial({ color: 0xa4b0bc, metalness: 0.78, roughness: 0.28 });
-  const steps  = Math.max(3, Math.min(8, Math.ceil(D * 50 / 28)));
-  const riser  = D / steps;
-  const tread  = Math.max(riser, riser * 1.3);
-  const sWidth = Math.min(W * 0.55, 0.9);
-
-  // Stacked cumulative blocks give a clean stair silhouette
-  for (let i = 0; i < steps; i++) {
-    const h = riser * (i + 1);
-    const m = new THREE.Mesh(new THREE.BoxGeometry(tread, h, sWidth), stairMat);
-    m.position.set(L/2 + tread * (steps - i - 0.5), -D/2 + h/2, 0);
-    m.castShadow = true; m.receiveShadow = true;
-    grp.add(m);
-  }
-
-  // Handrail posts
-  for (let i = 0; i <= steps; i++) {
-    const py = -D/2 + riser * i;
-    const px = L/2 + tread * (steps - i);
-    const post = new THREE.Mesh(new THREE.BoxGeometry(ex*0.7, 0.5, ex*0.7), alMat);
-    post.position.set(px, py + 0.25, sWidth/2);
-    grp.add(post);
-  }
-
-  // Diagonal handrail
-  const span = tread * steps;
-  const railLen = Math.sqrt(span*span + D*D) * 1.02;
-  const rail = new THREE.Mesh(new THREE.BoxGeometry(railLen, ex*0.55, ex*0.55), alMat);
-  rail.rotation.z = Math.atan2(D, span);
-  rail.position.set(L/2 + span/2, -D/2 + D/2 + 0.5, sWidth/2);
-  grp.add(rail);
 }
 
 /* ── Results ── */
@@ -990,16 +860,6 @@ fillSlider.addEventListener('input', () => {
   document.getElementById('fill-val').textContent = display;
   document.getElementById('inp-h').value = display;
   buildScene(); updateResults();
-});
-
-// Feature toggles
-document.querySelectorAll('.feature-row').forEach(row => {
-  row.addEventListener('click', () => {
-    const f = row.dataset.feature;
-    state.features[f] = !state.features[f];
-    row.classList.toggle('active', state.features[f]);
-    buildScene(); updateResults();
-  });
 });
 
 /* ── Init ── */
