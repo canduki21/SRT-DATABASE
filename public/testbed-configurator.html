@@ -306,6 +306,7 @@ input[type=range]::-webkit-slider-thumb {
       <div class="section-label">Units</div>
       <div class="pill-row" id="unit-toggle">
         <button class="active" data-val="cm">cm</button>
+        <button data-val="m">m</button>
         <button data-val="ft">ft</button>
       </div>
     </div>
@@ -416,9 +417,15 @@ const state = {
 
 /* ── Unit helpers ── */
 const FT_TO_CM = 30.48;
-function toCm(v) { return state.unit === 'ft' ? v * FT_TO_CM : v; }
+const M_TO_CM  = 100;
+function toCm(v) {
+  if (state.unit === 'ft') return v * FT_TO_CM;
+  if (state.unit === 'm')  return v * M_TO_CM;
+  return v;
+}
 function fmtDim(cm) {
   if (state.unit === 'ft') return (cm / FT_TO_CM).toFixed(2) + ' ft';
+  if (state.unit === 'm')  return (cm / M_TO_CM).toFixed(2) + ' m';
   return cm.toFixed(0) + ' cm';
 }
 
@@ -683,13 +690,15 @@ function syncUnitLabels() {
   const keys   = ['L','W','D'];
   inputs.forEach((id, i) => {
     const inp = document.getElementById('inp-' + id);
-    const raw = parseFloat(inp.value) || 0;
     if (u === 'ft') {
       inp.value = (state[keys[i]] / FT_TO_CM).toFixed(2);
-      inp.step = '0.1';
+      inp.step  = '0.1';
+    } else if (u === 'm') {
+      inp.value = (state[keys[i]] / M_TO_CM).toFixed(2);
+      inp.step  = '0.01';
     } else {
       inp.value = Math.round(state[keys[i]]);
-      inp.step = '1';
+      inp.step  = '1';
     }
   });
   // Fill slider
@@ -699,6 +708,11 @@ function syncUnitLabels() {
     fillInp.value = (state.fill / FT_TO_CM).toFixed(2);
     fillInp.step  = '0.01';
     document.getElementById('fill-val').textContent = (state.fill / FT_TO_CM).toFixed(2);
+  } else if (u === 'm') {
+    fillInp.max   = (state.D / M_TO_CM).toFixed(2);
+    fillInp.value = (state.fill / M_TO_CM).toFixed(2);
+    fillInp.step  = '0.005';
+    document.getElementById('fill-val').textContent = (state.fill / M_TO_CM).toFixed(2);
   } else {
     fillInp.max   = state.D;
     fillInp.value = state.fill;
@@ -723,7 +737,9 @@ setupPills('shape-toggle', 'shape', (val) => {
 
 function readInput(id) {
   const val = parseFloat(document.getElementById('inp-' + id).value) || 0;
-  return state.unit === 'ft' ? val * FT_TO_CM : val;
+  if (state.unit === 'ft') return val * FT_TO_CM;
+  if (state.unit === 'm')  return val * M_TO_CM;
+  return val;
 }
 
 ['l','w','d'].forEach(id => {
@@ -738,7 +754,9 @@ function readInput(id) {
     if (state.fill > state.D) { state.fill = state.D; }
     // Update fill slider max
     const fillSlider = document.getElementById('fill-slider');
-    fillSlider.max = state.unit === 'ft' ? (state.D / FT_TO_CM).toFixed(2) : state.D;
+    if (state.unit === 'ft')     fillSlider.max = (state.D / FT_TO_CM).toFixed(2);
+    else if (state.unit === 'm') fillSlider.max = (state.D / M_TO_CM).toFixed(2);
+    else                         fillSlider.max = state.D;
     if (parseFloat(fillSlider.value) > parseFloat(fillSlider.max)) {
       fillSlider.value = fillSlider.max;
       state.fill = state.D;
@@ -750,8 +768,10 @@ function readInput(id) {
 const fillSlider = document.getElementById('fill-slider');
 fillSlider.addEventListener('input', () => {
   const raw = parseFloat(fillSlider.value) || 0;
-  state.fill = state.unit === 'ft' ? raw * FT_TO_CM : raw;
-  const display = state.unit === 'ft' ? raw.toFixed(2) : raw.toFixed(1);
+  if (state.unit === 'ft')     state.fill = raw * FT_TO_CM;
+  else if (state.unit === 'm') state.fill = raw * M_TO_CM;
+  else                         state.fill = raw;
+  const display = (state.unit === 'cm') ? raw.toFixed(1) : raw.toFixed(2);
   document.getElementById('fill-val').textContent = display;
   buildScene(); updateResults();
 });
