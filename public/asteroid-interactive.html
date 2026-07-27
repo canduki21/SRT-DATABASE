@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asteroid Simulant Explorer — Space Resource Technologies</title>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --bg: #05060f; --srt-orange: #c87a41; }
+  body {
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  /* ── Meteorite stage ── */
+  .meteor-side {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  .meteor-pair {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .meteor-item {
+    flex: 1;
+    max-width: 210px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    padding: 12px 12px 10px;
+    border: 1.5px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.02);
+    transition: transform 0.22s, border-color 0.22s, box-shadow 0.22s, background 0.22s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .meteor-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.04);
+  }
+  .meteor-item.active {
+    border-color: var(--srt-orange);
+    box-shadow: 0 0 0 1px rgba(200,122,65,0.25), 0 0 40px rgba(200,122,65,0.22);
+    background: rgba(200,122,65,0.06);
+    transform: translateY(-5px);
+  }
+
+  /* Pulse ring on each card when nothing is selected */
+  .meteor-item::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.14);
+    animation: mring 3s ease-out infinite;
+    pointer-events: none;
+  }
+  .meteor-item.active::before,
+  .meteor-item:hover::before { animation: none; opacity: 0; }
+  @keyframes mring {
+    0%   { opacity: 0.5; transform: scale(0.97); }
+    100% { opacity: 0;   transform: scale(1.06); }
+  }
+
+  .meteor-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 8px 28px rgba(0,0,0,0.7));
+  }
+  .meteor-label {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: rgba(255,255,255,0.35);
+    transition: color 0.22s;
+    line-height: 1.5;
+  }
+  .meteor-label strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: rgba(255,255,255,0.55);
+    transition: color 0.22s;
+  }
+  .meteor-item.active .meteor-label,
+  .meteor-item.active .meteor-label strong {
+    color: var(--srt-orange);
+  }
+
+  /* Dot indicator */
+  .meteor-dot {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    gap: 4px;
+  }
+  .meteor-dot span {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    transition: background 0.22s;
+  }
+  .meteor-item.active .meteor-dot span {
+    background: var(--srt-orange);
+  }
+
+  /* ── Info panel ── */
+  .eyebrow {
+    font-size: 50px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--srt-orange);
+    margin-bottom: 1.8rem;
+  }
+  .panel { min-height: 300px; }
+  .panel-empty {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-top: 1rem;
+  }
+  .panel-empty p {
+    font-size: 25px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.7;
+    max-width: 32ch;
+  }
+  .pulse-dots { display: flex; gap: 7px; }
+  .pulse-dots i {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    animation: pdot 1.8s infinite;
+    font-style: normal;
+  }
+  .pulse-dots i:nth-child(2) { animation-delay: 0.25s; }
+  .pulse-dots i:nth-child(3) { animation-delay: 0.5s; }
+  @keyframes pdot { 0%,100%{opacity:0.2} 50%{opacity:0.8} }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 13px;
+    border-radius: 20px;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.9rem;
+  }
+  .region-title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 0.65rem;
+  }
+  .region-desc {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.75;
+    margin-bottom: 1.4rem;
+    max-width: 38ch;
+  }
+  .sims-label {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 0.55rem;
+  }
+  .sims-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+    gap: 7px;
+  }
+  .sim-card {
+    display: block;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 9px 11px;
+    text-decoration: none;
+    transition: background 0.18s, border-color 0.18s, transform 0.18s;
+  }
+  .sim-card:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.28);
+    transform: translateY(-1px);
+  }
+  .sim-name { display: block; font-size: 13px; font-weight: 500; color: #fff; margin-bottom: 2px; }
+  .sim-sub  { display: block; font-size: 10.5px; color: rgba(255,255,255,0.38); line-height: 1.4; }
+
+  @media (max-width: 740px) {
+    .wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .meteor-pair { gap: 1rem; }
+    .region-title { font-size: 24px; }
+    .eyebrow { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="meteor-side">
+    <div class="meteor-pair">
+
+      <!-- CI-E — Orgueil-type -->
+      <div class="meteor-item" id="mi-cie" onclick="show('cie')" tabindex="0" role="button" aria-label="CI-E Carbonaceous Chondrite Simulant">
+        <img class="meteor-img"
+          src="https://spaceresourcetech.com/cdn/shop/files/Carbonaceous_Chondrite_Asteroid_Regolith_Simulant_CI-E_1024x1024.png?v=1781791662"
+          alt="CI-E Simulant — Orgueil meteorite analog">
+        <div class="meteor-label">
+          <strong>CI-E</strong>
+          Orgueil-type
+        </div>
+        <div class="meteor-dot"><span></span></div>
+      </div>
+
+      <!-- CM-E — Murchison-type -->
+      <div class="meteor-item" id="mi-cme" onclick="show('cme')" tabindex="0" role="button" aria-label="CM-E Carbonaceous Chondrite Simulant">
+        <img class="meteor-img"
+          src="https://spaceresourcetech.com/cdn/shop/files/Asteroid_Simulant_CM-E_1024x1024.png?v=1781866675"
+          alt="CM-E Simulant — Murchison meteorite analog">
+        <div class="meteor-label">
+          <strong>CM-E</strong>
+          Murchison-type
+        </div>
+        <div class="meteor-dot"><span></span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="info-side">
+    <p class="eyebrow">Asteroid Simulant Explorer</p>
+    <div class="panel" id="panel">
+      <div class="panel-empty">
+        <p>Select a simulant to explore its composition and research applications.</p>
+        <div class="pulse-dots"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var simulants = {
+  cie: {
+    badge: { label: 'CI-type · Primitive · Volatile-rich', bg: 'rgba(90,60,20,0.55)', color: '#f5d08a', bdr: 'rgba(200,160,60,0.35)' },
+    title: 'CI-E Carbonaceous Chondrite',
+    desc: 'Modeled after the Orgueil meteorite — the most chemically primitive known material, with bulk composition matching the solar photosphere. Rich in hydrated silicates, organics, and sulfate salts from extensive aqueous alteration. The reference standard for pristine asteroid regolith.',
+    sims: [
+      { n:'CIE-1', s:'Orgueil-type, ≤5mm', u:'https://spaceresourcetech.com/collections/asteroid-simulants/products/ci-carbonaceous-chondrite-simulant' }
+    ]
+  },
+  cme: {
+    badge: { label: 'CM-type · Hydrated · Phyllosilicate-rich', bg: 'rgba(30,50,80,0.55)', color: '#93c5fd', bdr: 'rgba(80,140,220,0.35)' },
+    title: 'CM-E Carbonaceous Chondrite',
+    desc: 'Engineered to replicate the Murchison meteorite — the most studied CM chondrite. Features abundant phyllosilicates (tochilinite-cronstedtite), organic compounds, and carbonate veins from partial aqueous alteration. Ideal for hydration chemistry, astrobiology, and ISRU studies.',
+    sims: [
+      { n:'CME-1', s:'Murchison-type, ≤5mm', u:'https://spaceresourcetech.com/collections/asteroid-simulants/products/cm-e' }
+    ]
+  }
+};
+
+function show(key) {
+  var s = simulants[key];
+  document.querySelectorAll('.meteor-item').forEach(function(m){ m.classList.remove('active'); });
+  document.getElementById('mi-' + key).classList.add('active');
+  var chips = s.sims.map(function(sim){
+    return '<a class="sim-card" href="' + sim.u + '" target="_blank" rel="noopener"><span class="sim-name">' + sim.n + '</span><span class="sim-sub">' + sim.s + '</span></a>';
+  }).join('');
+  document.getElementById('panel').innerHTML =
+    '<span class="badge" style="background:' + s.badge.bg + ';color:' + s.badge.color + ';border:1px solid ' + s.badge.bdr + ';">' + s.badge.label + '</span>' +
+    '<div class="region-title">' + s.title + '</div>' +
+    '<div class="region-desc">' + s.desc + '</div>' +
+    '<div class="sims-label">Available simulant</div>' +
+    '<div class="sims-grid">' + chips + '</div>';
+}
+
+document.querySelectorAll('.meteor-item').forEach(function(m){
+  m.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); m.click(); }
+  });
+});
+</script>
+</body>
+</html>
