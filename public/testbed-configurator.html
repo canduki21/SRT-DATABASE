@@ -475,8 +475,8 @@ const fill2 = new THREE.DirectionalLight(0xaaccff, 0.4);
 fill2.position.set(-4, 3, -4);
 scene.add(fill2);
 
-/* ── Grid ── */
-const grid = new THREE.GridHelper(40, 80, 0x1a1d3a, 0x141628);
+/* ── Grid (rebuilt dynamically to fit any box size) ── */
+let grid = new THREE.GridHelper(40, 80, 0x1a1d3a, 0x141628);
 scene.add(grid);
 
 /* ── Scene objects ── */
@@ -484,6 +484,24 @@ let grp = new THREE.Group();
 scene.add(grp);
 
 const SCALE = 1/50; // 1 Three.js unit = 50 cm
+
+function fitCamera() {
+  const L = state.L * SCALE, W = state.W * SCALE, D = state.D * SCALE;
+  const diag = Math.sqrt(L*L + W*W + D*D);
+  const dist  = Math.max(2.5, diag * 1.65);
+  camera.position.set(dist * 0.82, dist * 0.55, dist * 0.82);
+  controls.maxDistance = dist * 8;
+  // Scale fog to keep scene visible at any size
+  scene.fog.density = Math.max(0.002, 0.05 / dist);
+  // Scale shadow frustum so shadows work on large boxes
+  const half = Math.max(10, Math.max(L, W, D) * 0.75);
+  sun.shadow.camera.left = sun.shadow.camera.bottom = -half;
+  sun.shadow.camera.right = sun.shadow.camera.top   =  half;
+  sun.shadow.camera.far   = dist * 6;
+  sun.shadow.camera.updateProjectionMatrix();
+  controls.target.set(0, 0, 0);
+  controls.update();
+}
 
 function buildScene() {
   grp.clear();
@@ -493,6 +511,16 @@ function buildScene() {
   const D = state.D * SCALE;
   const F = Math.min(state.fill, state.D) * SCALE;
   const sim = state.simulant;
+
+  // Auto-fit camera + scene to current box size
+  fitCamera();
+
+  // Rebuild grid so it always extends well beyond the box
+  scene.remove(grid);
+  const gridSpan  = Math.max(40, Math.ceil(Math.max(L, W)) * 5);
+  const gridCells = Math.min(200, gridSpan * 2);
+  grid = new THREE.GridHelper(gridSpan, gridCells, 0x1a1d3a, 0x141628);
+  scene.add(grid);
 
   // Position grid at base of container
   grid.position.y = -D / 2 - 0.001;
@@ -819,14 +847,8 @@ fillSlider.addEventListener('input', () => {
 /* ── Init ── */
 buildSimList();
 syncUnitLabels();
-buildScene();
+buildScene();   // fitCamera() is called inside buildScene
 updateResults();
-
-// Nice initial camera position based on default size
-const L0 = state.L * SCALE, W0 = state.W * SCALE, D0 = state.D * SCALE;
-const diag = Math.sqrt(L0*L0 + W0*W0) * 1.8;
-camera.position.set(diag, diag * 0.7, diag);
-controls.update();
 </script>
 </body>
 </html>
