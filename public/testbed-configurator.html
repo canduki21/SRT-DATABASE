@@ -714,10 +714,10 @@ function buildStairs(L, W, D, ex, alMat) {
 
 /* ── Results ── */
 function updateResults() {
-  const L_cm   = state.L;
-  const W_cm   = state.W;
+  const L_cm    = state.L;
+  const W_cm    = state.W;
   const fill_cm = Math.min(state.fill, state.D);
-  const sim    = state.simulant;
+  const sim     = state.simulant;
 
   if (L_cm <= 0 || W_cm <= 0 || fill_cm <= 0) {
     document.getElementById('res-body').innerHTML = '<div class="res-empty">Enter dimensions to calculate</div>';
@@ -727,17 +727,35 @@ function updateResults() {
   const vol_cm3 = L_cm * W_cm * fill_cm;
   const vol_L   = vol_cm3 / 1000;
   const mass_kg = vol_cm3 * sim.density / 1000;
-  const bags    = Math.ceil(mass_kg);
-  const cost    = bags * sim.price;
+  const isBulk  = mass_kg >= 1000;
+
+  const massDisplay = isBulk
+    ? `${(mass_kg / 1000).toFixed(2)} t`
+    : `${mass_kg.toFixed(1)} kg`;
+
+  let qtyRow, costRow, cta;
+  if (isBulk) {
+    const tonnes = mass_kg / 1000;
+    const estCost = Math.round(mass_kg * sim.price);
+    qtyRow  = `<div class="res-row"><span class="res-key">Bulk quantity</span><span class="res-val">${tonnes.toFixed(2)} t</span></div>`;
+    costRow = `<div class="res-row"><span class="res-key">Est. cost</span><span class="res-val">$${estCost.toLocaleString()}</span></div>`;
+    cta     = `<a class="res-cta" href="${sim.url}#bulk-simulant" target="_blank" rel="noopener">Get bulk simulant pricing →</a>`;
+  } else {
+    const bags = Math.ceil(mass_kg);
+    const cost = bags * sim.price;
+    qtyRow  = `<div class="res-row"><span class="res-key">Bags needed</span><span class="res-val">${bags} × 1 kg</span></div>`;
+    costRow = `<div class="res-row"><span class="res-key">Est. cost</span><span class="res-val">$${cost.toLocaleString()}</span></div>`;
+    cta     = `<a class="res-cta" href="${sim.url}" target="_blank" rel="noopener">Shop ${sim.name.split(' (')[0]} →</a>`;
+  }
 
   document.getElementById('res-body').innerHTML = `
     <div class="res-row"><span class="res-key">Fill volume</span><span class="res-val">${vol_L.toFixed(1)} L</span></div>
     <div class="res-row"><span class="res-key">Volume</span><span class="res-val">${(vol_cm3/1e6).toFixed(3)} m³</span></div>
-    <div class="res-row"><span class="res-key">Required mass</span><span class="res-val">${mass_kg.toFixed(1)} kg</span></div>
+    <div class="res-row"><span class="res-key">Required mass</span><span class="res-val">${massDisplay}</span></div>
     <hr class="res-divider">
-    <div class="res-row"><span class="res-key">Bags needed</span><span class="res-val">${bags} × 1 kg</span></div>
-    <div class="res-row"><span class="res-key">Est. cost</span><span class="res-val">$${cost.toLocaleString()}</span></div>
-    <a class="res-cta" href="${sim.url}" target="_blank" rel="noopener">Shop ${sim.name.split(' (')[0]} →</a>
+    ${qtyRow}
+    ${costRow}
+    ${cta}
   `;
 }
 
