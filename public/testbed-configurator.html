@@ -338,18 +338,22 @@ input[type=range]::-webkit-slider-thumb {
           <label id="d-label">Depth (container)</label>
           <input type="number" id="inp-d" value="30" min="1" step="1">
         </div>
+        <div class="field">
+          <label id="h-label">Simulant Height</label>
+          <input type="number" id="inp-h" value="20" min="0" step="1">
+        </div>
       </div>
     </div>
 
-    <!-- Fill depth -->
+    <!-- Fill slider (fine control, synced with Height input) -->
     <div>
-      <div class="section-label">Simulant fill depth</div>
+      <div class="section-label">Adjust simulant height</div>
       <div class="slider-row">
         <div class="slider-header">
-          <span id="fill-lbl" style="font-size:11px;color:var(--muted);">Fill</span>
+          <span style="font-size:11px;color:var(--muted);">Height</span>
           <span class="slider-val"><span id="fill-val">20</span> <span id="fill-unit">cm</span></span>
         </div>
-        <input type="range" id="fill-slider" min="1" max="30" value="20" step="0.5">
+        <input type="range" id="fill-slider" min="0" max="30" value="20" step="0.5">
       </div>
     </div>
 
@@ -369,6 +373,7 @@ input[type=range]::-webkit-slider-thumb {
     <div id="label-l" class="dim-label" style="display:none;"></div>
     <div id="label-w" class="dim-label" style="display:none;"></div>
     <div id="label-d" class="dim-label" style="display:none;"></div>
+    <div id="label-h" class="dim-label" style="display:none;"></div>
 
     <!-- Results -->
     <div id="results">
@@ -582,6 +587,7 @@ function updateResults() {
 const lblL = document.getElementById('label-l');
 const lblW = document.getElementById('label-w');
 const lblD = document.getElementById('label-d');
+const lblH = document.getElementById('label-h');
 
 const v3 = new THREE.Vector3();
 function project(x, y, z) {
@@ -596,10 +602,12 @@ function project(x, y, z) {
 
 function updateLabels() {
   const L = state.L * SCALE, W = state.W * SCALE, D = state.D * SCALE;
+  const F = Math.min(state.fill, state.D) * SCALE;
 
   const pL = project(0,  D/2 + 0.12, -W/2 - 0.15);
   const pW = project(L/2 + 0.15, D/2 + 0.12, 0);
   const pD = project(L/2 + 0.15, 0,  W/2 + 0.1);
+  const pH = project(-L/2 - 0.15, -D/2 + F/2, 0);
 
   function setLbl(el, pos, text) {
     if (pos.x < 0 || pos.y < 0) { el.style.display='none'; return; }
@@ -612,6 +620,8 @@ function updateLabels() {
   setLbl(lblL, pL, 'L: ' + fmtDim(state.L));
   setLbl(lblW, pW, 'W: ' + fmtDim(state.W));
   setLbl(lblD, pD, 'D: ' + fmtDim(state.D));
+  if (F > 0.001) setLbl(lblH, pH, 'H: ' + fmtDim(Math.min(state.fill, state.D)));
+  else lblH.style.display = 'none';
 }
 
 /* ── Resize ── */
@@ -683,6 +693,7 @@ function syncUnitLabels() {
   document.getElementById('l-label').textContent = `Length (${u})`;
   document.getElementById('w-label').textContent = `Width (${u})`;
   document.getElementById('d-label').textContent = `Depth (${u})`;
+  document.getElementById('h-label').textContent = `Simulant Height (${u})`;
   document.getElementById('fill-unit').textContent = u;
 
   // Convert existing values when toggling units
@@ -701,6 +712,20 @@ function syncUnitLabels() {
       inp.step  = '1';
     }
   });
+
+  // Simulant height input (mirrors fill state)
+  const hInp = document.getElementById('inp-h');
+  if (u === 'ft') {
+    hInp.value = (state.fill / FT_TO_CM).toFixed(2);
+    hInp.step  = '0.01';
+  } else if (u === 'm') {
+    hInp.value = (state.fill / M_TO_CM).toFixed(2);
+    hInp.step  = '0.005';
+  } else {
+    hInp.value = state.fill.toFixed(1);
+    hInp.step  = '0.5';
+  }
+
   // Fill slider
   const fillInp = document.getElementById('fill-slider');
   if (u === 'ft') {
@@ -765,6 +790,20 @@ function readInput(id) {
   });
 });
 
+// inp-h (simulant height typed input) — mirrors fill slider
+document.getElementById('inp-h').addEventListener('input', () => {
+  const raw = parseFloat(document.getElementById('inp-h').value) || 0;
+  state.fill = toCm(raw);
+  if (state.fill > state.D) state.fill = state.D;
+  const fillSliderEl = document.getElementById('fill-slider');
+  const displayVal = (state.unit === 'ft') ? (state.fill / FT_TO_CM).toFixed(2)
+                   : (state.unit === 'm')  ? (state.fill / M_TO_CM).toFixed(2)
+                   : state.fill.toFixed(1);
+  fillSliderEl.value = displayVal;
+  document.getElementById('fill-val').textContent = displayVal;
+  buildScene(); updateResults();
+});
+
 const fillSlider = document.getElementById('fill-slider');
 fillSlider.addEventListener('input', () => {
   const raw = parseFloat(fillSlider.value) || 0;
@@ -773,6 +812,7 @@ fillSlider.addEventListener('input', () => {
   else                         state.fill = raw;
   const display = (state.unit === 'cm') ? raw.toFixed(1) : raw.toFixed(2);
   document.getElementById('fill-val').textContent = display;
+  document.getElementById('inp-h').value = display;
   buildScene(); updateResults();
 });
 
