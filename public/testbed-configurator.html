@@ -335,22 +335,22 @@ input[type=range]::-webkit-slider-thumb {
       </div>
       <div class="input-row">
         <div class="field">
-          <label id="d-label">Depth (container)</label>
+          <label id="d-label">Height</label>
           <input type="number" id="inp-d" value="30" min="1" step="1">
         </div>
         <div class="field">
-          <label id="h-label">Simulant Height</label>
+          <label id="h-label">Simulant Depth</label>
           <input type="number" id="inp-h" value="20" min="0" step="1">
         </div>
       </div>
     </div>
 
-    <!-- Fill slider (fine control, synced with Height input) -->
+    <!-- Fill slider (fine control, synced with Simulant Depth input) -->
     <div>
-      <div class="section-label">Adjust simulant height</div>
+      <div class="section-label">Adjust simulant depth</div>
       <div class="slider-row">
         <div class="slider-header">
-          <span style="font-size:11px;color:var(--muted);">Height</span>
+          <span style="font-size:11px;color:var(--muted);">Depth</span>
           <span class="slider-val"><span id="fill-val">20</span> <span id="fill-unit">cm</span></span>
         </div>
         <input type="range" id="fill-slider" min="0" max="30" value="20" step="0.5">
@@ -647,8 +647,8 @@ function updateLabels() {
 
   setLbl(lblL, pL, 'L: ' + fmtDim(state.L));
   setLbl(lblW, pW, 'W: ' + fmtDim(state.W));
-  setLbl(lblD, pD, 'D: ' + fmtDim(state.D));
-  if (F > 0.001) setLbl(lblH, pH, 'H: ' + fmtDim(Math.min(state.fill, state.D)));
+  setLbl(lblD, pD, 'H: ' + fmtDim(state.D));
+  if (F > 0.001) setLbl(lblH, pH, 'D: ' + fmtDim(Math.min(state.fill, state.D)));
   else lblH.style.display = 'none';
 }
 
@@ -720,8 +720,8 @@ function syncUnitLabels() {
   const u = state.unit;
   document.getElementById('l-label').textContent = `Length (${u})`;
   document.getElementById('w-label').textContent = `Width (${u})`;
-  document.getElementById('d-label').textContent = `Depth (${u})`;
-  document.getElementById('h-label').textContent = `Simulant Height (${u})`;
+  document.getElementById('d-label').textContent = `Height (${u})`;
+  document.getElementById('h-label').textContent = `Simulant Depth (${u})`;
   document.getElementById('fill-unit').textContent = u;
 
   // Convert existing values when toggling units
