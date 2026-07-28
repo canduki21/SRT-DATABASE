@@ -252,12 +252,11 @@ input[type=range]::-webkit-slider-thumb {
   padding: 0.5rem 0;
 }
 .res-note {
-  font-size: 10px;
+  font-size: 9.5px;
   color: var(--muted);
-  line-height: 1.45;
-  margin-top: 0.7rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--border);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  opacity: 0.75;
 }
 
 /* Dimension labels */
@@ -634,7 +633,7 @@ function updateResults() {
     ${qtyRow}
     ${costRow}
     ${cta}
-    <p class="res-note">* This is an estimate. Densities listed are for uncompressed bulk material. If your application requires compacted fill, you may need additional quantity.</p>
+    <p class="res-note">* Estimate based on uncompressed bulk density. Compacted fill may require more.</p>
   `;
 }
 
