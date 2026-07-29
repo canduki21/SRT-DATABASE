@@ -346,6 +346,47 @@ input[type=range]::-webkit-slider-thumb {
 }
 .add-layer-btn:hover { border-color: var(--orange); color: var(--orange); }
 
+/* Promo / CTA block */
+.promo-block {
+  background: var(--orange2);
+  border: 1px solid rgba(200,122,65,0.28);
+  border-radius: 10px;
+  padding: 1rem 1rem 0.9rem;
+}
+.promo-eyebrow {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--orange);
+  margin-bottom: 0.35rem;
+}
+.promo-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.55;
+  margin-bottom: 0.8rem;
+}
+.promo-actions { display: flex; flex-direction: column; gap: 0.4rem; }
+.promo-btn {
+  display: block;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.promo-btn:hover { opacity: 0.82; }
+.promo-btn-primary { background: var(--orange); color: #fff; }
+.promo-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(200,122,65,0.45);
+  color: var(--orange);
+}
+
 /* Dimension labels */
 .dim-label {
   position: absolute;
@@ -461,6 +502,16 @@ input[type=range]::-webkit-slider-thumb {
     <div id="extra-layers-wrap">
       <div id="extra-layers"></div>
       <button class="add-layer-btn" id="add-layer-btn">+ Add another layer</button>
+    </div>
+
+    <!-- CTA -->
+    <div class="promo-block">
+      <div class="promo-eyebrow">Ready to build?</div>
+      <p class="promo-text">Affordable bulk pricing is available across all simulants. We're here to turn your configuration into reality.</p>
+      <div class="promo-actions">
+        <a class="promo-btn promo-btn-primary" href="https://calendar.app.google/Uz52hXNKyuhjojKJ7" target="_blank" rel="noopener">Book a Free Consultation</a>
+        <a class="promo-btn promo-btn-secondary" href="https://spaceresourcetech.com/pages/contact-us" target="_blank" rel="noopener">Contact Us</a>
+      </div>
     </div>
 
   </div>
