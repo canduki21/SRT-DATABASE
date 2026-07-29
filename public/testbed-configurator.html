@@ -610,21 +610,15 @@ function updateResults() {
     ? `${(mass_kg / 1000).toFixed(2)} t`
     : `${mass_kg.toFixed(1)} kg`;
 
-  let qtyRow, costRow, cta;
+  let qtyRow, cta;
   if (isBulk) {
     const tonnes = mass_kg / 1000;
-    const costStr = sim.bulkPrice !== null
-      ? `$${Math.round(tonnes * sim.bulkPrice).toLocaleString()}`
-      : 'Contact for quote';
-    qtyRow  = `<div class="res-row"><span class="res-key">Bulk quantity</span><span class="res-val">${tonnes.toFixed(2)} t</span></div>`;
-    costRow = `<div class="res-row"><span class="res-key">Est. cost</span><span class="res-val">${costStr}</span></div>`;
-    cta     = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Get bulk simulant pricing →</a>`;
+    qtyRow = `<div class="res-row"><span class="res-key">Bulk quantity</span><span class="res-val">${tonnes.toFixed(2)} t</span></div>`;
+    cta    = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Get bulk simulant pricing →</a>`;
   } else {
     const bags = Math.ceil(mass_kg);
-    const cost = bags * sim.price;
-    qtyRow  = `<div class="res-row"><span class="res-key">Bags needed</span><span class="res-val">${bags} × 1 kg</span></div>`;
-    costRow = `<div class="res-row"><span class="res-key">Est. cost</span><span class="res-val">$${cost.toLocaleString()}</span></div>`;
-    cta     = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Shop ${sim.name.split(' (')[0]} →</a>`;
+    qtyRow = `<div class="res-row"><span class="res-key">Bags needed</span><span class="res-val">${bags} × 1 kg</span></div>`;
+    cta    = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Shop ${sim.name.split(' (')[0]} →</a>`;
   }
 
   document.getElementById('res-body').innerHTML = `
@@ -633,7 +627,6 @@ function updateResults() {
     <div class="res-row"><span class="res-key">Required mass</span><span class="res-val">${massDisplay}</span></div>
     <hr class="res-divider">
     ${qtyRow}
-    ${costRow}
     ${cta}
     <p class="res-note">* Estimate based on uncompressed bulk density. Compacted fill may require more.</p>
   `;
