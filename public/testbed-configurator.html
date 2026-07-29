@@ -258,6 +258,93 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0.5rem;
   opacity: 0.75;
 }
+.res-layer { margin-bottom: 0.5rem; }
+.res-layer-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 3px;
+}
+.res-layer-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+.res-layer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.res-layer-qty { font-size: 13px; font-weight:500; color:#fff; }
+.res-layer-link {
+  font-size: 10px;
+  color: var(--orange);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.res-layer-link:hover { text-decoration: underline; }
+
+/* Layer cards in sidebar */
+.layer-card {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.layer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.layer-num {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+}
+.layer-dot-sm { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+.layer-remove {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  transition: color 0.15s;
+}
+.layer-remove:hover { color: #fff; }
+.layer-sim {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 12px;
+  font-family: inherit;
+  padding: 6px 8px;
+  outline: none;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+.layer-sim:focus { border-color: var(--orange); }
+.add-layer-btn {
+  width: 100%;
+  padding: 7px;
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,0.18);
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s;
+}
+.add-layer-btn:hover { border-color: var(--orange); color: var(--orange); }
 
 /* Dimension labels */
 .dim-label {
@@ -345,29 +432,14 @@ input[type=range]::-webkit-slider-thumb {
           <label id="d-label">Height</label>
           <input type="number" id="inp-d" value="30" min="1" step="1">
         </div>
-        <div class="field">
-          <label id="h-label">Simulant Depth</label>
-          <input type="number" id="inp-h" value="20" min="0" step="1">
-        </div>
       </div>
     </div>
 
-    <!-- Fill slider (fine control, synced with Simulant Depth input) -->
+    <!-- Simulant layers -->
     <div>
-      <div class="section-label">Adjust simulant depth</div>
-      <div class="slider-row">
-        <div class="slider-header">
-          <span style="font-size:11px;color:var(--muted);">Depth</span>
-          <span class="slider-val"><span id="fill-val">20</span> <span id="fill-unit">cm</span></span>
-        </div>
-        <input type="range" id="fill-slider" min="0" max="30" value="20" step="0.5">
-      </div>
-    </div>
-
-    <!-- Simulant selector -->
-    <div>
-      <div class="section-label">Simulant</div>
-      <div id="sim-list"></div>
+      <div class="section-label">Simulant Layers</div>
+      <div id="layers-list"></div>
+      <button class="add-layer-btn" id="add-layer-btn">+ Add Layer</button>
     </div>
 
   </div>
@@ -418,13 +490,14 @@ const SIMULANTS = [
 
 /* ── State ── */
 const state = {
-  unit:      'cm',
-  shape:     'rect',
-  L:         100,
-  W:         60,
-  D:         30,
-  fill:      20,
-  simulant:  SIMULANTS[0],
+  unit:  'cm',
+  shape: 'rect',
+  L:     100,
+  W:     60,
+  D:     30,
+  layers: [
+    { simulant: SIMULANTS[0], depth: 20 },
+  ],
 };
 
 /* ── Unit helpers ── */
@@ -434,6 +507,11 @@ function toCm(v) {
   if (state.unit === 'ft') return v * FT_TO_CM;
   if (state.unit === 'm')  return v * M_TO_CM;
   return v;
+}
+function fromCm(v) {
+  if (state.unit === 'ft') return (v / FT_TO_CM).toFixed(2);
+  if (state.unit === 'm')  return (v / M_TO_CM).toFixed(3);
+  return v.toFixed(1);
 }
 function fmtDim(cm) {
   if (state.unit === 'ft') return (cm / FT_TO_CM).toFixed(2) + ' ft';
@@ -516,8 +594,6 @@ function buildScene() {
   const L = state.L * SCALE;
   const W = state.W * SCALE;
   const D = state.D * SCALE;
-  const F = Math.min(state.fill, state.D) * SCALE;
-  const sim = state.simulant;
 
   fitCamera();
 
@@ -568,21 +644,32 @@ function buildScene() {
   // Front wall
   mkPanel(L-2*ex, D-2*ex, 0.004, 0, 0, W/2-ex);
 
-  // ── Simulant fill ──
-  if (F > 0.001) {
-    const fillMat = new THREE.MeshStandardMaterial({ color: sim.threeColor, roughness: 0.92, metalness: 0.0 });
+  // ── Simulant layers (stacked fills) ──
+  let cumCm = 0;
+  for (const layer of state.layers) {
+    const available = state.D - cumCm;
+    const depthCm   = Math.min(layer.depth, available);
+    if (depthCm <= 0.001) break;
+    const F = depthCm * SCALE;
+    const yBottom = -D/2 + cumCm * SCALE;
+    const fillMat = new THREE.MeshStandardMaterial({ color: layer.simulant.threeColor, roughness: 0.92, metalness: 0.0 });
     const fillMesh = new THREE.Mesh(new THREE.BoxGeometry(L-2*ex, F, W-2*ex), fillMat);
-    fillMesh.position.y = -D/2 + F/2;
+    fillMesh.position.y = yBottom + F/2;
     fillMesh.receiveShadow = true;
     grp.add(fillMesh);
-
+    cumCm += depthCm;
+  }
+  // Top surface edge line
+  const totalF = cumCm * SCALE;
+  if (totalF > 0.001) {
+    const topSim = state.layers[state.layers.length - 1].simulant;
     const topEdgeMat = new THREE.LineBasicMaterial({
-      color: new THREE.Color(sim.hex).lerp(new THREE.Color(0xffffff), 0.4)
+      color: new THREE.Color(topSim.hex).lerp(new THREE.Color(0xffffff), 0.4)
     });
     const topEdge = new THREE.LineSegments(
       new THREE.EdgesGeometry(new THREE.BoxGeometry(L-2*ex, 0.002, W-2*ex)), topEdgeMat
     );
-    topEdge.position.y = -D/2 + F;
+    topEdge.position.y = -D/2 + totalF;
     grp.add(topEdge);
   }
 
@@ -591,43 +678,59 @@ function buildScene() {
 
 /* ── Results ── */
 function updateResults() {
-  const L_cm    = state.L;
-  const W_cm    = state.W;
-  const fill_cm = Math.min(state.fill, state.D);
-  const sim     = state.simulant;
+  const L_cm = state.L;
+  const W_cm = state.W;
 
-  if (L_cm <= 0 || W_cm <= 0 || fill_cm <= 0) {
+  const totalDepthCm = state.layers.reduce((s, l) => s + l.depth, 0);
+  if (L_cm <= 0 || W_cm <= 0 || totalDepthCm <= 0) {
     document.getElementById('res-body').innerHTML = '<div class="res-empty">Enter dimensions to calculate</div>';
     return;
   }
 
-  const vol_cm3 = L_cm * W_cm * fill_cm;
-  const vol_L   = vol_cm3 / 1000;
-  const mass_kg = vol_cm3 * sim.density / 1000;
-  const isBulk  = mass_kg >= 1000;
+  let cumCm = 0;
+  let totalVol_cm3 = 0;
+  const layerResults = [];
 
-  const massDisplay = isBulk
-    ? `${(mass_kg / 1000).toFixed(2)} t`
-    : `${mass_kg.toFixed(1)} kg`;
-
-  let qtyRow, cta;
-  if (isBulk) {
-    const tonnes = mass_kg / 1000;
-    qtyRow = `<div class="res-row"><span class="res-key">Bulk quantity</span><span class="res-val">${tonnes.toFixed(2)} t</span></div>`;
-    cta    = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Get bulk simulant pricing →</a>`;
-  } else {
-    const bags = Math.ceil(mass_kg);
-    qtyRow = `<div class="res-row"><span class="res-key">Bags needed</span><span class="res-val">${bags} × 1 kg</span></div>`;
-    cta    = `<a class="res-cta" href="${sim.bulkUrl}" target="_blank" rel="noopener">Shop ${sim.name.split(' (')[0]} →</a>`;
+  for (const layer of state.layers) {
+    const available = state.D - cumCm;
+    const depthCm   = Math.min(layer.depth, available);
+    if (depthCm <= 0.001) break;
+    const vol_cm3 = L_cm * W_cm * depthCm;
+    const mass_kg = vol_cm3 * layer.simulant.density / 1000;
+    totalVol_cm3 += vol_cm3;
+    layerResults.push({ layer, depthCm, mass_kg });
+    cumCm += depthCm;
   }
 
+  const totalVol_L = totalVol_cm3 / 1000;
+
+  let layerHtml = '';
+  layerResults.forEach(({ layer, depthCm, mass_kg }, i) => {
+    const sim    = layer.simulant;
+    const isBulk = mass_kg >= 1000;
+    const qtyStr = isBulk
+      ? `${(mass_kg / 1000).toFixed(2)} t`
+      : `${Math.ceil(mass_kg)} × 1 kg`;
+    const linkTxt = isBulk ? 'Bulk pricing →' : 'Shop →';
+    if (i > 0) layerHtml += `<hr class="res-divider" style="margin:0.4rem 0">`;
+    layerHtml += `
+      <div class="res-layer">
+        <div class="res-layer-name">
+          <div class="res-layer-dot" style="background:${sim.hex}"></div>
+          ${sim.name.split(' (')[0]} · ${fromCm(depthCm)} ${state.unit}
+        </div>
+        <div class="res-layer-row">
+          <span class="res-layer-qty">${qtyStr}</span>
+          <a class="res-layer-link" href="${sim.bulkUrl}" target="_blank" rel="noopener">${linkTxt}</a>
+        </div>
+      </div>`;
+  });
+
   document.getElementById('res-body').innerHTML = `
-    <div class="res-row"><span class="res-key">Fill volume</span><span class="res-val">${vol_L.toFixed(1)} L</span></div>
-    <div class="res-row"><span class="res-key">Volume</span><span class="res-val">${(vol_cm3/1e6).toFixed(3)} m³</span></div>
-    <div class="res-row"><span class="res-key">Required mass</span><span class="res-val">${massDisplay}</span></div>
+    <div class="res-row"><span class="res-key">Fill volume</span><span class="res-val">${totalVol_L.toFixed(1)} L</span></div>
+    <div class="res-row"><span class="res-key">Volume</span><span class="res-val">${(totalVol_cm3/1e6).toFixed(3)} m³</span></div>
     <hr class="res-divider">
-    ${qtyRow}
-    ${cta}
+    ${layerHtml}
     <p class="res-note">* Estimate based on uncompressed bulk density. Compacted fill may require more.</p>
   `;
 }
@@ -651,7 +754,8 @@ function project(x, y, z) {
 
 function updateLabels() {
   const L = state.L * SCALE, W = state.W * SCALE, D = state.D * SCALE;
-  const F = Math.min(state.fill, state.D) * SCALE;
+  const totalDepthCm = state.layers.reduce((s, l) => s + l.depth, 0);
+  const F = Math.min(totalDepthCm, state.D) * SCALE;
 
   const pL = project(0,  D/2 + 0.12, -W/2 - 0.15);
   const pW = project(L/2 + 0.15, D/2 + 0.12, 0);
@@ -669,7 +773,7 @@ function updateLabels() {
   setLbl(lblL, pL, 'L: ' + fmtDim(state.L));
   setLbl(lblW, pW, 'W: ' + fmtDim(state.W));
   setLbl(lblD, pD, 'H: ' + fmtDim(state.D));
-  if (F > 0.001) setLbl(lblH, pH, 'D: ' + fmtDim(Math.min(state.fill, state.D)));
+  if (F > 0.001) setLbl(lblH, pH, 'D: ' + fmtDim(Math.min(totalDepthCm, state.D)));
   else lblH.style.display = 'none';
 }
 
@@ -694,36 +798,65 @@ function animate() {
 animate();
 
 /* ── UI setup ── */
-function buildSimList() {
-  const container = document.getElementById('sim-list');
-  const groups = {};
-  SIMULANTS.forEach(s => { (groups[s.group] = groups[s.group] || []).push(s); });
+function buildLayerUI() {
+  const container = document.getElementById('layers-list');
+  container.innerHTML = '';
 
-  Object.entries(groups).forEach(([gname, sims]) => {
-    const gDiv = document.createElement('div');
-    gDiv.className = 'sim-group';
-    gDiv.innerHTML = `<div class="sim-group-title">${gname}</div>`;
-    sims.forEach(s => {
-      const el = document.createElement('div');
-      el.className = 'sim-option' + (s === state.simulant ? ' active' : '');
-      el.dataset.id = s.id;
-      el.innerHTML = `
-        <div class="sim-dot" style="background:${s.hex};"></div>
-        <div class="sim-info">
-          <span class="sim-name">${s.name}</span>
-          <span class="sim-meta">${s.sub}</span>
-        </div>`;
-      el.addEventListener('click', () => {
-        state.simulant = s;
-        document.querySelectorAll('.sim-option').forEach(e => e.classList.remove('active'));
-        el.classList.add('active');
-        buildScene();
-        updateResults();
-      });
-      gDiv.appendChild(el);
+  const simOptions = SIMULANTS.map(s =>
+    `<option value="${s.id}">${s.name}</option>`
+  ).join('');
+
+  state.layers.forEach((layer, i) => {
+    const card = document.createElement('div');
+    card.className = 'layer-card';
+    card.innerHTML = `
+      <div class="layer-header">
+        <div class="layer-num">
+          <div class="layer-dot-sm" style="background:${layer.simulant.hex}"></div>
+          Layer ${i + 1}
+        </div>
+        ${state.layers.length > 1
+          ? `<button class="layer-remove" data-i="${i}" title="Remove layer">×</button>`
+          : ''}
+      </div>
+      <select class="layer-sim" data-i="${i}">${simOptions}</select>
+      <div class="field">
+        <label>Depth (${state.unit})</label>
+        <input type="number" class="layer-depth" data-i="${i}"
+          value="${fromCm(layer.depth)}" min="0" step="${state.unit === 'cm' ? '0.5' : '0.01'}">
+      </div>`;
+
+    card.querySelector('.layer-sim').value = layer.simulant.id;
+
+    card.querySelector('.layer-sim').addEventListener('change', e => {
+      const idx = parseInt(e.target.dataset.i);
+      state.layers[idx].simulant = SIMULANTS.find(s => s.id === e.target.value);
+      buildLayerUI();
+      buildScene(); updateResults();
     });
-    container.appendChild(gDiv);
+    card.querySelector('.layer-depth').addEventListener('input', e => {
+      const idx = parseInt(e.target.dataset.i);
+      state.layers[idx].depth = toCm(parseFloat(e.target.value) || 0);
+      buildScene(); updateResults();
+    });
+    const removeBtn = card.querySelector('.layer-remove');
+    if (removeBtn) {
+      removeBtn.addEventListener('click', () => {
+        state.layers.splice(parseInt(removeBtn.dataset.i), 1);
+        buildLayerUI(); buildScene(); updateResults();
+      });
+    }
+
+    container.appendChild(card);
   });
+
+  const addBtn = document.getElementById('add-layer-btn');
+  addBtn.style.display = state.layers.length >= 3 ? 'none' : 'block';
+  addBtn.onclick = () => {
+    if (state.layers.length >= 3) return;
+    state.layers.push({ simulant: SIMULANTS[0], depth: 10 });
+    buildLayerUI(); buildScene(); updateResults();
+  };
 }
 
 function setupPills(id, key, onChange) {
@@ -742,10 +875,7 @@ function syncUnitLabels() {
   document.getElementById('l-label').textContent = `Length (${u})`;
   document.getElementById('w-label').textContent = `Width (${u})`;
   document.getElementById('d-label').textContent = `Height (${u})`;
-  document.getElementById('h-label').textContent = `Simulant Depth (${u})`;
-  document.getElementById('fill-unit').textContent = u;
 
-  // Convert existing values when toggling units
   const inputs = ['l','w','d'];
   const keys   = ['L','W','D'];
   inputs.forEach((id, i) => {
@@ -762,37 +892,7 @@ function syncUnitLabels() {
     }
   });
 
-  // Simulant height input (mirrors fill state)
-  const hInp = document.getElementById('inp-h');
-  if (u === 'ft') {
-    hInp.value = (state.fill / FT_TO_CM).toFixed(2);
-    hInp.step  = '0.01';
-  } else if (u === 'm') {
-    hInp.value = (state.fill / M_TO_CM).toFixed(2);
-    hInp.step  = '0.005';
-  } else {
-    hInp.value = state.fill.toFixed(1);
-    hInp.step  = '0.5';
-  }
-
-  // Fill slider
-  const fillInp = document.getElementById('fill-slider');
-  if (u === 'ft') {
-    fillInp.max   = (state.D / FT_TO_CM).toFixed(2);
-    fillInp.value = (state.fill / FT_TO_CM).toFixed(2);
-    fillInp.step  = '0.01';
-    document.getElementById('fill-val').textContent = (state.fill / FT_TO_CM).toFixed(2);
-  } else if (u === 'm') {
-    fillInp.max   = (state.D / M_TO_CM).toFixed(2);
-    fillInp.value = (state.fill / M_TO_CM).toFixed(2);
-    fillInp.step  = '0.005';
-    document.getElementById('fill-val').textContent = (state.fill / M_TO_CM).toFixed(2);
-  } else {
-    fillInp.max   = state.D;
-    fillInp.value = state.fill;
-    fillInp.step  = '0.5';
-    document.getElementById('fill-val').textContent = state.fill.toFixed(1);
-  }
+  buildLayerUI();
 }
 
 setupPills('unit-toggle', 'unit', () => { syncUnitLabels(); });
@@ -824,49 +924,12 @@ function readInput(id) {
       state.W = state.L;
       document.getElementById('inp-w').value = document.getElementById('inp-l').value;
     }
-    // Keep fill ≤ depth
-    if (state.fill > state.D) { state.fill = state.D; }
-    // Update fill slider max
-    const fillSlider = document.getElementById('fill-slider');
-    if (state.unit === 'ft')     fillSlider.max = (state.D / FT_TO_CM).toFixed(2);
-    else if (state.unit === 'm') fillSlider.max = (state.D / M_TO_CM).toFixed(2);
-    else                         fillSlider.max = state.D;
-    if (parseFloat(fillSlider.value) > parseFloat(fillSlider.max)) {
-      fillSlider.value = fillSlider.max;
-      state.fill = state.D;
-    }
     buildScene(); updateResults();
   });
 });
 
-// inp-h (simulant height typed input) — mirrors fill slider
-document.getElementById('inp-h').addEventListener('input', () => {
-  const raw = parseFloat(document.getElementById('inp-h').value) || 0;
-  state.fill = toCm(raw);
-  if (state.fill > state.D) state.fill = state.D;
-  const fillSliderEl = document.getElementById('fill-slider');
-  const displayVal = (state.unit === 'ft') ? (state.fill / FT_TO_CM).toFixed(2)
-                   : (state.unit === 'm')  ? (state.fill / M_TO_CM).toFixed(2)
-                   : state.fill.toFixed(1);
-  fillSliderEl.value = displayVal;
-  document.getElementById('fill-val').textContent = displayVal;
-  buildScene(); updateResults();
-});
-
-const fillSlider = document.getElementById('fill-slider');
-fillSlider.addEventListener('input', () => {
-  const raw = parseFloat(fillSlider.value) || 0;
-  if (state.unit === 'ft')     state.fill = raw * FT_TO_CM;
-  else if (state.unit === 'm') state.fill = raw * M_TO_CM;
-  else                         state.fill = raw;
-  const display = (state.unit === 'cm') ? raw.toFixed(1) : raw.toFixed(2);
-  document.getElementById('fill-val').textContent = display;
-  document.getElementById('inp-h').value = display;
-  buildScene(); updateResults();
-});
-
 /* ── Init ── */
-buildSimList();
+buildLayerUI();
 syncUnitLabels();
 buildScene();   // fitCamera() is called inside buildScene
 updateResults();
