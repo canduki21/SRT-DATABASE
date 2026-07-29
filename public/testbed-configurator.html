@@ -348,10 +348,16 @@ input[type=range]::-webkit-slider-thumb {
 
 /* Promo / CTA block */
 .promo-block {
-  background: var(--orange2);
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  background: rgba(13,14,26,0.88);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(200,122,65,0.28);
-  border-radius: 10px;
-  padding: 1rem 1rem 0.9rem;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 0.9rem;
+  min-width: 200px;
+  max-width: 240px;
 }
 .promo-eyebrow {
   font-size: 9px;
@@ -420,6 +426,7 @@ input[type=range]::-webkit-slider-thumb {
   .layout { flex-direction:column; }
   #sidebar { width:100%; max-height:45vh; border-right:none; border-bottom:1px solid var(--border); }
   #results { bottom:0.8rem; right:0.8rem; min-width:180px; }
+  .promo-block { top:0.8rem; right:0.8rem; max-width:180px; }
 }
 </style>
 </head>
@@ -504,16 +511,6 @@ input[type=range]::-webkit-slider-thumb {
       <button class="add-layer-btn" id="add-layer-btn">+ Add another layer</button>
     </div>
 
-    <!-- CTA -->
-    <div class="promo-block">
-      <div class="promo-eyebrow">Ready to build?</div>
-      <p class="promo-text">Affordable bulk pricing is available across all simulants. We're here to turn your configuration into reality.</p>
-      <div class="promo-actions">
-        <a class="promo-btn promo-btn-primary" href="https://calendar.app.google/Uz52hXNKyuhjojKJ7" target="_blank" rel="noopener">Book a Free Consultation</a>
-        <a class="promo-btn promo-btn-secondary" href="https://spaceresourcetech.com/pages/contact-us" target="_blank" rel="noopener">Contact Us</a>
-      </div>
-    </div>
-
   </div>
 
   <!-- ── 3D Viewport ── -->
@@ -525,6 +522,16 @@ input[type=range]::-webkit-slider-thumb {
     <div id="label-w" class="dim-label" style="display:none;"></div>
     <div id="label-d" class="dim-label" style="display:none;"></div>
     <div id="label-h" class="dim-label" style="display:none;"></div>
+
+    <!-- CTA overlay -->
+    <div class="promo-block">
+      <div class="promo-eyebrow">Ready to build?</div>
+      <p class="promo-text">Affordable bulk pricing is available across all simulants. We're here to turn your configuration into reality.</p>
+      <div class="promo-actions">
+        <a class="promo-btn promo-btn-primary" href="https://calendar.app.google/Uz52hXNKyuhjojKJ7" target="_blank" rel="noopener">Book a Free Consultation</a>
+        <a class="promo-btn promo-btn-secondary" href="https://spaceresourcetech.com/pages/contact-us" target="_blank" rel="noopener">Contact Us</a>
+      </div>
+    </div>
 
     <!-- Results -->
     <div id="results">
