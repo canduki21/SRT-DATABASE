@@ -15,7 +15,7 @@
   --text:    #fff;
   --muted:   rgba(255,255,255,0.38);
   --input-bg:#111320;
-  --sidebar: 300px;
+  --sidebar: 380px;
 }
 html, body { height:100%; overflow:hidden; }
 body {
@@ -76,7 +76,7 @@ header .sep { width:1px; height:20px; background:var(--border); }
 #sidebar::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:2px; }
 
 .section-label {
-  font-size: 9.5px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--muted);
@@ -93,11 +93,11 @@ header .sep { width:1px; height:20px; background:var(--border); }
 }
 .pill-row button {
   flex: 1;
-  padding: 7px 0;
+  padding: 10px 0;
   border: none;
   background: transparent;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-family: inherit;
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
@@ -117,7 +117,7 @@ header .sep { width:1px; height:20px; background:var(--border); }
   flex: 1;
 }
 .field label {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -127,9 +127,9 @@ header .sep { width:1px; height:20px; background:var(--border); }
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 16px;
   font-family: inherit;
-  padding: 7px 10px;
+  padding: 10px 12px;
   width: 100%;
   outline: none;
   transition: border-color 0.18s;
@@ -142,7 +142,7 @@ header .sep { width:1px; height:20px; background:var(--border); }
 /* Simulant cards */
 .sim-group { margin-bottom:0.6rem; }
 .sim-group-title {
-  font-size: 9px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--muted);
@@ -153,11 +153,11 @@ header .sep { width:1px; height:20px; background:var(--border); }
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 7px;
   cursor: pointer;
   transition: background 0.15s;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 .sim-option:hover { background: rgba(255,255,255,0.05); }
 .sim-option.active { background: var(--orange2); }
@@ -169,8 +169,8 @@ header .sep { width:1px; height:20px; background:var(--border); }
 }
 .sim-option.active .sim-dot { border-color: var(--orange); }
 .sim-info { display:flex; flex-direction:column; gap:1px; }
-.sim-name  { font-size: 12px; color: rgba(255,255,255,0.75); }
-.sim-meta  { font-size: 10px; color: var(--muted); }
+.sim-name  { font-size: 14px; color: rgba(255,255,255,0.75); }
+.sim-meta  { font-size: 12px; color: var(--muted); }
 
 /* Fill depth */
 .slider-row { display:flex; flex-direction:column; gap:6px; }

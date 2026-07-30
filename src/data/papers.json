@@ -1,5 +1,32 @@
 [
   {
+    "id": "dac9f808-94e8-46e9-941e-fdc8370349fd",
+    "title": "Defined Mars Media (DMM), a chemically defined simulant of the soluble macro- and micro-nutrients in Mars regolith for use in biological research",
+    "authors": "H. Greene, U. Nattermann, D. A. Stork et al.",
+    "year": 2026,
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.24.719001v2",
+    "keywords": [
+      "Defined Mars Media",
+      "DMM",
+      "Mars regolith simulant",
+      "Astrobiology",
+      "Microbiology",
+      "Biological research",
+      "Mars nutrients",
+      "In situ resource utilization",
+      "Regolith leachate"
+    ],
+    "simulants": [
+      "DMM"
+    ],
+    "category": "martian",
+    "source": "manual",
+    "added_at": "2026-07-30",
+    "applications": [
+      "biology"
+    ]
+  },
+  {
     "id": "9badf8cb-bee6-4293-b4ba-c992aa34a7f3",
     "title": "An aluminum production chain for the Moon: Experimental demonstration of aluminum metal extraction for in-situ resource utilization",
     "authors": "Xavier Walls, Alex Ellery, Katherine Marczenko et al.",
