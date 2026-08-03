@@ -1101,6 +1101,61 @@
     "added_at": "2026-08-03"
   },
   {
+    "id": "447b9ec6-2a4f-4262-81fb-371fd3085e6c",
+    "title": "Modification of Thermal Control Surface Thermo-Optical Properties by Lunar Dust – an Empirical Approach for Thermal Engineers",
+    "authors": "Philipp Hager",
+    "year": 2026,
+    "url": "https://doi.org/10.32865/2346/109100",
+    "keywords": [
+      "Regolith",
+      "Emissivity",
+      "Thermal",
+      "Extrapolation",
+      "Spacecraft",
+      "Deposition (geology)",
+      "Thermal emittance",
+      "Infrared",
+      "Sizing"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
+    "id": "b7b981b4-2bb7-41d1-bb3e-6ab1a2b248bc",
+    "title": "Metal Recovery from Lunar Regolith via Deep Eutectic Solvent Electrolysis for In Situ Resource Utilization",
+    "authors": "V. Cvetković, Nataša M. Petrović, Ksenija Milicevic Neumann et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3390/ma19143120",
+    "keywords": [],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
+    "id": "f53d7c63-927c-4a4a-a854-e326a7484b0b",
+    "title": "Sintering of wet-processed simulated Mars regolith slurries shaped using conventional and laser-induced slip casting (LIS)",
+    "authors": "Mariano Casu, Jonathan Bahr, Rafael Kleba-Ehrhardt et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.ceramint.2026.03.213",
+    "keywords": [
+      "Slurry",
+      "Sintering",
+      "Regolith",
+      "Slip (aerodynamics)",
+      "Mars Exploration Program",
+      "Casting"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4290,6 +4345,22 @@
     "added_at": "2026-07-11"
   },
   {
+    "id": "ba065a92-e8bf-40be-87cd-268347ace6ec",
+    "title": "Получение плазменно-пылевых облаков из метеоритного вещества, его аналогов и имитаторов лунного реголита с помощью микроволнового разряда",
+    "authors": "В. Д. Борзосеков, Н. С. Ахмадуллина, Alexander S. Sokolov et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.31857/s0320930x24030049",
+    "keywords": [
+      "Geography"
+    ],
+    "simulants": [
+      "LMS-1D"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -6730,6 +6801,33 @@
     "added_at": "2026-07-11"
   },
   {
+    "id": "9add5d36-0db7-4e09-af58-ac40a18c53f2",
+    "title": "Blue on red: Chemical conditions of liquid water emerging on simulated martian regolith",
+    "authors": "Piotr Rzymski, Piotr Klimaszyk, Nadiia Kasianchuk et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1016/j.icarus.2022.115263",
+    "keywords": [
+      "Regolith",
+      "Martian",
+      "Mars Exploration Program",
+      "Perchlorate",
+      "Martian soil",
+      "Dissolution",
+      "Environmental chemistry",
+      "Liquid water",
+      "Chemistry",
+      "Adsorption",
+      "Astrobiology",
+      "Leaching (pedology)"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -7295,6 +7393,25 @@
     "added_at": "2026-07-11"
   },
   {
+    "id": "ce3d8037-eb31-45e2-9933-4d2ce29a5fca",
+    "title": "Blood, sweat, and tears: extraterrestrial regolith biocomposites with in vivo binders",
+    "authors": "Aled D. Roberts, Dominic R Whittall, Rainer Breitling et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.mtbio.2021.100136",
+    "keywords": [
+      "Regolith",
+      "Martian",
+      "Astrobiology",
+      "Mars Exploration Program",
+      "Extraterrestrial life",
+      "Physics"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
     "title": "METZGER, CARBONACEOUS CHONDRITE\" Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -7624,6 +7741,77 @@
     "added_at": "2026-07-05"
   },
   {
+    "id": "d01f4f39-edfe-41e2-abae-8a2aa7edb548",
+    "title": "JSC-Rocknest: A large-scale Mojave Mars Simulant (MMS) based soil simulant for in-situ resource utilization water-extraction studies",
+    "authors": "J. V. Clark, P. D. Archer, J. E. Gruener et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.icarus.2020.113936",
+    "keywords": [
+      "Mars Exploration Program",
+      "Aeolian processes",
+      "Regolith",
+      "Geology",
+      "Exploration of Mars",
+      "Mineralogy",
+      "Astrobiology",
+      "Geomorphology"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
+    "id": "2120f51f-a9e6-40ec-8b7f-9eddcd7a560f",
+    "title": "Sintering of ceramics for clay in situ resource utilization on Mars",
+    "authors": "David Karl, Franz Kamutzki, Pedro Lima et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.oceram.2020.100008",
+    "keywords": [
+      "Sintering",
+      "Mars Exploration Program",
+      "Materials science",
+      "Resource (disambiguation)",
+      "In situ",
+      "Ceramic",
+      "Business",
+      "Metallurgy",
+      "Astrobiology",
+      "Computer science",
+      "Chemistry",
+      "Physics"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
+    "id": "7c7b80a0-69b8-4635-99b8-3c63440ab942",
+    "title": "A review towards the design of extraterrestrial structures: From regolith to human outposts",
+    "authors": "Nicos A. Kalapodis, Georgios Kampas, Olga‐Joan Ktenidou",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.actaastro.2020.05.038",
+    "keywords": [
+      "Astrobiology",
+      "Regolith",
+      "Extraterrestrial life",
+      "Martian",
+      "Mars Exploration Program",
+      "Scope (computer science)",
+      "Planet",
+      "Space exploration",
+      "Engineering",
+      "Computer science",
+      "Aerospace engineering",
+      "Astronomy"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -7945,6 +8133,56 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-07-11"
+  },
+  {
+    "id": "19465f47-08fc-4cd2-a5cd-f2d6e2bed866",
+    "title": "New simulants for martian regolith: Controlling iron variability",
+    "authors": "Nisha K. Ramkissoon, V. K. Pearson, S. P. Schwenzer et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1016/j.pss.2019.104722",
+    "keywords": [
+      "Regolith",
+      "Martian",
+      "Astrobiology",
+      "Mars Exploration Program",
+      "Martian soil",
+      "Martian surface",
+      "Exploration of Mars",
+      "Habitability",
+      "Geology",
+      "Mars landing",
+      "Environmental science",
+      "Planet"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
+  },
+  {
+    "id": "a61782d8-cc1b-44cd-8ef8-dc2a1cf3adb1",
+    "title": "Parametric review of existing regolith excavation techniques for lunar In Situ Resource Utilisation (ISRU) and recommendations for future excavation experiments",
+    "authors": "Gunter H. Just, Katherine Smith, K. H. Joy et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1016/j.pss.2019.104746",
+    "keywords": [
+      "Regolith",
+      "Excavation",
+      "Excavator",
+      "Resource (disambiguation)",
+      "Parametric statistics",
+      "Computer science",
+      "Mining engineering",
+      "Environmental science",
+      "Geology",
+      "Engineering",
+      "Civil engineering",
+      "Geotechnical engineering"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-03"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
