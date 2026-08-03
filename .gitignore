@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 scripts/parse_log.txt
 scripts/papers_seed.json
+.vercel

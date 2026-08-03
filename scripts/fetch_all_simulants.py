@@ -220,5 +220,9 @@ def main():
     PAPERS_FILE.write_text(json.dumps(papers, indent=2, ensure_ascii=False) + "\n")
     print(f"\nDone. Added {new_count} new papers. Total: {len(papers)}", file=sys.stderr)
 
+    # GitHub Actions step output
+    print(f"new={new_count}")
+    print(f"total={len(papers)}")
+
 if __name__ == "__main__":
     main()

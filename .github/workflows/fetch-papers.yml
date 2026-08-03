@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch new papers from Semantic Scholar
+      - name: Fetch new papers from OpenAlex
         id: fetch
         run: |
-          python scripts/fetch_new_papers.py >> $GITHUB_OUTPUT
+          python scripts/fetch_all_simulants.py >> $GITHUB_OUTPUT
 
       - name: Rebuild site
         uses: actions/setup-node@v4

@@ -146,4 +146,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
+        time.sleep(12 * 60 * 60)  # 12 hours

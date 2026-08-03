@@ -1087,6 +1087,20 @@
     "added_at": "2026-07-25"
   },
   {
+    "id": "d38eb640-22bf-4841-a053-6f49bb5f5178",
+    "title": "Martian-Regolith Simulant Confined Nanogenerators for Wireless Tactile Sensing for Human-Machine Interface",
+    "authors": "Shidhin Mappoli, Keval K. Sonigara, Martin Pumera",
+    "year": 2026,
+    "url": "https://doi.org/10.1002/smll.74734",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "manual",
+    "added_at": "2026-08-03"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
