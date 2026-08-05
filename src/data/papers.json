@@ -1156,6 +1156,20 @@
     "added_at": "2026-08-03"
   },
   {
+    "id": "fc0fb671-9606-41e3-93ec-a042741c5fd8",
+    "title": "Fe-Si alloys extraction via carbothermal reduction of lunar regolith",
+    "authors": "Surya Pratap Singh, Geoffrey Brooks, Alan R. Duffy, Boris Eisenbart, Ajay Kumar Shukla",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.pss.2026.106319",
+    "keywords": [],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "manual",
+    "added_at": "2026-08-05"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
