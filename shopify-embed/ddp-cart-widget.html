@@ -231,11 +231,18 @@
 
 <script>
 (function () {
-  const API_BASE   = 'https://srt-database.vercel.app/api/ddp-checkout';
-  const fmt        = v => '$' + v.toFixed(2);
+  // ── CONFIG ──────────────────────────────────────────────────────────────────
+  // Shopify variant ID for your hidden "DDP Service Fee" product ($1.00/unit).
+  // Replace with your actual variant ID after creating the product.
+  const DDP_VARIANT_ID = 'REPLACE_WITH_VARIANT_ID';
+  const RATES_URL      = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
+  // ────────────────────────────────────────────────────────────────────────────
+
+  const fmt = v => '$' + v.toFixed(2);
 
   let cart  = null;
   let rates = {};
+  let ddpUnits = 0; // number of $1 units = rounded DDP fee in dollars
 
   const toggle    = document.getElementById('ddp-toggle');
   const panel     = document.getElementById('ddp-panel');
@@ -256,29 +263,31 @@
       breakdown.style.display = 'none';
       btn.disabled = true;
       btn.textContent = 'Select a country to continue';
+      ddpUnits = 0;
       return;
     }
     const r             = rates[code];
     const product_value = (cart?.total_price ?? 0) / 100;
     const shipping      = parseFloat(shipInput.value) || 0;
-    const insurance     = 0;
 
-    const customs_value  = product_value + shipping + insurance;
-    const import_duty    = customs_value * r.duty_rate;
-    const taxable_value  = customs_value + import_duty;
-    const import_tax     = taxable_value * r.tax_rate;
-    const ddp_charge     = import_duty + import_tax + r.brokerage_fee + r.processing_fee;
+    const customs_value = product_value + shipping;
+    const import_duty   = customs_value * r.duty_rate;
+    const taxable_value = customs_value + import_duty;
+    const import_tax    = taxable_value * r.tax_rate;
+    const ddp_charge    = import_duty + import_tax + r.brokerage_fee + r.processing_fee;
+
+    ddpUnits = Math.ceil(ddp_charge); // round up to nearest dollar
 
     document.getElementById('bd-customs').textContent    = fmt(customs_value);
     document.getElementById('bd-duty').textContent       = fmt(import_duty);
     document.getElementById('bd-tax').textContent        = fmt(import_tax);
     document.getElementById('bd-brokerage').textContent  = fmt(r.brokerage_fee);
     document.getElementById('bd-processing').textContent = fmt(r.processing_fee);
-    document.getElementById('bd-total').textContent      = fmt(ddp_charge);
+    document.getElementById('bd-total').textContent      = fmt(ddpUnits);
 
     breakdown.style.display = 'block';
     btn.disabled    = false;
-    btn.textContent = `Proceed to Checkout with DDP (+ ${fmt(ddp_charge)})`;
+    btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
     showError('');
   }
 
@@ -286,7 +295,7 @@
     try {
       [cart, rates] = await Promise.all([
         fetch('/cart.js').then(r => r.json()),
-        fetch(`${API_BASE}?action=rates`).then(r => r.json()),
+        fetch(RATES_URL).then(r => r.json()),
       ]);
     } catch {
       showError('Unable to load DDP rates. Please try refreshing.');
@@ -311,34 +320,46 @@
   shipInput.addEventListener('input', calculate);
 
   btn.addEventListener('click', async () => {
-    const country = select.value;
-    if (!country || !cart?.items?.length) return;
+    if (!ddpUnits || !cart?.items?.length) return;
 
     btn.disabled = true;
-    btn.textContent = 'Creating your DDP checkout…';
+    btn.textContent = 'Adding DDP fee to cart…';
     showError('');
 
     try {
-      const res = await fetch(API_BASE, {
+      // Remove any existing DDP fee line items first
+      const existingDdp = cart.items.find(i => i.variant_id == DDP_VARIANT_ID);
+      if (existingDdp) {
+        await fetch('/cart/change.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: existingDdp.key, quantity: 0 }),
+        });
+      }
+
+      // Add DDP units ($1 × ddpUnits = total DDP fee)
+      const addRes = await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          country,
-          shipping_cost: parseFloat(shipInput.value) || 0,
-          insurance: 0,
-          items: cart.items.map(i => ({
-            variant_id: i.variant_id,
-            quantity:   i.quantity,
-            price:      i.price,
-          })),
+          items: [{
+            id:       DDP_VARIANT_ID,
+            quantity: ddpUnits,
+            properties: {
+              'Destination':   select.options[select.selectedIndex].text,
+              'Import Duty':   document.getElementById('bd-duty').textContent,
+              'Import Tax':    document.getElementById('bd-tax').textContent,
+              'Brokerage Fee': document.getElementById('bd-brokerage').textContent,
+              'Processing Fee':document.getElementById('bd-processing').textContent,
+            },
+          }],
         }),
       });
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Unknown error');
-      window.location.href = data.checkout_url;
+      if (!addRes.ok) throw new Error('Failed to add DDP fee to cart');
+      window.location.href = '/checkout';
     } catch (err) {
-      showError('Could not create DDP checkout: ' + err.message);
+      showError('Could not add DDP fee: ' + err.message);
       btn.disabled = false;
       calculate();
     }
