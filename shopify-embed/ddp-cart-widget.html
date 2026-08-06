@@ -238,12 +238,13 @@
 
 <script>
 (function () {
-  const DDP_VARIANT_ID = 47853114884274;
-  const RATES_URL      = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
+  const DDP_VARIANT_ID  = 47853114884274;
+  const RATES_URL       = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
+  const SHIP_RATE_URL   = 'https://srt-database.vercel.app/api/shipping-rate';
 
-  // base + per_kg before 1.25x buffer — calibrated from real carrier data
-  // LAM calibrated from: 1 kg = $155.45, 2 kg = $259.83 (Argentina Standard International)
-  const ZONE_RATES = {
+  // Fallback zone rates if Shopify API returns no rate for a country
+  // Calibrated from real data: Argentina 1kg=$155.45, 2kg=$259.83
+  const ZONE_FALLBACK = {
     NA:  { base: 28,  per_kg: 22 },
     LAM: { base: 41,  per_kg: 83 },
     WEU: { base: 44,  per_kg: 30 },
@@ -255,7 +256,7 @@
     OCE: { base: 56,  per_kg: 40 },
     AFR: { base: 64,  per_kg: 50 },
   };
-  const SHIPPING_BUFFER = 1.25;
+  const SHIPPING_BUFFER = 1.10;
 
   const fmt = v => '$' + v.toFixed(2);
   let cart  = null;
@@ -274,7 +275,7 @@
     errBox.style.setProperty('display', msg ? 'block' : 'none', 'important');
   }
 
-  function calculate() {
+  async function calculate() {
     const code = select.value;
     if (!code || !rates[code]) {
       breakdown.style.setProperty('display', 'none', 'important');
@@ -283,6 +284,10 @@
       ddpUnits = 0;
       return;
     }
+
+    btn.disabled = true;
+    btn.textContent = 'Calculating…';
+
     const r = rates[code];
 
     // Product value — exclude any existing DDP fee line
@@ -290,13 +295,31 @@
       .filter(i => i.variant_id != DDP_VARIANT_ID)
       .reduce((sum, i) => sum + i.final_line_price / 100, 0);
 
-    // Weight-based shipping: cart weight (grams) → kg, min 0.5 kg for packaging
+    // Weight from cart items (grams), min 0.5 kg for packaging
     const weight_g  = (cart?.items || [])
       .filter(i => i.variant_id != DDP_VARIANT_ID)
       .reduce((sum, i) => sum + (i.grams || 0) * i.quantity, 0);
     const weight_kg = Math.max(weight_g / 1000, 0.5);
-    const zone      = ZONE_RATES[r.zone] || ZONE_RATES.LAM;
-    const shipping  = (zone.base + weight_kg * zone.per_kg) * SHIPPING_BUFFER;
+
+    // Try to get real shipping rate from Shopify zones API
+    let shipping = null;
+    let rateSource = 'estimated';
+    try {
+      const rateRes = await fetch(`${SHIP_RATE_URL}?country=${code}&weight=${Math.round(weight_g)}`);
+      if (rateRes.ok) {
+        const rateData = await rateRes.json();
+        if (rateData.shipping_cost != null) {
+          shipping   = rateData.shipping_cost * SHIPPING_BUFFER;
+          rateSource = 'shopify';
+        }
+      }
+    } catch {}
+
+    // Fallback to zone estimate if Shopify returned nothing
+    if (shipping == null) {
+      const zf = ZONE_FALLBACK[r.zone] || ZONE_FALLBACK.LAM;
+      shipping  = (zf.base + weight_kg * zf.per_kg) * 1.25;
+    }
 
     const customs_value = product_value + shipping;
     const import_duty   = customs_value * r.duty_rate;
@@ -306,8 +329,12 @@
 
     ddpUnits = Math.ceil(ddp_charge);
 
+    const shipLabel = rateSource === 'shopify'
+      ? fmt(shipping) + ` (${weight_kg.toFixed(1)} kg — from your carrier)`
+      : fmt(shipping) + ` (${weight_kg.toFixed(1)} kg — estimated)`;
+
     document.getElementById('bd-product').textContent    = fmt(product_value);
-    document.getElementById('bd-shipping').textContent   = fmt(shipping) + ` (${weight_kg.toFixed(1)} kg)`;
+    document.getElementById('bd-shipping').textContent   = shipLabel;
     document.getElementById('bd-duty').textContent       = fmt(import_duty);
     document.getElementById('bd-tax').textContent        = fmt(import_tax);
     document.getElementById('bd-brokerage').textContent  = fmt(r.brokerage_fee);
