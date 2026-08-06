@@ -350,12 +350,22 @@
   shipInput.addEventListener('input', calculate);
 
   btn.addEventListener('click', async () => {
-    if (!ddpUnits || !cart?.items?.length) return;
+    if (!ddpUnits) { showError('Please select a destination country first.'); return; }
+
     btn.disabled = true;
     btn.textContent = 'Adding DDP fee to cart…';
     showError('');
+
     try {
-      const existingDdp = cart.items.find(i => i.variant_id == DDP_VARIANT_ID);
+      // Re-fetch cart to get latest state
+      const freshCart = await fetch('/cart.js').then(r => r.json());
+
+      if (!freshCart?.items?.length) {
+        throw new Error('Your cart is empty. Add products before selecting DDP.');
+      }
+
+      // Remove any existing DDP fee line first
+      const existingDdp = freshCart.items.find(i => i.variant_id == DDP_VARIANT_ID);
       if (existingDdp) {
         await fetch('/cart/change.js', {
           method: 'POST',
@@ -363,6 +373,8 @@
           body: JSON.stringify({ id: existingDdp.key, quantity: 0 }),
         });
       }
+
+      // Add DDP fee units ($1 × ddpUnits)
       const addRes = await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -380,12 +392,17 @@
           }],
         }),
       });
-      if (!addRes.ok) throw new Error('Failed to add DDP fee to cart');
+
+      if (!addRes.ok) {
+        const errData = await addRes.json().catch(() => ({}));
+        throw new Error(errData.description || errData.message || 'Failed to add DDP fee to cart.');
+      }
+
       window.location.href = '/checkout';
     } catch (err) {
-      showError('Could not add DDP fee: ' + err.message);
+      showError(err.message);
       btn.disabled = false;
-      calculate();
+      btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
     }
   });
 
