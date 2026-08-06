@@ -6842,6 +6842,54 @@
     "added_at": "2026-08-03"
   },
   {
+    "id": "f5252d1f-8894-49db-bbd3-fbed2ac57e57",
+    "title": "Liquid nitrogen removal of lunar regolith simulant from spacesuit simulants",
+    "authors": "Ian A. Wells, John Bussey, N. Swets et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1088/1757-899x/1240/1/012003",
+    "keywords": [
+      "Regolith",
+      "Abrasion (mechanical)",
+      "Environmental science",
+      "Astrobiology",
+      "Liquid nitrogen",
+      "Materials science",
+      "Physics",
+      "Composite material"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-06"
+  },
+  {
+    "id": "0ae9a5b1-b1bf-45db-bab5-a1cc9d9bbf2e",
+    "title": "Cyanobacteria as Candidates to Support Mars Colonization: Growth and Biofertilization Potential Using Mars Regolith as a Resource",
+    "authors": "Inês P. E. Maçario, Telma Veloso, Silja Frankenbach et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.3389/fmicb.2022.840098",
+    "keywords": [
+      "Mars Exploration Program",
+      "Regolith",
+      "Cyanobacteria",
+      "Astrobiology",
+      "Colonization",
+      "Life on Mars",
+      "Biology",
+      "Resource (disambiguation)",
+      "Environmental science",
+      "Ecology",
+      "Bacteria",
+      "Martian"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-06"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
