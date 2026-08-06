@@ -224,7 +224,7 @@
         <div class="ddp-row"><span class="ddp-row-label">DDP Processing Fee</span>   <span class="ddp-row-val" id="bd-processing">—</span></div>
         <div class="ddp-row total"><span class="ddp-row-label">Total DDP Charge</span><span class="ddp-row-val" id="bd-total">—</span></div>
         <div class="ddp-note">
-          ⚠ Estimates are based on standard duty/VAT rates. Shipping is estimated by destination. Final charges are confirmed on the invoice.
+          ⚠ Shipping is estimated by destination zone and package weight, with a 20% buffer. Duty/VAT rates are standard published rates. Final charges are confirmed on the invoice.
         </div>
       </div>
 
@@ -240,6 +240,21 @@
 (function () {
   const DDP_VARIANT_ID = 47853114884274;
   const RATES_URL      = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
+
+  // base (USD) + per_kg (USD) before 20% over-estimate buffer
+  const ZONE_RATES = {
+    NA:  { base: 35,  per_kg: 12 },
+    LAM: { base: 100, per_kg: 25 },
+    WEU: { base: 65,  per_kg: 20 },
+    EEU: { base: 70,  per_kg: 22 },
+    MDE: { base: 75,  per_kg: 22 },
+    SAS: { base: 80,  per_kg: 22 },
+    EAS: { base: 75,  per_kg: 20 },
+    SEA: { base: 80,  per_kg: 21 },
+    OCE: { base: 100, per_kg: 25 },
+    AFR: { base: 110, per_kg: 28 },
+  };
+  const SHIPPING_BUFFER = 1.20;
 
   const fmt = v => '$' + v.toFixed(2);
   let cart  = null;
@@ -267,9 +282,20 @@
       ddpUnits = 0;
       return;
     }
-    const r             = rates[code];
-    const product_value = (cart?.total_price ?? 0) / 100;
-    const shipping      = r.shipping_estimate || 0;
+    const r = rates[code];
+
+    // Product value — exclude any existing DDP fee line
+    const product_value = (cart?.items || [])
+      .filter(i => i.variant_id != DDP_VARIANT_ID)
+      .reduce((sum, i) => sum + i.final_line_price / 100, 0);
+
+    // Weight-based shipping: cart weight (grams) → kg, min 0.5 kg for packaging
+    const weight_g  = (cart?.items || [])
+      .filter(i => i.variant_id != DDP_VARIANT_ID)
+      .reduce((sum, i) => sum + (i.grams || 0) * i.quantity, 0);
+    const weight_kg = Math.max(weight_g / 1000, 0.5);
+    const zone      = ZONE_RATES[r.zone] || ZONE_RATES.LAM;
+    const shipping  = (zone.base + weight_kg * zone.per_kg) * SHIPPING_BUFFER;
 
     const customs_value = product_value + shipping;
     const import_duty   = customs_value * r.duty_rate;
@@ -280,7 +306,7 @@
     ddpUnits = Math.ceil(ddp_charge);
 
     document.getElementById('bd-product').textContent    = fmt(product_value);
-    document.getElementById('bd-shipping').textContent   = fmt(shipping);
+    document.getElementById('bd-shipping').textContent   = fmt(shipping) + ` (${weight_kg.toFixed(1)} kg)`;
     document.getElementById('bd-duty').textContent       = fmt(import_duty);
     document.getElementById('bd-tax').textContent        = fmt(import_tax);
     document.getElementById('bd-brokerage').textContent  = fmt(r.brokerage_fee);
