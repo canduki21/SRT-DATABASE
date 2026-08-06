@@ -3,168 +3,179 @@
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  #srt-ddp { font-family: 'Titillium Web', sans-serif; }
-  #srt-ddp * { box-sizing: border-box; margin: 0; padding: 0; }
+  #srt-ddp { font-family: 'Titillium Web', sans-serif !important; display: block !important; width: 100% !important; }
+  #srt-ddp * { box-sizing: border-box !important; }
 
-  .ddp-wrap {
-    background: #001219;
-    border: 1px solid rgba(200,122,65,0.35);
-    border-radius: 10px;
-    padding: 22px 24px;
-    margin: 24px 0;
-    color: #fafafa;
+  #srt-ddp .ddp-wrap {
+    display: block !important;
+    background: #001219 !important;
+    border: 1px solid rgba(200,122,65,0.35) !important;
+    border-radius: 10px !important;
+    padding: 22px 24px !important;
+    margin: 24px 0 !important;
+    color: #fafafa !important;
+    width: 100% !important;
   }
+  #srt-ddp .ddp-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+  }
+  #srt-ddp .ddp-header-icon {
+    width: 36px !important; height: 36px !important;
+    background: rgba(200,122,65,0.15) !important;
+    border-radius: 8px !important;
+    display: flex !important; align-items: center !important; justify-content: center !important;
+    flex-shrink: 0 !important;
+    padding: 0 !important; margin: 0 !important;
+  }
+  #srt-ddp .ddp-header-text { margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-header-text h3 { font-size: 1rem !important; font-weight: 700 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-header-text p  { font-size: 0.78rem !important; color: #8f8d8d !important; margin: 2px 0 0 0 !important; padding: 0 !important; line-height: 1.4 !important; }
 
-  .ddp-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
+  #srt-ddp .ddp-toggle-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: #022e4b !important;
+    border: 1px solid rgba(143,141,141,0.2) !important;
+    border-radius: 8px !important;
+    padding: 14px 16px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    gap: 12px !important;
+    width: 100% !important;
   }
-  .ddp-header-icon {
-    width: 36px; height: 36px;
-    background: rgba(200,122,65,0.15);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-  }
-  .ddp-header-text h3 { font-size: 1rem; font-weight: 700; color: #fafafa; }
-  .ddp-header-text p  { font-size: 0.78rem; color: #8f8d8d; margin-top: 2px; line-height: 1.4; }
+  #srt-ddp .ddp-toggle-label { font-size: 0.9rem !important; font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-toggle-sub   { font-size: 0.75rem !important; color: #8f8d8d !important; margin: 2px 0 0 0 !important; padding: 0 !important; }
 
-  .ddp-toggle-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #022e4b;
-    border: 1px solid rgba(143,141,141,0.2);
-    border-radius: 8px;
-    padding: 14px 16px;
-    cursor: pointer;
-    gap: 12px;
+  #srt-ddp .ddp-switch { position: relative !important; width: 44px !important; height: 24px !important; flex-shrink: 0 !important; display: inline-block !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-switch input { opacity: 0 !important; width: 0 !important; height: 0 !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-slider {
+    position: absolute !important; inset: 0 !important;
+    background: #334155 !important;
+    border-radius: 24px !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+    margin: 0 !important; padding: 0 !important;
   }
-  .ddp-toggle-label { font-size: 0.9rem; font-weight: 600; }
-  .ddp-toggle-sub   { font-size: 0.75rem; color: #8f8d8d; margin-top: 2px; }
+  #srt-ddp .ddp-slider::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 18px !important; height: 18px !important;
+    left: 3px !important; top: 3px !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    transition: transform 0.2s !important;
+    margin: 0 !important; padding: 0 !important;
+  }
+  #srt-ddp .ddp-switch input:checked + .ddp-slider { background: #c87a41 !important; }
+  #srt-ddp .ddp-switch input:checked + .ddp-slider::before { transform: translateX(20px) !important; }
 
-  /* Toggle switch */
-  .ddp-switch { position: relative; width: 44px; height: 24px; flex-shrink: 0; }
-  .ddp-switch input { opacity: 0; width: 0; height: 0; }
-  .ddp-slider {
-    position: absolute; inset: 0;
-    background: #334155;
-    border-radius: 24px;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .ddp-slider::before {
-    content: '';
-    position: absolute;
-    width: 18px; height: 18px;
-    left: 3px; top: 3px;
-    background: #fff;
-    border-radius: 50%;
-    transition: transform 0.2s;
-  }
-  .ddp-switch input:checked + .ddp-slider { background: #c87a41; }
-  .ddp-switch input:checked + .ddp-slider::before { transform: translateX(20px); }
+  #srt-ddp .ddp-panel { display: none !important; margin: 14px 0 0 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-panel.open { display: block !important; }
 
-  /* Expanded panel */
-  .ddp-panel { display: none; margin-top: 14px; }
-  .ddp-panel.open { display: block; }
+  #srt-ddp .ddp-field { margin: 0 0 12px 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-field label {
+    display: block !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    color: #8f8d8d !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    margin: 0 0 6px 0 !important;
+    padding: 0 !important;
+  }
+  #srt-ddp .ddp-field select,
+  #srt-ddp .ddp-field input {
+    display: block !important;
+    width: 100% !important;
+    background: #022e4b !important;
+    border: 1px solid rgba(143,141,141,0.25) !important;
+    border-radius: 6px !important;
+    color: #fafafa !important;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 0.9rem !important;
+    padding: 10px 12px !important;
+    margin: 0 !important;
+    outline: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+  }
+  #srt-ddp .ddp-field select:focus,
+  #srt-ddp .ddp-field input:focus { border-color: #c87a41 !important; }
+  #srt-ddp .ddp-field select option { background: #001219 !important; }
 
-  .ddp-field { margin-bottom: 12px; }
-  .ddp-field label {
-    display: block;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: #8f8d8d;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 6px;
+  #srt-ddp .ddp-breakdown {
+    background: #022e4b !important;
+    border: 1px solid rgba(143,141,141,0.2) !important;
+    border-radius: 8px !important;
+    padding: 14px 16px !important;
+    margin: 14px 0 0 0 !important;
+    font-size: 0.85rem !important;
   }
-  .ddp-field select,
-  .ddp-field input {
-    width: 100%;
-    background: #022e4b;
-    border: 1px solid rgba(143,141,141,0.25);
-    border-radius: 6px;
-    color: #fafafa;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 0.9rem;
-    padding: 10px 12px;
-    outline: none;
-    appearance: none;
+  #srt-ddp .ddp-breakdown-title {
+    display: block !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #8f8d8d !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
   }
-  .ddp-field select:focus,
-  .ddp-field input:focus { border-color: #c87a41; }
-  .ddp-field select option { background: #001219; }
+  #srt-ddp .ddp-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 5px 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(143,141,141,0.1) !important;
+  }
+  #srt-ddp .ddp-row:last-child { border-bottom: none !important; }
+  #srt-ddp .ddp-row-label { color: #8f8d8d !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-row-val   { font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-row.total .ddp-row-label { color: #fafafa !important; font-weight: 700 !important; }
+  #srt-ddp .ddp-row.total .ddp-row-val   { color: #c87a41 !important; font-size: 1rem !important; }
 
-  /* Breakdown table */
-  .ddp-breakdown {
-    background: #022e4b;
-    border: 1px solid rgba(143,141,141,0.2);
-    border-radius: 8px;
-    padding: 14px 16px;
-    margin-top: 14px;
-    font-size: 0.85rem;
+  #srt-ddp .ddp-note {
+    display: block !important;
+    font-size: 0.73rem !important;
+    color: #8f8d8d !important;
+    margin: 10px 0 0 0 !important;
+    padding: 0 !important;
+    line-height: 1.5 !important;
   }
-  .ddp-breakdown-title {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #8f8d8d;
-    margin-bottom: 10px;
+  #srt-ddp .ddp-btn {
+    display: block !important;
+    width: 100% !important;
+    margin: 16px 0 0 0 !important;
+    padding: 13px !important;
+    background: #c87a41 !important;
+    color: #fff !important;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    transition: background 0.2s, opacity 0.2s !important;
   }
-  .ddp-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(143,141,141,0.1);
-  }
-  .ddp-row:last-child { border-bottom: none; }
-  .ddp-row-label { color: #8f8d8d; }
-  .ddp-row-val   { font-weight: 600; }
-  .ddp-row.total .ddp-row-label { color: #fafafa; font-weight: 700; }
-  .ddp-row.total .ddp-row-val   { color: #c87a41; font-size: 1rem; }
+  #srt-ddp .ddp-btn:hover:not(:disabled) { background: #a86030 !important; }
+  #srt-ddp .ddp-btn:disabled { opacity: 0.5 !important; cursor: not-allowed !important; }
 
-  /* Estimate note */
-  .ddp-note {
-    font-size: 0.73rem;
-    color: #8f8d8d;
-    margin-top: 10px;
-    line-height: 1.5;
-  }
-
-  /* CTA button */
-  .ddp-btn {
-    display: block;
-    width: 100%;
-    margin-top: 16px;
-    padding: 13px;
-    background: #c87a41;
-    color: #fff;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    transition: background 0.2s, opacity 0.2s;
-  }
-  .ddp-btn:hover:not(:disabled) { background: #a86030; }
-  .ddp-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-
-  .ddp-error {
-    background: rgba(200,50,50,0.12);
-    border: 1px solid rgba(200,50,50,0.35);
-    border-radius: 6px;
-    padding: 10px 14px;
-    font-size: 0.82rem;
-    color: #f87171;
-    margin-top: 12px;
-    display: none;
+  #srt-ddp .ddp-error {
+    display: none !important;
+    background: rgba(200,50,50,0.12) !important;
+    border: 1px solid rgba(200,50,50,0.35) !important;
+    border-radius: 6px !important;
+    padding: 10px 14px !important;
+    margin: 12px 0 0 0 !important;
+    font-size: 0.82rem !important;
+    color: #f87171 !important;
   }
 </style>
 
@@ -208,7 +219,7 @@
         <input type="number" id="ddp-shipping" min="0" step="1" placeholder="e.g. 150" value="">
       </div>
 
-      <div class="ddp-breakdown" id="ddp-breakdown" style="display:none">
+      <div class="ddp-breakdown" id="ddp-breakdown" style="display:none !important">
         <div class="ddp-breakdown-title">DDP Fee Breakdown (estimate)</div>
         <div class="ddp-row"><span class="ddp-row-label">Customs Value</span>        <span class="ddp-row-val" id="bd-customs">—</span></div>
         <div class="ddp-row"><span class="ddp-row-label">Import Duty</span>          <span class="ddp-row-val" id="bd-duty">—</span></div>
@@ -231,18 +242,13 @@
 
 <script>
 (function () {
-  // ── CONFIG ──────────────────────────────────────────────────────────────────
-  // Shopify variant ID for your hidden "DDP Service Fee" product ($1.00/unit).
-  // Replace with your actual variant ID after creating the product.
   const DDP_VARIANT_ID = 47847821672626;
   const RATES_URL      = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
-  // ────────────────────────────────────────────────────────────────────────────
 
   const fmt = v => '$' + v.toFixed(2);
-
   let cart  = null;
   let rates = {};
-  let ddpUnits = 0; // number of $1 units = rounded DDP fee in dollars
+  let ddpUnits = 0;
 
   const toggle    = document.getElementById('ddp-toggle');
   const panel     = document.getElementById('ddp-panel');
@@ -254,13 +260,13 @@
 
   function showError(msg) {
     errBox.textContent = msg;
-    errBox.style.display = msg ? 'block' : 'none';
+    errBox.style.setProperty('display', msg ? 'block' : 'none', 'important');
   }
 
   function calculate() {
     const code = select.value;
     if (!code || !rates[code]) {
-      breakdown.style.display = 'none';
+      breakdown.style.setProperty('display', 'none', 'important');
       btn.disabled = true;
       btn.textContent = 'Select a country to continue';
       ddpUnits = 0;
@@ -276,7 +282,7 @@
     const import_tax    = taxable_value * r.tax_rate;
     const ddp_charge    = import_duty + import_tax + r.brokerage_fee + r.processing_fee;
 
-    ddpUnits = Math.ceil(ddp_charge); // round up to nearest dollar
+    ddpUnits = Math.ceil(ddp_charge);
 
     document.getElementById('bd-customs').textContent    = fmt(customs_value);
     document.getElementById('bd-duty').textContent       = fmt(import_duty);
@@ -285,7 +291,7 @@
     document.getElementById('bd-processing').textContent = fmt(r.processing_fee);
     document.getElementById('bd-total').textContent      = fmt(ddpUnits);
 
-    breakdown.style.display = 'block';
+    breakdown.style.setProperty('display', 'block', 'important');
     btn.disabled    = false;
     btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
     showError('');
@@ -301,7 +307,6 @@
       showError('Unable to load DDP rates. Please try refreshing.');
       return;
     }
-
     const sorted = Object.entries(rates).sort((a, b) => a[1].name.localeCompare(b[1].name));
     sorted.forEach(([code, info]) => {
       const opt = document.createElement('option');
@@ -315,19 +320,15 @@
     panel.classList.toggle('open', toggle.checked);
     if (toggle.checked) calculate();
   });
-
   select.addEventListener('change', calculate);
   shipInput.addEventListener('input', calculate);
 
   btn.addEventListener('click', async () => {
     if (!ddpUnits || !cart?.items?.length) return;
-
     btn.disabled = true;
     btn.textContent = 'Adding DDP fee to cart…';
     showError('');
-
     try {
-      // Remove any existing DDP fee line items first
       const existingDdp = cart.items.find(i => i.variant_id == DDP_VARIANT_ID);
       if (existingDdp) {
         await fetch('/cart/change.js', {
@@ -336,8 +337,6 @@
           body: JSON.stringify({ id: existingDdp.key, quantity: 0 }),
         });
       }
-
-      // Add DDP units ($1 × ddpUnits = total DDP fee)
       const addRes = await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -346,16 +345,15 @@
             id:       DDP_VARIANT_ID,
             quantity: ddpUnits,
             properties: {
-              'Destination':   select.options[select.selectedIndex].text,
-              'Import Duty':   document.getElementById('bd-duty').textContent,
-              'Import Tax':    document.getElementById('bd-tax').textContent,
-              'Brokerage Fee': document.getElementById('bd-brokerage').textContent,
-              'Processing Fee':document.getElementById('bd-processing').textContent,
+              'Destination':    select.options[select.selectedIndex].text,
+              'Import Duty':    document.getElementById('bd-duty').textContent,
+              'Import Tax':     document.getElementById('bd-tax').textContent,
+              'Brokerage Fee':  document.getElementById('bd-brokerage').textContent,
+              'Processing Fee': document.getElementById('bd-processing').textContent,
             },
           }],
         }),
       });
-
       if (!addRes.ok) throw new Error('Failed to add DDP fee to cart');
       window.location.href = '/checkout';
     } catch (err) {
@@ -368,3 +366,11 @@
   init();
 })();
 </script>
+
+{% schema %}
+{
+  "name": "DDP Service Fee",
+  "settings": [],
+  "presets": [{ "name": "DDP Service Fee" }]
+}
+{% endschema %}
