@@ -215,8 +215,8 @@
       </div>
 
       <div class="ddp-field">
-        <label for="ddp-shipping">Estimated international shipping cost (USD)</label>
-        <input type="number" id="ddp-shipping" min="0" step="1" placeholder="e.g. 150" value="">
+        <label for="ddp-shipping">Estimated shipping cost (USD) <span id="ddp-ship-status" style="font-weight:400;text-transform:none;letter-spacing:0;color:#c87a41;font-size:0.72rem"></span></label>
+        <input type="number" id="ddp-shipping" min="0" step="0.01" placeholder="Fetching from your cart…" value="">
       </div>
 
       <div class="ddp-breakdown" id="ddp-breakdown" style="display:none !important">
@@ -250,13 +250,14 @@
   let rates = {};
   let ddpUnits = 0;
 
-  const toggle    = document.getElementById('ddp-toggle');
-  const panel     = document.getElementById('ddp-panel');
-  const select    = document.getElementById('ddp-country');
-  const shipInput = document.getElementById('ddp-shipping');
-  const breakdown = document.getElementById('ddp-breakdown');
-  const btn       = document.getElementById('ddp-btn');
-  const errBox    = document.getElementById('ddp-error');
+  const toggle     = document.getElementById('ddp-toggle');
+  const panel      = document.getElementById('ddp-panel');
+  const select     = document.getElementById('ddp-country');
+  const shipInput  = document.getElementById('ddp-shipping');
+  const shipStatus = document.getElementById('ddp-ship-status');
+  const breakdown  = document.getElementById('ddp-breakdown');
+  const btn        = document.getElementById('ddp-btn');
+  const errBox     = document.getElementById('ddp-error');
 
   function showError(msg) {
     errBox.textContent = msg;
@@ -316,11 +317,36 @@
     });
   }
 
+  async function fetchShippingRate(countryCode) {
+    shipStatus.textContent = 'fetching rate…';
+    shipInput.placeholder  = 'Fetching…';
+    try {
+      const res  = await fetch(
+        `/cart/shipping_rates.json?shipping_address[country]=${countryCode}`
+      );
+      const data = await res.json();
+      const rate = data?.shipping_rates?.[0];
+      if (rate) {
+        const price = parseFloat(rate.price);
+        shipInput.value       = price.toFixed(2);
+        shipStatus.textContent = `Auto-filled from "${rate.name}"`;
+        calculate();
+        return;
+      }
+    } catch {}
+    shipStatus.textContent = 'Enter manually below';
+    shipInput.placeholder  = 'e.g. 150';
+    calculate();
+  }
+
   toggle.addEventListener('change', () => {
     panel.classList.toggle('open', toggle.checked);
-    if (toggle.checked) calculate();
+    if (toggle.checked && select.value) fetchShippingRate(select.value);
+    else if (toggle.checked) calculate();
   });
-  select.addEventListener('change', calculate);
+  select.addEventListener('change', () => {
+    if (select.value) fetchShippingRate(select.value);
+  });
   shipInput.addEventListener('input', calculate);
 
   btn.addEventListener('click', async () => {
