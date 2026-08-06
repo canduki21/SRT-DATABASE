@@ -241,18 +241,19 @@
   const DDP_VARIANT_ID = 47853114884274;
   const RATES_URL      = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
 
-  // base (USD) + per_kg (USD) before 20% over-estimate buffer
+  // base + per_kg before 1.25x buffer — calibrated from real carrier data
+  // LAM calibrated from: 1 kg = $155.45, 2 kg = $259.83 (Argentina Standard International)
   const ZONE_RATES = {
-    NA:  { base: 35,  per_kg: 12 },
-    LAM: { base: 100, per_kg: 25 },
-    WEU: { base: 65,  per_kg: 20 },
-    EEU: { base: 70,  per_kg: 22 },
-    MDE: { base: 75,  per_kg: 22 },
-    SAS: { base: 80,  per_kg: 22 },
-    EAS: { base: 75,  per_kg: 20 },
-    SEA: { base: 80,  per_kg: 21 },
-    OCE: { base: 100, per_kg: 25 },
-    AFR: { base: 110, per_kg: 28 },
+    NA:  { base: 28,  per_kg: 22 },
+    LAM: { base: 41,  per_kg: 83 },
+    WEU: { base: 44,  per_kg: 30 },
+    EEU: { base: 48,  per_kg: 34 },
+    MDE: { base: 50,  per_kg: 36 },
+    SAS: { base: 52,  per_kg: 38 },
+    EAS: { base: 48,  per_kg: 32 },
+    SEA: { base: 52,  per_kg: 34 },
+    OCE: { base: 56,  per_kg: 40 },
+    AFR: { base: 64,  per_kg: 50 },
   };
   const SHIPPING_BUFFER = 1.25;
 
