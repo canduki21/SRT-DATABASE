@@ -214,21 +214,17 @@
         </select>
       </div>
 
-      <div class="ddp-field">
-        <label for="ddp-shipping">Estimated shipping cost (USD) <span id="ddp-ship-status" style="font-weight:400;text-transform:none;letter-spacing:0;color:#c87a41;font-size:0.72rem">— auto-filled by country, adjustable</span></label>
-        <input type="number" id="ddp-shipping" min="0" step="0.01" placeholder="Select a country first" value="">
-      </div>
-
       <div class="ddp-breakdown" id="ddp-breakdown" style="display:none !important">
         <div class="ddp-breakdown-title">DDP Fee Breakdown (estimate)</div>
-        <div class="ddp-row"><span class="ddp-row-label">Customs Value</span>        <span class="ddp-row-val" id="bd-customs">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">Product Value</span>        <span class="ddp-row-val" id="bd-product">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">Est. Shipping</span>        <span class="ddp-row-val" id="bd-shipping">—</span></div>
         <div class="ddp-row"><span class="ddp-row-label">Import Duty</span>          <span class="ddp-row-val" id="bd-duty">—</span></div>
         <div class="ddp-row"><span class="ddp-row-label">Import Tax (VAT/GST)</span> <span class="ddp-row-val" id="bd-tax">—</span></div>
         <div class="ddp-row"><span class="ddp-row-label">Brokerage Fee</span>        <span class="ddp-row-val" id="bd-brokerage">—</span></div>
         <div class="ddp-row"><span class="ddp-row-label">DDP Processing Fee</span>   <span class="ddp-row-val" id="bd-processing">—</span></div>
         <div class="ddp-row total"><span class="ddp-row-label">Total DDP Charge</span><span class="ddp-row-val" id="bd-total">—</span></div>
         <div class="ddp-note">
-          ⚠ Estimates are based on standard duty/VAT rates and may vary. Final charges are confirmed on the invoice.
+          ⚠ Estimates are based on standard duty/VAT rates. Shipping is estimated by destination. Final charges are confirmed on the invoice.
         </div>
       </div>
 
@@ -250,13 +246,12 @@
   let rates = {};
   let ddpUnits = 0;
 
-  const toggle     = document.getElementById('ddp-toggle');
-  const panel      = document.getElementById('ddp-panel');
-  const select     = document.getElementById('ddp-country');
-  const shipInput  = document.getElementById('ddp-shipping');
-  const breakdown  = document.getElementById('ddp-breakdown');
-  const btn        = document.getElementById('ddp-btn');
-  const errBox     = document.getElementById('ddp-error');
+  const toggle    = document.getElementById('ddp-toggle');
+  const panel     = document.getElementById('ddp-panel');
+  const select    = document.getElementById('ddp-country');
+  const breakdown = document.getElementById('ddp-breakdown');
+  const btn       = document.getElementById('ddp-btn');
+  const errBox    = document.getElementById('ddp-error');
 
   function showError(msg) {
     errBox.textContent = msg;
@@ -274,7 +269,7 @@
     }
     const r             = rates[code];
     const product_value = (cart?.total_price ?? 0) / 100;
-    const shipping      = parseFloat(shipInput.value) || 0;
+    const shipping      = r.shipping_estimate || 0;
 
     const customs_value = product_value + shipping;
     const import_duty   = customs_value * r.duty_rate;
@@ -284,7 +279,8 @@
 
     ddpUnits = Math.ceil(ddp_charge);
 
-    document.getElementById('bd-customs').textContent    = fmt(customs_value);
+    document.getElementById('bd-product').textContent    = fmt(product_value);
+    document.getElementById('bd-shipping').textContent   = fmt(shipping);
     document.getElementById('bd-duty').textContent       = fmt(import_duty);
     document.getElementById('bd-tax').textContent        = fmt(import_tax);
     document.getElementById('bd-brokerage').textContent  = fmt(r.brokerage_fee);
@@ -316,26 +312,11 @@
     });
   }
 
-  function applyShippingEstimate(code) {
-    if (code && rates[code]?.shipping_estimate != null) {
-      shipInput.value = rates[code].shipping_estimate.toFixed(2);
-    } else {
-      shipInput.value = '';
-    }
-    calculate();
-  }
-
   toggle.addEventListener('change', () => {
     panel.classList.toggle('open', toggle.checked);
-    if (toggle.checked) {
-      if (select.value) applyShippingEstimate(select.value);
-      else calculate();
-    }
+    if (toggle.checked) calculate();
   });
-  select.addEventListener('change', () => {
-    applyShippingEstimate(select.value);
-  });
-  shipInput.addEventListener('input', calculate);
+  select.addEventListener('change', calculate);
 
   btn.addEventListener('click', async () => {
     if (!ddpUnits) { showError('Please select a destination country first.'); return; }
