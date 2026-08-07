@@ -6890,6 +6890,31 @@
     "added_at": "2026-08-06"
   },
   {
+    "id": "3e618697-9543-4328-92fe-ee63c375f868",
+    "title": "The Potential for Lunar and Martian Regolith Simulants to Sustain Plant Growth: A Multidisciplinary Overview",
+    "authors": "Luigi Giuseppe Duri, Antonio Giandonato Caporale, Youssef Rouphael et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.3389/fspas.2021.747821",
+    "keywords": [
+      "Regolith",
+      "Martian",
+      "Mars Exploration Program",
+      "Astrobiology",
+      "Environmental science",
+      "Life support system",
+      "Martian soil",
+      "Earth science",
+      "Martian surface",
+      "Engineering",
+      "Geology",
+      "Physics"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-07"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
