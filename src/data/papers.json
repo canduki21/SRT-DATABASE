@@ -1170,6 +1170,52 @@
     "added_at": "2026-08-05"
   },
   {
+    "id": "4b87544a-6daa-4fbf-81b1-52b270a274a4",
+    "title": "Investigating the Resilience of Ceramics Against Wear for Lunar Applications",
+    "authors": "Ashley Tirado Pujols",
+    "year": 2026,
+    "url": "https://commons.erau.edu/edt/1006",
+    "keywords": [
+      "Abrasion (mechanical)",
+      "Abrasive",
+      "Ceramic",
+      "Cubic zirconia",
+      "Regolith",
+      "Delamination (geology)",
+      "Resist",
+      "Substrate (aquarium)",
+      "Resilience (materials science)"
+    ],
+    "simulants": [
+      "LMS-1D"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-08"
+  },
+  {
+    "id": "2a079e87-1bf9-4cbb-9e67-01656f16faeb",
+    "title": "Validation of proton energy loss in regolith simulants: PSI Proton Irradiation Facility (PIF) beam tests and MRADSIM simulations",
+    "authors": "Zehra Güzel, M. Waqas, B. Alpat et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.nimb.2026.166252",
+    "keywords": [
+      "Proton",
+      "Beam (structure)",
+      "Irradiation",
+      "Regolith",
+      "Energy (signal processing)",
+      "Calibration"
+    ],
+    "simulants": [
+      "MGS-1",
+      "JEZ-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-08"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -7497,6 +7543,31 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-03"
+  },
+  {
+    "id": "2cbf53df-3910-404f-8014-0e908ae43a3f",
+    "title": "The Scientific Value of a Sustained Exploration Program at the Aristarchus Plateau",
+    "authors": "T. D. Glotch, E. R. Jawin, B. T. Greenhagen et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.3847/psj/abfec6",
+    "keywords": [
+      "Pyroclastic rock",
+      "Geology",
+      "Silicic",
+      "Multispectral image",
+      "Volcanism",
+      "Volcano",
+      "Impact crater",
+      "Basalt",
+      "Volcanic rock",
+      "Plateau (mathematics)",
+      "Earth science",
+      "Geochemistry"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-08"
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
