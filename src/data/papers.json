@@ -1216,6 +1216,44 @@
     "added_at": "2026-08-08"
   },
   {
+    "id": "cbe72b74-7daa-4ca3-8d36-cad84e0b00e7",
+    "title": "Guidelines for Estimating the 3D Size and Shape of Boulders from Planetary Surface Images",
+    "authors": "Alexia Duchêne, N. Murdoch, C. Robin et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3847/PSJ/ae5d37",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "62931f63-aa12-4365-adf6-378d4567f183",
+    "title": "Comparison of Compaction Techniques on Lunar Highland Regolith Simulant",
+    "authors": "Akshay K. Agarwal, Brendan Scott, M. Jaksa et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1061/jaeeez.aseng-6822",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "2e67daf9-2151-4e0b-811a-5d58f6eddb1d",
+    "title": "Martian mudstone simulant MUD-1 as a new Mars analogue material",
+    "authors": "Wen Yu, Xiaojia Zeng, Xiongyao Li",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.asr.2026.03.049",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -2750,6 +2788,72 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-07-20"
+  },
+  {
+    "id": "db9cdab2-2fe9-4951-b433-9c6158127462",
+    "title": "Bacterial bio-cementation can repair space bricks",
+    "authors": "Nitin Gupta, Rohan Kulkarni, Arya R. Naik et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3389/frspt.2025.1550526",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "7ea4db14-9b01-4889-b4ff-d119cb952bfd",
+    "title": "Fava bean plant performance and fertility dynamics in Mars regolith simulant-based substrates for space farming",
+    "authors": "A. Caporale, R. Paradiso, N. Arouna et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3389/fpls.2025.1676285",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "e50eb3c3-b881-4a2e-9e94-9e7c3ca7fcfc",
+    "title": "A Mars regolith simulant prototype (P_TO_MARS-1) exploiting the Piedmont (NW Italy) geology",
+    "authors": "Sara Di Felice, G. Servetto, Melissa Di Tria et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1144/jgs2025-068",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "76eeaba5-b573-4b51-9c56-4e16324792b4",
+    "title": "Peas on Mars: A study of garden pea, Lathyrus oleraceus (=Pisum sativum), growth in Martian regolith simulant treated with black soldier fly frass",
+    "authors": "J. E. Mendoza, N. Lemke, J. K. Tomberlin",
+    "year": 2025,
+    "url": "https://doi.org/10.1101/2025.11.14.688485",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "e4f26083-c42f-4eea-ad0b-bcd8ebf38d9c",
+    "title": "UPRS-1: A regolith simulant of Utopia Planitia, Mars",
+    "authors": "Yiming Diao, Honglei Lin, Juan Li et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.icarus.2025.116692",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -4421,6 +4525,20 @@
     "added_at": "2026-08-03"
   },
   {
+    "id": "46f61027-c555-412e-b25e-a18caefb2028",
+    "title": "Assessment of Fertility Dynamics and Nutritional Quality of Potato Tubers in a Compost-Amended Mars Regolith Simulant",
+    "authors": "A. Caporale, R. Paradiso, Mario Palladino et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3390/plants13050747",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -5934,6 +6052,56 @@
     "added_at": "2026-07-11"
   },
   {
+    "id": "cade0fdb-ea30-4f0e-a55d-6cbaae6208a9",
+    "title": "Similarity assessment of lunar highland simulant (LSS-ISAC-1) for lunar habitation materials and structures",
+    "authors": "T. Prabu, K. Muthukkumaran, I. Venugopal et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.pss.2023.105710",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "b5d15181-3298-4e6e-ae98-3b04745cdb31",
+    "title": "Green compost amendment improves potato plant performance on Mars regolith simulant as substrate for cultivation in space",
+    "authors": "A. Caporale, R. Paradiso, Greta Liuzzi et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s11104-022-05860-0",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "976c0ea9-e501-4202-9cf7-ac0f3d824c66",
+    "title": "Cell culture experiment using a Mars soil simulant for the detection of extraterrestrial life",
+    "authors": "K. Enya, S. Sasaki, N. Fujishiro et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1117/12.2655550",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
+    "id": "a8488cb4-a766-4b82-9a0e-53de0db51917",
+    "title": "Granular Mechanics of JSC-1 Mars Regolith Simulants",
+    "authors": "R. Ashtiani, Jesus Baca, Jacob Wessel et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1061/9780784484470.001",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -6961,6 +7129,20 @@
     "added_at": "2026-08-07"
   },
   {
+    "id": "1b38a700-6c6c-4120-9cf1-c5cdfb8104e8",
+    "title": "Research on the Mechanical Properties of Mojave Mars Simulant-1 (MMS-1) Soil",
+    "authors": "T. Fujikawa, Timothy Newson, Aly Ahmed et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.2472/jsms.71.41",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -7570,6 +7752,20 @@
     "added_at": "2026-08-08"
   },
   {
+    "id": "68b31985-12b0-4cc3-ac24-ee3e9212fcd1",
+    "title": "A Grain-Scale Study of Mojave Mars Simulant (MMS-1)",
+    "authors": "S. S. Kasyap, K. Senetakis",
+    "year": 2021,
+    "url": "https://doi.org/10.3390/s21144730",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
+  },
+  {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
     "title": "METZGER, CARBONACEOUS CHONDRITE\" Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -7968,6 +8164,20 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-03"
+  },
+  {
+    "id": "9bf91d70-deaa-450f-a457-ba5121edcc99",
+    "title": "Geo-mineralogical characterisation of Mars simulant MMS-1 and appraisal of substrate physico-chemical properties and crop performance obtained with variable green compost amendment rates.",
+    "authors": "A. Caporale, S. Vingiani, M. Palladino et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.scitotenv.2020.137543",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
   },
   {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
@@ -9048,6 +9258,18 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-07-04"
+  },
+  {
+    "id": "4279f7ef-7740-4df7-a321-c42a7cab6953",
+    "title": "NAO-1: Lunar Highland Soil Simulant Developed in China",
+    "authors": "Yongquan Li, Jianzhong Liu, Z. Yue",
+    "year": 2009,
+    "url": "https://doi.org/10.1061/(ASCE)0893-1321(2009)22:1(53)",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-09"
   },
   {
     "id": "ed149731-a162-4531-a6b5-a5f738af5c2f",
