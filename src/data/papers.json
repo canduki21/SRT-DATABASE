@@ -1254,6 +1254,20 @@
     "added_at": "2026-08-09"
   },
   {
+    "id": "3ed5c9df-5f87-4f1b-a704-18a3a1d9f050",
+    "title": "Gas Evolution during Thermal Processing of Regolith Simulants for ISRU Applications",
+    "authors": "Lucy G. Somervill, C. Franco, Jason A. Fischer et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.32865/2346/108918",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-10"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -2854,6 +2868,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-09"
+  },
+  {
+    "id": "f2f89283-5d83-42c4-be6a-36d45a1a1d00",
+    "title": "Moon BRICCSS: Moon Blocks Using Regolith ISRU for Corbelled Construction of Sustainable Shielding",
+    "authors": "Lanie McKinney, Palak B. Patel, Daniel Massimino et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1109/AERO63441.2025.11068677",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-10"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -4539,6 +4565,18 @@
     "added_at": "2026-08-09"
   },
   {
+    "id": "49f08cf1-c2b6-49aa-814b-927f51286e2b",
+    "title": "Investigating the Microscopic, Mechanical, and Thermal Properties of Vacuum-Sintered BH-1 Lunar Regolith Simulant for Lunar In-Situ Construction",
+    "authors": "Yu Jiang, Feng Li, Siqi Zhou et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.cscm.2024.e04132",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-10"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -6100,6 +6138,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-09"
+  },
+  {
+    "id": "81782306-fdff-40e9-aee5-576e8e133155",
+    "title": "Printability and hardening performance of three-dimensionally-printed geopolymer based on lunar regolith simulant for automated construction of lunar infrastructure",
+    "authors": "Feng Li, Rongrong Zhang, Siqi Zhou et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s11709-023-0003-0",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-10"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
