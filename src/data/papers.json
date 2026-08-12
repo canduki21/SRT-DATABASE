@@ -1268,6 +1268,41 @@
     "added_at": "2026-08-10"
   },
   {
+    "id": "ba026642-7ee4-40c8-b3ad-cf4f9bc9112a",
+    "title": "Experimental investigation of compaction behaviour of lunar highlands regolith simulant using a second-generation lunar vibratory drum roller",
+    "authors": "Akshay Kumar Agarwal, B. Scott, Mark Jaksa",
+    "year": 2026,
+    "url": "https://doi.org/10.31224/7897",
+    "keywords": [
+      "Regolith",
+      "Compaction",
+      "Drum",
+      "Vibration",
+      "Shear strength (soil)",
+      "Shear (geology)",
+      "Penetration (warfare)",
+      "Porosity"
+    ],
+    "simulants": [
+      "LHS-1E"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-12"
+  },
+  {
+    "id": "65153946-e15c-4acd-b054-c10d7a503ef6",
+    "title": "Regolith analysis via penetrometry: Contrasting planets and minor bodies",
+    "authors": "Alexander Smyth-Moore, Johan Borg, Naomi Murdoch et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.icarus.2026.117180",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-12"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4605,6 +4640,30 @@
     "category": "multi",
     "source": "auto-fetch",
     "added_at": "2026-08-11"
+  },
+  {
+    "id": "bb87ee93-811d-4c4b-b3a1-6ad61e070b8a",
+    "title": "The Synthesis and Characterization of Artificial Mars Regolith for Astrobiological and Geotechnical Applications",
+    "authors": "A. Sumanarathna",
+    "year": 2024,
+    "url": "https://doi.org/10.63119/mars.ea.01j2024",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-12"
+  },
+  {
+    "id": "dcadc2a9-a5ff-4c58-90f0-048c265d5324",
+    "title": "Calibration of Discrete Element Method Parameters for a High-Fidelity Lunar Regolith Simulant Considering the Effects of Realistic Particle Shape",
+    "authors": "Ningxi Zhou, Jian Chen, Ning Tian et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3390/ma17194789",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-12"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
