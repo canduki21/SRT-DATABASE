@@ -1303,6 +1303,29 @@
     "added_at": "2026-08-12"
   },
   {
+    "id": "0d48b4b5-616b-47b6-b4e5-1d356615186d",
+    "title": "Selection of beneficial fungi for plants with the potential to metabolize lunar and Martian regolith",
+    "authors": "Jéssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3389/fspas.2026.1784533",
+    "keywords": [
+      "Regolith",
+      "Abiotic component",
+      "Nutrient",
+      "Martian",
+      "Extraterrestrial life",
+      "Extremophile",
+      "Mars Exploration Program",
+      "Habitability",
+      "Martian soil",
+      "Microorganism"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -2930,6 +2953,20 @@
     "category": "multi",
     "source": "auto-fetch",
     "added_at": "2026-08-11"
+  },
+  {
+    "id": "e5edf036-5712-4bb3-8aa0-3e4bf906956d",
+    "title": "Short-term survival of tardigrades (Ramazzottius cf. varieornatus and Hypsibius exemplaris) in martian regolith simulants (MGS-1 and OUCM-1)",
+    "authors": "C. Bakermans, Matteo Vecchi, G. Pearce",
+    "year": 2025,
+    "url": "https://doi.org/10.1017/S1473550425100220",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -4666,6 +4703,18 @@
     "added_at": "2026-08-12"
   },
   {
+    "id": "33d5846e-bb5b-4121-a54f-0a20a5318848",
+    "title": "Modeling of Low Salinity Polymer (LSP) Interactions in Carbonates from Geochemical and Surface Chemistry Perspectives",
+    "authors": "A. M. Hassan, A. Adila, E. Al-Shalabi et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.2523/iptc-23687-ms",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -6255,6 +6304,66 @@
     "added_at": "2026-08-11"
   },
   {
+    "id": "461afec5-9707-404b-8200-968acd3438f2",
+    "title": "Probing the Mechanism of Hydrolytic Degradation of Nerve Agent Simulant with Zirconium-Based Metal–Organic Frameworks",
+    "authors": "Yijun Liao, Thomas R. Sheridan, Jian Liu et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1021/acscatal.3c04469",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "77dcb5ed-72dc-4df4-a9c8-a43d69a1e420",
+    "title": "Optimal skin simulant for ballistic testing.",
+    "authors": "R.A.G. Hes, J. Painter, G. Appleby-Thomas",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.forsciint.2023.111653",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "0079811b-ab26-43d1-93e0-2dd447d66dc1",
+    "title": "Finite element model to simulate impact on a soft tissue simulant",
+    "authors": "S. A. Imam, Angus C. Hughes, M. Carré et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s12283-023-00407-7",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "69ebb0b2-03c6-45a9-bbd8-646a11d2e22f",
+    "title": "HP-LSP: A reference of land surface phenology from fused Harmonized Landsat and Sentinel-2 with PhenoCam data",
+    "authors": "Khuong H. Tran, Xiaoyang Zhang, Y. Ye et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1038/s41597-023-02605-1",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "f5db06c5-989e-45a0-8c7f-460553e39a9a",
+    "title": "Wave Velocities and Poisson Ratio in a Loose Sandy Martian Regolith Simulant Under Low Stresses: 2. Theoretical Analysis",
+    "authors": "B. Caicedo, J. P. Castillo Betancourt, P. Delage et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1029/2023JE008008",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -7296,6 +7405,42 @@
     "added_at": "2026-08-09"
   },
   {
+    "id": "3fd1b057-e8b4-4174-8b9e-6202acb49ffc",
+    "title": "Aminal-linked Porphyrinic Covalent Organic Framework for Rapid Photocatalytic Decontamination of Mustard-Gas Simulant.",
+    "authors": "Qianyou Wang, Jing Liu, Man Cao et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1002/anie.202207130",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "a28bc67c-f741-427b-ac8f-96605c698f59",
+    "title": "Fe-Doped MoS2 Nanozyme for Antibacterial Activity and Detoxification of Mustard Gas Simulant.",
+    "authors": "Sk Rajab Ali, Mrinmoy De",
+    "year": 2022,
+    "url": "https://doi.org/10.1021/acsami.2c11245",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "ecc01446-7e0c-4135-8b5c-f32f7d1ee7b8",
+    "title": "Selective Photodetoxification of a Sulfur Mustard Simulant Using Plasmonic Aluminum Nanoparticles.",
+    "authors": "Minghe Lou, Aaron Bayles, H. Everitt et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1021/acs.nanolett.2c03188",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -7931,6 +8076,18 @@
     "added_at": "2026-08-11"
   },
   {
+    "id": "a2d2b6f9-4c40-4f3f-b1ae-3072235d387f",
+    "title": "Hollow Lindqvist-like-Shaped {V6} Cluster-Based Metal-Organic Framework for the Highly Efficient Detoxification of Mustard Gas Simulant.",
+    "authors": "Hongrui Tian, Zhong Zhang, Tianyi Dang et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1021/acs.inorgchem.0c02890",
+    "keywords": [],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
     "title": "METZGER, CARBONACEOUS CHONDRITE\" Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -8343,6 +8500,30 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-09"
+  },
+  {
+    "id": "915fefde-66c9-4c97-a5db-0043763a6570",
+    "title": "Protective Fabrics: Metal-Organic Framework Textiles for Rapid Photocatalytic Sulfur Mustard Simulant Detoxification",
+    "authors": "Dennis T. Lee, Jovenal D. Jamir, G. Peterson et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.matt.2019.11.005",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "bc1eef01-6f9e-4ebf-8025-66ed5cd8449c",
+    "title": "Determining the feasible conditions for processing lunar regolith simulant via laser powder bed fusion",
+    "authors": "L. Caprio, A. Demir, B. Previtali et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.addma.2019.101029",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
   },
   {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
@@ -9647,6 +9828,116 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "2c8f282b-fa61-478b-9e60-0134e4c6d25a",
+    "title": "Complete sequence, expression, and evolution of the hexamerin LSP-2 of Calliphora vicina.",
+    "authors": "T. Burmester, C. Kölling, B. Schroer et al.",
+    "year": 1998,
+    "url": "https://doi.org/10.1016/S0965-1748(97)00054-4",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "a5dfacf9-5d3e-44e9-902e-567e2f1be156",
+    "title": "Sequence, structure and evolution of the ecdysone-inducible Lsp-2 gene of Drosophila melanogaster.",
+    "authors": "Sylvie Mousseron‐Grall, J. Kejzlarova-Lepesant, T. Burmester et al.",
+    "year": 1997,
+    "url": "https://doi.org/10.1111/J.1432-1033.1997.00191.X",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "8d0ecd8c-e195-435c-b23e-98edf45a715d",
+    "title": "Overlapping Lsp‐2 gene sequences target expression to both the larval and adult Drosophila fat body",
+    "authors": "H. Beneš, Karama Neal, R. L. Willis et al.",
+    "year": 1996,
+    "url": "https://doi.org/10.1111/j.1365-2583.1996.tb00039.x",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "078bbf5f-1cb6-437f-9ead-6afd617fa4a5",
+    "title": "Characterization of an EcR/USP heterodimer target site that mediates ecdysone responsiveness of the Drosophila Lsp-2 gene",
+    "authors": "C. Antoniewski, M. O'grady, R. G. Edmondson et al.",
+    "year": 1995,
+    "url": "https://doi.org/10.1007/BF00290580",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "0d756dc2-6d08-4eba-904b-23cdb35ffa38",
+    "title": "Incorporation of arylphorins (LSP-1) and LSP-2 like protein into the integument of Ceratitis capitata during pupariation",
+    "authors": "S. Tsakas, P. Katsoris, K. Bourtzis et al.",
+    "year": 1991,
+    "url": "https://doi.org/10.1016/0020-1790(91)90104-M",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "d2ba9671-2f38-45da-8fba-398f6cd4bd0a",
+    "title": "Adult expression of the Drosophila Lsp-2 gene.",
+    "authors": "H. Beneš, R. G. Edmondson, P. Fink et al.",
+    "year": 1990,
+    "url": "https://doi.org/10.1016/0012-1606(90)90157-E",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "b82f3497-9b8b-4653-bf61-fecd149505f8",
+    "title": "Fat-body-specific expression of the Drosophila Lsp-2 gene.",
+    "authors": "H. Beneš, D. W. Spivey, J. Miles et al.",
+    "year": 1990,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1369981/",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
+    "id": "ca762fd9-a20c-4f74-9061-1f0e362de70a",
+    "title": "Histochemical analysis of the ecdysterone-regulated expression of the Drosophila genes P1 and LSP-2.",
+    "authors": "M. L. Paço-Larson, Y. Nakanishi, M. Levine et al.",
+    "year": 1986,
+    "url": "https://doi.org/10.1002/DVG.1020070405",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
+  },
+  {
     "id": "37e3573b-0478-4c8d-b528-3f10bd17e77a",
     "title": "Systematics of Ti isotopes in carbonaceous chondrite whole‐rock samples",
     "authors": "S. Niemeyer",
@@ -9657,6 +9948,20 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-07-04"
+  },
+  {
+    "id": "7e849f43-36ae-4467-a323-6fccfa3485f9",
+    "title": "The LSP-2 gene and a 5′ flanking sequence are independently expressed in Drosophila melanogaster",
+    "authors": "B. Yedvobnick, M. Levine",
+    "year": 1982,
+    "url": "https://doi.org/10.1038/297239A0",
+    "keywords": [],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-13"
   },
   {
     "id": "bec91524-8634-4801-9181-b1db3dde4bc6",
