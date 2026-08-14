@@ -1326,6 +1326,30 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "a48c119c-ff19-439e-9f80-bd50bfaa8cb8",
+    "title": "Defined Mars Media (DMM), a chemically defined simulant of the soluble macro- and micro- nutrients in Mars regolith for use in biological research",
+    "authors": "H. Greene, Una Nattermann, Devon A. Stork et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.64898/2026.04.24.719001",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "d8f877b7-2313-405f-8a08-3f1aafbcc7db",
+    "title": "Development and mechanical behavior of ice-cemented Martian Regolith Simulant (TJ-MRS01) for future mars sample-return engineering studies",
+    "authors": "Siji Sanlang, Kaihang Xu, Chao Wang et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1186/s40623-026-02439-2",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -2967,6 +2991,54 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-13"
+  },
+  {
+    "id": "21bbea56-f384-48ac-bb85-1ea2925c4e83",
+    "title": "Universal and economical experimental platform for colloidal mixing lab-on-chip in parabolic flight",
+    "authors": "Saran Seehanam, H. H. Aung, Rattanawalee Tobsri et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1038/s41598-025-04368-8",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "37326da6-7462-4c3d-ad44-2609e1c1b1b2",
+    "title": "UPREB: Universal Predictors of Regolith Behavior - Handling of Lunar Regolith for ISRU Payloads",
+    "authors": "Tehya F. Birch, Matthias Weber, Achim Seidel et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1149/ma2025-02673234mtgabs",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "409cc5ae-0d04-42cc-a9de-39e6e0ecbf09",
+    "title": "Resettable Land Anchor Launcher for Unmanned Rover Rescue and Slope Climbing",
+    "authors": "Aaryan Kainth, Andrew R. Krohn, Kyle A. Johnson et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1109/ICRA55743.2025.11128100",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "2656f75c-ffba-4751-97b5-0b9a7544f7df",
+    "title": "Making parts on Mars: Laser processing of iron contaminated by regolith simulant",
+    "authors": "Askar Kvaratskheliya, Aleksandr M. Filimonov, Bruno Bianchini et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.mtadv.2025.100566",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -4715,6 +4787,30 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "2131a05f-594d-495b-9805-26cf3c0ff3c2",
+    "title": "Planetary Soil Simulant Characterisation: NU-LHT-2M Study Case to Support Oxygen Extraction Lab Tests with a Low-Temperature Carbothermal Process",
+    "authors": "G. Zanotti, I. Troisi, A. Dottori et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3390/aerospace11040295",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "d8aa2d3b-805e-4699-b156-164ed4079a54",
+    "title": "A micromechanical model for estimating the shear modulus and damping ratio of loose sands under low stresses. Application to a Mars regolith simulant",
+    "authors": "B. Caicedo, M. J. Chaparro, J. P. Castillo Betancourt et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1680/jgeot.23.00244",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -6364,6 +6460,18 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "3d1c5c22-71e5-46fa-9641-012c3880508c",
+    "title": "Cold Operable Lunar Deployable Arm (COLDArm) System Development and Test",
+    "authors": "David Newill-Smith, Jennifer Shatts, R. P. Dillon et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/AERO55745.2023.10115649",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -7439,6 +7547,44 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-08-13"
+  },
+  {
+    "id": "1ee59e72-2e30-481c-8a09-fe4f7aeb111d",
+    "title": "Testing and Development of the Tethered-Permanently Shadowed Region EXplorer: A Rover Designed to Lay Superconducting Tether into Lunar Permanently Shaded Regions",
+    "authors": "M. Guadagno, Travis Wavrunek, Paul J. van Susante et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1089/space.2021.0056",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "2b65ff7a-08a8-4c53-8708-d8df0a111a4c",
+    "title": "Thermal Properties of the Mojave Mars Regolith Simulant in Mars-Like Atmospheric Conditions",
+    "authors": "S. Nagihara, P. Ngo, M. Grott",
+    "year": 2022,
+    "url": "https://doi.org/10.1007/s10765-022-03023-y",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
+    "id": "83b419c2-2dea-4dc9-9adb-009daaf8716a",
+    "title": "Can Peat Amendment of Mars Regolith Simulant Allow Soybean Cultivation in Mars Bioregenerative Life Support Systems?",
+    "authors": "A. Caporale, R. Paradiso, Greta Liuzzi et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.3390/plants12010064",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
   },
   {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
@@ -8526,6 +8672,20 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "64fb2c25-436b-424e-b63c-cad67fc2a286",
+    "title": "Mars Regolith Simulant Ameliorated by Compost as in situ Cultivation Substrate Improves Lettuce Growth and Nutritional Aspects",
+    "authors": "L. Duri, C. El-Nakhel, A. Caporale et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.3390/plants9050628",
+    "keywords": [],
+    "simulants": [
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -9473,6 +9633,18 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "e25e07ef-98b6-4160-806a-f959a473a769",
+    "title": "Mechanical Properties of Icy Mars Regolith Simulant: Assessment of a Potential ISRU Feedstock",
+    "authors": "R. Ash, J. Emery, B. Crane et al.",
+    "year": 2016,
+    "url": "https://doi.org/10.2514/6.2016-0227",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "3940b046-08d2-47a0-acc5-cb0961e8abf7",
     "title": "Ejecta Production in Microgravity from Low Velocity Impacts in Regolith",
     "authors": "Colwell et al",
@@ -9741,6 +9913,18 @@
     "added_at": "2026-06-11"
   },
   {
+    "id": "2f859cb6-d3f8-4215-9bc8-ba631f1467e5",
+    "title": "Development of the MASSE instrument: immunoassay detection of organic compounds in soil and Mars regolith simulant",
+    "authors": "D. Warmflash, D. Mckay, G. Fox et al.",
+    "year": 2003,
+    "url": "https://doi.org/10.1117/12.520552",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
+  },
+  {
     "id": "9240b1c3-0cc5-42b6-aa42-293089872ef0",
     "title": "Geologic setting and origin of Terra Meridiani hematite deposit on Mars",
     "authors": "B. M. Hynek, R. E. Arvidson, R. J. Phillips",
@@ -9826,6 +10010,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "cea014b7-2582-4a86-8bf2-9a5ae76d7020",
+    "title": "Preliminary Study of Greenhouse Grown Swiss Chard in Mixtures of Compost and Mars Regolith Simulant",
+    "authors": "M. Gilrain, J. Hogan, R. Cowan et al.",
+    "year": 1999,
+    "url": "https://doi.org/10.4271/1999-01-2021",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-14"
   },
   {
     "id": "2c8f282b-fa61-478b-9e60-0134e4c6d25a",
