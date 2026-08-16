@@ -1350,6 +1350,18 @@
     "added_at": "2026-08-14"
   },
   {
+    "id": "52d4fe97-710f-44e8-9c35-d7443e131b5b",
+    "title": "Tulip-Shaped Orbits for Lunar South-Pole PNT and Direct-to-Earth Relay Missions",
+    "authors": "Darin C. Koblick, Michael A. Casey",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2607.10482",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-16"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3039,6 +3051,26 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-14"
+  },
+  {
+    "id": "20b239fa-0bb9-46c7-81db-deb2f20ddb47",
+    "title": "The Passive Regolith Sampler: From Concept to Delivery to the Lunar Surface",
+    "authors": "Keith Javier Stober, Scott Dorrington, Dinuri Rupasinghe et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1007/s11214-025-01217-y",
+    "keywords": [
+      "Regolith",
+      "Planetary surface",
+      "Wax",
+      "Space exploration",
+      "Space research",
+      "Thermal",
+      "Space weathering"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-16"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
