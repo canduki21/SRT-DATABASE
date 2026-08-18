@@ -1362,6 +1362,18 @@
     "added_at": "2026-08-16"
   },
   {
+    "id": "34fcb8c6-2155-46ed-af1e-71517be6aa65",
+    "title": "Sustainable plant cultivation in Lunar regolith: Feasibility study",
+    "authors": "Jessica Ellen Lima Dias, Z. May, M. Mohai et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1556/446.2026.00321",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-18"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -11451,5 +11463,17 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-22"
+  },
+  {
+    "id": "ad925bbc-75aa-4ba5-8205-68326acd4486",
+    "title": "Effects of thermal cycling and mechanical characterization of an asteroid regolith simulant material",
+    "authors": "Sébastien Cohoner",
+    "year": null,
+    "url": "https://doi.org/10.70675/7662a486z9fd8z4c20za9a1z41da8fcf66f6",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-08-18"
   }
 ]
