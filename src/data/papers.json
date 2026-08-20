@@ -10001,6 +10001,31 @@
     "added_at": "2026-06-24"
   },
   {
+    "id": "2a540863-87cb-44d2-a6c1-35308705a36a",
+    "title": "Radiation Damage Analysis of the Swept Charge Device for the C1XS Instrument",
+    "authors": "Jason Gow",
+    "year": 2010,
+    "url": "https://oro.open.ac.uk/view/person/jpdg3.html",
+    "keywords": [
+      "Micrometeoroid",
+      "Spacecraft",
+      "Remote sensing",
+      "Aerospace engineering",
+      "Space debris",
+      "Physics",
+      "Radiation",
+      "Low earth orbit",
+      "Space environment",
+      "Orbital mechanics",
+      "Spectrometer",
+      "Space weather"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-20"
+  },
+  {
     "id": "25cc7e59-0bd4-46b1-9820-176ca5eb17b4",
     "title": "A synthesis of Martian aqueous mineralogy after 1 Mars year of observations from the Mars Reconnaissance Orbiter",
     "authors": "S. L. Murchie, John F. Mustard, B. L. Ehlmann et al.",
