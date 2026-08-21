@@ -1374,6 +1374,18 @@
     "added_at": "2026-08-18"
   },
   {
+    "id": "27f05db6-4e7f-4ead-b5d7-f7cfd6691ad9",
+    "title": "Meteor over New York City: Brines in a primitive CM asteroid",
+    "authors": "P. Jenniskens, M. Zolensky, Austin Gordon et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1126/sciadv.aea2105",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-08-21"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -5033,6 +5045,30 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-14"
+  },
+  {
+    "id": "1c1b5c2d-7084-4f66-93cc-6a4d867e86a5",
+    "title": "Spectro-photometry of Phobos simulants",
+    "authors": "A. Wargnier, Thomas Gautier, A. Doressoundiram et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.icarus.2024.116216",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-21"
+  },
+  {
+    "id": "34ca54ea-1d01-4e1a-9bac-2529431f40c5",
+    "title": "Microscale hydrogen, carbon, and nitrogen isotopic diversity of organic matter in asteroid Ryugu",
+    "authors": "L. Nittler, J. Barosch, Katherine D. Burgess et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.epsl.2024.118719",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-08-21"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
