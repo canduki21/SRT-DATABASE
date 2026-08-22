@@ -1386,6 +1386,26 @@
     "added_at": "2026-08-21"
   },
   {
+    "id": "228243c1-1ab5-4963-9598-d1c67fdc6fdf",
+    "title": "Role of amorphous phase, temperature fluctuations, and vacuum, on the performance of alkali-activated lunar regolith simulants",
+    "authors": "Anas Driouich, Ahmad Goudarzi, Francesco Santoro et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1617/s11527-026-03243-w",
+    "keywords": [
+      "Regolith",
+      "Amorphous solid",
+      "Vacuum level",
+      "Aluminium",
+      "Agglomerate",
+      "Geopolymer",
+      "Alkali metal"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-22"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3275,6 +3295,26 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-17"
+  },
+  {
+    "id": "ec427fd9-2446-4c11-b26d-8cdb3e3d9166",
+    "title": "Sample science traceability matrix for Perseverance ’s Mars Sample Return Collection",
+    "authors": "M-P Zorzano, A. D. Czaja, T. Bosak et al.",
+    "year": 2025,
+    "url": "https://eprints.bbk.ac.uk/id/eprint/57830/1/Zorzano%20et%20al.%20%282025%29%20Perseverance%20SSTM.pdf",
+    "keywords": [
+      "Mars Exploration Program",
+      "Sample (material)",
+      "Set (abstract data type)",
+      "Traceability",
+      "Matrix (chemical analysis)",
+      "Martian",
+      "Suite"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-22"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -9317,6 +9357,22 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-03"
+  },
+  {
+    "id": "03e1697f-cc6d-4433-9960-b07ba16ae7c7",
+    "title": "Nanostructuration de surface pour l'imagerie à résonance de plasmons de surface de haute résolution",
+    "authors": "Frederic A. Banville",
+    "year": 2019,
+    "url": "https://doi.org/10.70675/e2617ba7zca4bz43e0z9a58z0c8b7459cf85",
+    "keywords": [
+      "Physics",
+      "Humanities",
+      "Art"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-22"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
