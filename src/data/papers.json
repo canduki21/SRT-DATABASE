@@ -3344,6 +3344,30 @@
     "added_at": "2026-08-23"
   },
   {
+    "id": "2c059f91-60b3-46fa-988c-3ce979ebcf5a",
+    "title": "In-situ thermite combustion of micro magnesium fuel and lunar regolith simulant nanoparticles",
+    "authors": "Connor J. MacRobbie, Anqi Wang, Jean-Pierre Hickey et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.fuel.2024.133722",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-28"
+  },
+  {
+    "id": "2fd05dad-05cc-45f2-b061-fb69c58c77f6",
+    "title": "3D Printing of flexible parts out of lunar regolith simulant",
+    "authors": "Miranda Fateri, A. Frick, Constantin Schuler et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.actaastro.2025.02.003",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-28"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -5136,6 +5160,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-08-21"
+  },
+  {
+    "id": "dd7ecb8e-1031-430d-80e4-c43d14289595",
+    "title": "A Lab-scale Investigation of the Mars Kieffer Model",
+    "authors": "L. M. Mc Keown, M. Poston, S. Diniega et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3847/PSJ/ad67c8",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-28"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -10030,6 +10066,18 @@
     ]
   },
   {
+    "id": "11794bab-eee5-4db0-8fe0-0496e7ac5092",
+    "title": "Quantification of plume-soil interaction and excavation due to the Mars Science Laboratory Sky Crane Descent Phase",
+    "authors": "J. Vizcaino, M. Mehta",
+    "year": 2015,
+    "url": "https://doi.org/10.2514/6.2015-1649",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-28"
+  },
+  {
     "id": "ff335b98-0c56-4d4f-ab25-4c1f3a3dda05",
     "title": "Crawling ResearchGate.net to Measure Student/Supervisor Collaboration",
     "authors": "Zahra Hammook, J. Misic, V. Mišić",
@@ -10291,6 +10339,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-14"
+  },
+  {
+    "id": "282fcefb-b32e-4174-ac66-eb41998acdb1",
+    "title": "Mars Surveyor Program '01 Mars Environmental Compatibility Assessment wet chemistry lab: a sensor array for chemical analysis of the Martian soil.",
+    "authors": "S. Kounaves, Stefan R Lukow, B. Comeau et al.",
+    "year": 2003,
+    "url": "https://doi.org/10.1029/2002JE001978",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-08-28"
   },
   {
     "id": "9240b1c3-0cc5-42b6-aa42-293089872ef0",
