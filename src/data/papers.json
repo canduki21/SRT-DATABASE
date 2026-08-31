@@ -1421,6 +1421,25 @@
     "added_at": "2026-08-27"
   },
   {
+    "id": "c11a3c14-0462-49ad-9e5e-ca176cfb5937",
+    "title": "High-Fidelity Lunar Surface Simulation Platform : A Reproducible Excavation Interaction Testbed for ISRU at the Lunar South Pole",
+    "authors": "Yaqoob Alqassab, Massimiliano Vasile, Mohamed Alaseeri",
+    "year": 2026,
+    "url": "https://strathprints.strath.ac.uk/view/author/1615403.html>",
+    "keywords": [
+      "Excavation",
+      "Testbed",
+      "Workflow",
+      "Terrain",
+      "Resource (disambiguation)",
+      "Visualization"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-08-31"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -10388,6 +10407,22 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-07-04"
+  },
+  {
+    "id": "cf0452dd-4d76-4393-a7f7-ca3bf808e0f3",
+    "title": "Des marchés de droits d'épandage pour résorber les excédents au moindre coût : simulation dans les ZES de Bretagne",
+    "authors": "Philippe Le Goffe, Laure Rebuffet",
+    "year": 2002,
+    "url": "http://prodinra.inra.fr/ft/B8CBCFA7-975F-4EF7-94F4-37EE6E35BEC9",
+    "keywords": [
+      "Humanities",
+      "Political science",
+      "Art"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-08-31"
   },
   {
     "id": "dc4f93ad-ad06-4b93-b69f-16ab679a2f80",
