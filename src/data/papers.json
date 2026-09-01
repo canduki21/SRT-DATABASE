@@ -1440,6 +1440,28 @@
     "added_at": "2026-08-31"
   },
   {
+    "id": "559a5aca-c1ae-4ead-b747-916839a1734b",
+    "title": "Mainstream Lunar Regolith Simulants Incompletely Represent Lunar Bulk Chemistry─A Subcompositional Analysis of Lunar Prospector GRS Data",
+    "authors": "Aenghus C. Denvir, Harrison R. Coker, Borja B. Barcenilla et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1021/acsearthspacechem.6c00195",
+    "keywords": [
+      "Regolith",
+      "Lunar soil",
+      "Monte Carlo method",
+      "Lunar mare",
+      "Geology of the Moon",
+      "Confusion"
+    ],
+    "simulants": [
+      "LMS-1",
+      "LMS-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-01"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
