@@ -1462,6 +1462,26 @@
     "added_at": "2026-09-01"
   },
   {
+    "id": "e8eec56b-15b1-462d-a670-6767d9fafcc4",
+    "title": "Trafficability and excavatability of icy lunar regolith simulants quantified using cone penetration",
+    "authors": "Daniel Ricardo, Jane Hodgkinson, M. Akbar Rhamdhani et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s44461-026-00015-w",
+    "keywords": [
+      "Regolith",
+      "Penetration (warfare)",
+      "Microstructure",
+      "Water ice",
+      "Penetration depth",
+      "Lunar soil",
+      "Impact crater"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -6876,6 +6896,18 @@
     "added_at": "2026-08-14"
   },
   {
+    "id": "cddcd714-4dd1-499e-a426-506139c9b73a",
+    "title": "Origin of Isotopic Diversity among Carbonaceous Chondrites",
+    "authors": "J. Hellmann, J. Schneider, Elias Wölfer et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.3847/2041-8213/acc102",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -10065,6 +10097,18 @@
     "added_at": "2026-08-14"
   },
   {
+    "id": "dd9e775a-3a74-4f6c-a822-dc3f33fa7325",
+    "title": "Magnesium and 54Cr isotope compositions of carbonaceous chondrite chondrules – Insights into early disk processes",
+    "authors": "M. Olsen, D. Wielandt, M. Schiller et al.",
+    "year": 2016,
+    "url": "https://doi.org/10.1016/j.gca.2016.07.011",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
+  },
+  {
     "id": "3940b046-08d2-47a0-acc5-cb0961e8abf7",
     "title": "Ejecta Production in Microgravity from Low Velocity Impacts in Regolith",
     "authors": "Colwell et al",
@@ -10549,6 +10593,18 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "61681482-f5a4-4309-830b-a0f49702377d",
+    "title": "Mineralogy of carbonaceous chondrite clasts in HED achondrites and the Moon",
+    "authors": "M. Zolensky, M. Weisberg, P. Buchanan et al.",
+    "year": 1996,
+    "url": "https://doi.org/10.1111/J.1945-5100.1996.TB02093.X",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
+  },
+  {
     "id": "078bbf5f-1cb6-437f-9ead-6afd617fa4a5",
     "title": "Characterization of an EcR/USP heterodimer target site that mediates ecdysone responsiveness of the Drosophila Lsp-2 gene",
     "authors": "C. Antoniewski, M. O'grady, R. G. Edmondson et al.",
@@ -10561,6 +10617,30 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-13"
+  },
+  {
+    "id": "a4631697-d38b-4ddf-9bc9-1f226693608a",
+    "title": "Coolidge and Loongana 001: A new carbonaceous chondrite grouplet",
+    "authors": "G. Kallemeyn, A. Rubin",
+    "year": 1995,
+    "url": "https://doi.org/10.1111/J.1945-5100.1995.TB01207.X",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
+  },
+  {
+    "id": "3edde5c9-4706-4287-aec9-ba052a42b1bb",
+    "title": "THE COMPOSITIONAL CLASSIFICATION OF CHONDRITES. VI: THE CR CARBONACEOUS CHONDRITE GROUP",
+    "authors": "G. Kallemeyn, A. Rubin, J. Wasson",
+    "year": 1994,
+    "url": "https://doi.org/10.1016/0016-7037(94)90121-X",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
   },
   {
     "id": "0d756dc2-6d08-4eba-904b-23cdb35ffa38",
@@ -10603,6 +10683,18 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-13"
+  },
+  {
+    "id": "9842bfe7-9bcb-4dda-81f4-ccb23c5e65fd",
+    "title": "Lewis Cliff 85332: A unique carbonaceous chondrite",
+    "authors": "A. Rubin, G. Kallemeyn",
+    "year": 1990,
+    "url": "https://doi.org/10.1111/J.1945-5100.1990.TB00999.X",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-03"
   },
   {
     "id": "ca762fd9-a20c-4f74-9061-1f0e362de70a",
