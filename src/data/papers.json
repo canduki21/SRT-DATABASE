@@ -1482,6 +1482,18 @@
     "added_at": "2026-09-03"
   },
   {
+    "id": "69b22da8-10d2-4609-a0e1-7d2ffdc00d0b",
+    "title": "Threshold Velocity of Wind‐Blown Sand Under Jezero Crater‐Like Martian Conditions",
+    "authors": "Weiwei Hu, Jie Zhang, N. Huang et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1029/2025JE009470",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3429,6 +3441,33 @@
     "added_at": "2026-08-28"
   },
   {
+    "id": "a45e8b43-dd4a-4566-af01-19ef13213999",
+    "title": "Tribological Effects of Martian Regoliths on Stainless Steel with Natural and Composite Lip Seal and Packing Materials",
+    "authors": "G. Kalácska, G. Barkó, Tamás Bálint et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3390/lubricants13040136",
+    "keywords": [],
+    "simulants": [
+      "MGS-1",
+      "JEZ-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "ba0cee37-d4d7-484d-a8c7-b76249a30073",
+    "title": "2020 BX12—The Last Binary Asteroid Discovered at Arecibo",
+    "authors": "L. Zambrano-Marin, S. Marshall, E. Howell et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3847/PSJ/adbe39",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -5233,6 +5272,66 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-08-28"
+  },
+  {
+    "id": "01f6adf2-8ed0-4475-88a6-4df90060b948",
+    "title": "Asteroid (101955) Bennu in the laboratory: Properties of the sample collected by OSIRIS‐REx",
+    "authors": "D. Lauretta, H. Connolly, Joseph E. Aebersold et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14227",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "5e465a03-44db-4f33-8feb-b3f5ca722d1a",
+    "title": "Asteroid (101955) Bennu in the Laboratory: Properties of the Sample Collected by OSIRIS-REx",
+    "authors": "D. Lauretta, H. Connolly, Jr. et al.",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2404.12536",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "585a1841-4fe4-47d2-b9e3-454d6c6bd20a",
+    "title": "Micro-Raman and FTIR spectroscopic characterization of the first Turkish lunar regolith simulant",
+    "authors": "O. Unsalan, Y. Cengiz Toklu, C. Altunayar‐Unsalan et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1007/s10509-024-04383-7",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "5586ce8f-bb19-4aa5-ab2f-3dcdd217cdfb",
+    "title": "Radar and Optical Observations and Physical Modeling of Binary Near-Earth Asteroid 2018 EB",
+    "authors": "M. Brozović, L. Benner, S. Naidu et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3847/PSJ/ad4342",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "b953fb31-f7f6-4f47-a4c1-1a98d37fc9b2",
+    "title": "Physical and Mutual Orbit Characteristics of Near-Earth Binary Asteroid (163693) Atira",
+    "authors": "Aaron P. Deleon, S. Marshall, T. Becker et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3847/PSJ/ad7814",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -8023,6 +8122,18 @@
     "added_at": "2026-08-14"
   },
   {
+    "id": "200db254-3cc0-4ce6-9976-b58e37fdc5cc",
+    "title": "The Winchcombe meteorite—A regolith breccia from a rubble pile CM chondrite asteroid",
+    "authors": "M. Suttle, L. Daly, R. H. Jones et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1111/maps.13938",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -8670,6 +8781,18 @@
     "added_at": "2026-08-13"
   },
   {
+    "id": "af992b39-10bd-4cda-921c-86aad9fdb699",
+    "title": "UNDERSTANDING THE FORMATION OF CARBONATES ON MARS: EXPERIMENTAL APPROACH",
+    "authors": "C. Gil-Lozano, F. Baron, A. Gaudin et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.7185/gold2021.4414",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
     "title": "METZGER, CARBONACEOUS CHONDRITE\" Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -9122,6 +9245,66 @@
     "added_at": "2026-08-14"
   },
   {
+    "id": "4c32606a-575a-4d2c-b1da-09b9165827a9",
+    "title": "Temperature transformation of calcium and potassium Martian sulfates as seen by an Exomars 2022 RLS-like Raman instrument",
+    "authors": "J. Madariaga, J. Huidobro, C. García‐Florentino et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.5194/epsc2020-1063",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "5332005e-9c09-4434-83f9-e48eaae57f4b",
+    "title": "Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
+    "authors": "C. Avdellidou, A. DiDonna, C. Schultz et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.icarus.2020.113648",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "3f0f69f5-5bc6-4c43-87ae-bbb6dae42508",
+    "title": "Signatures of the post-hydration heating of highly aqueously altered CM carbonaceous chondrites and implications for interpreting asteroid sample returns",
+    "authors": "P. Lindgren, Martin R. Lee, R. Sparkes et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1016/j.gca.2020.08.021",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "45ffc704-9b51-46de-bbf1-b5eeca9cdf8a",
+    "title": "The nature of the CM parent asteroid regolith based on cosmic ray exposure ages",
+    "authors": "M. Zolensky, A. Takenouchi, T. Mikouchi et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1111/maps.13561",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
+    "id": "7eb45227-a72c-466d-94d5-0c8918c5ace8",
+    "title": "Hemispherical differences in the shape and topography of asteroid (101955) Bennu",
+    "authors": "M. Daly, O. Barnouin, J. Seabrook et al.",
+    "year": 2020,
+    "url": "https://doi.org/10.1126/sciadv.abd3649",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -9509,6 +9692,18 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-08-22"
+  },
+  {
+    "id": "5395e931-4983-49c7-ad1b-bc7f013d08af",
+    "title": "Homogeneous internal structure of CM-like asteroid (41) Daphne",
+    "authors": "B. Carry, F. Vachier, J. Berthier et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1051/0004-6361/201833898",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
@@ -10215,6 +10410,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "d484d6e2-a842-4c22-8c5c-f9b8a8f9f190",
+    "title": "Mineralogy and petrography of C asteroid regolith: The Sutter's Mill CM meteorite",
+    "authors": "M. Zolensky, T. Mikouchi, M. Fries et al.",
+    "year": 2014,
+    "url": "https://doi.org/10.1111/maps.12386",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-04"
   },
   {
     "id": "65d600dd-17b1-4210-acf4-87cd4ba2ed8b",
