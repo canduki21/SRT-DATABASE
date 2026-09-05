@@ -1494,6 +1494,20 @@
     "added_at": "2026-09-04"
   },
   {
+    "id": "bde19880-7f6a-4d5e-b0ae-3015999cfc3a",
+    "title": "Characterization of flow behavior of graded regolith-metal powder mixtures",
+    "authors": "S. M. Mahid, I. Jones, N. Kouraytem",
+    "year": 2026,
+    "url": "https://doi.org/10.1007/s10035-026-01665-5",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-05"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -10594,6 +10608,26 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-06-11"
+  },
+  {
+    "id": "77b7cfd7-46c0-4dcd-be75-2748ae70c7f5",
+    "title": "Geomorphology of Ma'adim Vallis, Mars, and associated paleolake basins",
+    "authors": "R. P. Irwin, A. D. Howard, T. A. Maxwell",
+    "year": 2004,
+    "url": "https://doi.org/10.1029/2004je002287",
+    "keywords": [
+      "Geology",
+      "Mars Exploration Program",
+      "Tributary",
+      "Geomorphology",
+      "Structural basin",
+      "Channel (broadcasting)",
+      "Impact crater"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-05"
   },
   {
     "id": "68674db9-e8a6-4cd5-895f-19c79601f6a7",
