@@ -3482,6 +3482,18 @@
     "added_at": "2026-09-04"
   },
   {
+    "id": "9541d3ca-8430-4c04-b61d-f1f25a5e019c",
+    "title": "Measurement of the three-dimensional shape and size distribution of 17 lunar regolith simulants: Simulant shape and size inter-comparison and simulant shape comparison with Apollo 11 and Apollo 14 lunar regolith",
+    "authors": "O. L. Kafka, N. Moser, A. N. Chiaramonti et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.icarus.2025.116542",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-06"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
