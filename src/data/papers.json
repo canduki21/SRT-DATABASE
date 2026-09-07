@@ -1508,6 +1508,28 @@
     "added_at": "2026-09-05"
   },
   {
+    "id": "2e1a0c78-d355-44a9-8190-bed64f5ffc5d",
+    "title": "Regolith simulant dataset for terrestrial and simulated extraterrestrial conditions using LIBS",
+    "authors": "Jakub Buday, Sergio Quiñonez, Pavel Pořízka et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41597-026-08260-6",
+    "keywords": [
+      "Regolith",
+      "Mars Exploration Program",
+      "Extraterrestrial life",
+      "Laser-induced breakdown spectroscopy",
+      "Exploration of Mars",
+      "Spectroscopy",
+      "Range (aeronautics)",
+      "Mars landing",
+      "Atmospheric pressure"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-07"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -7031,6 +7053,28 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-09-03"
+  },
+  {
+    "id": "800bb231-866e-4333-9b15-8044b8f40e33",
+    "title": "Abrasion Evaluation of Moon and Mars Simulants on Rotating Shaft/Sealing Materials: Simulants and Structural Materials Review and Selection",
+    "authors": "György Barkó, Gábor Kalácska, Róbert Keresztes et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.3390/lubricants11080334",
+    "keywords": [
+      "Abrasion (mechanical)",
+      "Tribology",
+      "Mars Exploration Program",
+      "Abrasive",
+      "Materials science",
+      "Exploration of Mars",
+      "Composite material",
+      "Metallurgy",
+      "Astrobiology"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-07"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
