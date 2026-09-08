@@ -10616,6 +10616,31 @@
     "added_at": "2026-08-11"
   },
   {
+    "id": "05c601de-bfc6-4988-8c12-ef4cb66abdba",
+    "title": "Timing of acid weathering on Mars: A kinetic‐thermodynamic assessment",
+    "authors": "M. Yu. Zolotov, М. В. Мироненко",
+    "year": 2007,
+    "url": "https://doi.org/10.1029/2006je002882",
+    "keywords": [
+      "Weathering",
+      "Dissolution",
+      "Kaolinite",
+      "Dissolved silica",
+      "Geology",
+      "Noachian",
+      "Goethite",
+      "Aqueous solution",
+      "Mineral",
+      "Precipitation",
+      "Ferrous",
+      "Mineralogy"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-08"
+  },
+  {
     "id": "ed149731-a162-4531-a6b5-a5f738af5c2f",
     "title": "Impact‐induced hydrothermal activity on early Mars",
     "authors": "O. Abramov, D. A. Kring",
