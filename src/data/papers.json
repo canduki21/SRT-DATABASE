@@ -1530,6 +1530,21 @@
     "added_at": "2026-09-07"
   },
   {
+    "id": "14d41786-3624-42d6-a711-3932a85a71f9",
+    "title": "Taguchi-Based DEM Calibration of Angle of Repose and Particle Scaling for LHS-1 and MGS-1 Simulants",
+    "authors": "D. Stephens, T. Letcher",
+    "year": 2026,
+    "url": "https://doi.org/10.2514/6.2026-1536",
+    "keywords": [],
+    "simulants": [
+      "LHS-1",
+      "MGS-1"
+    ],
+    "category": "multi",
+    "source": "auto-fetch",
+    "added_at": "2026-09-09"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3516,6 +3531,18 @@
     "added_at": "2026-09-06"
   },
   {
+    "id": "89f6fccf-07c4-4843-ad41-786b498dc398",
+    "title": "CM carbonaceous chondrite petrofabrics and their implications for understanding the relative chronologies of parent body deformation and aqueous alteration",
+    "authors": "C. Floyd, L. Jenkins, Pierre-Etienne Martin et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.14303",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-09"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -5382,6 +5409,18 @@
     "added_at": "2026-09-04"
   },
   {
+    "id": "c05666b6-bcfe-497d-987d-92e3596a0980",
+    "title": "Identification of hydroandradite in CM carbonaceous chondrites: Aproduct of calc-silicate alteration on C-complex asteroids",
+    "authors": "L. Jenkins, Martin R. Lee, L. Daly et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.2138/am-2024-9389",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-09"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -7075,6 +7114,18 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-09-07"
+  },
+  {
+    "id": "a590ee7d-96bc-424a-8063-67f75345fa42",
+    "title": "The bulk mineralogy, elemental composition, and water content of the Winchcombe CM chondrite fall",
+    "authors": "H. Bates, A. King, K. Shirley et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1111/maps.14043",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-09"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
@@ -10048,6 +10099,18 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-11"
+  },
+  {
+    "id": "47547c92-0abb-4b7b-aef5-286aaad96395",
+    "title": "The alteration history of the Jbilet Winselwan CM carbonaceous chondrite: An analog for C‐type asteroid sample return",
+    "authors": "A. J. King, Sara S. Russell, P. Schofield et al.",
+    "year": 2018,
+    "url": "https://doi.org/10.1111/maps.13224",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-09"
   },
   {
     "id": "bd2eb27a-f337-4ba2-8e74-3933ee186d08",
