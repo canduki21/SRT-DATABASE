@@ -1545,6 +1545,18 @@
     "added_at": "2026-09-09"
   },
   {
+    "id": "af0512b6-b0e1-4550-a05a-b28883f10c3c",
+    "title": "Impact of oxygen extraction from lunar regolith simulant using fluorinated plasma processes",
+    "authors": null,
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41598-026-67891-2",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-12"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3541,6 +3553,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-09-09"
+  },
+  {
+    "id": "d69f943a-ba88-4574-9edc-880a8cb48f1d",
+    "title": "Noble gases and nitrogen in material from asteroid Bennu",
+    "authors": "B. Marty, L. Zimmermann, E. Füri et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1111/maps.70058",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-12"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
