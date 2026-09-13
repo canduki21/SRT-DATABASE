@@ -1557,6 +1557,21 @@
     "added_at": "2026-09-12"
   },
   {
+    "id": "b081df2d-53ec-40b1-a39d-4ca089f7445f",
+    "title": "Feasibility of cereal crop cultivation on Mars: constraints, regolith limitations, and emerging mitigation strategies",
+    "authors": null,
+    "year": 2026,
+    "url": "https://doi.org/10.67784/0043",
+    "keywords": [],
+    "simulants": [
+      "MGS-1",
+      "MMS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3567,6 +3582,21 @@
     "added_at": "2026-09-12"
   },
   {
+    "id": "ff936364-92bd-41fe-97ca-6b289c8e77b7",
+    "title": "Physiological and Transcriptional Responses of Arabidopsis thaliana to Simulated Lunar and Martian Regolith Substrates",
+    "authors": "A'nya Buckner, Sarah Lang, Rafael Loureiro",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2505.13583",
+    "keywords": [],
+    "simulants": [
+      "LHS-2",
+      "MGS-1"
+    ],
+    "category": "multi",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -5445,6 +5475,34 @@
     "added_at": "2026-09-09"
   },
   {
+    "id": "7c0dd635-3c5e-4083-b53b-2653d8a7ff49",
+    "title": "Rhinocladiella similis: A Model Eukaryotic Organism for Astrobiological Studies on Microbial Interactions with Martian Soil Analogs",
+    "authors": "Alef Dos Santos, Júnia Schultz, Isabella Dal’Rio et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1021/jacsau.4c00869",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
+  },
+  {
+    "id": "3610556d-ab37-4de7-8fa0-daaa8aefa15e",
+    "title": "Martian Regolith Simulant-Based Geopolymers with Lithium Hydroxide Alkaline Activator",
+    "authors": "Jasper Vitse, Jiabin Li, L. Boehme et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3390/buildings14051365",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -7152,6 +7210,18 @@
     "added_at": "2026-09-09"
   },
   {
+    "id": "85920063-78bb-4c9d-999f-ff80e4416114",
+    "title": "Regolith of the Crater Floor Units, Jezero Crater, Mars: Textures, Composition, and Implications for Provenance",
+    "authors": "A. Vaughan, M. Minitti, E. Cardarelli et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1029/2022JE007437",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -8277,6 +8347,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-09-04"
+  },
+  {
+    "id": "f857831d-a779-4429-9c76-99c8117d3e43",
+    "title": "In Situ and Orbital Stratigraphic Characterization of the InSight Landing Site—A Type Example of a Regolith‐Covered Lava Plain on Mars",
+    "authors": "N. Warner, M. P. Golombek, V. Ansan et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1029/2022JE007232",
+    "keywords": [],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-13"
   },
   {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
