@@ -1572,6 +1572,23 @@
     "added_at": "2026-09-13"
   },
   {
+    "id": "1efdb1dd-7933-432d-8fc9-c9e5af2f25a8",
+    "title": "Planetary Rover Mobility Evaluation on Mars Regolith Simulants Using PyBullet Terrain Simulation",
+    "authors": "Okan Aktuğ, O. Unsalan",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/RAST69551.2026.11672473",
+    "keywords": [],
+    "simulants": [
+      "MGS-1C",
+      "MGS-1S",
+      "MGS-1",
+      "JEZ-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-16"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
