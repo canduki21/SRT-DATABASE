@@ -1589,6 +1589,39 @@
     "added_at": "2026-09-16"
   },
   {
+    "id": "4d62f4e4-eb3a-443b-87f3-0900882a5ea7",
+    "title": "Growth promoting bacterium Mokoshia rubra isolated from Antarctic soil stimulates growth and physiological parameters of Arabidopsis thaliana cultivated in lunar regolith analog",
+    "authors": "Davide Giordano, Pavel Coufalík, Oliwia Walkowiak et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5817/cpr2026-1-8",
+    "keywords": [
+      "Regolith",
+      "Nutrient",
+      "Photosynthesis",
+      "Arabidopsis thaliana",
+      "Autotroph",
+      "Chlorophyll",
+      "Chlorophyll fluorescence",
+      "Inoculation"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-18"
+  },
+  {
+    "id": "f855076d-14dc-4282-b835-f539696d9288",
+    "title": "Utilization of Extremophiles for Lunar Regolith Simulant Improvement: A Study on CELSS Compatibility from Physicochemical Equilibrium to Nutrient Supply",
+    "authors": "Wei Liang, Zhi-Hui Luan, Yongbin Wang et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3390/nitrogen7030093",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-18"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -9035,6 +9068,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-09-04"
+  },
+  {
+    "id": "70fcacc4-d093-41b6-8c0a-9941ab013060",
+    "title": "A Spectral Investigation of Aqueously and Thermally Altered CM, CM‐An, and CY Chondrites Under Simulated Asteroid Conditions for Comparison With OSIRIS‐REx and Hayabusa2 Observations",
+    "authors": "H. Bates, K. D. Donaldson Hanna, A. King et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.1029/2021JE006827",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-09-18"
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
