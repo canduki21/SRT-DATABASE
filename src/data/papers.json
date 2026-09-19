@@ -1622,6 +1622,20 @@
     "added_at": "2026-09-18"
   },
   {
+    "id": "2dec6f7b-68da-4782-9a96-9249f5abef92",
+    "title": "Soybean Growth and Nodulation Under Mars-Like Magnesium Sulfate Concentrations",
+    "authors": "Caio Felipe de Miranda-Costa, A. P. Avelino, C. T. Hotta",
+    "year": 2026,
+    "url": "https://doi.org/10.64898/2026.09.10.750807",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-09-19"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
