@@ -201,7 +201,7 @@
   {
     "id": "d1e4d263-a044-4c83-8525-9c93db36ba20",
     "title": "Many-to-many transfer of LIBS spectra across multiple experimental conditions",
-    "authors": "Antoni Pawłowicz, Jakub Vrábel, Jakub Buday et al.",
+    "authors": "Antoni Paw\u0142owicz, Jakub Vr\u00e1bel, Jakub Buday et al.",
     "year": 2026,
     "url": "https://doi.org/10.1039/d5ja00401b",
     "keywords": [
@@ -374,7 +374,7 @@
   {
     "id": "6bec38e6-1174-49fe-9246-d604097d3601",
     "title": "Spatial Dataset for Comparing 3D Measurement Techniques on Lunar Regolith Simulant Cones",
-    "authors": "Piotr Kędziorski, Janusz Kobaka, Jacek Katzer et al.",
+    "authors": "Piotr K\u0119dziorski, Janusz Kobaka, Jacek Katzer et al.",
     "year": 2026,
     "url": "https://doi.org/10.3390/data11010010",
     "keywords": [
@@ -395,7 +395,7 @@
   {
     "id": "f1538d64-a167-44fb-a978-fff36622b74a",
     "title": "MEMS X-ray source enables ultra-compact XRF spectrometry for in situ extraterrestrial surface analysis",
-    "authors": "Paweł Urbański, Piotr Szyszka",
+    "authors": "Pawe\u0142 Urba\u0144ski, Piotr Szyszka",
     "year": 2026,
     "url": "https://doi.org/10.1016/j.actaastro.2025.12.052",
     "keywords": [
@@ -436,7 +436,7 @@
   {
     "id": "39d9d095-2fbb-4728-aee4-0249cbeb08e3",
     "title": "Synthetic Mars Analog Soils are Efficient Photon Shielding Materials",
-    "authors": "Luiz F. Pires, J. W. Berrar, André Maurício Brinatti et al.",
+    "authors": "Luiz F. Pires, J. W. Berrar, Andr\u00e9 Maur\u00edcio Brinatti et al.",
     "year": 2026,
     "url": "https://doi.org/10.1007/s13538-026-02056-0",
     "keywords": [
@@ -458,7 +458,7 @@
   {
     "id": "76fc8ce4-637e-47a8-b587-019b46d674f8",
     "title": "Amazonian dark earth as a reservoir of stress-tolerant bacteria with potential relevance to future Mars exploration missions",
-    "authors": "Edward Joel Sealey, Anderson Santos de Freitas, Paula García-Martínez et al.",
+    "authors": "Edward Joel Sealey, Anderson Santos de Freitas, Paula Garc\u00eda-Mart\u00ednez et al.",
     "year": 2026,
     "url": "https://doi.org/10.21203/rs.3.rs-9578631/v1",
     "keywords": [
@@ -501,7 +501,7 @@
   {
     "id": "08804536-974e-4724-b7dc-c8e235efc972",
     "title": "Shaken, not stirred: Inefficient mixing of CM- and CI-like materials",
-    "authors": "S. Anderson, P. Vernazza, M. Brož",
+    "authors": "S. Anderson, P. Vernazza, M. Bro\u017e",
     "year": 2026,
     "url": "https://doi.org/10.1051/0004-6361/202557394",
     "keywords": [],
@@ -512,7 +512,7 @@
   },
   {
     "id": "2d692082-c98e-49e2-bb0a-f8ce21f018bb",
-    "title": "Anhydrous minerals in asteroid Bennu: Evidence for well‐preserved primordial components",
+    "title": "Anhydrous minerals in asteroid Bennu: Evidence for well\u2010preserved primordial components",
     "authors": "S. S. Russell, I. Franchi, T. Salge et al.",
     "year": 2026,
     "url": "https://doi.org/10.1111/maps.70151",
@@ -633,7 +633,7 @@
   },
   {
     "id": "fed48c7e-ff3d-4ed2-8242-574f64ab8dee",
-    "title": "Maize (Zea mays L.) survival on Mars depends on regolith’s chemical composition rather than reduced gravity or lack of magnetic field",
+    "title": "Maize (Zea mays L.) survival on Mars depends on regolith\u2019s chemical composition rather than reduced gravity or lack of magnetic field",
     "authors": "G. Servetto, Paolo Botta, G. Rossi et al.",
     "year": 2026,
     "url": "https://doi.org/10.1038/s41598-026-50840-4",
@@ -646,7 +646,7 @@
   {
     "id": "d32dfe4e-f0a8-4f73-914c-b3b7757ecdaf",
     "title": "An Optimization to Increase Bacterial DNA Yield in a Lunar Regolith Simulant",
-    "authors": "Jéssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
+    "authors": "J\u00e9ssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
     "year": 2026,
     "url": "https://doi.org/10.2478/gsr-2026-0002",
     "keywords": [],
@@ -659,7 +659,7 @@
   },
   {
     "id": "d72dfd19-8acf-47c6-98e5-ae4e8d71e3ea",
-    "title": "Finite-Element Modeling of Additively Manufactured Regolith-Filled Polyether–Ether–Ketone (PEEK)",
+    "title": "Finite-Element Modeling of Additively Manufactured Regolith-Filled Polyether\u2013Ether\u2013Ketone (PEEK)",
     "authors": "Mohammad Azami, Pierre-Lucas Aubin-Fournier, Krzysztof Skonieczny",
     "year": 2026,
     "url": "https://www.preprints.org/manuscript/b5af9738dc4913de4ce1daed5d0c8944/v1",
@@ -809,7 +809,7 @@
   {
     "id": "eaa6aa4b-a07c-41c9-aa53-b93656641bda",
     "title": "Mineralogical characterization of an Apollo 16 sample and lunar simulants through Mid-Infrared spectral analysis",
-    "authors": "Mariarca D’Aniello, Océane Barraud, Giulia Alemanno et al.",
+    "authors": "Mariarca D\u2019Aniello, Oc\u00e9ane Barraud, Giulia Alemanno et al.",
     "year": 2026,
     "url": "https://doi.org/10.5194/epsc2026-948",
     "keywords": [
@@ -860,7 +860,7 @@
   {
     "id": "31e4721a-5102-42b4-afde-b1d8611f1ffb",
     "title": "Lunar regolith simulant for cultivation of plants: seed germination and early growth study of plant vitality",
-    "authors": "Štěpán Krejčí, Hector A. Stavrakakis, P. Coufalík et al.",
+    "authors": "\u0160t\u011bp\u00e1n Krej\u010d\u00ed, Hector A. Stavrakakis, P. Coufal\u00edk et al.",
     "year": 2026,
     "url": "https://doi.org/10.1017/S1473550426100275",
     "keywords": [],
@@ -913,7 +913,7 @@
   {
     "id": "5bdf09fc-354f-47e1-b654-257442c5fee6",
     "title": "Vibrational Circular Dichroism of Organics in Planetary Analog Minerals: Laboratory Constraints for Chiral Detection in Small Body Environments",
-    "authors": "Mariya Krasteva, John Carter, Jean-Valère Naubron et al.",
+    "authors": "Mariya Krasteva, John Carter, Jean-Val\u00e8re Naubron et al.",
     "year": 2026,
     "url": "https://doi.org/10.5194/epsc2026-1169",
     "keywords": [
@@ -976,7 +976,7 @@
   },
   {
     "id": "396a529b-0d3d-4200-bded-1fa177a43004",
-    "title": "Mineral Weathering Experiments for Terrestrial Planetary Analogs in a Continuous‐Flow Reactor",
+    "title": "Mineral Weathering Experiments for Terrestrial Planetary Analogs in a Continuous\u2010Flow Reactor",
     "authors": "J. Weber, Eduardo Martinez, Rachel Y. Sheppard et al.",
     "year": 2026,
     "url": "https://doi.org/10.1155/gfl/6180315",
@@ -1007,7 +1007,7 @@
   },
   {
     "id": "7a2635c0-59a1-465a-98e7-3143b4ef464f",
-    "title": "Support to MMX mission: Impact cratering and exogenous material contamination on Phobos simulants ",
+    "title": "Support to MMX mission: Impact cratering and exogenous material contamination on Phobos simulants\u00a0",
     "authors": "Chrysa Avdellidou, Emelia Branagan-Harris, Vassi Spathis et al.",
     "year": 2026,
     "url": "https://doi.org/10.5194/epsc2026-1147",
@@ -1102,7 +1102,7 @@
   },
   {
     "id": "447b9ec6-2a4f-4262-81fb-371fd3085e6c",
-    "title": "Modification of Thermal Control Surface Thermo-Optical Properties by Lunar Dust – an Empirical Approach for Thermal Engineers",
+    "title": "Modification of Thermal Control Surface Thermo-Optical Properties by Lunar Dust \u2013 an Empirical Approach for Thermal Engineers",
     "authors": "Philipp Hager",
     "year": 2026,
     "url": "https://doi.org/10.32865/2346/109100",
@@ -1125,7 +1125,7 @@
   {
     "id": "b7b981b4-2bb7-41d1-bb3e-6ab1a2b248bc",
     "title": "Metal Recovery from Lunar Regolith via Deep Eutectic Solvent Electrolysis for In Situ Resource Utilization",
-    "authors": "V. Cvetković, Nataša M. Petrović, Ksenija Milicevic Neumann et al.",
+    "authors": "V. Cvetkovi\u0107, Nata\u0161a M. Petrovi\u0107, Ksenija Milicevic Neumann et al.",
     "year": 2026,
     "url": "https://doi.org/10.3390/ma19143120",
     "keywords": [],
@@ -1196,7 +1196,7 @@
   {
     "id": "2a079e87-1bf9-4cbb-9e67-01656f16faeb",
     "title": "Validation of proton energy loss in regolith simulants: PSI Proton Irradiation Facility (PIF) beam tests and MRADSIM simulations",
-    "authors": "Zehra Güzel, M. Waqas, B. Alpat et al.",
+    "authors": "Zehra G\u00fczel, M. Waqas, B. Alpat et al.",
     "year": 2026,
     "url": "https://doi.org/10.1016/j.nimb.2026.166252",
     "keywords": [
@@ -1218,7 +1218,7 @@
   {
     "id": "cbe72b74-7daa-4ca3-8d36-cad84e0b00e7",
     "title": "Guidelines for Estimating the 3D Size and Shape of Boulders from Planetary Surface Images",
-    "authors": "Alexia Duchêne, N. Murdoch, C. Robin et al.",
+    "authors": "Alexia Duch\u00eane, N. Murdoch, C. Robin et al.",
     "year": 2026,
     "url": "https://doi.org/10.3847/PSJ/ae5d37",
     "keywords": [],
@@ -1305,7 +1305,7 @@
   {
     "id": "0d48b4b5-616b-47b6-b4e5-1d356615186d",
     "title": "Selection of beneficial fungi for plants with the potential to metabolize lunar and Martian regolith",
-    "authors": "Jéssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
+    "authors": "J\u00e9ssica Carneiro Oliveira, Rafael Loureiro, Andrew Palmer et al.",
     "year": 2026,
     "url": "https://doi.org/10.3389/fspas.2026.1784533",
     "keywords": [
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "559a5aca-c1ae-4ead-b747-916839a1734b",
-    "title": "Mainstream Lunar Regolith Simulants Incompletely Represent Lunar Bulk Chemistry─A Subcompositional Analysis of Lunar Prospector GRS Data",
+    "title": "Mainstream Lunar Regolith Simulants Incompletely Represent Lunar Bulk Chemistry\u2500A Subcompositional Analysis of Lunar Prospector GRS Data",
     "authors": "Aenghus C. Denvir, Harrison R. Coker, Borja B. Barcenilla et al.",
     "year": 2026,
     "url": "https://doi.org/10.1021/acsearthspacechem.6c00195",
@@ -1483,7 +1483,7 @@
   },
   {
     "id": "69b22da8-10d2-4609-a0e1-7d2ffdc00d0b",
-    "title": "Threshold Velocity of Wind‐Blown Sand Under Jezero Crater‐Like Martian Conditions",
+    "title": "Threshold Velocity of Wind\u2010Blown Sand Under Jezero Crater\u2010Like Martian Conditions",
     "authors": "Weiwei Hu, Jie Zhang, N. Huang et al.",
     "year": 2026,
     "url": "https://doi.org/10.1029/2025JE009470",
@@ -1510,7 +1510,7 @@
   {
     "id": "2e1a0c78-d355-44a9-8190-bed64f5ffc5d",
     "title": "Regolith simulant dataset for terrestrial and simulated extraterrestrial conditions using LIBS",
-    "authors": "Jakub Buday, Sergio Quiñonez, Pavel Pořízka et al.",
+    "authors": "Jakub Buday, Sergio Qui\u00f1onez, Pavel Po\u0159\u00edzka et al.",
     "year": 2026,
     "url": "https://doi.org/10.1038/s41597-026-08260-6",
     "keywords": [
@@ -1574,7 +1574,7 @@
   {
     "id": "1efdb1dd-7933-432d-8fc9-c9e5af2f25a8",
     "title": "Planetary Rover Mobility Evaluation on Mars Regolith Simulants Using PyBullet Terrain Simulation",
-    "authors": "Okan Aktuğ, O. Unsalan",
+    "authors": "Okan Aktu\u011f, O. Unsalan",
     "year": 2026,
     "url": "https://doi.org/10.1109/RAST69551.2026.11672473",
     "keywords": [],
@@ -1591,7 +1591,7 @@
   {
     "id": "4d62f4e4-eb3a-443b-87f3-0900882a5ea7",
     "title": "Growth promoting bacterium Mokoshia rubra isolated from Antarctic soil stimulates growth and physiological parameters of Arabidopsis thaliana cultivated in lunar regolith analog",
-    "authors": "Davide Giordano, Pavel Coufalík, Oliwia Walkowiak et al.",
+    "authors": "Davide Giordano, Pavel Coufal\u00edk, Oliwia Walkowiak et al.",
     "year": 2026,
     "url": "https://doi.org/10.5817/cpr2026-1-8",
     "keywords": [
@@ -1638,7 +1638,7 @@
   {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
-    "authors": "G. Steinbrügge, G. Patterson",
+    "authors": "G. Steinbr\u00fcgge, G. Patterson",
     "year": 2025,
     "url": "https://ui.adsabs.harvard.edu/abs/2022AAS...24014205N/abstract",
     "keywords": [
@@ -1707,7 +1707,7 @@
   },
   {
     "id": "d6e9877d-9ad4-4ccf-994e-9635cc8ed42e",
-    "title": "Effect of Regolith–Ice Stratigraphy and Laser Weathering on Ultraviolet–Visible–Near-infrared Detection of Lunar Water Ice",
+    "title": "Effect of Regolith\u2013Ice Stratigraphy and Laser Weathering on Ultraviolet\u2013Visible\u2013Near-infrared Detection of Lunar Water Ice",
     "authors": "A. Vidwans, Jeffrey J. Gillis",
     "year": 2025,
     "url": "https://iopscience.iop.org/article/10.3847/PSJ/ae1baa",
@@ -1734,7 +1734,7 @@
   },
   {
     "id": "e3516382-40fd-4d3a-bf32-2bb68167e20c",
-    "title": "Magnetic beneficiation – A novel approach to facilitate additive manufacturing of lunar regolith ceramics by vat photopolymerization",
+    "title": "Magnetic beneficiation \u2013 A novel approach to facilitate additive manufacturing of lunar regolith ceramics by vat photopolymerization",
     "authors": "Maxim Isachenkov, Antonio Mattia Grande, Marco Mariani et al.",
     "year": 2025,
     "url": "https://www.sciencedirect.com/science/article/pii/S2214860425002271",
@@ -1809,7 +1809,7 @@
   {
     "id": "24b83d21-2667-4997-bd88-47111973ab21",
     "title": "Identifying an efficient endpoint for oxygen extraction from lunar regolith simulant pellets using molten salt electrolysis",
-    "authors": "Bethany A. Lomax, Áron Selmeci, Alexander Rützler et al.",
+    "authors": "Bethany A. Lomax, \u00c1ron Selmeci, Alexander R\u00fctzler et al.",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.actaastro.2025.04.049",
     "keywords": [
@@ -1833,7 +1833,7 @@
   },
   {
     "id": "a8272405-0534-49b2-bbea-dcc6e4b9a143",
-    "title": "Magnetic beneficiation – A novel approach to facilitate additive manufacturing of lunar regolith ceramics by vat photopolymerization",
+    "title": "Magnetic beneficiation \u2013 A novel approach to facilitate additive manufacturing of lunar regolith ceramics by vat photopolymerization",
     "authors": "Maxim Isachenkov, Antonio Mattia Grande, Marco Mariani et al.",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.addma.2025.104863",
@@ -1905,7 +1905,7 @@
   {
     "id": "c0e03b27-6a74-44e4-8f2e-c2b578ace833",
     "title": "Improved additive manufacturing of lunar regolith simulant via digital light processing for in-situ resource utilization on the moon",
-    "authors": "Adolor David Aiyeki, А. А. Тихонов, Svyatoslav Chugunov",
+    "authors": "Adolor David Aiyeki, \u0410. \u0410. \u0422\u0438\u0445\u043e\u043d\u043e\u0432, Svyatoslav Chugunov",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.actaastro.2025.04.009",
     "keywords": [
@@ -1927,7 +1927,7 @@
   {
     "id": "9c939cfc-ef14-481d-83d1-4711ac7455d4",
     "title": "Determination of the Dynamic Angle of Repose of Lunar Regolith Simulants",
-    "authors": "Mateusz Pawłowski, Damian Pietrusiak, Jakub Wróbel et al.",
+    "authors": "Mateusz Paw\u0142owski, Damian Pietrusiak, Jakub Wr\u00f3bel et al.",
     "year": 2025,
     "url": "https://doi.org/10.3390/geosciences15060207",
     "keywords": [
@@ -2061,7 +2061,7 @@
   },
   {
     "id": "12bc118a-1197-4658-b969-b5b6dcb790b0",
-    "title": "Strongly cohesive lunar soil identified at the Chang’e-6 landing site",
+    "title": "Strongly cohesive lunar soil identified at the Chang\u2019e-6 landing site",
     "authors": "Shengwen Qi, Lihui Li, Xiaokun Hou et al.",
     "year": 2025,
     "url": "https://doi.org/10.1038/s41550-025-02715-3",
@@ -2143,7 +2143,7 @@
   {
     "id": "61aeb2e9-8872-470a-946f-002f68dc834c",
     "title": "Wear investigation of PTFE, PEEK and UHMWPE-based reciprocating shaft seal materials with lunar/Martian regolith simulants",
-    "authors": "Ádám Kalácska, Vivien Parmentier, Patrick De Baets et al.",
+    "authors": "\u00c1d\u00e1m Kal\u00e1cska, Vivien Parmentier, Patrick De Baets et al.",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.wear.2025.205791",
     "keywords": [
@@ -2217,7 +2217,7 @@
   {
     "id": "37a85b06-2367-468e-b14f-1c2586017e6e",
     "title": "Simulation Experiments on LMS-1D Regolith Particles Precipitation in a Gyrotronic Discharge and Their Impact on Solar Panels of Space Vehicles",
-    "authors": "A. S. Sokolov, В. Д. Степахин, Н. Н. Скворцова et al.",
+    "authors": "A. S. Sokolov, \u0412. \u0414. \u0421\u0442\u0435\u043f\u0430\u0445\u0438\u043d, \u041d. \u041d. \u0421\u043a\u0432\u043e\u0440\u0446\u043e\u0432\u0430 et al.",
     "year": 2025,
     "url": "https://doi.org/10.1007/s10891-025-03090-6",
     "keywords": [
@@ -2243,7 +2243,7 @@
   {
     "id": "5e9745fd-861f-4f8e-ba4e-a1cbecc29cd8",
     "title": "Laser Melting vs. Laser Sintering: Large Area Heat Processing of Lunar South Pole Simulant",
-    "authors": "Juan-Carlos Ginés-Palomares, J. Baasch, S. Stapperfend et al.",
+    "authors": "Juan-Carlos Gin\u00e9s-Palomares, J. Baasch, S. Stapperfend et al.",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.amf.2025.200226",
     "keywords": [],
@@ -2314,7 +2314,7 @@
   },
   {
     "id": "4bb248b8-e272-439c-a931-a40ae181f903",
-    "title": "Ultra-depleted mantle source of basalts from the South Pole–Aitken basin",
+    "title": "Ultra-depleted mantle source of basalts from the South Pole\u2013Aitken basin",
     "authors": "Qin Zhou, Wei Yang, Zhuyin Chu et al.",
     "year": 2025,
     "url": "https://doi.org/10.1038/s41586-025-09131-7",
@@ -2547,7 +2547,7 @@
   {
     "id": "627f5543-8459-4ede-893e-af947b2e9ebe",
     "title": "Different arrival times of CM- and CI-like bodies from the outer Solar System in the asteroid belt",
-    "authors": "S. Anderson, P. Vernazza, M. Brož",
+    "authors": "S. Anderson, P. Vernazza, M. Bro\u017e",
     "year": 2025,
     "url": "https://doi.org/10.1038/s41550-025-02635-2",
     "keywords": [],
@@ -2570,7 +2570,7 @@
   },
   {
     "id": "6353a505-6e1f-4c9e-9087-bb90f2bc42d5",
-    "title": "The variety and origin of materials accreted by Bennu’s parent asteroid",
+    "title": "The variety and origin of materials accreted by Bennu\u2019s parent asteroid",
     "authors": "J. J. Barnes, A. Nguyen, F. Abernethy et al.",
     "year": 2025,
     "url": "https://doi.org/10.1038/s41550-025-02631-6",
@@ -2632,7 +2632,7 @@
   {
     "id": "d74f176f-dbd0-432c-8efa-368031b6da98",
     "title": "Assessment of methods and strategies for lunar dust mitigation experiments within a low-fidelity test environment",
-    "authors": "Moritz Gewehr, Amran Al-Barwani, Daniel Bölke et al.",
+    "authors": "Moritz Gewehr, Amran Al-Barwani, Daniel B\u00f6lke et al.",
     "year": 2025,
     "url": "https://doi.org/10.1007/s12567-025-00618-7",
     "keywords": [
@@ -2657,7 +2657,7 @@
   {
     "id": "ae6cfc1f-8d75-4da0-9d3a-578f5adbb025",
     "title": "Distinctive impact responses of extraterrestrial regolith simulants: Insights from crater morphology classification and granular dynamics through machine learning and x-ray computed tomography",
-    "authors": "Takuma Ishii, Arata Kioka, Jyh‐Jaan Steven Huang et al.",
+    "authors": "Takuma Ishii, Arata Kioka, Jyh\u2010Jaan Steven Huang et al.",
     "year": 2025,
     "url": "https://doi.org/10.1063/5.0252502",
     "keywords": [
@@ -2682,8 +2682,8 @@
   },
   {
     "id": "b2e71166-e0a0-4512-ac42-11b4bc858cf0",
-    "title": "Vibration-induced size segregation of lunar regolith and simulants for in situ resource utilisation (ISRU)",
-    "authors": "J.N. Rasera, Luis Salinas‐Farran, S. O. Starr et al.",
+    "title": "Vibration-induced size segregation of lunar regolith and simulants for in situ resource utilisation\u00a0(ISRU)",
+    "authors": "J.N. Rasera, Luis Salinas\u2010Farran, S. O. Starr et al.",
     "year": 2025,
     "url": "https://doi.org/10.1007/s44461-025-00004-5",
     "keywords": [
@@ -2855,7 +2855,7 @@
   {
     "id": "41a96220-b92f-4cef-9ac9-0a7828f9351e",
     "title": "Abrasion Behaviour of Natural and Composite Polytetrafluoroethylene Seal Materials Against Stainless Steel in Lunar Regolith Conditions",
-    "authors": "György Barkó, G. Kalácska, Tamás Bálint et al.",
+    "authors": "Gy\u00f6rgy Bark\u00f3, G. Kal\u00e1cska, Tam\u00e1s B\u00e1lint et al.",
     "year": 2025,
     "url": "https://doi.org/10.3390/lubricants13020043",
     "keywords": [],
@@ -2919,7 +2919,7 @@
   },
   {
     "id": "024afa24-d778-48b1-aa9a-763cd511b6a6",
-    "title": "Near‐ and mid‐infrared spectral diversity in the Aguas Zarcas carbonaceous chondrite and implications for inferring aqueous processes on primitive asteroids using remote sensing",
+    "title": "Near\u2010 and mid\u2010infrared spectral diversity in the Aguas Zarcas carbonaceous chondrite and implications for inferring aqueous processes on primitive asteroids using remote sensing",
     "authors": "C. Schultz, R. E. Milliken, J. Boesenberg et al.",
     "year": 2025,
     "url": "https://doi.org/10.1111/maps.14339",
@@ -2931,7 +2931,7 @@
   },
   {
     "id": "5e02d694-98e1-4877-9813-9f868834a9fe",
-    "title": "VIS‐to‐MIR reflectance and Raman spectroscopy of the CM2 NWA 12184 carbonaceous chondrite",
+    "title": "VIS\u2010to\u2010MIR reflectance and Raman spectroscopy of the CM2 NWA 12184 carbonaceous chondrite",
     "authors": "A. Galiano, F. Dirri, M. Ferrari et al.",
     "year": 2025,
     "url": "https://doi.org/10.1111/maps.14315",
@@ -2993,7 +2993,7 @@
   {
     "id": "6abebc72-f87a-47b0-8033-e6aa4956dac8",
     "title": "Biomining of lunar regolith simulant EAC-1 A with the fungus Penicillium simplicissimum",
-    "authors": "João Figueira, Stella Koch, D. W. Müller et al.",
+    "authors": "Jo\u00e3o Figueira, Stella Koch, D. W. M\u00fcller et al.",
     "year": 2025,
     "url": "https://doi.org/10.1186/s40694-025-00201-z",
     "keywords": [],
@@ -3065,7 +3065,7 @@
   },
   {
     "id": "481ad904-d20b-4b12-a8a4-be3b9316c2b3",
-    "title": "Planetary Protection of Planet Mars – Potential risks of contamination by sulphate-reducing organisms from Earth?",
+    "title": "Planetary Protection of Planet Mars \u2013 Potential risks of contamination by sulphate-reducing organisms from Earth?",
     "authors": "Gibis, F., Beblo-Vranesevic, K., Rettberg, P. et al.",
     "year": 2025,
     "url": "https://elib.dlr.de/213548/",
@@ -3126,8 +3126,8 @@
   },
   {
     "id": "36107496-ed24-4a13-b196-5f78715f70c9",
-    "title": "Sample Science Traceability Matrix for <i>Perseverance</i> ’s Mars Sample Return Collection",
-    "authors": "María‐Paz Zorzano, Andrew D. Czaja, Tanja Bosak et al.",
+    "title": "Sample Science Traceability Matrix for <i>Perseverance</i> \u2019s Mars Sample Return Collection",
+    "authors": "Mar\u00eda\u2010Paz Zorzano, Andrew D. Czaja, Tanja Bosak et al.",
     "year": 2025,
     "url": "https://doi.org/10.1177/15311074251382585",
     "keywords": [
@@ -3158,8 +3158,8 @@
   },
   {
     "id": "d5a262e2-d284-47fe-8e0d-7e3479e95ad4",
-    "title": "Regolith as a Refuge: Differential Survival of Bacteriophage Qβ in Mars Analog Environments",
-    "authors": "Miguel Arribas Tiemblo, Alicia Rodríguez-Moreno, F. Gómez et al.",
+    "title": "Regolith as a Refuge: Differential Survival of Bacteriophage Q\u03b2 in Mars Analog Environments",
+    "authors": "Miguel Arribas Tiemblo, Alicia Rodr\u00edguez-Moreno, F. G\u00f3mez et al.",
     "year": 2025,
     "url": "https://doi.org/10.1177/15311074261459203",
     "keywords": [],
@@ -3360,7 +3360,7 @@
   },
   {
     "id": "c315142c-be80-46e7-a86a-a43f0fc09a72",
-    "title": "Influence of loading conditions on mechanical behaviors of lunar regolith simulant WHU-1 based on Chang’e-5 returned samples",
+    "title": "Influence of loading conditions on mechanical behaviors of lunar regolith simulant WHU-1 based on Chang\u2019e-5 returned samples",
     "authors": "Yue Teng, Shun Wang, Yifei Cui et al.",
     "year": 2025,
     "url": "https://doi.org/10.1007/s11440-025-02553-7",
@@ -3433,7 +3433,7 @@
   {
     "id": "383af375-5bca-49f3-8cb7-0eebdc53c360",
     "title": "Chemical analysis of Antarctic regolith and lunar regolith simulant as prospective substrates for experiments with plants",
-    "authors": "P. Coufalík, Hector A. Stavrakakis, Dimitra Argyrou",
+    "authors": "P. Coufal\u00edk, Hector A. Stavrakakis, Dimitra Argyrou",
     "year": 2025,
     "url": "https://doi.org/10.5817/cpr2024-2-15",
     "keywords": [],
@@ -3492,7 +3492,7 @@
   },
   {
     "id": "4f21a154-4f7c-47c2-8e38-e3b2ee41d2fc",
-    "title": "Electromagnetic–thermal coupled modeling for optimizing the microwave sintering of homogeneous block of KLS-1 lunar regolith simulant",
+    "title": "Electromagnetic\u2013thermal coupled modeling for optimizing the microwave sintering of homogeneous block of KLS-1 lunar regolith simulant",
     "authors": "Gyu-Hyun Go, Hyunwoo Jin, Jangguen Lee et al.",
     "year": 2025,
     "url": "https://doi.org/10.1016/j.icheatmasstransfer.2024.108544",
@@ -3528,7 +3528,7 @@
   },
   {
     "id": "ec427fd9-2446-4c11-b26d-8cdb3e3d9166",
-    "title": "Sample science traceability matrix for Perseverance ’s Mars Sample Return Collection",
+    "title": "Sample science traceability matrix for Perseverance \u2019s Mars Sample Return Collection",
     "authors": "M-P Zorzano, A. D. Czaja, T. Bosak et al.",
     "year": 2025,
     "url": "https://eprints.bbk.ac.uk/id/eprint/57830/1/Zorzano%20et%20al.%20%282025%29%20Perseverance%20SSTM.pdf",
@@ -3585,7 +3585,7 @@
   {
     "id": "a45e8b43-dd4a-4566-af01-19ef13213999",
     "title": "Tribological Effects of Martian Regoliths on Stainless Steel with Natural and Composite Lip Seal and Packing Materials",
-    "authors": "G. Kalácska, G. Barkó, Tamás Bálint et al.",
+    "authors": "G. Kal\u00e1cska, G. Bark\u00f3, Tam\u00e1s B\u00e1lint et al.",
     "year": 2025,
     "url": "https://doi.org/10.3390/lubricants13040136",
     "keywords": [],
@@ -3599,7 +3599,7 @@
   },
   {
     "id": "ba0cee37-d4d7-484d-a8c7-b76249a30073",
-    "title": "2020 BX12—The Last Binary Asteroid Discovered at Arecibo",
+    "title": "2020 BX12\u2014The Last Binary Asteroid Discovered at Arecibo",
     "authors": "L. Zambrano-Marin, S. Marshall, E. Howell et al.",
     "year": 2025,
     "url": "https://doi.org/10.3847/PSJ/adbe39",
@@ -3623,7 +3623,7 @@
   },
   {
     "id": "89f6fccf-07c4-4843-ad41-786b498dc398",
-    "title": "CM carbonaceous chondrite petrofabrics and their implications for understanding the relative chronologies of parent body deformation and aqueous alteration",
+    "title": "CM carbonaceous chondrite petrofabrics and their implications for understanding the\u00a0relative chronologies of parent body deformation and aqueous alteration",
     "authors": "C. Floyd, L. Jenkins, Pierre-Etienne Martin et al.",
     "year": 2025,
     "url": "https://doi.org/10.1111/maps.14303",
@@ -3636,7 +3636,7 @@
   {
     "id": "d69f943a-ba88-4574-9edc-880a8cb48f1d",
     "title": "Noble gases and nitrogen in material from asteroid Bennu",
-    "authors": "B. Marty, L. Zimmermann, E. Füri et al.",
+    "authors": "B. Marty, L. Zimmermann, E. F\u00fcri et al.",
     "year": 2025,
     "url": "https://doi.org/10.1111/maps.70058",
     "keywords": [],
@@ -4004,7 +4004,7 @@
   {
     "id": "40b29ae1-fede-4729-8369-ba09f015d48f",
     "title": "Low-velocity impact response of lunar and Martian regolith simulants: Implications for lunar and Martian surface explorations",
-    "authors": "Takuma Ishii, Arata Kioka, Jyh‐Jaan Steven Huang et al.",
+    "authors": "Takuma Ishii, Arata Kioka, Jyh\u2010Jaan Steven Huang et al.",
     "year": 2024,
     "url": "https://doi.org/10.1063/5.0233884",
     "keywords": [
@@ -4172,7 +4172,7 @@
   },
   {
     "id": "84f07c06-3a7b-440e-997a-cd0950b9af24",
-    "title": "LHS-2E and LSP-2: Expanding Exolith Lab’s Lunar Regolith Simulants to Particle Sizes &gt;1 mm",
+    "title": "LHS-2E and LSP-2: Expanding Exolith Lab\u2019s Lunar Regolith Simulants to Particle Sizes &gt;1 mm",
     "authors": "Parks Easter, Konrad Krol, Isabel Wilburn et al.",
     "year": 2024,
     "url": "https://doi.org/10.1061/9780784485736.012",
@@ -4471,8 +4471,8 @@
   },
   {
     "id": "31c74737-bbe6-45ca-9e79-ea0741e8e675",
-    "title": "Obtaining Plasma–Dust Clouds from Meteoritic Matter, its Analogs and Simulants of Lunar Regolith Using Microwave Discharge",
-    "authors": "В. Д. Борзосеков, Н. С. Ахмадуллина, Alexander S. Sokolov et al.",
+    "title": "Obtaining Plasma\u2013Dust Clouds from Meteoritic Matter, its Analogs and Simulants of Lunar Regolith Using Microwave Discharge",
+    "authors": "\u0412. \u0414. \u0411\u043e\u0440\u0437\u043e\u0441\u0435\u043a\u043e\u0432, \u041d. \u0421. \u0410\u0445\u043c\u0430\u0434\u0443\u043b\u043b\u0438\u043d\u0430, Alexander S. Sokolov et al.",
     "year": 2024,
     "url": "https://doi.org/10.1134/s0038094624700138",
     "keywords": [
@@ -4494,7 +4494,7 @@
   {
     "id": "c63f559e-4b23-4516-9b7c-c4d8b8fc26d5",
     "title": "Simulation Experiments on the Deposition of Charged Particles of LMS-1D Regolith on the Solar Panels of Spacecraft",
-    "authors": "A. S. Sokolov, Т. E. Gayanova, В. Д. Борзосеков et al.",
+    "authors": "A. S. Sokolov, \u0422. E. Gayanova, \u0412. \u0414. \u0411\u043e\u0440\u0437\u043e\u0441\u0435\u043a\u043e\u0432 et al.",
     "year": 2024,
     "url": "https://doi.org/10.1134/s0038094624700114",
     "keywords": [
@@ -4521,7 +4521,7 @@
   {
     "id": "f20677db-e762-4bf0-903c-dd6b2ebea2e8",
     "title": "A method for estimating the number of regolith particles in a dust cloud in a discharge initiated by gyrotron radiation",
-    "authors": "A. S. Sokolov, Т. E. Gayanova, А. К. Kozak et al.",
+    "authors": "A. S. Sokolov, \u0422. E. Gayanova, \u0410. \u041a. Kozak et al.",
     "year": 2024,
     "url": "https://doi.org/10.31857/s0004629924040053",
     "keywords": [
@@ -4710,7 +4710,7 @@
   {
     "id": "6a827291-7dff-49d3-8d64-11e7d26677ec",
     "title": "The Abrasive Effect of Moon and Mars Regolith Simulants on Stainless Steel Rotating Shaft and Polytetrafluoroethylene Sealing Material Pairs",
-    "authors": "Gábor Kalácska, György Barkó, Hailemariam Shegawu et al.",
+    "authors": "G\u00e1bor Kal\u00e1cska, Gy\u00f6rgy Bark\u00f3, Hailemariam Shegawu et al.",
     "year": 2024,
     "url": "https://doi.org/10.3390/ma17174240",
     "keywords": [
@@ -4770,7 +4770,7 @@
   },
   {
     "id": "655ac312-9a23-473c-a947-4733214f26f1",
-    "title": "Thermochemical interactions between yttria‐stabilized zirconia and molten lunar regolith simulants",
+    "title": "Thermochemical interactions between yttria\u2010stabilized zirconia and molten lunar regolith simulants",
     "authors": "Kevin Yu, Jamesa L. Stokes, Bryan J. Harder et al.",
     "year": 2024,
     "url": "https://doi.org/10.1111/jace.19821",
@@ -4848,7 +4848,7 @@
   {
     "id": "ba05b761-8b95-46ef-9d82-65b0f50cea43",
     "title": "Survival of Environment-Derived Opportunistic Bacterial Pathogens to Martian Conditions: Is There a Concern for Human Missions to Mars?",
-    "authors": "Tommaso Zaccaria, Marien I. de Jonge, Jorge Domínguez‐Andrés et al.",
+    "authors": "Tommaso Zaccaria, Marien I. de Jonge, Jorge Dom\u00ednguez\u2010Andr\u00e9s et al.",
     "year": 2024,
     "url": "https://doi.org/10.1089/ast.2023.0057",
     "keywords": [
@@ -4873,7 +4873,7 @@
   {
     "id": "1607d3a6-996f-48f2-b25d-53b36971859c",
     "title": "Microbial preference for chlorate over perchlorate under simulated shallow subsurface Mars-like conditions",
-    "authors": "Florian Carlo Fischer, Dirk Schulze‐Makuch, Jacob Heinz",
+    "authors": "Florian Carlo Fischer, Dirk Schulze\u2010Makuch, Jacob Heinz",
     "year": 2024,
     "url": "https://doi.org/10.1038/s41598-024-62346-y",
     "keywords": [
@@ -4918,7 +4918,7 @@
   {
     "id": "9495bb2c-4485-41fd-a3f4-0b53cce11a89",
     "title": "Electromagnetic Characterization of EAC-1A and JSC-2A Lunar Regolith Simulants",
-    "authors": "David Ramos Somolinos, Borja Plaza Gallardo, José Cidrás Estévez et al.",
+    "authors": "David Ramos Somolinos, Borja Plaza Gallardo, Jos\u00e9 Cidr\u00e1s Est\u00e9vez et al.",
     "year": 2024,
     "url": "https://doi.org/10.3390/ma17153633",
     "keywords": [
@@ -4939,7 +4939,7 @@
   {
     "id": "6e77faf4-5896-4396-be0c-d4d4a5eb2db9",
     "title": "Electromagnetic Characterization of EAC-1A and JSC-2A Lunar Regolith Simulants",
-    "authors": "David Ramos Somolinos, Borja Plaza Gallardo, José Cidrás Estévez et al.",
+    "authors": "David Ramos Somolinos, Borja Plaza Gallardo, Jos\u00e9 Cidr\u00e1s Est\u00e9vez et al.",
     "year": 2024,
     "url": "https://doi.org/10.20944/preprints202405.1829.v1",
     "keywords": [
@@ -4961,7 +4961,7 @@
   {
     "id": "f5861efc-da2b-4d79-b024-6e614d709de8",
     "title": "LIBS for prospecting and Raman spectroscopy for monitoring: two feasibility studies for supporting in-situ resource utilization",
-    "authors": "Kristin Rammelkamp, Susanne Schröder, Bethany A. Lomax et al.",
+    "authors": "Kristin Rammelkamp, Susanne Schr\u00f6der, Bethany A. Lomax et al.",
     "year": 2024,
     "url": "https://doi.org/10.3389/frspt.2024.1336548",
     "keywords": [
@@ -4986,7 +4986,7 @@
   {
     "id": "e2692b11-29a9-4828-96dd-b9fe44bbd931",
     "title": "Gas permeability and mechanical properties of dust grain aggregates at hyper- and zero-gravity",
-    "authors": "Holly L. Capelo, Jean-David Bodénan, Martin Jutzi et al.",
+    "authors": "Holly L. Capelo, Jean-David Bod\u00e9nan, Martin Jutzi et al.",
     "year": 2024,
     "url": "https://doi.org/10.1093/mnras/stae1898",
     "keywords": [
@@ -5006,7 +5006,7 @@
   {
     "id": "0490499b-092b-4921-af6a-980e201ecc52",
     "title": "Seed Priming with <i>Ulva lactuca L</i> . in Cultivars Grown in Martian and Lunar Regolith Analogues",
-    "authors": "Jéssica Carneiro Oliveira, Renato Crespo Pereira, T. Johnson et al.",
+    "authors": "J\u00e9ssica Carneiro Oliveira, Renato Crespo Pereira, T. Johnson et al.",
     "year": 2024,
     "url": "https://doi.org/10.2478/gsr-2024-0006",
     "keywords": [
@@ -5052,7 +5052,7 @@
   },
   {
     "id": "0ae05285-fcda-481a-93aa-16aa4b016fbf",
-    "title": "Near Room Temperature Production of Segregated Network Composites of Carbon Nanotubes and Regolith as Multifunctional, Extra‐Terrestrial Building Materials",
+    "title": "Near Room Temperature Production of Segregated Network Composites of Carbon Nanotubes and Regolith as Multifunctional, Extra\u2010Terrestrial Building Materials",
     "authors": "James Garcia, Eoin Caffrey, Luke Doolan et al.",
     "year": 2024,
     "url": "https://doi.org/10.1002/smll.202310954",
@@ -5103,7 +5103,7 @@
   },
   {
     "id": "bced66be-4028-4959-b4c9-5d0d6a0b8aa2",
-    "title": "Lunar highlands simulant — Geotechnical characterization, 3D discrete element modeling, and cone penetration simulations",
+    "title": "Lunar highlands simulant \u2014 Geotechnical characterization, 3D discrete element modeling, and cone penetration simulations",
     "authors": "Quan Sun, Lei Wang, Liang Zhang et al.",
     "year": 2024,
     "url": "https://doi.org/10.1016/j.actaastro.2024.05.031",
@@ -5128,7 +5128,7 @@
   },
   {
     "id": "db52f239-15ac-46e1-9116-0200bdf62aec",
-    "title": "Chang'E‐5 In Situ Spectra Reveal Photometric Properties of the Lunar Surface",
+    "title": "Chang'E\u20105 In Situ Spectra Reveal Photometric Properties of the Lunar Surface",
     "authors": "Lin Guo, Xin Ren, Dawei Liu et al.",
     "year": 2024,
     "url": "https://doi.org/10.1029/2023je007847",
@@ -5206,7 +5206,7 @@
   {
     "id": "a08bcd79-72a3-450c-8d45-fc9e535b2d6d",
     "title": "Laser Irradiation of Carbonaceous Chondrite Simulants: Space-weathering Implications for C-complex Asteroids",
-    "authors": "A. López-Oquendo, Mark J. Loeffler, D. Trilling",
+    "authors": "A. L\u00f3pez-Oquendo, Mark J. Loeffler, D. Trilling",
     "year": 2024,
     "url": "https://doi.org/10.3847/PSJ/ad4028",
     "keywords": [],
@@ -5253,7 +5253,7 @@
   },
   {
     "id": "286aff85-c7f5-4544-a1d8-5b982bf246dd",
-    "title": "Petrofabrics in the CM chondrite Kolang: Evidence for non‐spherical chondrules in the protoplanetary disk",
+    "title": "Petrofabrics in the CM chondrite Kolang: Evidence for non\u2010spherical chondrules in\u00a0the protoplanetary disk",
     "authors": "L. Jenkins, Martin R. Lee, L. Daly et al.",
     "year": 2024,
     "url": "https://doi.org/10.1111/maps.14297",
@@ -5265,7 +5265,7 @@
   },
   {
     "id": "d18f057b-5148-45db-a98b-267de97329f7",
-    "title": "Brecciation at the grain scale within the lithologies of the Winchcombe Mighei‐like carbonaceous chondrite",
+    "title": "Brecciation at the grain scale within the lithologies of the Winchcombe Mighei\u2010like carbonaceous chondrite",
     "authors": "Luke Daly, M. Suttle, Martin R. Lee et al.",
     "year": 2024,
     "url": "https://doi.org/10.1111/maps.14164",
@@ -5303,7 +5303,7 @@
   },
   {
     "id": "01578c26-cabc-471f-9850-c1ae84f54ffb",
-    "title": "Corrigendum to “Np-Fe0 addition affects the microstructure and composition of the microwave-sintered lunar soil simulant CLRS-2” [Adv. Space Res. 73(1) (2024) 945–957]",
+    "title": "Corrigendum to \u201cNp-Fe0 addition affects the microstructure and composition of the microwave-sintered lunar soil simulant CLRS-2\u201d [Adv. Space Res. 73(1) (2024) 945\u2013957]",
     "authors": "Tian Zhang, Hong Tang, Xiongyao Li et al.",
     "year": 2024,
     "url": "https://doi.org/10.1016/j.asr.2024.08.070",
@@ -5315,8 +5315,8 @@
   },
   {
     "id": "ba065a92-e8bf-40be-87cd-268347ace6ec",
-    "title": "Получение плазменно-пылевых облаков из метеоритного вещества, его аналогов и имитаторов лунного реголита с помощью микроволнового разряда",
-    "authors": "В. Д. Борзосеков, Н. С. Ахмадуллина, Alexander S. Sokolov et al.",
+    "title": "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435 \u043f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u043e-\u043f\u044b\u043b\u0435\u0432\u044b\u0445 \u043e\u0431\u043b\u0430\u043a\u043e\u0432 \u0438\u0437 \u043c\u0435\u0442\u0435\u043e\u0440\u0438\u0442\u043d\u043e\u0433\u043e \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430, \u0435\u0433\u043e \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432 \u0438 \u0438\u043c\u0438\u0442\u0430\u0442\u043e\u0440\u043e\u0432 \u043b\u0443\u043d\u043d\u043e\u0433\u043e \u0440\u0435\u0433\u043e\u043b\u0438\u0442\u0430 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043c\u0438\u043a\u0440\u043e\u0432\u043e\u043b\u043d\u043e\u0432\u043e\u0433\u043e \u0440\u0430\u0437\u0440\u044f\u0434\u0430",
+    "authors": "\u0412. \u0414. \u0411\u043e\u0440\u0437\u043e\u0441\u0435\u043a\u043e\u0432, \u041d. \u0421. \u0410\u0445\u043c\u0430\u0434\u0443\u043b\u043b\u0438\u043d\u0430, Alexander S. Sokolov et al.",
     "year": 2024,
     "url": "https://doi.org/10.31857/s0320930x24030049",
     "keywords": [
@@ -5468,7 +5468,7 @@
   },
   {
     "id": "01f6adf2-8ed0-4475-88a6-4df90060b948",
-    "title": "Asteroid (101955) Bennu in the laboratory: Properties of the sample collected by OSIRIS‐REx",
+    "title": "Asteroid (101955) Bennu in the laboratory: Properties of the sample collected by OSIRIS\u2010REx",
     "authors": "D. Lauretta, H. Connolly, Joseph E. Aebersold et al.",
     "year": 2024,
     "url": "https://doi.org/10.1111/maps.14227",
@@ -5493,7 +5493,7 @@
   {
     "id": "585a1841-4fe4-47d2-b9e3-454d6c6bd20a",
     "title": "Micro-Raman and FTIR spectroscopic characterization of the first Turkish lunar regolith simulant",
-    "authors": "O. Unsalan, Y. Cengiz Toklu, C. Altunayar‐Unsalan et al.",
+    "authors": "O. Unsalan, Y. Cengiz Toklu, C. Altunayar\u2010Unsalan et al.",
     "year": 2024,
     "url": "https://doi.org/10.1007/s10509-024-04383-7",
     "keywords": [],
@@ -5505,7 +5505,7 @@
   {
     "id": "5586ce8f-bb19-4aa5-ab2f-3dcdd217cdfb",
     "title": "Radar and Optical Observations and Physical Modeling of Binary Near-Earth Asteroid 2018 EB",
-    "authors": "M. Brozović, L. Benner, S. Naidu et al.",
+    "authors": "M. Brozovi\u0107, L. Benner, S. Naidu et al.",
     "year": 2024,
     "url": "https://doi.org/10.3847/PSJ/ad4342",
     "keywords": [],
@@ -5541,7 +5541,7 @@
   {
     "id": "7c0dd635-3c5e-4083-b53b-2653d8a7ff49",
     "title": "Rhinocladiella similis: A Model Eukaryotic Organism for Astrobiological Studies on Microbial Interactions with Martian Soil Analogs",
-    "authors": "Alef Dos Santos, Júnia Schultz, Isabella Dal’Rio et al.",
+    "authors": "Alef Dos Santos, J\u00fania Schultz, Isabella Dal\u2019Rio et al.",
     "year": 2024,
     "url": "https://doi.org/10.1021/jacsau.4c00869",
     "keywords": [],
@@ -6230,7 +6230,7 @@
   {
     "id": "6ab98a5f-e0ac-450d-907f-3674b461d8b9",
     "title": "Laser melting manufacturing of large elements of lunar regolith simulant for paving on the Moon",
-    "authors": "Juan-Carlos Ginés-Palomares, Miranda Fateri, Eckehard Kalhöfer et al.",
+    "authors": "Juan-Carlos Gin\u00e9s-Palomares, Miranda Fateri, Eckehard Kalh\u00f6fer et al.",
     "year": 2023,
     "url": "https://doi.org/10.1038/s41598-023-42008-1",
     "keywords": [
@@ -6252,7 +6252,7 @@
   {
     "id": "3898fe78-bce1-4ff2-b325-61ef7027dcf7",
     "title": "3D shape analysis of lunar regolith simulants",
-    "authors": "Bo Peng, Rotana Hay, Kemal Çelik",
+    "authors": "Bo Peng, Rotana Hay, Kemal \u00c7elik",
     "year": 2023,
     "url": "https://doi.org/10.1016/j.powtec.2023.118621",
     "keywords": [
@@ -6578,8 +6578,8 @@
   },
   {
     "id": "5a18a6af-e512-460c-8925-a43077d42153",
-    "title": "Optical Constants of Martian Dust Analogs at UV–Visible–Near-infrared Wavelengths",
-    "authors": "Julia Martikainen, Olga Muñoz, Teresa Jardiel et al.",
+    "title": "Optical Constants of Martian Dust Analogs at UV\u2013Visible\u2013Near-infrared Wavelengths",
+    "authors": "Julia Martikainen, Olga Mu\u00f1oz, Teresa Jardiel et al.",
     "year": 2023,
     "url": "https://doi.org/10.3847/1538-4365/acf0be",
     "keywords": [
@@ -6633,7 +6633,7 @@
   {
     "id": "474555e1-4b71-4d15-862e-3d12744d5c34",
     "title": "Abrasion Evaluation of Moon and Mars Simulants on Rotating Shaft/Sealing Materials: Simulants and Structural Materials Review and Selection",
-    "authors": "György Barkó, Gábor Kalácska, Róbert Keresztes et al.",
+    "authors": "Gy\u00f6rgy Bark\u00f3, G\u00e1bor Kal\u00e1cska, R\u00f3bert Keresztes et al.",
     "year": 2023,
     "url": "https://doi.org/10.20944/preprints202306.1135.v1",
     "keywords": [
@@ -6681,7 +6681,7 @@
   },
   {
     "id": "668f062e-8e64-42a7-8a61-92e0feb5b5ea",
-    "title": "Effect of thermal cycles on volumetric and shear behavior of sand–concrete interface",
+    "title": "Effect of thermal cycles on volumetric and shear behavior of sand\u2013concrete interface",
     "authors": "Kexin Yin, Roxana Vasilescu",
     "year": 2023,
     "url": "https://doi.org/10.1016/j.gete.2023.100503",
@@ -6764,7 +6764,7 @@
   },
   {
     "id": "4b7b61ab-387f-4aa5-bdf0-2c514fdcb85d",
-    "title": "Mineralogy and petrology of fine‐grained samples recovered from the asteroid (162173) Ryugu",
+    "title": "Mineralogy and petrology of fine\u2010grained samples recovered from the asteroid (162173) Ryugu",
     "authors": "T. Noguchi, T. Matsumoto, Akira Miyake et al.",
     "year": 2023,
     "url": "https://doi.org/10.1111/maps.14093",
@@ -6842,7 +6842,7 @@
   {
     "id": "ffc1056b-c6f3-4b6a-91ad-9fe94c67e4c3",
     "title": "Matrix transformation of lunar regolith and its use as a feedstock for additive manufacturing",
-    "authors": "Nicholas I. Cool, Saul Perez-Beltran, Jing‐Xiang Cheng et al.",
+    "authors": "Nicholas I. Cool, Saul Perez-Beltran, Jing\u2010Xiang Cheng et al.",
     "year": 2023,
     "url": "https://doi.org/10.1016/j.isci.2023.106382",
     "keywords": [
@@ -6914,7 +6914,7 @@
   {
     "id": "e0c8aa3d-d4e0-42bc-9afc-17f26b1b3b10",
     "title": "Abrasion Evaluation of Moon and Mars Simulants on Rotating Shaft/Sealing Materials: Simulants and Structural Materials Review and Selection",
-    "authors": "György Barkó, Gábor Kalácska, Róbert Keresztes et al.",
+    "authors": "Gy\u00f6rgy Bark\u00f3, G\u00e1bor Kal\u00e1cska, R\u00f3bert Keresztes et al.",
     "year": 2023,
     "url": "https://www.preprints.org/manuscript/202306.1135/v1",
     "keywords": [
@@ -6984,7 +6984,7 @@
   },
   {
     "id": "e16df998-be9d-4d59-9129-121aa962336d",
-    "title": "Calcium‐aluminum‐rich inclusion found in the Ivuna CI chondrite: Are CI chondrites a good proxy for the bulk composition of the solar system?",
+    "title": "Calcium\u2010aluminum\u2010rich inclusion found in the Ivuna CI chondrite: Are CI chondrites a good proxy for the bulk composition of the solar system?",
     "authors": "David R. Frank, G. Huss, M. Zolensky et al.",
     "year": 2023,
     "url": "https://doi.org/10.1111/maps.14083",
@@ -7157,7 +7157,7 @@
   },
   {
     "id": "461afec5-9707-404b-8200-968acd3438f2",
-    "title": "Probing the Mechanism of Hydrolytic Degradation of Nerve Agent Simulant with Zirconium-Based Metal–Organic Frameworks",
+    "title": "Probing the Mechanism of Hydrolytic Degradation of Nerve Agent Simulant with Zirconium-Based Metal\u2013Organic Frameworks",
     "authors": "Yijun Liao, Thomas R. Sheridan, Jian Liu et al.",
     "year": 2023,
     "url": "https://doi.org/10.1021/acscatal.3c04469",
@@ -7182,7 +7182,7 @@
   {
     "id": "0079811b-ab26-43d1-93e0-2dd447d66dc1",
     "title": "Finite element model to simulate impact on a soft tissue simulant",
-    "authors": "S. A. Imam, Angus C. Hughes, M. Carré et al.",
+    "authors": "S. A. Imam, Angus C. Hughes, M. Carr\u00e9 et al.",
     "year": 2023,
     "url": "https://doi.org/10.1007/s12283-023-00407-7",
     "keywords": [],
@@ -7230,7 +7230,7 @@
   {
     "id": "cddcd714-4dd1-499e-a426-506139c9b73a",
     "title": "Origin of Isotopic Diversity among Carbonaceous Chondrites",
-    "authors": "J. Hellmann, J. Schneider, Elias Wölfer et al.",
+    "authors": "J. Hellmann, J. Schneider, Elias W\u00f6lfer et al.",
     "year": 2023,
     "url": "https://doi.org/10.3847/2041-8213/acc102",
     "keywords": [],
@@ -7242,7 +7242,7 @@
   {
     "id": "800bb231-866e-4333-9b15-8044b8f40e33",
     "title": "Abrasion Evaluation of Moon and Mars Simulants on Rotating Shaft/Sealing Materials: Simulants and Structural Materials Review and Selection",
-    "authors": "György Barkó, Gábor Kalácska, Róbert Keresztes et al.",
+    "authors": "Gy\u00f6rgy Bark\u00f3, G\u00e1bor Kal\u00e1cska, R\u00f3bert Keresztes et al.",
     "year": 2023,
     "url": "https://doi.org/10.3390/lubricants11080334",
     "keywords": [
@@ -7426,7 +7426,7 @@
   {
     "id": "7efc52cc-88bc-4d82-8067-2b06539982ea",
     "title": "VOILA on the LUVMI-X Rover: Laser-Induced Breakdown Spectroscopy for the Detection of Volatiles at the Lunar South Pole",
-    "authors": "David S. Vogt, Susanne Schröder, Lutz Richter et al.",
+    "authors": "David S. Vogt, Susanne Schr\u00f6der, Lutz Richter et al.",
     "year": 2022,
     "url": "https://www.mdpi.com/1424-8220/22/23/9518",
     "keywords": [],
@@ -7439,7 +7439,7 @@
   },
   {
     "id": "c801036f-5447-4a3a-8548-75f3c8ecd76c",
-    "title": "The host galaxy and persistent radio counterpart of FRB 20201124A",
+    "title": "The host galaxy and persistent radio counterpart of FRB\u200920201124A",
     "authors": "Vikram Ravi, Casey J Law, Dongzi Li et al.",
     "year": 2022,
     "url": "https://academic.oup.com/mnras/article/516/1/465/6660653",
@@ -7489,7 +7489,7 @@
   {
     "id": "0d51672a-87e7-4d22-baa7-a08f0b9ac426",
     "title": "Terrestrial Laser Scanning of Lunar Soil Simulants",
-    "authors": "Marzena Damięcka-Suchocka, Jacek Katzer",
+    "authors": "Marzena Dami\u0119cka-Suchocka, Jacek Katzer",
     "year": 2022,
     "url": "https://doi.org/10.3390/ma15248773",
     "keywords": [
@@ -7540,7 +7540,7 @@
   {
     "id": "880369a8-a8bf-4c5e-97d8-bf6ea98fc64b",
     "title": "Bioactive Compounds and Antioxidant Activity of Lettuce Grown in Different Mixtures of Monogastric-Based Manure With Lunar and Martian Soils",
-    "authors": "Luigi Giuseppe Duri, Antonio Pannico, Spyridon Α. Petropoulos et al.",
+    "authors": "Luigi Giuseppe Duri, Antonio Pannico, Spyridon \u0391. Petropoulos et al.",
     "year": 2022,
     "url": "https://doi.org/10.3389/fnut.2022.890786",
     "keywords": [
@@ -7589,7 +7589,7 @@
   {
     "id": "b0ecbba2-f8f6-496c-8f23-c6f24eaad3fb",
     "title": "Temperature programmed desorption comparison of lunar regolith to lunar regolith simulants LMS-1 and LHS-1",
-    "authors": "Ashley R. Clendenen, А. В. Александров, Brant M. Jones et al.",
+    "authors": "Ashley R. Clendenen, \u0410. \u0412. \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432, Brant M. Jones et al.",
     "year": 2022,
     "url": "https://doi.org/10.1016/j.epsl.2022.117632",
     "keywords": [
@@ -7693,7 +7693,7 @@
   },
   {
     "id": "1761984e-0b0d-48c1-9cc3-6845a60648a8",
-    "title": "Far‐Ultraviolet Photometric Characteristics of JSC‐1A and LMS‐1 Lunar Regolith Simulants: Comparative Investigations With Apollo 10084",
+    "title": "Far\u2010Ultraviolet Photometric Characteristics of JSC\u20101A and LMS\u20101 Lunar Regolith Simulants: Comparative Investigations With Apollo 10084",
     "authors": "Caleb J. Gimar, U. Raut, Michael J. Poston et al.",
     "year": 2022,
     "url": "https://doi.org/10.1029/2022je007508",
@@ -7769,8 +7769,8 @@
   },
   {
     "id": "4ca61931-6284-424c-8c60-14b2d4b5365b",
-    "title": "LRO‐LAMP Survey of Lunar South Pole Cold Traps: Implication for the Presence of Condensed H2O",
-    "authors": "L. Magaña, K. Retherford, B. Byron et al.",
+    "title": "LRO\u2010LAMP Survey of Lunar South Pole Cold Traps: Implication for the Presence of Condensed H2O",
+    "authors": "L. Maga\u00f1a, K. Retherford, B. Byron et al.",
     "year": 2022,
     "url": "https://doi.org/10.1029/2022JE007301",
     "keywords": [],
@@ -7901,7 +7901,7 @@
   {
     "id": "c0796921-33fd-4210-93b8-2b3c35df4d9e",
     "title": "A molecular study of Italian ryegrass grown on Martian regolith simulant",
-    "authors": "Roberto Berni, Céline C. Leclercq, Philippe Roux et al.",
+    "authors": "Roberto Berni, C\u00e9line C. Leclercq, Philippe Roux et al.",
     "year": 2022,
     "url": "https://doi.org/10.1016/j.scitotenv.2022.158774",
     "keywords": [
@@ -7926,7 +7926,7 @@
   {
     "id": "aedec9b8-e4a8-411a-8df0-b13c85d67458",
     "title": "American Public University System Analog Research Group Mission 1: A Space Analog 11-Day Mission",
-    "authors": "Scott Van Hoy, Bill O’Hara, Diallo Wallace et al.",
+    "authors": "Scott Van Hoy, Bill O\u2019Hara, Diallo Wallace et al.",
     "year": 2022,
     "url": "https://doi.org/10.18278/001c.37309",
     "keywords": [
@@ -7973,7 +7973,7 @@
   },
   {
     "id": "36cd6eec-e5f0-4f31-88cd-75e615e8ea09",
-    "title": "Methods for Solving Finite Element Mesh-Dependency Problems in Geotechnical Engineering—A Review",
+    "title": "Methods for Solving Finite Element Mesh-Dependency Problems in Geotechnical Engineering\u2014A Review",
     "authors": "Jiangxin Liu, Lijian Wu, Kexin Yin et al.",
     "year": 2022,
     "url": "https://doi.org/10.3390/su14052982",
@@ -8023,7 +8023,7 @@
   {
     "id": "b993b143-62b8-4e2f-9dd6-7f2cc84b07bc",
     "title": "3D printed laboratory equipment to measure bulk materials in extreme conditions",
-    "authors": "Jan Diviš, Jakub Hlosta, David Žurovec et al.",
+    "authors": "Jan Divi\u0161, Jakub Hlosta, David \u017durovec et al.",
     "year": 2022,
     "url": "https://doi.org/10.1038/s41598-022-22114-2",
     "keywords": [
@@ -8125,7 +8125,7 @@
   {
     "id": "19912a5f-a1d5-4553-9389-f17d3bb7a446",
     "title": "Feasibility of additive manufacturing processes for lunar soil simulants",
-    "authors": "Danijela Ignjatović Stupar, Grégoire Robert Chabrol, Abdoul Razak Ibrahim Baraze et al.",
+    "authors": "Danijela Ignjatovi\u0107 Stupar, Gr\u00e9goire Robert Chabrol, Abdoul Razak Ibrahim Baraze et al.",
     "year": 2022,
     "url": "https://doi.org/10.24867/atm-2022-1-007",
     "keywords": [
@@ -8152,7 +8152,7 @@
   },
   {
     "id": "640eac71-c64b-479f-8d86-be7784ecff7f",
-    "title": "Landing Site Selection and Characterization of Tianwen‐1 (Zhurong Rover) on Mars",
+    "title": "Landing Site Selection and Characterization of Tianwen\u20101 (Zhurong Rover) on Mars",
     "authors": "Bo Wu, Jie Dong, Yiran Wang et al.",
     "year": 2022,
     "url": "https://doi.org/10.1029/2021je007137",
@@ -8263,7 +8263,7 @@
   {
     "id": "0ae9a5b1-b1bf-45db-bab5-a1cc9d9bbf2e",
     "title": "Cyanobacteria as Candidates to Support Mars Colonization: Growth and Biofertilization Potential Using Mars Regolith as a Resource",
-    "authors": "Inês P. E. Maçario, Telma Veloso, Silja Frankenbach et al.",
+    "authors": "In\u00eas P. E. Ma\u00e7ario, Telma Veloso, Silja Frankenbach et al.",
     "year": 2022,
     "url": "https://doi.org/10.3389/fmicb.2022.840098",
     "keywords": [
@@ -8402,7 +8402,7 @@
   },
   {
     "id": "200db254-3cc0-4ce6-9976-b58e37fdc5cc",
-    "title": "The Winchcombe meteorite—A regolith breccia from a rubble pile CM chondrite asteroid",
+    "title": "The Winchcombe meteorite\u2014A regolith breccia from a rubble pile CM chondrite asteroid",
     "authors": "M. Suttle, L. Daly, R. H. Jones et al.",
     "year": 2022,
     "url": "https://doi.org/10.1111/maps.13938",
@@ -8414,7 +8414,7 @@
   },
   {
     "id": "f857831d-a779-4429-9c76-99c8117d3e43",
-    "title": "In Situ and Orbital Stratigraphic Characterization of the InSight Landing Site—A Type Example of a Regolith‐Covered Lava Plain on Mars",
+    "title": "In Situ and Orbital Stratigraphic Characterization of the InSight Landing Site\u2014A Type Example of a Regolith\u2010Covered Lava Plain on Mars",
     "authors": "N. Warner, M. P. Golombek, V. Ansan et al.",
     "year": 2022,
     "url": "https://doi.org/10.1029/2022JE007232",
@@ -8584,7 +8584,7 @@
   {
     "id": "c84f67b5-5504-46e4-8282-a30f7df298ff",
     "title": "Analysis of microbial lipids deposited on Mars Global Simulant (MGS-1) by geomatrix-assisted laser desorption/ionization-mass spectrometry",
-    "authors": "Alef dos Santos, Edson Rodrigues‐Filho, M. G. P. Homem",
+    "authors": "Alef dos Santos, Edson Rodrigues\u2010Filho, M. G. P. Homem",
     "year": 2021,
     "url": "https://doi.org/10.1017/s1473550421000100",
     "keywords": [
@@ -8768,8 +8768,8 @@
   },
   {
     "id": "c27bbb70-75db-467c-b7a5-3e3093874d9c",
-    "title": "A Review of Sand–Clay Mixture and Soil–Structure Interface Direct Shear Test",
-    "authors": "Kexin Yin, Anne‐Laure Fauchille, Eugenia Di Filippo et al.",
+    "title": "A Review of Sand\u2013Clay Mixture and Soil\u2013Structure Interface Direct Shear Test",
+    "authors": "Kexin Yin, Anne\u2010Laure Fauchille, Eugenia Di Filippo et al.",
     "year": 2021,
     "url": "https://doi.org/10.3390/geotechnics1020014",
     "keywords": [
@@ -8793,8 +8793,8 @@
   },
   {
     "id": "31db72c7-0c8e-4842-8a18-a29ceb07f697",
-    "title": "The Influence of Mixing Orders on the Microstructure of Artificially Prepared Sand‐Clay Mixtures",
-    "authors": "Kexin Yin, Anne‐Laure Fauchille, Eugenia Di Filippo et al.",
+    "title": "The Influence of Mixing Orders on the Microstructure of Artificially Prepared Sand\u2010Clay Mixtures",
+    "authors": "Kexin Yin, Anne\u2010Laure Fauchille, Eugenia Di Filippo et al.",
     "year": 2021,
     "url": "https://doi.org/10.1155/2021/8552224",
     "keywords": [
@@ -8811,7 +8811,7 @@
   },
   {
     "id": "4e44b5bd-fa6a-411a-ba43-0842c52fc54d",
-    "title": "Machine Learning Mid‐Infrared Spectral Models for Predicting Modal Mineralogy of CI/CM Chondritic Asteroids and Bennu",
+    "title": "Machine Learning Mid\u2010Infrared Spectral Models for Predicting Modal Mineralogy of CI/CM Chondritic Asteroids and Bennu",
     "authors": "L. Breitenfeld, A. D. Rogers, T. Glotch et al.",
     "year": 2021,
     "url": "https://doi.org/10.1029/2021JE007035",
@@ -8849,7 +8849,7 @@
   {
     "id": "05fe62a8-5a1c-4643-8472-040d25a1f80e",
     "title": "Experimental Investigation of the Atmosphere-Regolith Water Cycle on Present-Day Mars",
-    "authors": "Abhilash Vakkada Ramachandran, María‐Paz Zorzano, Javier Martín‐Torres",
+    "authors": "Abhilash Vakkada Ramachandran, Mar\u00eda\u2010Paz Zorzano, Javier Mart\u00edn\u2010Torres",
     "year": 2021,
     "url": "https://doi.org/10.3390/s21217421",
     "keywords": [
@@ -8896,7 +8896,7 @@
   },
   {
     "id": "d899f6c5-193c-43a4-8b09-753453ff8beb",
-    "title": "Ryugu’s observed volatile loss did not arise from impact heating alone",
+    "title": "Ryugu\u2019s observed volatile loss did not arise from impact heating alone",
     "authors": "Kosuke Kurosawa, Ryota Moriwaki, Hikaru Yabuta et al.",
     "year": 2021,
     "url": "https://doi.org/10.1038/s43247-021-00218-3",
@@ -8932,7 +8932,7 @@
   },
   {
     "id": "509543da-79c0-4010-97c7-71822a200f0c",
-    "title": "China’s Mars Exploration Mission and Science Investigation",
+    "title": "China\u2019s Mars Exploration Mission and Science Investigation",
     "authors": "Chunlai Li, Rongqiao Zhang, Deng-Yun Yu et al.",
     "year": 2021,
     "url": "https://doi.org/10.1007/s11214-021-00832-9",
@@ -8967,7 +8967,7 @@
   },
   {
     "id": "4f84de5c-6f15-4b37-bfae-cd7cf62e9d61",
-    "title": "Nanoscale mineralogy and organic structure in Orgueil (CI) and EET 92042 (CR) carbonaceous chondrites studied with AFM‐IR spectroscopy",
+    "title": "Nanoscale mineralogy and organic structure in Orgueil (CI) and EET 92042 (CR) carbonaceous chondrites studied with AFM\u2010IR spectroscopy",
     "authors": "Van T. H. Phan, R. Rebois, P. Beck et al.",
     "year": 2021,
     "url": "https://doi.org/10.1111/maps.13773",
@@ -9085,7 +9085,7 @@
   },
   {
     "id": "70fcacc4-d093-41b6-8c0a-9941ab013060",
-    "title": "A Spectral Investigation of Aqueously and Thermally Altered CM, CM‐An, and CY Chondrites Under Simulated Asteroid Conditions for Comparison With OSIRIS‐REx and Hayabusa2 Observations",
+    "title": "A Spectral Investigation of Aqueously and Thermally Altered CM, CM\u2010An, and CY Chondrites Under Simulated Asteroid Conditions for Comparison With OSIRIS\u2010REx and Hayabusa2 Observations",
     "authors": "H. Bates, K. D. Donaldson Hanna, A. King et al.",
     "year": 2021,
     "url": "https://doi.org/10.1029/2021JE006827",
@@ -9156,7 +9156,7 @@
   {
     "id": "d4e816fe-73eb-4f4d-bc77-16908d951e4c",
     "title": "Influence of Powder Type on Aerosol Emissions in Powder-Binder Jetting with Emphasis on Lunar Regolith for In Situ Space Applications",
-    "authors": "Austin C. Hayes, Jorge Osio‐Norgaard, Shelly L. Miller et al.",
+    "authors": "Austin C. Hayes, Jorge Osio\u2010Norgaard, Shelly L. Miller et al.",
     "year": 2020,
     "url": "https://doi.org/10.1021/acsestengg.0c00045",
     "keywords": [
@@ -9254,8 +9254,8 @@
   },
   {
     "id": "ff5baf17-e478-41db-bc16-632ff4ef639a",
-    "title": "Thermal effects on the mechanical behavior of Paris green clay–concrete interface",
-    "authors": "Kexin Yin, Roxana Vasilescu, Anne‐Laure Fauchille et al.",
+    "title": "Thermal effects on the mechanical behavior of Paris green clay\u2013concrete interface",
+    "authors": "Kexin Yin, Roxana Vasilescu, Anne\u2010Laure Fauchille et al.",
     "year": 2020,
     "url": "https://doi.org/10.1051/e3sconf/202020513006",
     "keywords": [
@@ -9273,7 +9273,7 @@
   },
   {
     "id": "ff11f95c-b112-4aa4-8531-7aa2977dc02a",
-    "title": "Asteroid (101955) Bennu’s weak boulders and thermally anomalous equator",
+    "title": "Asteroid (101955) Bennu\u2019s weak boulders and thermally anomalous equator",
     "authors": "B. Rozitis, A. J. Ryan, Joshua P. Emery et al.",
     "year": 2020,
     "url": "https://doi.org/10.1126/sciadv.abc3699",
@@ -9320,7 +9320,7 @@
   {
     "id": "5c86bd78-b1fc-42c2-adb1-dbc5b09ac0ac",
     "title": "Hypervelocity impacts on carbonaceous asteroid simulants: comparison with observations",
-    "authors": "Chrysa Avdellidou, Marco Delbò, Cody Schultz et al.",
+    "authors": "Chrysa Avdellidou, Marco Delb\u00f2, Cody Schultz et al.",
     "year": 2020,
     "url": "https://doi.org/10.5194/epsc2020-762",
     "keywords": [
@@ -9359,7 +9359,7 @@
   {
     "id": "699766be-2a73-45ef-8660-17ad13c20ba5",
     "title": "Subsurface Structure at the InSight Landing Site From Compliance Measurements by Seismic and Meteorological Experiments",
-    "authors": "B. Kenda, M. Drilleau, R. García et al.",
+    "authors": "B. Kenda, M. Drilleau, R. Garc\u00eda et al.",
     "year": 2020,
     "url": "https://doi.org/10.1029/2020je006387",
     "keywords": [
@@ -9403,7 +9403,7 @@
   {
     "id": "e72a0012-cea8-466d-9e40-2a34034fc306",
     "title": "The isotopic composition of volatiles in the unique Bench Crater carbonaceous chondrite impactor found in the Apollo 12 regolith",
-    "authors": "K. Joy, R. Tartèse, S. Messenger et al.",
+    "authors": "K. Joy, R. Tart\u00e8se, S. Messenger et al.",
     "year": 2020,
     "url": "https://doi.org/10.1016/j.epsl.2020.116265",
     "keywords": [],
@@ -9473,7 +9473,7 @@
   {
     "id": "7c7b80a0-69b8-4635-99b8-3c63440ab942",
     "title": "A review towards the design of extraterrestrial structures: From regolith to human outposts",
-    "authors": "Nicos A. Kalapodis, Georgios Kampas, Olga‐Joan Ktenidou",
+    "authors": "Nicos A. Kalapodis, Georgios Kampas, Olga\u2010Joan Ktenidou",
     "year": 2020,
     "url": "https://doi.org/10.1016/j.actaastro.2020.05.038",
     "keywords": [
@@ -9550,7 +9550,7 @@
   {
     "id": "4c32606a-575a-4d2c-b1da-09b9165827a9",
     "title": "Temperature transformation of calcium and potassium Martian sulfates as seen by an Exomars 2022 RLS-like Raman instrument",
-    "authors": "J. Madariaga, J. Huidobro, C. García‐Florentino et al.",
+    "authors": "J. Madariaga, J. Huidobro, C. Garc\u00eda\u2010Florentino et al.",
     "year": 2020,
     "url": "https://doi.org/10.5194/epsc2020-1063",
     "keywords": [],
@@ -9831,7 +9831,7 @@
   },
   {
     "id": "2da4fcc9-fac0-4acd-ac63-3a9d5b1a4de5",
-    "title": "Nanostructuration de surface pour l'imagerie à résonance de plasmons de surface de haute résolution",
+    "title": "Nanostructuration de surface pour l'imagerie \u00e0 r\u00e9sonance de plasmons de surface de haute r\u00e9solution",
     "authors": "Frederic A. Banville",
     "year": 2019,
     "url": "https://pastel.hal.science/tel-02173714",
@@ -9982,7 +9982,7 @@
   },
   {
     "id": "03e1697f-cc6d-4433-9960-b07ba16ae7c7",
-    "title": "Nanostructuration de surface pour l'imagerie à résonance de plasmons de surface de haute résolution",
+    "title": "Nanostructuration de surface pour l'imagerie \u00e0 r\u00e9sonance de plasmons de surface de haute r\u00e9solution",
     "authors": "Frederic A. Banville",
     "year": 2019,
     "url": "https://doi.org/10.70675/e2617ba7zca4bz43e0z9a58z0c8b7459cf85",
@@ -10185,8 +10185,8 @@
   },
   {
     "id": "8f9d7030-3f7b-48d6-9c52-d6e0db727d15",
-    "title": "MGS‐TES Spectra Suggest a Basaltic Component in the Regolith of Phobos",
-    "authors": "T. D. Glotch, Christopher S. Edwards, Mehmet Yeşiltaş et al.",
+    "title": "MGS\u2010TES Spectra Suggest a Basaltic Component in the Regolith of Phobos",
+    "authors": "T. D. Glotch, Christopher S. Edwards, Mehmet Ye\u015filta\u015f et al.",
     "year": 2018,
     "url": "https://doi.org/10.1029/2018je005647",
     "keywords": [
@@ -10211,7 +10211,7 @@
   {
     "id": "5165c774-996a-45e5-9dc9-828fef514923",
     "title": "Pre-mission InSights on the Interior of Mars",
-    "authors": "S. E. Smrekar, Philippe Lognonné, Tilman Spohn et al.",
+    "authors": "S. E. Smrekar, Philippe Lognonn\u00e9, Tilman Spohn et al.",
     "year": 2018,
     "url": "https://doi.org/10.1007/s11214-018-0563-9",
     "keywords": [
@@ -10284,7 +10284,7 @@
   },
   {
     "id": "47547c92-0abb-4b7b-aef5-286aaad96395",
-    "title": "The alteration history of the Jbilet Winselwan CM carbonaceous chondrite: An analog for C‐type asteroid sample return",
+    "title": "The alteration history of the Jbilet Winselwan CM carbonaceous chondrite: An analog for C\u2010type asteroid sample return",
     "authors": "A. J. King, Sara S. Russell, P. Schofield et al.",
     "year": 2018,
     "url": "https://doi.org/10.1111/maps.13224",
@@ -10439,7 +10439,7 @@
   {
     "id": "d634c978-3bda-4afb-b741-805a4b174a36",
     "title": "Investigation of the properties of icy lunar polar regolith simulants",
-    "authors": "Craig Pitcher, Norbert Kömle, Otto Leibniz et al.",
+    "authors": "Craig Pitcher, Norbert K\u00f6mle, Otto Leibniz et al.",
     "year": 2016,
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0273117715009035",
     "keywords": [
@@ -10470,7 +10470,7 @@
   {
     "id": "51410e91-bc5d-4f75-825c-584f16d69579",
     "title": "Investigation of the properties of icy lunar polar regolith simulants",
-    "authors": "Craig Pitcher, Norbert Kömle, Otto Leibniz et al.",
+    "authors": "Craig Pitcher, Norbert K\u00f6mle, Otto Leibniz et al.",
     "year": 2016,
     "url": "https://www.sciencedirect.com/science/article/pii/S0273117715009035",
     "keywords": [
@@ -10547,7 +10547,7 @@
   {
     "id": "e8739eec-e80b-4bfe-9156-82fcfe2521a0",
     "title": "Planned Products of the Mars Structure Service for the InSight Mission to Mars",
-    "authors": "M. P. Panning, Philippe Lognonné, W. B. Banerdt et al.",
+    "authors": "M. P. Panning, Philippe Lognonn\u00e9, W. B. Banerdt et al.",
     "year": 2016,
     "url": "https://doi.org/10.1007/s11214-016-0317-5",
     "keywords": [
@@ -10571,7 +10571,7 @@
   },
   {
     "id": "c967e270-4939-48bf-ac4c-e7c6f1ae5fdc",
-    "title": "Orbital evidence for more widespread carbonate‐bearing rocks on Mars",
+    "title": "Orbital evidence for more widespread carbonate\u2010bearing rocks on Mars",
     "authors": "J. J. Wray, S. L. Murchie, J. L. Bishop et al.",
     "year": 2016,
     "url": "https://doi.org/10.1002/2015je004972",
@@ -10608,7 +10608,7 @@
   },
   {
     "id": "dd9e775a-3a74-4f6c-a822-dc3f33fa7325",
-    "title": "Magnesium and 54Cr isotope compositions of carbonaceous chondrite chondrules – Insights into early disk processes",
+    "title": "Magnesium and 54Cr isotope compositions of carbonaceous chondrite chondrules \u2013 Insights into early disk processes",
     "authors": "M. Olsen, D. Wielandt, M. Schiller et al.",
     "year": 2016,
     "url": "https://doi.org/10.1016/j.gca.2016.07.011",
@@ -10675,7 +10675,7 @@
   {
     "id": "ff335b98-0c56-4d4f-ab25-4c1f3a3dda05",
     "title": "Crawling ResearchGate.net to Measure Student/Supervisor Collaboration",
-    "authors": "Zahra Hammook, J. Misic, V. Mišić",
+    "authors": "Zahra Hammook, J. Misic, V. Mi\u0161i\u0107",
     "year": 2014,
     "url": "https://www.researchgate.net/publication/362149551",
     "keywords": [
@@ -10862,8 +10862,8 @@
   },
   {
     "id": "05c601de-bfc6-4988-8c12-ef4cb66abdba",
-    "title": "Timing of acid weathering on Mars: A kinetic‐thermodynamic assessment",
-    "authors": "M. Yu. Zolotov, М. В. Мироненко",
+    "title": "Timing of acid weathering on Mars: A kinetic\u2010thermodynamic assessment",
+    "authors": "M. Yu. Zolotov, \u041c. \u0412. \u041c\u0438\u0440\u043e\u043d\u0435\u043d\u043a\u043e",
     "year": 2007,
     "url": "https://doi.org/10.1029/2006je002882",
     "keywords": [
@@ -10887,7 +10887,7 @@
   },
   {
     "id": "ed149731-a162-4531-a6b5-a5f738af5c2f",
-    "title": "Impact‐induced hydrothermal activity on early Mars",
+    "title": "Impact\u2010induced hydrothermal activity on early Mars",
     "authors": "O. Abramov, D. A. Kring",
     "year": 2005,
     "url": "https://doi.org/10.1029/2005je002453",
@@ -11043,7 +11043,7 @@
   },
   {
     "id": "cf0452dd-4d76-4393-a7f7-ca3bf808e0f3",
-    "title": "Des marchés de droits d'épandage pour résorber les excédents au moindre coût : simulation dans les ZES de Bretagne",
+    "title": "Des march\u00e9s de droits d'\u00e9pandage pour r\u00e9sorber les exc\u00e9dents au moindre co\u00fbt : simulation dans les ZES de Bretagne",
     "authors": "Philippe Le Goffe, Laure Rebuffet",
     "year": 2002,
     "url": "http://prodinra.inra.fr/ft/B8CBCFA7-975F-4EF7-94F4-37EE6E35BEC9",
@@ -11059,7 +11059,7 @@
   },
   {
     "id": "b4db10df-73fd-46ef-9d0a-8c7738c71122",
-    "title": "Des marchés de droits d'épandage pour résorber les excédents au moindre coût : simulation dans les ZES de Bretagne",
+    "title": "Des march\u00e9s de droits d'\u00e9pandage pour r\u00e9sorber les exc\u00e9dents au moindre co\u00fbt : simulation dans les ZES de Bretagne",
     "authors": "Philippe Le Goffe, Laure Rebuffet",
     "year": 2002,
     "url": "https://hal.science/hal-02317183",
@@ -11138,7 +11138,7 @@
   {
     "id": "2c8f282b-fa61-478b-9e60-0134e4c6d25a",
     "title": "Complete sequence, expression, and evolution of the hexamerin LSP-2 of Calliphora vicina.",
-    "authors": "T. Burmester, C. Kölling, B. Schroer et al.",
+    "authors": "T. Burmester, C. K\u00f6lling, B. Schroer et al.",
     "year": 1998,
     "url": "https://doi.org/10.1016/S0965-1748(97)00054-4",
     "keywords": [],
@@ -11152,7 +11152,7 @@
   {
     "id": "a5dfacf9-5d3e-44e9-902e-567e2f1be156",
     "title": "Sequence, structure and evolution of the ecdysone-inducible Lsp-2 gene of Drosophila melanogaster.",
-    "authors": "Sylvie Mousseron‐Grall, J. Kejzlarova-Lepesant, T. Burmester et al.",
+    "authors": "Sylvie Mousseron\u2010Grall, J. Kejzlarova-Lepesant, T. Burmester et al.",
     "year": 1997,
     "url": "https://doi.org/10.1111/J.1432-1033.1997.00191.X",
     "keywords": [],
@@ -11165,8 +11165,8 @@
   },
   {
     "id": "8d0ecd8c-e195-435c-b23e-98edf45a715d",
-    "title": "Overlapping Lsp‐2 gene sequences target expression to both the larval and adult Drosophila fat body",
-    "authors": "H. Beneš, Karama Neal, R. L. Willis et al.",
+    "title": "Overlapping Lsp\u20102 gene sequences target expression to both the larval and adult Drosophila fat body",
+    "authors": "H. Bene\u0161, Karama Neal, R. L. Willis et al.",
     "year": 1996,
     "url": "https://doi.org/10.1111/j.1365-2583.1996.tb00039.x",
     "keywords": [],
@@ -11242,7 +11242,7 @@
   {
     "id": "d2ba9671-2f38-45da-8fba-398f6cd4bd0a",
     "title": "Adult expression of the Drosophila Lsp-2 gene.",
-    "authors": "H. Beneš, R. G. Edmondson, P. Fink et al.",
+    "authors": "H. Bene\u0161, R. G. Edmondson, P. Fink et al.",
     "year": 1990,
     "url": "https://doi.org/10.1016/0012-1606(90)90157-E",
     "keywords": [],
@@ -11256,7 +11256,7 @@
   {
     "id": "b82f3497-9b8b-4653-bf61-fecd149505f8",
     "title": "Fat-body-specific expression of the Drosophila Lsp-2 gene.",
-    "authors": "H. Beneš, D. W. Spivey, J. Miles et al.",
+    "authors": "H. Bene\u0161, D. W. Spivey, J. Miles et al.",
     "year": 1990,
     "url": "https://pubmed.ncbi.nlm.nih.gov/1369981/",
     "keywords": [],
@@ -11282,7 +11282,7 @@
   {
     "id": "ca762fd9-a20c-4f74-9061-1f0e362de70a",
     "title": "Histochemical analysis of the ecdysterone-regulated expression of the Drosophila genes P1 and LSP-2.",
-    "authors": "M. L. Paço-Larson, Y. Nakanishi, M. Levine et al.",
+    "authors": "M. L. Pa\u00e7o-Larson, Y. Nakanishi, M. Levine et al.",
     "year": 1986,
     "url": "https://doi.org/10.1002/DVG.1020070405",
     "keywords": [],
@@ -11295,7 +11295,7 @@
   },
   {
     "id": "37e3573b-0478-4c8d-b528-3f10bd17e77a",
-    "title": "Systematics of Ti isotopes in carbonaceous chondrite whole‐rock samples",
+    "title": "Systematics of Ti isotopes in carbonaceous chondrite whole\u2010rock samples",
     "authors": "S. Niemeyer",
     "year": 1985,
     "url": "https://doi.org/10.1029/GL012I010P00733",
@@ -11307,7 +11307,7 @@
   },
   {
     "id": "7e849f43-36ae-4467-a323-6fccfa3485f9",
-    "title": "The LSP-2 gene and a 5′ flanking sequence are independently expressed in Drosophila melanogaster",
+    "title": "The LSP-2 gene and a 5\u2032 flanking sequence are independently expressed in Drosophila melanogaster",
     "authors": "B. Yedvobnick, M. Levine",
     "year": 1982,
     "url": "https://doi.org/10.1038/297239A0",
@@ -11601,7 +11601,7 @@
   },
   {
     "id": "ac77ba3a-b4af-4f12-9fbf-89a0a1819ff1",
-    "title": "Regolith adherence characterization (RAC) experiment on the Moon and it’s ground-based simulation: Materials Issues",
+    "title": "Regolith adherence characterization (RAC) experiment on the Moon and it\u2019s ground-based simulation: Materials Issues",
     "authors": null,
     "year": null,
     "url": "https://iopscience.iop.org/article/10.1088/1757-899X/1287/1/012040/meta",
@@ -12403,7 +12403,7 @@
   {
     "id": "ad925bbc-75aa-4ba5-8205-68326acd4486",
     "title": "Effects of thermal cycling and mechanical characterization of an asteroid regolith simulant material",
-    "authors": "Sébastien Cohoner",
+    "authors": "Se\u0301bastien Cohoner",
     "year": null,
     "url": "https://doi.org/10.70675/7662a486z9fd8z4c20za9a1z41da8fcf66f6",
     "keywords": [],
@@ -12411,5 +12411,30 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-08-18"
+  },
+  {
+    "id": "88b8f6e7-dc0b-43ee-82ba-ab0a4f0d826f",
+    "title": "Comparison of lunar and Martian regolith simulant-based geopolymer cements formed by alkali-activation for in-situ resource utilization",
+    "authors": "Jennifer N. Mills, Maria Katzarova, Norman J. Wagner",
+    "year": 2022,
+    "url": "https://doi.org/10.1016/j.asr.2021.10.045",
+    "keywords": [
+      "Geopolymer cement",
+      "Lunar regolith simulant",
+      "Martian regolith simulant",
+      "Alkali-activation",
+      "In-situ resource utilization",
+      "ISRU",
+      "Construction",
+      "Advances in Space Research"
+    ],
+    "simulants": [],
+    "category": "multi",
+    "source": "manual",
+    "added_at": "2026-09-21",
+    "applications": [
+      "isru",
+      "construction"
+    ]
   }
 ]
