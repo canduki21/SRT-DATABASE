@@ -1656,6 +1656,49 @@
     "added_at": "2026-09-22"
   },
   {
+    "id": "04f2bac6-bf06-40e7-8577-b3b1182e0ea6",
+    "title": "The response of lunar regolith simulants of varying particle size ranges to vertical and horizontal vibrations",
+    "authors": "Craig McKenzie, Peter Watson, S. Vincent-Bonnieu et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1122/8.0001041",
+    "keywords": [
+      "Particle (ecology)",
+      "Convection",
+      "Regolith",
+      "Fluidization",
+      "Particle size",
+      "Propellant",
+      "Range (aeronautics)",
+      "Magnetosphere particle motion",
+      "Amplitude"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-25"
+  },
+  {
+    "id": "a09cbc42-b38d-4043-85f6-c926a149afb8",
+    "title": "Physicochemical properties of lunar regolith simulant for in situ oxygen production",
+    "authors": "Alyssa Ang De Guzman, Anish Mathai Varghese, Saif Alshalloudi et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.48550/arxiv.2601.14719",
+    "keywords": [
+      "Regolith",
+      "Ilmenite",
+      "Lunar mare",
+      "In situ",
+      "Oxygen",
+      "Silicate",
+      "Adsorption",
+      "Hydrogen"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-25"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
