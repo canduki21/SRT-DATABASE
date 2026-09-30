@@ -1699,6 +1699,45 @@
     "added_at": "2026-09-25"
   },
   {
+    "id": "8a59371a-8cf7-4b0a-b249-1a04f627d6dc",
+    "title": "Mechanical and microstructural performance of LHS-1E-based geopolymer concrete subjected to thermal curing conditions",
+    "authors": "Rayhan Md. Faysal, Scott Thomas Smith, T. Tafsirojjaman",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.conbuildmat.2026.148207",
+    "keywords": [
+      "Geopolymer",
+      "Curing (chemistry)",
+      "Sodium silicate",
+      "Compressive strength",
+      "Ultimate tensile strength",
+      "Flexural strength",
+      "Regolith",
+      "Raw material"
+    ],
+    "simulants": [
+      "LHS-1E"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-30"
+  },
+  {
+    "id": "1b6071a0-00b4-462d-9bd1-04460cbf707f",
+    "title": "Printability Analysis and Strength Enhancement of Extraterrestrial Geopolymers",
+    "authors": "Catalina Gonzalez, Joseph Ely, Beng Wei Chong et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1061/jaeeez.aseng-7043",
+    "keywords": [],
+    "simulants": [
+      "LHS-1",
+      "LSP-2",
+      "MGS-1C"
+    ],
+    "category": "multi",
+    "source": "auto-fetch",
+    "added_at": "2026-09-30"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -3736,6 +3775,29 @@
     "added_at": "2026-09-23"
   },
   {
+    "id": "08b5da0c-b2e8-466b-b198-0c247d7befec",
+    "title": "Viscosity and glass formation behavior of lunar regolith simulants",
+    "authors": "Simon Stapperfend, Donald Bruce Dingwell, Kai‐Uwe Hess et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.chemgeo.2025.123082",
+    "keywords": [
+      "Regolith",
+      "Differential scanning calorimetry",
+      "Viscosity",
+      "Viscometer",
+      "Sintering",
+      "Penetrometer",
+      "Homogeneity (statistics)"
+    ],
+    "simulants": [
+      "LHS-1",
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-30"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -5652,6 +5714,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-09-22"
+  },
+  {
+    "id": "8ccedcbf-99af-410b-937e-a256cdab3db3",
+    "title": "Experimental Evaluation of Lunar Regolith Settlement Caused by Ice Extraction",
+    "authors": "Zheng Gong, N. Barnett, Jangguen Lee et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.3390/aerospace11030207",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-09-30"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
