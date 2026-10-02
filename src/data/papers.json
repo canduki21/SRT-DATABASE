@@ -1738,6 +1738,21 @@
     "added_at": "2026-09-30"
   },
   {
+    "id": "2953a787-30c2-4e9d-a0d1-c4d0fba71355",
+    "title": "Characterization, Transport Modeling, and Image Analysis of Rover-Terrain Interaction for Lunar Regolith In-Situ Resource Utilization",
+    "authors": "Luke A Manolescu",
+    "year": 2026,
+    "url": "https://open.clemson.edu/all_theses/4807",
+    "keywords": [],
+    "simulants": [
+      "LHS-1",
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-02"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
