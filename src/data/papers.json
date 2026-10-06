@@ -2028,6 +2028,27 @@
     "added_at": "2026-10-04"
   },
   {
+    "id": "4eec540d-cd9f-49e9-b368-b910a517f00c",
+    "title": "Mineralogy-Dependent Charge Trapping and Thermoluminescence in Lunar Regolith Simulants",
+    "authors": "Isabela Alves Ferreira, Caio Vicentini, M.C.S. Nunes et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.materresbull.2026.114474",
+    "keywords": [
+      "lunar regolith simulant",
+      "thermoluminescence",
+      "radiation-induced charge trapping",
+      "mineralogical heterogeneity",
+      "anorthite",
+      "albite",
+      "photoluminescence",
+      "luminescence sensitization"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-06"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
