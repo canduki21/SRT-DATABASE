@@ -10045,6 +10045,27 @@
     "added_at": "2026-10-04"
   },
   {
+    "id": "2fd4acc5-27d7-4116-8898-299bc2814c16",
+    "title": "A Numerical Investigation to Determine the p–y Curves of Laterally Loaded Piles",
+    "authors": "Kexin Yin, Lianghui Li, Eugenia Di Filippo",
+    "year": 2021,
+    "url": "https://doi.org/10.3390/math9212783",
+    "keywords": [
+      "p-y curves",
+      "laterally loaded piles",
+      "pile lateral capacity",
+      "pile-soil interaction",
+      "clay content",
+      "sensitivity analysis",
+      "interface thickness",
+      "lateral displacement"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-10-09"
+  },
+  {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
     "title": "METZGER, CARBONACEOUS CHONDRITE\" Very weak carbonaceous asteroid simulants I: Mechanical properties and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
