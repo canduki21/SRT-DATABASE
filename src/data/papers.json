@@ -10637,6 +10637,25 @@
     "added_at": "2026-10-04"
   },
   {
+    "id": "4614e2b9-f4bd-4378-808c-4f9b2f404259",
+    "title": "Bulk and Thermal Properties of Planetary Analogue Simulants and Martian Meteorites",
+    "authors": "Helen E. A. Brand, N. R. Stephen, D. J. P. Martin",
+    "year": 2020,
+    "url": "http://hdl.handle.net/10026.1/17453",
+    "keywords": [
+      "Martian meteorites",
+      "bulk properties",
+      "thermal properties",
+      "Mars analog",
+      "thermal conductivity",
+      "thermal diffusivity"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-10-10"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -11036,6 +11055,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-09-04"
+  },
+  {
+    "id": "4d2acd18-1a6b-463a-b334-55f5dce3e35f",
+    "title": "Episodes of particle ejection from the surface of the active asteroid (101955) Bennu",
+    "authors": "D. Lauretta, C. Hergenrother, S. Chesley et al.",
+    "year": 2019,
+    "url": "https://doi.org/10.1126/science.aay3544",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-10-10"
   },
   {
     "id": "af1abecd-868d-47fc-b4db-39a08c66a7bf",
