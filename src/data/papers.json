@@ -2061,6 +2061,20 @@
     "added_at": "2026-10-07"
   },
   {
+    "id": "69eda089-604d-4ba2-b070-0f07f1cbbaa2",
+    "title": "Nanofibrillated Cellulose–Regolith Composite Aerogels for Lunar Thermal Insulation",
+    "authors": "Jacob Staker, J. Mather, Annabelle L. Hegeman et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1021/acssuschemeng.6c06706",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-11"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
