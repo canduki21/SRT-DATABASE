@@ -2075,6 +2075,23 @@
     "added_at": "2026-10-11"
   },
   {
+    "id": "11296678-065b-4d6d-afe3-c4e534464aeb",
+    "title": "Impact of particle size distribution on modulus development during curing and seven-day compressive strength of lunar regolith simulant geopolymers",
+    "authors": "William H. Hartt, Jake George, Norman J. Wagner",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.asr.2026.10.019",
+    "keywords": [
+      "lunar regolith simulant",
+      "geopolymer",
+      "particle size distribution",
+      "curing"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-12"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -6303,6 +6320,28 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-10-04"
+  },
+  {
+    "id": "6e33b0ee-db22-47d7-8f77-568633ccdf5f",
+    "title": "Cohesion and shear strength of compacted lunar and Martian regolith simulants",
+    "authors": "B. Dotson, Diana Valencia, Catherine Millwater et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.icarus.2024.115943",
+    "keywords": [
+      "lunar regolith",
+      "Martian regolith",
+      "regolith simulants",
+      "cohesion",
+      "shear strength",
+      "particle size distribution",
+      "bulk density",
+      "granular materials",
+      "direct shear test"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-12"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
