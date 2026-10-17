@@ -4324,6 +4324,18 @@
     "added_at": "2026-10-16"
   },
   {
+    "id": "6c4fca36-0cf9-4f27-9038-2b965c8c7f39",
+    "title": "3D printing LDPE/lunar regolith simulant composite: manufacturing with in-situ resources on the Moon",
+    "authors": "S. Moazen, F. Gosselin, I. Tabiai et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.actaastro.2025.08.012",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-17"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
