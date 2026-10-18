@@ -4336,6 +4336,27 @@
     "added_at": "2026-10-17"
   },
   {
+    "id": "ea3dc858-2d5d-4708-a128-575459b2e3ab",
+    "title": "A novel approach to increase flowability of planetary regolith",
+    "authors": "Chenggui He, Paul Junge, Rafael Kleba-Ehrhardt et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.14279/depositonce-25586",
+    "keywords": [
+      "Martian regolith simulant",
+      "spray drying",
+      "agglomeration",
+      "in-situ resource utilization",
+      "atmospheric plasma spraying",
+      "rapid heating and cooling",
+      "phase transitions",
+      "microstructure"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-10-18"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -8178,6 +8199,23 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-10-04"
+  },
+  {
+    "id": "e3ddd7a0-f4f1-4bab-ac5a-c33791c6cb3b",
+    "title": "Alkali-activated materials: Potential as alternative binders and use as extraterrestrial construction materials",
+    "authors": "Omar Ahmed Moussa Abdelrahman",
+    "year": 2023,
+    "url": "https://hdl.handle.net/2142/120580",
+    "keywords": [
+      "alkali-activated materials",
+      "alternative binders",
+      "space construction",
+      "binder materials"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-10-18"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
