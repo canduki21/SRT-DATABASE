@@ -2092,6 +2092,30 @@
     "added_at": "2026-10-12"
   },
   {
+    "id": "21e9ff67-d799-43e5-a9e1-cbbf9358094c",
+    "title": "Tulip-Shaped Orbits for Lunar South-Pole PNT and Direct-to-Earth Relay Missions",
+    "authors": "Darin C. Koblick, Michael A. Casey",
+    "year": 2026,
+    "url": "https://doi.org/10.48550/arXiv.2607.10482",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-24"
+  },
+  {
+    "id": "f1e7b816-409b-4718-9201-fdf2337d8cc3",
+    "title": "Ancient Impact Melt Near the Lunar South Pole: Distribution, Provenance, and Sampling Strategy",
+    "authors": "J. Ando, A. Blance, É. Brassard et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1029/2026je009990",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-24"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
