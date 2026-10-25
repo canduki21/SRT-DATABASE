@@ -2116,6 +2116,58 @@
     "added_at": "2026-10-24"
   },
   {
+    "id": "6eb7c414-078b-4051-b8d6-81af8be420d1",
+    "title": "Understanding Phosphorus Dynamics in Martian and Lunar Regolith Simulants: Insights for Space Agriculture",
+    "authors": "Victor Akuku, Ashley Loredo, Julie A. Howe et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1021/acsearthspacechem.6c00270",
+    "keywords": [
+      "phosphorus dynamics",
+      "Martian regolith simulant",
+      "lunar regolith simulant",
+      "phosphorus adsorption",
+      "phosphorus desorption",
+      "phosphorus retention",
+      "phosphorus speciation",
+      "aluminum-bound phosphorus",
+      "iron-bound phosphorus",
+      "space agriculture",
+      "phosphorus management"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
+  },
+  {
+    "id": "8cbacf2a-3e2e-4562-b793-8a94a6675256",
+    "title": "Manure and chia mucilage as structure-forming agents in lunar and martian regolith simulants: a bio-based approach to substrate conditioning",
+    "authors": "Rosangela Addesso, Antonio Giandonato Caporale, Paola Adamo et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3389/fsoil.2026.1999715",
+    "keywords": [
+      "lunar regolith simulant",
+      "Martian regolith simulant",
+      "manure",
+      "chia seed mucilage",
+      "Salvia hispanica",
+      "soil aggregate stability",
+      "particle aggregation",
+      "organic amendments",
+      "space agriculture",
+      "bioregenerative life support",
+      "particle adhesion",
+      "elemental composition"
+    ],
+    "simulants": [
+      "LHS-1",
+      "MMS-1"
+    ],
+    "category": "multi",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4381,6 +4433,27 @@
     "added_at": "2026-10-18"
   },
   {
+    "id": "f72d99ec-e57c-41b7-8775-9e546b0f172e",
+    "title": "Effects of lunar dust deposition on thermal control surfaces - from measurements with lunar dust simulants to predictions for real lunar dust",
+    "authors": "Philipp Hager, S. Duzellier, Jean-Charles Matéo‐Vélez",
+    "year": 2025,
+    "url": "https://hal.science/hal-05642728v1",
+    "keywords": [
+      "lunar dust",
+      "dust deposition",
+      "thermal control surfaces",
+      "lunar dust simulant",
+      "thermal control coatings"
+    ],
+    "simulants": [
+      "LHS-1-25A",
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -6411,6 +6484,49 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-10-12"
+  },
+  {
+    "id": "bba5a5ef-2577-4584-8c2a-e3e581dece51",
+    "title": "Evolution of thermo-optical properties of solar panels or thermal control materials with lunar dust simulants contamination",
+    "authors": "S. Duzellier, Jean-Charles Matéo‐Vélez, Beyler, Adrian et al.",
+    "year": 2024,
+    "url": "https://hal.science/hal-04969633",
+    "keywords": [
+      "thermo-optical properties",
+      "solar panels",
+      "thermal control materials",
+      "lunar dust simulant",
+      "contamination",
+      "space debris"
+    ],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
+  },
+  {
+    "id": "fd8d30b5-60d1-496a-89b9-facbec99b0f8",
+    "title": "An investigation of lunar dust simulant adhesion using a centrifuge system under high vacuum and UV irradiation conditions",
+    "authors": "Kahan, Alice, Suarez, Jean-Charles Matéo‐Vélez, Emmanuel Porcheron et al.",
+    "year": 2024,
+    "url": "https://hal.science/hal-04892311",
+    "keywords": [
+      "lunar dust simulant",
+      "dust adhesion",
+      "centrifuge testing",
+      "high vacuum",
+      "UV irradiation",
+      "lunar regolith",
+      "spacecraft contamination"
+    ],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -10203,6 +10319,27 @@
     "category": "general",
     "source": "auto-fetch",
     "added_at": "2026-10-09"
+  },
+  {
+    "id": "672c0f2a-d9e0-4aa1-846b-5a63f7d7e23e",
+    "title": "Feasibility of additive manufacturing processes for lunar soil simulants",
+    "authors": "Danijela Ignjatović Stupar, Grégoire Robert Chabrol, Razak, Abdoul et al.",
+    "year": 2021,
+    "url": "https://hal.archives-ouvertes.fr/hal-03433758",
+    "keywords": [
+      "additive manufacturing",
+      "lunar regolith simulant",
+      "regolith",
+      "3D printing",
+      "in-situ resource utilization"
+    ],
+    "simulants": [
+      "LHS-1",
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-25"
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
