@@ -2168,6 +2168,27 @@
     "added_at": "2026-10-25"
   },
   {
+    "id": "4914cf05-ea68-476f-83fe-f195a9ddfa83",
+    "title": "Lunar Dust Vacuum Cleaner Status Report",
+    "authors": "Steve A. Lee, Glenn Waguespack, Kristen John",
+    "year": 2026,
+    "url": "https://doi.org/10.64631/nkaq9835",
+    "keywords": [
+      "lunar dust",
+      "vacuuming",
+      "particulate matter removal",
+      "lunar regolith simulant",
+      "particle adhesion",
+      "particle resuspension",
+      "removal efficiency",
+      "Artemis missions"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-10-29"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
