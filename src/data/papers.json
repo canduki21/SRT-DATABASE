@@ -6550,6 +6550,31 @@
     "added_at": "2026-10-25"
   },
   {
+    "id": "58dc865c-dce2-4826-a14b-c62cbdebf9a9",
+    "title": "Spray-deposition of graphene/polymer thin coatings on polyimide sheets for lunar dust adhesion mitigation",
+    "authors": "Keith L. Gordon, Lopamudra Das, Thanuja L. Galhena et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.actaastro.2024.02.030",
+    "keywords": [
+      "lunar dust",
+      "graphene coating",
+      "polyimide thin films",
+      "spray deposition",
+      "graphene ink",
+      "surface resistivity",
+      "charge dissipation",
+      "abrasion resistance",
+      "scratch test",
+      "water contact angle",
+      "surface topography",
+      "polymer coatings"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-02"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
