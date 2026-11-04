@@ -4475,6 +4475,29 @@
     "added_at": "2026-10-25"
   },
   {
+    "id": "9175bab9-6faf-4e5a-885b-3292e62d7b6f",
+    "title": "A novel approach to increase flowability of planetary regolith: Spray drying of Martian simulants for powder-based ISRU fabrication",
+    "authors": "Chenggui He, Paul Junge, Rafael Kleba-Ehrhardt et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.actaastro.2025.07.054",
+    "keywords": [
+      "Martian regolith simulant",
+      "powder flowability",
+      "spray drying",
+      "in-situ resource utilization",
+      "granulation",
+      "atmospheric plasma spraying",
+      "porous coatings",
+      "planetary regolith"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-04"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -9652,6 +9675,27 @@
     "added_at": "2026-10-04"
   },
   {
+    "id": "5cacdd39-cdbf-4ce2-9254-aaeef62345e1",
+    "title": "Selection of Anabaena sp. PCC 7938 as a Cyanobacterium Model for Biological ISRU on Mars",
+    "authors": "Tiago P. Ramalho, Guillaume Chopin, Olga M. Pérez-Carrascal et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1128/aem.00594-22",
+    "keywords": [
+      "cyanobacteria",
+      "Mars",
+      "in-situ resource utilization",
+      "model organism selection",
+      "diazotrophic cyanobacteria",
+      "rock leaching",
+      "human Mars missions",
+      "biotechnology"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-04"
+  },
+  {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
     "title": "ASS Exolith Lab,\"LHS-1, LMS-1, MGS-1, SIMULANTS, MGS-1C, JEZ-1, DUST-Y, ASTEROID, CLASS, EXOLITH, OSIRIS-REX\" Phobos regolith simulants PGI-1 and PCA-1",
     "authors": "Landsman et al",
@@ -10386,6 +10430,24 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-10-25"
+  },
+  {
+    "id": "fdac585e-52d5-409e-b9af-df461d8f9554",
+    "title": "Furthering Asteroid Resource Utilization in the Next Decade through Technology Leadership",
+    "authors": "Chris Lewicki, A. L. Graps, Martin E. Elvis et al.",
+    "year": 2021,
+    "url": "https://doi.org/10.48550/arxiv.2103.02435",
+    "keywords": [
+      "asteroid mining",
+      "space resource development",
+      "technology leadership",
+      "knowledge gaps",
+      "space economy"
+    ],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-11-04"
   },
   {
     "id": "2152e875-a145-4ad5-b00f-7410632ffa39",
