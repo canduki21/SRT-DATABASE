@@ -2189,6 +2189,68 @@
     "added_at": "2026-10-29"
   },
   {
+    "id": "55cd9b78-23cd-463f-bf25-834d344a0a7e",
+    "title": "LunarRF: A Terrain-Aware Propagation Engine and Pole-Wide 3GPP Surface Coverage Atlas of the Lunar South Pole",
+    "authors": "Christopher Santorelli, Alexander M. Wyglinski",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2610.34554",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-07"
+  },
+  {
+    "id": "b69d6b94-c007-4311-a436-47f216a6f9cd",
+    "title": "Regolith Simulant Adhesion to Polycarbonate and PDMS: Deposition Methods, Coverage, and Removal Resistance",
+    "authors": "Emma Nolan, Emily Power, Dylan Doherty et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1002/mame.70357",
+    "keywords": [
+      "regolith simulants",
+      "dust adhesion",
+      "lunar dust",
+      "Martian dust",
+      "polycarbonate",
+      "polydimethylsiloxane",
+      "substrate stiffness",
+      "Young's modulus",
+      "surface energy",
+      "atmospheric deposition",
+      "drying effects",
+      "van der Waals interactions"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-07"
+  },
+  {
+    "id": "463aa97f-0e9b-4c00-a46a-05434bc35bb5",
+    "title": "Plant growth in lunar regolith: current advances in plant responses, regolith engineering, and sustainable lunar agriculture",
+    "authors": "N. Bharathy, Saiyyeda Firdous, Theivasigamani Parthasarathi",
+    "year": 2026,
+    "url": "https://doi.org/10.3389/fspas.2026.1953450",
+    "keywords": [
+      "lunar regolith",
+      "lunar agriculture",
+      "plant growth",
+      "regolith simulants",
+      "bioregenerative life support",
+      "arbuscular mycorrhizal inoculation",
+      "seed priming",
+      "oxidative stress",
+      "space radiation",
+      "reduced gravity",
+      "plant-microbe interactions",
+      "rhizosphere microbiome"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-07"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4496,6 +4558,45 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-11-04"
+  },
+  {
+    "id": "ce5552ff-9d4e-4de4-9cbf-77dae1997f3a",
+    "title": "Additive Manufacturing of PEEK/Lunar Regolith Composites for Sustainable Lunar Manufacturing",
+    "authors": "Mohammad Azami, Pierre-Lucas Aubin-Fournier, Mehdi Hojjati et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.48550/arxiv.2508.00894",
+    "keywords": [
+      "PEEK composites",
+      "lunar regolith simulant",
+      "in-situ resource utilization",
+      "material extrusion",
+      "melt blending",
+      "annealing",
+      "porosity",
+      "crystallinity",
+      "tensile strength",
+      "elastic modulus",
+      "lunar infrastructure",
+      "additive manufacturing"
+    ],
+    "simulants": [
+      "LMS-1D"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-07"
+  },
+  {
+    "id": "84fc5821-7158-421d-8577-8acd2bee18d4",
+    "title": "Application of Machine Learning Techniques to Distinguish between Mare, Cryptomare, and Light Plains in Central Lunar South Pole−Aitken Basin",
+    "authors": "Frank C. Chuang, Matthew D. Richardson, J. Whitten et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.3847/PSJ/ada4a6",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-07"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
