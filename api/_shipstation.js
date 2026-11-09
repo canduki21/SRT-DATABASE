@@ -87,7 +87,20 @@ export async function quoteLandedCost({ address, cart }) {
   };
 
   const { rate_response: rr = {} } = await ss('/rates', { method: 'POST', body: JSON.stringify(body) });
-  const rates = (rr.rates || [])
+  const raw = rr.rates || [];
+  console.log('shipstation rates:', JSON.stringify({
+    status: rr.status,
+    count: raw.length,
+    errors: (rr.errors || []).map((e) => e.message),
+    invalid: (rr.invalid_rates || []).slice(0, 5).map((r) => ({ c: r.carrier_code, s: r.service_code, e: r.error_messages })),
+    sample: raw.slice(0, 5).map((r) => ({
+      c: r.carrier_code, s: r.service_code, ship: r.shipping_amount, tax: r.tax_amount,
+      details: (r.rate_details || []).map((d) => `${d.rate_detail_type}:${d.amount?.amount}`),
+      keys: Object.keys(r),
+    })),
+  }));
+
+  const rates = raw
     .map((r) => {
       const taxFromDetails = (r.rate_details || [])
         .filter((d) => d.rate_detail_type === 'tax')
@@ -109,7 +122,11 @@ export async function quoteLandedCost({ address, cart }) {
     .filter((r) => r.has_duties);
 
   if (!rates.length) {
-    const why = (rr.errors || []).map((e) => e.message).join('; ');
+    const why = [
+      ...(rr.errors || []).map((e) => e.message),
+      ...(rr.invalid_rates || []).flatMap((r) => r.error_messages || []),
+      raw.length ? `${raw.length} rate(s) returned without duties/taxes` : 'no rates returned',
+    ].slice(0, 4).join('; ');
     throw new Error(`No DDP rate with duties/taxes available for this destination${why ? `: ${why}` : ''}`);
   }
   rates.sort((a, b) => a.shipping + a.duties_taxes - (b.shipping + b.duties_taxes));
