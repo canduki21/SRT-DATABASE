@@ -36,7 +36,10 @@ export async function buildQuote(body) {
   const cart = await priceCart(lineItems, address);
   const rate = await quoteLandedCost({ address, cart });
 
-  const duties_taxes = cents(rate.duties_taxes);
+  const duties = cents(rate.duties);
+  const taxes = cents(rate.taxes);
+  const import_fees = cents(rate.import_fees);
+  const duties_taxes = cents(duties + taxes + import_fees);
   const brokerage_fee = cents(fees.brokerage_fee);
   const processing_fee = cents(fees.processing_fee);
 
@@ -53,6 +56,10 @@ export async function buildQuote(body) {
       carrier: rate.carrier,
       service: rate.service,
       delivery_days: rate.delivery_days,
+      guaranteed: rate.guaranteed,
+      duties,
+      taxes,
+      import_fees,
       duties_taxes,
       brokerage_fee,
       processing_fee,

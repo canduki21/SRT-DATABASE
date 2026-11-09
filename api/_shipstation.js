@@ -88,35 +88,33 @@ export async function quoteLandedCost({ address, cart }) {
 
   const { rate_response: rr = {} } = await ss('/rates', { method: 'POST', body: JSON.stringify(body) });
   const raw = rr.rates || [];
-  console.log('shipstation rates:', JSON.stringify({
-    status: rr.status,
-    count: raw.length,
-    errors: (rr.errors || []).map((e) => e.message),
-    invalid: (rr.invalid_rates || []).slice(0, 5).map((r) => ({ c: r.carrier_code, s: r.service_code, e: r.error_messages })),
-    sample: raw.slice(0, 5).map((r) => ({
-      c: r.carrier_code, s: r.service_code, ship: r.shipping_amount, tax: r.tax_amount,
-      details: (r.rate_details || []).map((d) => `${d.rate_detail_type}:${d.amount?.amount}`),
-      keys: Object.keys(r),
-    })),
-  }));
 
+  // ShipStation itemises landed cost in rate_details, e.g. UPS: prepaid_duties / prepaid_taxes /
+  // prepaid_import_fees (guaranteed); DHL: estimated_duties / estimated_taxes / estimated_import_fees.
+  // Everything else (shipping, fuel_charge, additional_fees, ...) is the carrier's shipping charge.
   const rates = raw
     .map((r) => {
-      const taxFromDetails = (r.rate_details || [])
-        .filter((d) => d.rate_detail_type === 'tax')
-        .reduce((s, d) => s + amt(d.amount), 0);
-      const duties_taxes = r.tax_amount ? amt(r.tax_amount) : taxFromDetails;
-      const has_duties = Boolean(r.tax_amount) || taxFromDetails > 0;
-      const shipping =
-        amt(r.shipping_amount) + amt(r.other_amount) + amt(r.confirmation_amount) + amt(r.insurance_amount);
+      const details = r.rate_details || [];
+      const sum = (re) => details.filter((d) => re.test(d.rate_detail_type || '')).reduce((s, d) => s + amt(d.amount), 0);
+      const duties = sum(/duties|duty/);
+      const taxes = sum(/taxes|tax$/);
+      const import_fees = sum(/import_fee/);
+      const landedTypes = /duties|duty|taxes|tax$|import_fee/;
+      const shipping = details.length
+        ? details.filter((d) => !landedTypes.test(d.rate_detail_type || '')).reduce((s, d) => s + amt(d.amount), 0)
+        : amt(r.shipping_amount) + amt(r.other_amount) + amt(r.confirmation_amount) + amt(r.insurance_amount);
       return {
         rate_id: r.rate_id,
         carrier: r.carrier_friendly_name || r.carrier_code,
         service: r.service_type || r.service_code,
         delivery_days: r.delivery_days ?? null,
         shipping,
-        duties_taxes,
-        has_duties,
+        duties,
+        taxes,
+        import_fees,
+        duties_taxes: duties + taxes + import_fees,
+        guaranteed: details.some((d) => /^prepaid_/.test(d.rate_detail_type || '')),
+        has_duties: details.some((d) => landedTypes.test(d.rate_detail_type || '')),
       };
     })
     .filter((r) => r.has_duties);
@@ -129,6 +127,9 @@ export async function quoteLandedCost({ address, cart }) {
     ].slice(0, 4).join('; ');
     throw new Error(`No DDP rate with duties/taxes available for this destination${why ? `: ${why}` : ''}`);
   }
-  rates.sort((a, b) => a.shipping + a.duties_taxes - (b.shipping + b.duties_taxes));
+
+  // Prefer guaranteed (prepaid) duties & taxes, then the lowest landed cost.
+  rates.sort((a, b) =>
+    (b.guaranteed - a.guaranteed) || (a.shipping + a.duties_taxes) - (b.shipping + b.duties_taxes));
   return rates[0];
 }
