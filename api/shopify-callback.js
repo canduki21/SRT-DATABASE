@@ -10,7 +10,6 @@ export default async function handler(req, res) {
 
   const CLIENT_ID = (process.env.SHOPIFY_CLIENT_ID || '').trim();
   const CLIENT_SECRET = (process.env.SHOPIFY_CLIENT_SECRET || '').trim();
-  console.log('shopify-callback: secret length', CLIENT_SECRET.length, 'raw', (process.env.SHOPIFY_CLIENT_SECRET || '').length, 'client id length', CLIENT_ID.length, 'raw', (process.env.SHOPIFY_CLIENT_ID || '').length);
 
   const tokenRes = await fetch(`https://${shop}/admin/oauth/access_token`, {
     method: 'POST',
