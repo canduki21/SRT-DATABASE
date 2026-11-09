@@ -1,197 +1,71 @@
-<!-- SRT DDP Cart Widget — paste into Shopify Theme Customizer → Custom Liquid section on the cart page -->
+<!-- SRT DDP Cart Widget — live landed-cost quotes from ShipStation via https://srt-database.vercel.app/api/ddp-quote -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
   #srt-ddp { font-family: 'Titillium Web', sans-serif !important; display: block !important; width: 100% !important; }
   #srt-ddp * { box-sizing: border-box !important; }
-
-  #srt-ddp .ddp-wrap {
-    display: block !important;
-    background: #001219 !important;
-    border: 1px solid rgba(200,122,65,0.35) !important;
-    border-radius: 10px !important;
-    padding: 22px 24px !important;
-    margin: 24px 0 !important;
-    color: #fafafa !important;
-    width: 100% !important;
-  }
-  #srt-ddp .ddp-header {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    margin: 0 0 16px 0 !important;
-    padding: 0 !important;
-  }
-  #srt-ddp .ddp-header-icon {
-    width: 36px !important; height: 36px !important;
-    background: rgba(200,122,65,0.15) !important;
-    border-radius: 8px !important;
-    display: flex !important; align-items: center !important; justify-content: center !important;
-    flex-shrink: 0 !important;
-    padding: 0 !important; margin: 0 !important;
-  }
+  #srt-ddp .ddp-wrap { display: block !important; background: #001219 !important; border: 1px solid rgba(200,122,65,0.35) !important; border-radius: 12px !important; padding: 32px 36px !important; margin: 32px auto !important; color: #fafafa !important; width: 100% !important; max-width: 680px !important; }
+  @media (max-width: 600px) { #srt-ddp .ddp-wrap { padding: 22px 18px !important; } }
+  #srt-ddp .ddp-header { display: flex !important; align-items: center !important; gap: 14px !important; margin: 0 0 20px 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-header-icon { width: 44px !important; height: 44px !important; background: rgba(200,122,65,0.15) !important; border-radius: 10px !important; display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; padding: 0 !important; margin: 0 !important; }
   #srt-ddp .ddp-header-text { margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-header-text h3 { font-size: 1rem !important; font-weight: 700 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-header-text p  { font-size: 0.78rem !important; color: #8f8d8d !important; margin: 2px 0 0 0 !important; padding: 0 !important; line-height: 1.4 !important; }
+  #srt-ddp .ddp-header-text h3 { font-size: 1.25rem !important; font-weight: 700 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-header-text p { font-size: 0.95rem !important; color: #8f8d8d !important; margin: 4px 0 0 0 !important; padding: 0 !important; line-height: 1.5 !important; }
 
-  #srt-ddp .ddp-toggle-row {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    background: #022e4b !important;
-    border: 1px solid rgba(143,141,141,0.2) !important;
-    border-radius: 8px !important;
-    padding: 14px 16px !important;
-    margin: 0 !important;
-    cursor: pointer !important;
-    gap: 12px !important;
-    width: 100% !important;
-  }
-  #srt-ddp .ddp-toggle-label { font-size: 0.9rem !important; font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-toggle-sub   { font-size: 0.75rem !important; color: #8f8d8d !important; margin: 2px 0 0 0 !important; padding: 0 !important; }
-
-  #srt-ddp .ddp-switch { position: relative !important; width: 44px !important; height: 24px !important; flex-shrink: 0 !important; display: inline-block !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-toggle-row { display: flex !important; align-items: center !important; justify-content: space-between !important; background: #022e4b !important; border: 1px solid rgba(143,141,141,0.2) !important; border-radius: 10px !important; padding: 18px 20px !important; margin: 0 !important; cursor: pointer !important; gap: 12px !important; width: 100% !important; }
+  #srt-ddp .ddp-toggle-label { font-size: 1.05rem !important; font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-toggle-sub { font-size: 0.88rem !important; color: #8f8d8d !important; margin: 3px 0 0 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-switch { position: relative !important; width: 50px !important; height: 28px !important; flex-shrink: 0 !important; display: inline-block !important; margin: 0 !important; padding: 0 !important; }
   #srt-ddp .ddp-switch input { opacity: 0 !important; width: 0 !important; height: 0 !important; margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-slider {
-    position: absolute !important; inset: 0 !important;
-    background: #334155 !important;
-    border-radius: 24px !important;
-    cursor: pointer !important;
-    transition: background 0.2s !important;
-    margin: 0 !important; padding: 0 !important;
-  }
-  #srt-ddp .ddp-slider::before {
-    content: '' !important;
-    position: absolute !important;
-    width: 18px !important; height: 18px !important;
-    left: 3px !important; top: 3px !important;
-    background: #fff !important;
-    border-radius: 50% !important;
-    transition: transform 0.2s !important;
-    margin: 0 !important; padding: 0 !important;
-  }
+  #srt-ddp .ddp-slider { position: absolute !important; inset: 0 !important; background: #334155 !important; border-radius: 28px !important; cursor: pointer !important; transition: background 0.2s !important; margin: 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-slider::before { content: '' !important; position: absolute !important; width: 22px !important; height: 22px !important; left: 3px !important; top: 3px !important; background: #fff !important; border-radius: 50% !important; transition: transform 0.2s !important; margin: 0 !important; padding: 0 !important; }
   #srt-ddp .ddp-switch input:checked + .ddp-slider { background: #c87a41 !important; }
-  #srt-ddp .ddp-switch input:checked + .ddp-slider::before { transform: translateX(20px) !important; }
+  #srt-ddp .ddp-switch input:checked + .ddp-slider::before { transform: translateX(22px) !important; }
 
-  #srt-ddp .ddp-panel { display: none !important; margin: 14px 0 0 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-panel { display: none !important; margin: 16px 0 0 0 !important; padding: 0 !important; }
   #srt-ddp .ddp-panel.open { display: block !important; }
+  #srt-ddp .ddp-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 0 14px !important; }
+  #srt-ddp .ddp-grid .full { grid-column: 1 / -1 !important; }
+  @media (max-width: 600px) { #srt-ddp .ddp-grid { grid-template-columns: 1fr !important; } }
 
-  #srt-ddp .ddp-field { margin: 0 0 12px 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-field label {
-    display: block !important;
-    font-size: 0.78rem !important;
-    font-weight: 600 !important;
-    color: #8f8d8d !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.04em !important;
-    margin: 0 0 6px 0 !important;
-    padding: 0 !important;
-  }
-  #srt-ddp .ddp-field select,
-  #srt-ddp .ddp-field input {
-    display: block !important;
-    width: 100% !important;
-    background: #022e4b !important;
-    border: 1px solid rgba(143,141,141,0.25) !important;
-    border-radius: 6px !important;
-    color: #fafafa !important;
-    font-family: 'Titillium Web', sans-serif !important;
-    font-size: 0.9rem !important;
-    padding: 10px 12px !important;
-    margin: 0 !important;
-    outline: none !important;
-    appearance: none !important;
-    -webkit-appearance: none !important;
-  }
-  #srt-ddp .ddp-field select:focus,
-  #srt-ddp .ddp-field input:focus { border-color: #c87a41 !important; }
+  #srt-ddp .ddp-field { margin: 0 0 14px 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-field label { display: block !important; font-size: 0.88rem !important; font-weight: 600 !important; color: #8f8d8d !important; text-transform: uppercase !important; letter-spacing: 0.04em !important; margin: 0 0 8px 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-field select, #srt-ddp .ddp-field input { display: block !important; width: 100% !important; background: #022e4b !important; border: 1px solid rgba(143,141,141,0.25) !important; border-radius: 8px !important; color: #fafafa !important; font-family: 'Titillium Web', sans-serif !important; font-size: 1rem !important; padding: 13px 15px !important; margin: 0 !important; outline: none !important; appearance: none !important; -webkit-appearance: none !important; }
+  #srt-ddp .ddp-field select:focus, #srt-ddp .ddp-field input:focus { border-color: #c87a41 !important; }
   #srt-ddp .ddp-field select option { background: #001219 !important; }
 
-  #srt-ddp .ddp-breakdown {
-    background: #022e4b !important;
-    border: 1px solid rgba(143,141,141,0.2) !important;
-    border-radius: 8px !important;
-    padding: 14px 16px !important;
-    margin: 14px 0 0 0 !important;
-    font-size: 0.85rem !important;
-  }
-  #srt-ddp .ddp-breakdown-title {
-    display: block !important;
-    font-size: 0.75rem !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.05em !important;
-    color: #8f8d8d !important;
-    margin: 0 0 10px 0 !important;
-    padding: 0 !important;
-  }
-  #srt-ddp .ddp-row {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 5px 0 !important;
-    margin: 0 !important;
-    border-bottom: 1px solid rgba(143,141,141,0.1) !important;
-  }
+  #srt-ddp .ddp-breakdown { background: #022e4b !important; border: 1px solid rgba(143,141,141,0.2) !important; border-radius: 10px !important; padding: 18px 20px !important; margin: 16px 0 0 0 !important; font-size: 1rem !important; }
+  #srt-ddp .ddp-breakdown-title { display: block !important; font-size: 0.82rem !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; color: #8f8d8d !important; margin: 0 0 12px 0 !important; padding: 0 !important; }
+  #srt-ddp .ddp-row { display: flex !important; justify-content: space-between !important; align-items: baseline !important; gap: 12px !important; padding: 7px 0 !important; margin: 0 !important; border-bottom: 1px solid rgba(143,141,141,0.1) !important; }
   #srt-ddp .ddp-row:last-child { border-bottom: none !important; }
-  #srt-ddp .ddp-row-label { color: #8f8d8d !important; margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-row-val   { font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; }
-  #srt-ddp .ddp-row.total .ddp-row-label { color: #fafafa !important; font-weight: 700 !important; }
-  #srt-ddp .ddp-row.total .ddp-row-val   { color: #c87a41 !important; font-size: 1rem !important; }
+  #srt-ddp .ddp-row.sub .ddp-row-label { padding-left: 14px !important; }
+  #srt-ddp .ddp-row.ref { opacity: 0.75 !important; }
+  #srt-ddp .ddp-row-label { color: #8f8d8d !important; margin: 0 !important; padding: 0 !important; font-size: 0.95rem !important; }
+  #srt-ddp .ddp-row-val { font-weight: 600 !important; color: #fafafa !important; margin: 0 !important; padding: 0 !important; font-size: 0.95rem !important; text-align: right !important; }
+  #srt-ddp .ddp-row.total .ddp-row-label { color: #fafafa !important; font-weight: 700 !important; font-size: 1.05rem !important; }
+  #srt-ddp .ddp-row.total .ddp-row-val { color: #c87a41 !important; font-size: 1.15rem !important; }
+  #srt-ddp .ddp-note { display: block !important; font-size: 0.82rem !important; color: #8f8d8d !important; margin: 12px 0 0 0 !important; padding: 0 !important; line-height: 1.6 !important; }
 
-  #srt-ddp .ddp-note {
-    display: block !important;
-    font-size: 0.73rem !important;
-    color: #8f8d8d !important;
-    margin: 10px 0 0 0 !important;
-    padding: 0 !important;
-    line-height: 1.5 !important;
-  }
-  #srt-ddp .ddp-btn {
-    display: block !important;
-    width: 100% !important;
-    margin: 16px 0 0 0 !important;
-    padding: 13px !important;
-    background: #c87a41 !important;
-    color: #fff !important;
-    font-family: 'Titillium Web', sans-serif !important;
-    font-size: 0.95rem !important;
-    font-weight: 700 !important;
-    border: none !important;
-    border-radius: 8px !important;
-    cursor: pointer !important;
-    text-align: center !important;
-    transition: background 0.2s, opacity 0.2s !important;
-  }
-  #srt-ddp .ddp-btn:hover:not(:disabled) { background: #a86030 !important; }
+  #srt-ddp .ddp-btn { display: block !important; width: 100% !important; margin: 20px 0 0 0 !important; padding: 16px !important; background: #c87a41 !important; color: #fff !important; font-family: 'Titillium Web', sans-serif !important; font-size: 1.1rem !important; font-weight: 700 !important; border: none !important; border-radius: 10px !important; cursor: pointer !important; text-align: center !important; transition: background 0.2s, opacity 0.2s !important; }
+  #srt-ddp .ddp-btn.secondary { background: transparent !important; border: 1px solid #c87a41 !important; color: #c87a41 !important; margin-top: 4px !important; }
+  #srt-ddp .ddp-btn:hover:not(:disabled) { background: #a86030 !important; color: #fff !important; }
   #srt-ddp .ddp-btn:disabled { opacity: 0.5 !important; cursor: not-allowed !important; }
-
-  #srt-ddp .ddp-error {
-    display: none !important;
-    background: rgba(200,50,50,0.12) !important;
-    border: 1px solid rgba(200,50,50,0.35) !important;
-    border-radius: 6px !important;
-    padding: 10px 14px !important;
-    margin: 12px 0 0 0 !important;
-    font-size: 0.82rem !important;
-    color: #f87171 !important;
-  }
+  #srt-ddp .ddp-error { display: none !important; background: rgba(200,50,50,0.12) !important; border: 1px solid rgba(200,50,50,0.35) !important; border-radius: 8px !important; padding: 12px 16px !important; margin: 14px 0 0 0 !important; font-size: 0.95rem !important; color: #f87171 !important; }
 </style>
 
 <div id="srt-ddp">
   <div class="ddp-wrap">
-
     <div class="ddp-header">
       <div class="ddp-header-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c87a41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c87a41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
         </svg>
       </div>
       <div class="ddp-header-text">
         <h3>Delivered Duty Paid (DDP)</h3>
-        <p>Prepay import duties, taxes &amp; customs fees — no surprise charges at delivery.</p>
+        <p>Pay import duties and taxes now so the shipment is delivered straight to your door — no customs bill on arrival.</p>
       </div>
     </div>
 
@@ -200,235 +74,189 @@
         <div class="ddp-toggle-label">Add DDP to my order</div>
         <div class="ddp-toggle-sub">International customers only</div>
       </div>
-      <label class="ddp-switch">
+      <span class="ddp-switch">
         <input type="checkbox" id="ddp-toggle">
         <span class="ddp-slider"></span>
-      </label>
+      </span>
     </label>
 
     <div class="ddp-panel" id="ddp-panel">
-      <div class="ddp-field">
-        <label for="ddp-country">Destination country</label>
-        <select id="ddp-country">
-          <option value="">— select country —</option>
-        </select>
-      </div>
+      <form id="ddp-form" novalidate>
+        <div class="ddp-grid">
+          <div class="ddp-field full">
+            <label for="ddp-country">Destination country</label>
+            <select id="ddp-country" required autocomplete="shipping country">
+              <option value="">Loading countries…</option>
+            </select>
+          </div>
+          <div class="ddp-field full">
+            <label for="ddp-address1">Street address</label>
+            <input id="ddp-address1" required autocomplete="shipping address-line1">
+          </div>
+          <div class="ddp-field">
+            <label for="ddp-city">City</label>
+            <input id="ddp-city" required autocomplete="shipping address-level2">
+          </div>
+          <div class="ddp-field">
+            <label for="ddp-postal">Postal code</label>
+            <input id="ddp-postal" autocomplete="shipping postal-code">
+          </div>
+          <div class="ddp-field full">
+            <label for="ddp-province">State / province code <span style="text-transform:none !important;font-weight:400 !important">(if applicable, e.g. ON, SP)</span></label>
+            <input id="ddp-province" maxlength="3" autocomplete="shipping address-level1">
+          </div>
+        </div>
+        <button type="submit" class="ddp-btn secondary" id="ddp-quote-btn" disabled>Get DDP quote</button>
+      </form>
 
       <div class="ddp-breakdown" id="ddp-breakdown" style="display:none !important">
-        <div class="ddp-breakdown-title">DDP Fee Breakdown (estimate)</div>
-        <div class="ddp-row"><span class="ddp-row-label">Product Value</span>        <span class="ddp-row-val" id="bd-product">—</span></div>
-        <div class="ddp-row"><span class="ddp-row-label">Est. Shipping</span>        <span class="ddp-row-val" id="bd-shipping">—</span></div>
-        <div class="ddp-row"><span class="ddp-row-label">Import Duty</span>          <span class="ddp-row-val" id="bd-duty">—</span></div>
-        <div class="ddp-row"><span class="ddp-row-label">Import Tax (VAT/GST)</span> <span class="ddp-row-val" id="bd-tax">—</span></div>
-        <div class="ddp-row"><span class="ddp-row-label">Brokerage Fee</span>        <span class="ddp-row-val" id="bd-brokerage">—</span></div>
-        <div class="ddp-row"><span class="ddp-row-label">DDP Processing Fee</span>   <span class="ddp-row-val" id="bd-processing">—</span></div>
-        <div class="ddp-row total"><span class="ddp-row-label">Total DDP Charge</span><span class="ddp-row-val" id="bd-total">—</span></div>
-        <div class="ddp-note">
-          ⚠ Shipping is estimated by destination zone and package weight, with a 20% buffer. Duty/VAT rates are standard published rates. Final charges are confirmed on the invoice.
-        </div>
+        <div class="ddp-breakdown-title">DDP charge — live carrier quote</div>
+        <div class="ddp-row"><span class="ddp-row-label">Import duties</span><span class="ddp-row-val" id="bd-duty">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">Import taxes (VAT/GST)</span><span class="ddp-row-val" id="bd-tax">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">Carrier import fees</span><span class="ddp-row-val" id="bd-import">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">Brokerage fee</span><span class="ddp-row-val" id="bd-brokerage">—</span></div>
+        <div class="ddp-row"><span class="ddp-row-label">DDP processing fee</span><span class="ddp-row-val" id="bd-processing">—</span></div>
+        <div class="ddp-row total"><span class="ddp-row-label">Total DDP charge</span><span class="ddp-row-val" id="bd-total">—</span></div>
+        <div class="ddp-row ref"><span class="ddp-row-label">Order value</span><span class="ddp-row-val" id="bd-product">—</span></div>
+        <div class="ddp-row ref"><span class="ddp-row-label">Shipping basis</span><span class="ddp-row-val" id="bd-shipping">—</span></div>
+        <div class="ddp-note" id="bd-note"></div>
       </div>
 
-      <div class="ddp-error" id="ddp-error"></div>
-
-      <button class="ddp-btn" id="ddp-btn" disabled>Select a country to continue</button>
+      <div class="ddp-error" id="ddp-error" role="alert"></div>
+      <button type="button" class="ddp-btn" id="ddp-btn" disabled>Enter your address to get a quote</button>
     </div>
-
   </div>
 </div>
 
 <script>
 (function () {
-  const DDP_VARIANT_ID  = 47853114884274;
-  const RATES_URL       = 'https://srt-database.vercel.app/api/ddp-checkout?action=rates';
-  const SHIP_RATE_URL   = 'https://srt-database.vercel.app/api/shipping-rate';
+  const API = 'https://srt-database.vercel.app/api/ddp-quote';
+  const DDP_VARIANT_ID = 47853114884274; // $1.00 "DDP fee" product; quantity = whole-dollar DDP charge
 
-  // Fallback zone rates if Shopify API returns no rate for a country
-  // Calibrated from real data: Argentina 1kg=$155.45, 2kg=$259.83
-  const ZONE_FALLBACK = {
-    NA:  { base: 28,  per_kg: 22 },
-    LAM: { base: 41,  per_kg: 83 },
-    WEU: { base: 44,  per_kg: 30 },
-    EEU: { base: 48,  per_kg: 34 },
-    MDE: { base: 50,  per_kg: 36 },
-    SAS: { base: 52,  per_kg: 38 },
-    EAS: { base: 48,  per_kg: 32 },
-    SEA: { base: 52,  per_kg: 34 },
-    OCE: { base: 56,  per_kg: 40 },
-    AFR: { base: 64,  per_kg: 50 },
-  };
-  const SHIPPING_BUFFER = 1.10;
-
-  const fmt = v => '$' + v.toFixed(2);
-  let cart  = null;
-  let rates = {};
-  let ddpUnits = 0;
-
-  const toggle    = document.getElementById('ddp-toggle');
-  const panel     = document.getElementById('ddp-panel');
-  const select    = document.getElementById('ddp-country');
-  const breakdown = document.getElementById('ddp-breakdown');
-  const btn       = document.getElementById('ddp-btn');
-  const errBox    = document.getElementById('ddp-error');
+  const $ = (id) => document.getElementById(id);
+  const fmt = (v) => '$' + Number(v).toFixed(2);
+  const toggle = $('ddp-toggle'), panel = $('ddp-panel'), form = $('ddp-form');
+  const country = $('ddp-country'), quoteBtn = $('ddp-quote-btn'), btn = $('ddp-btn');
+  const breakdown = $('ddp-breakdown'), errBox = $('ddp-error');
+  let quote = null, ddpUnits = 0;
 
   function showError(msg) {
-    errBox.textContent = msg;
+    errBox.textContent = msg || '';
     errBox.style.setProperty('display', msg ? 'block' : 'none', 'important');
   }
-
-  async function calculate() {
-    const code = select.value;
-    if (!code || !rates[code]) {
-      breakdown.style.setProperty('display', 'none', 'important');
-      btn.disabled = true;
-      btn.textContent = 'Select a country to continue';
-      ddpUnits = 0;
-      return;
-    }
-
+  function address() {
+    return {
+      country: country.value,
+      address1: $('ddp-address1').value.trim(),
+      city: $('ddp-city').value.trim(),
+      postal_code: $('ddp-postal').value.trim(),
+      province: $('ddp-province').value.trim(),
+    };
+  }
+  function resetQuote() {
+    quote = null; ddpUnits = 0;
+    breakdown.style.setProperty('display', 'none', 'important');
     btn.disabled = true;
-    btn.textContent = 'Calculating…';
-
-    const r = rates[code];
-
-    // Product value — exclude any existing DDP fee line
-    const product_value = (cart?.items || [])
-      .filter(i => i.variant_id != DDP_VARIANT_ID)
-      .reduce((sum, i) => sum + i.final_line_price / 100, 0);
-
-    // Weight from cart items (grams), min 0.5 kg for packaging
-    const weight_g  = (cart?.items || [])
-      .filter(i => i.variant_id != DDP_VARIANT_ID)
-      .reduce((sum, i) => sum + (i.grams || 0) * i.quantity, 0);
-    const weight_kg = Math.max(weight_g / 1000, 0.5);
-
-    // Try to get real shipping rate from Shopify zones API
-    let shipping = null;
-    let rateSource = 'estimated';
-    try {
-      const rateRes = await fetch(`${SHIP_RATE_URL}?country=${code}&weight=${Math.round(weight_g)}`);
-      if (rateRes.ok) {
-        const rateData = await rateRes.json();
-        if (rateData.shipping_cost != null) {
-          shipping   = rateData.shipping_cost * SHIPPING_BUFFER;
-          rateSource = 'shopify';
-        }
-      }
-    } catch {}
-
-    // Fallback to zone estimate if Shopify returned nothing
-    if (shipping == null) {
-      const zf = ZONE_FALLBACK[r.zone] || ZONE_FALLBACK.LAM;
-      shipping  = (zf.base + weight_kg * zf.per_kg) * 1.25;
-    }
-
-    const customs_value = product_value + shipping;
-    const import_duty   = customs_value * r.duty_rate;
-    const taxable_value = customs_value + import_duty;
-    const import_tax    = taxable_value * r.tax_rate;
-    const ddp_charge    = import_duty + import_tax + r.brokerage_fee + r.processing_fee;
-
-    ddpUnits = Math.ceil(ddp_charge);
-
-    const shipLabel = rateSource === 'shopify'
-      ? fmt(shipping) + ` (${weight_kg.toFixed(1)} kg — from your carrier)`
-      : fmt(shipping) + ` (${weight_kg.toFixed(1)} kg — estimated)`;
-
-    document.getElementById('bd-product').textContent    = fmt(product_value);
-    document.getElementById('bd-shipping').textContent   = shipLabel;
-    document.getElementById('bd-duty').textContent       = fmt(import_duty);
-    document.getElementById('bd-tax').textContent        = fmt(import_tax);
-    document.getElementById('bd-brokerage').textContent  = fmt(r.brokerage_fee);
-    document.getElementById('bd-processing').textContent = fmt(r.processing_fee);
-    document.getElementById('bd-total').textContent      = fmt(ddpUnits);
-
-    breakdown.style.setProperty('display', 'block', 'important');
-    btn.disabled    = false;
-    btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
-    showError('');
+    btn.textContent = 'Enter your address to get a quote';
+    const a = address();
+    quoteBtn.disabled = !(a.country && a.address1 && a.city);
   }
 
-  async function init() {
+  async function getQuote(e) {
+    if (e) e.preventDefault();
+    const a = address();
+    if (!a.country || !a.address1 || !a.city) { showError('Please enter the destination country, street address and city.'); return; }
+    showError('');
+    quoteBtn.disabled = true; quoteBtn.textContent = 'Getting live quote…';
     try {
-      [cart, rates] = await Promise.all([
-        fetch('/cart.js').then(r => r.json()),
-        fetch(RATES_URL).then(r => r.json()),
-      ]);
-    } catch {
-      showError('Unable to load DDP rates. Please try refreshing.');
-      return;
+      const cart = await fetch('/cart.js').then((r) => r.json());
+      const items = (cart.items || [])
+        .filter((i) => i.variant_id != DDP_VARIANT_ID)
+        .map((i) => ({ variant_id: i.variant_id, quantity: i.quantity }));
+      if (!items.length) throw new Error('Your cart is empty. Add products before selecting DDP.');
+
+      const res = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ items, address: a }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'We could not get a DDP quote right now.');
+
+      quote = data;
+      ddpUnits = Math.ceil(data.ddp_charge);
+      $('bd-duty').textContent = fmt(data.duties);
+      $('bd-tax').textContent = fmt(data.taxes);
+      $('bd-import').textContent = fmt(data.import_fees);
+      $('bd-brokerage').textContent = fmt(data.brokerage_fee);
+      $('bd-processing').textContent = fmt(data.processing_fee);
+      $('bd-total').textContent = fmt(ddpUnits);
+      $('bd-product').textContent = fmt(data.product_value);
+      $('bd-shipping').textContent = `${data.service} · ${data.weight_kg} kg`;
+      $('bd-note').textContent =
+        (data.guaranteed ? 'Duties and taxes are guaranteed by the carrier for this shipment. ' : 'Duties and taxes are the carrier’s estimate. ') +
+        'Shipping itself is charged separately at checkout. The DDP charge is rounded up to the nearest dollar. ' +
+        'Please use this same shipping address at checkout.';
+      breakdown.style.setProperty('display', 'block', 'important');
+      btn.disabled = false;
+      btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
+    } catch (err) {
+      resetQuote();
+      showError(err.message + ' You can also contact info@spaceresourcetech.com for a DDP quote.');
+    } finally {
+      quoteBtn.textContent = 'Get DDP quote';
+      quoteBtn.disabled = !(country.value && $('ddp-address1').value.trim() && $('ddp-city').value.trim());
     }
-    const sorted = Object.entries(rates).sort((a, b) => a[1].name.localeCompare(b[1].name));
-    sorted.forEach(([code, info]) => {
-      const opt = document.createElement('option');
-      opt.value = code;
-      opt.textContent = info.name;
-      select.appendChild(opt);
-    });
   }
 
-  toggle.addEventListener('change', () => {
-    panel.classList.toggle('open', toggle.checked);
-    if (toggle.checked) calculate();
-  });
-  select.addEventListener('change', calculate);
-
-  btn.addEventListener('click', async () => {
-    if (!ddpUnits) { showError('Please select a destination country first.'); return; }
-
-    btn.disabled = true;
-    btn.textContent = 'Adding DDP fee to cart…';
-    showError('');
-
+  async function addAndCheckout() {
+    if (!quote || !ddpUnits) { showError('Please get a DDP quote first.'); return; }
+    btn.disabled = true; btn.textContent = 'Adding DDP to your cart…'; showError('');
     try {
-      // Re-fetch cart to get latest state
-      const freshCart = await fetch('/cart.js').then(r => r.json());
-
-      if (!freshCart?.items?.length) {
-        throw new Error('Your cart is empty. Add products before selecting DDP.');
+      const cart = await fetch('/cart.js').then((r) => r.json());
+      const existing = (cart.items || []).find((i) => i.variant_id == DDP_VARIANT_ID);
+      if (existing) {
+        await fetch('/cart/change.js', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: existing.key, quantity: 0 }) });
       }
-
-      // Remove any existing DDP fee line first
-      const existingDdp = freshCart.items.find(i => i.variant_id == DDP_VARIANT_ID);
-      if (existingDdp) {
-        await fetch('/cart/change.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id: existingDdp.key, quantity: 0 }),
-        });
-      }
-
-      // Add DDP fee units ($1 × ddpUnits)
-      const addRes = await fetch('/cart/add.js', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          items: [{
-            id:       DDP_VARIANT_ID,
-            quantity: ddpUnits,
-            properties: {
-              'Destination':    select.options[select.selectedIndex].text,
-              'Import Duty':    document.getElementById('bd-duty').textContent,
-              'Import Tax':     document.getElementById('bd-tax').textContent,
-              'Brokerage Fee':  document.getElementById('bd-brokerage').textContent,
-              'Processing Fee': document.getElementById('bd-processing').textContent,
-            },
-          }],
-        }),
+      const a = address();
+      const dest = `${a.address1}, ${a.city}${a.province ? ', ' + a.province : ''} ${a.postal_code}, ${country.options[country.selectedIndex].text}`;
+      const add = await fetch('/cart/add.js', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: [{ id: DDP_VARIANT_ID, quantity: ddpUnits, properties: {
+          'Destination': dest,
+          'Import duties': fmt(quote.duties),
+          'Import taxes': fmt(quote.taxes),
+          'Carrier import fees': fmt(quote.import_fees),
+          'Brokerage fee': fmt(quote.brokerage_fee),
+          'Processing fee': fmt(quote.processing_fee),
+          'Quoted service': quote.service + (quote.guaranteed ? ' (guaranteed duties)' : ' (estimated duties)'),
+        } }] }),
       });
-
-      if (!addRes.ok) {
-        const errData = await addRes.json().catch(() => ({}));
-        throw new Error(errData.description || errData.message || 'Failed to add DDP fee to cart.');
+      if (!add.ok) {
+        const e = await add.json().catch(() => ({}));
+        throw new Error(e.description || e.message || 'Failed to add DDP to your cart.');
       }
-
+      await fetch('/cart/update.js', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ attributes: { 'DDP destination': dest, 'DDP quoted service': quote.service } }) }).catch(() => {});
       window.location.href = '/checkout';
     } catch (err) {
       showError(err.message);
       btn.disabled = false;
       btn.textContent = `Add DDP & Proceed to Checkout (+ ${fmt(ddpUnits)})`;
     }
-  });
+  }
 
+  async function init() {
+    try {
+      const { countries } = await fetch(API).then((r) => r.json());
+      country.innerHTML = '<option value="">— select country —</option>' +
+        countries.map((c) => `<option value="${c.code}">${c.name}</option>`).join('');
+    } catch {
+      country.innerHTML = '<option value="">Unavailable</option>';
+      showError('DDP quotes are unavailable right now. Please contact info@spaceresourcetech.com.');
+    }
+  }
+
+  toggle.addEventListener('change', () => panel.classList.toggle('open', toggle.checked));
+  form.addEventListener('input', resetQuote);
+  form.addEventListener('submit', getQuote);
+  btn.addEventListener('click', addAndCheckout);
   init();
 })();
 </script>
