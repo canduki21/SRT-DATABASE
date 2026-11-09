@@ -34,9 +34,14 @@ const toGid = (id) => (String(id).startsWith('gid://') ? String(id) : `gid://sho
 
 // Normalise cart items coming from the browser. Only variant + quantity are trusted;
 // prices, weights and HS codes are always re-read from Shopify.
+// The $1 "DDP fee" product the cart widget adds; never part of the customs value.
+const DDP_FEE_VARIANT_ID = String(process.env.DDP_FEE_VARIANT_ID || '47853114884274');
+
 export function parseItems(items) {
-  if (!Array.isArray(items) || !items.length) throw new Error('Cart is empty');
-  return items.map((i) => {
+  const goods = (Array.isArray(items) ? items : [])
+    .filter((i) => !String(i?.variant_id || '').endsWith(DDP_FEE_VARIANT_ID));
+  if (!goods.length) throw new Error('Cart is empty');
+  return goods.map((i) => {
     const quantity = parseInt(i.quantity, 10);
     if (!i.variant_id || !Number.isInteger(quantity) || quantity < 1 || quantity > 10000) {
       throw new Error('Invalid cart item');
