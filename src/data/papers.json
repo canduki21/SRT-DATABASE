@@ -2251,6 +2251,45 @@
     "added_at": "2026-11-07"
   },
   {
+    "id": "24ed9ea5-ec71-471f-9cc3-8ddc211fb8eb",
+    "title": "Lunar and Martian regolith simulants compromise airway barrier function and trigger inflammation",
+    "authors": "Ozlem Pinar Bulut, Mario Pérez‐Diego, Tommaso Zaccaria et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s42003-026-11300-x",
+    "keywords": [
+      "lunar regolith simulant",
+      "Martian regolith simulant",
+      "airway barrier function",
+      "epithelial barrier dysfunction",
+      "airway inflammation",
+      "cytotoxicity",
+      "fibrosis",
+      "bronchial epithelial cells",
+      "astronaut health",
+      "dust control",
+      "space missions",
+      "immune cell recruitment"
+    ],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-09"
+  },
+  {
+    "id": "4457a6f6-2c08-4667-90e9-1f076dee6f23",
+    "title": "Supplemental Material: Meteor over New York City: Brines in a primitive CM asteroid",
+    "authors": "P. Jenniskens, M. Zolensky, A. Gordon et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5531/sd.eps.11",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-11-09"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -8528,6 +8567,18 @@
     "added_at": "2026-10-18"
   },
   {
+    "id": "36db22fe-fe7f-4bc2-9eca-848641610e8b",
+    "title": "Soluble organic molecules in samples of the carbonaceous asteroid (162173) Ryugu",
+    "authors": "H. Naraoka, Y. Takano, J. Dworkin et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1126/science.abn9033",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-11-09"
+  },
+  {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
     "title": "Default.aspx?s=65-AC-3D-97-0C-1E-E2-85-42-8D-3A-B4-2C-30-C3-5E, CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
     "authors": "Russel et al",
@@ -9795,6 +9846,18 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-11-04"
+  },
+  {
+    "id": "24fa5473-81d0-48a5-9d6d-4f956505f078",
+    "title": "Noble gases and nitrogen in samples of asteroid Ryugu record its volatile sources and recent surface evolution",
+    "authors": "R. Okazaki, B. Marty, H. Busemann et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1126/science.abo0431",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-11-09"
   },
   {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
