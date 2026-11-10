@@ -2290,6 +2290,20 @@
     "added_at": "2026-11-09"
   },
   {
+    "id": "8eefdcb6-f188-4c5d-ab61-1dedfb526b76",
+    "title": "Recovery of Al and Si from lunar regolith by low temperature electrochemical deposition from ethaline",
+    "authors": "Nataša M. Petrović, Ksenija Milićević-Neumann, Bernd Friedrich et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.62638/zasmat1925",
+    "keywords": [],
+    "simulants": [
+      "LMS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-10"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -8577,6 +8591,18 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-11-09"
+  },
+  {
+    "id": "d2fcf304-cce6-48d6-83b2-fa134a77dd91",
+    "title": "Preparation and Characterization of a Novel Magnetic High-Titanium Lunar Regolith Simulant for Geotechnical Engineering Application",
+    "authors": "Ning-Xi Zhou, Jian Chen",
+    "year": 2023,
+    "url": "https://doi.org/10.56952/arma-2023-0220",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-10"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
