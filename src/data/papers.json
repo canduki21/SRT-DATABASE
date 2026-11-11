@@ -2304,6 +2304,31 @@
     "added_at": "2026-11-10"
   },
   {
+    "id": "28d195c3-f0af-43d4-b05c-d05a1db03480",
+    "title": "SCIENCE DEVELOPMENT OF THE INTEGRATED LIBS-RAMAN SENSOR (LiRS) FOR MULTIMODAL SPECTROSCOPIC CHARACTERIZATION OF THE LUNAR SURFACE",
+    "authors": "Belen Maria Barrios Areinamo",
+    "year": 2026,
+    "url": "https://hdl.handle.net/10315/44262",
+    "keywords": [
+      "UV Raman spectroscopy",
+      "laser-induced breakdown spectroscopy",
+      "lunar regolith simulant",
+      "lunar meteorites",
+      "pyroxene",
+      "feldspar",
+      "olivine",
+      "silicate",
+      "oxides",
+      "sulfide",
+      "phosphate",
+      "mineral classification"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-11"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4650,6 +4675,31 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-11-07"
+  },
+  {
+    "id": "defe63ec-be0b-41d5-a38a-b9ca554343b3",
+    "title": "Raman spectroscopy as a tool for assessing plant growth in space and on lunar regolith simulants",
+    "authors": "Axell Rodriguez, Borja Barbero Barcenilla, Emily Hall et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1038/s41526-025-00479-8",
+    "keywords": [
+      "Raman spectroscopy",
+      "plant growth in space",
+      "lunar regolith simulant",
+      "zero gravity",
+      "International Space Station",
+      "plant stress monitoring",
+      "carotenoids",
+      "pectin",
+      "cellulose",
+      "phenolic compounds",
+      "plant biochemistry",
+      "space agriculture"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-11"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
@@ -12413,6 +12463,28 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-08-11"
+  },
+  {
+    "id": "d477dd99-0bde-4a62-9ede-521785ffd284",
+    "title": "Caractérisation de la dynamique de la prédation du pétoncle géant (Placopecten magellanicus) juvénile à court terme après un ensemencement à grande échelle au large des Îles de la Madeleine, Québec",
+    "authors": "Madeleine Nadeau",
+    "year": 2012,
+    "url": "https://semaphore.uqar.ca/id/eprint/892/1/Madeleine_Nadeau_juin2012.pdf",
+    "keywords": [
+      "Placopecten magellanicus",
+      "giant scallop",
+      "predation rate",
+      "predator-prey interactions",
+      "benthic predators",
+      "predatory behavior",
+      "predator-prey model",
+      "scallop aquaculture",
+      "predator-prey coevolution"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-11-11"
   },
   {
     "id": "286d9a7a-d452-4711-9110-5cc63440ced6",
