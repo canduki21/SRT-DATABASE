@@ -2329,6 +2329,70 @@
     "added_at": "2026-11-11"
   },
   {
+    "id": "75b5f472-4063-4a28-923b-f4fea26ec8db",
+    "title": "Compaction performance of a scale model vibrating drum roller on lunar highlands regolith simulant",
+    "authors": "Akshay Kumar Agarwal, Brendan T. Scott, Mark B. Jaksa",
+    "year": 2026,
+    "url": "https://doi.org/10.31224/6983",
+    "keywords": [
+      "lunar regolith",
+      "lunar highlands",
+      "regolith simulants",
+      "scale model",
+      "compaction speed",
+      "vibration frequency",
+      "surface settlement",
+      "penetration resistance",
+      "bulk density",
+      "lunar south pole",
+      "in situ fabrication"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "c5128ac9-fd41-4426-91b7-cad666567101",
+    "title": "Laboratory Reflectance Spectra of Al-Bearing Hydrated Mineral and Mars Regolith Simulant Mixtures",
+    "authors": "Xing Cai Wu, Shen Lei, Sheng Yizhi et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5281/zenodo.24094935",
+    "keywords": [
+      "spectral reflectance",
+      "alunite",
+      "kaolinite",
+      "montmorillonite",
+      "phyllosilicates",
+      "sulfate",
+      "spectral unmixing",
+      "grain size effects",
+      "near-infrared spectroscopy",
+      "radiative transfer modeling",
+      "mineral mixtures"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "3a56c4de-cb37-4d95-b676-020d0376a698",
+    "title": "In situ self-sensing in epoxy-lunar regolith simulant composites with and without carbon nanotube inclusions under compression",
+    "authors": "Joseph Cunningham, G. D. Seidel",
+    "year": 2026,
+    "url": "https://doi.org/10.1088/1361-665x/aebfdc",
+    "keywords": [],
+    "simulants": [
+      "LHS-1"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-12"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
