@@ -2393,6 +2393,31 @@
     "added_at": "2026-11-12"
   },
   {
+    "id": "1f70f109-eac6-40b4-bff6-7d58ebc62f6a",
+    "title": "High-Fidelity Lunar Surface Simulation Platform : A Reproducible Excavation Interaction Testbed for ISRU at the Lunar South Pole",
+    "authors": "Yaqoob Alqassab, Massimiliano L. Vasile, Mohamed Alaseeri",
+    "year": 2026,
+    "url": "https://strathprints.strath.ac.uk/97115/",
+    "keywords": [
+      "lunar surface simulation",
+      "in-situ resource utilization",
+      "lunar excavation",
+      "lunar south pole",
+      "rover mobility",
+      "icy regolith",
+      "polar craters",
+      "autonomous navigation",
+      "stereo vision",
+      "inertial measurement unit",
+      "ROS2",
+      "Gazebo"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-14"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -11344,6 +11369,25 @@
     "added_at": "2026-10-10"
   },
   {
+    "id": "3f867bad-12e8-48f9-bb63-0ca7fef51bfb",
+    "title": "Bulk and Thermal Properties of Planetary Analogue Simulants and Martian Meteorites",
+    "authors": "Helen E. A. Brand, N. R. Stephen, D. J. P. Martin",
+    "year": 2020,
+    "url": "https://pearl.plymouth.ac.uk/gees-research/1052",
+    "keywords": [
+      "Martian meteorites",
+      "bulk properties",
+      "thermal properties",
+      "Mars analog",
+      "thermal conductivity",
+      "thermal diffusivity"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-14"
+  },
+  {
     "id": "b9ffae99-5803-4dbe-bbfa-3918e197b1e9",
     "title": "ROID Asteroid,,,,,,,Author,Year,Link,Keywords Mechanical properties of very weak carbonaceous asteroid analogues and response to hypervelocity impacts",
     "authors": "Avdellidou et al",
@@ -12586,6 +12630,27 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-08-20"
+  },
+  {
+    "id": "3e56f122-1bae-49ba-b3c3-ec45f3690d04",
+    "title": "Radiation Damage Analysis of the Swept Charge Device for the C1XS Instrument",
+    "authors": "Jason Gow",
+    "year": 2010,
+    "url": "https://oro.open.ac.uk/40158/",
+    "keywords": [
+      "radiation damage",
+      "X-ray fluorescence",
+      "solar flares",
+      "lunar surface",
+      "charge-coupled devices",
+      "high energy resolution",
+      "space instrumentation",
+      "device characterization"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-14"
   },
   {
     "id": "25cc7e59-0bd4-46b1-9820-176ca5eb17b4",
