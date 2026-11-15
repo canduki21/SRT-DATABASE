@@ -2418,6 +2418,47 @@
     "added_at": "2026-11-14"
   },
   {
+    "id": "b1f9aeed-e7c7-4cfa-98a0-736a41f4d003",
+    "title": "A framework for standardised characterisation of bulk material handling properties of planetary regolith simulants",
+    "authors": "Marko Pratnekar, Vivek Garg, Christopher Ogunlesi et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.actaastro.2026.11.008",
+    "keywords": [
+      "bulk material handling",
+      "planetary surface exploration"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-11-15"
+  },
+  {
+    "id": "3185fa28-1b97-42fc-bda7-86e87b184ade",
+    "title": "White-clover biomass amendment as a biological conditioning strategy for radish cultivation in Mars global regolith simulant",
+    "authors": "Gilbert Cauthorn, Rafael Rodrigues Loureiro, Kristen Miller et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.3389/frspt.2026.2013462",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-15"
+  },
+  {
+    "id": "f10bb96c-9587-4528-986d-17eec67794e7",
+    "title": "Simulating the Surface Maturation of Exogenous Organic Material on Europa",
+    "authors": "Andrea Aldaba",
+    "year": 2026,
+    "url": "https://scholarworks.utrgv.edu/etd/2064",
+    "keywords": [],
+    "simulants": [],
+    "category": "asteroid",
+    "source": "auto-fetch",
+    "added_at": "2026-11-15"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
