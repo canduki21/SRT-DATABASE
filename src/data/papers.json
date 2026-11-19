@@ -2459,6 +2459,51 @@
     "added_at": "2026-11-15"
   },
   {
+    "id": "71b94c54-a35e-4a02-adb6-40e3d556f4cd",
+    "title": "宇宙環境におけるヒメツリガネゴケの光合成・成長応答―３Ｄクリノスタットおよびレゴリス実験―",
+    "authors": "Yuko HANBA T., Souma OKUGAWA, Manaka ANDOH et al.",
+    "year": 2026,
+    "url": "https://jaxa.repo.nii.ac.jp/records/2002715",
+    "keywords": [
+      "Nephrolepis exaltata",
+      "photosynthesis",
+      "growth response",
+      "microgravity",
+      "space environment"
+    ],
+    "simulants": [
+      "LSP-2"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "2b6de26f-2eb0-49bd-b95a-52602e37db7a",
+    "title": "Rheological properties of clay-containing Martian regolith simulant slurries",
+    "authors": "J. Kameda",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.clay.2026.108387",
+    "keywords": [
+      "Martian regolith simulant",
+      "slurry rheology",
+      "yield stress",
+      "hysteresis",
+      "ball milling",
+      "particle size",
+      "in-situ resource utilization",
+      "binder effects",
+      "slurry transport"
+    ],
+    "simulants": [
+      "MGS-1C",
+      "JEZ-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-19"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -12778,6 +12823,30 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-09-08"
+  },
+  {
+    "id": "306ba0c5-a40a-46be-aaa8-deee03f72766",
+    "title": "Mécanismes de gestion de la mobilité et évaluation de performance dans les réseaux cellulaires tout IP",
+    "authors": "Rami Langar",
+    "year": 2006,
+    "url": "https://hal.science/pastel-00001871v1",
+    "keywords": [
+      "micro-mobility management",
+      "Mobile IP",
+      "MPLS",
+      "fast handover",
+      "QoS management",
+      "traffic engineering",
+      "signaling cost reduction",
+      "handover latency",
+      "packet loss rate",
+      "Markov chain model",
+      "mobility models"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-19"
   },
   {
     "id": "ed149731-a162-4531-a6b5-a5f738af5c2f",
