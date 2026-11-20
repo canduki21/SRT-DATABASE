@@ -2504,6 +2504,29 @@
     "added_at": "2026-11-19"
   },
   {
+    "id": "f315f2a0-81e8-4a14-870d-f84072581079",
+    "title": "Circular additive manufacturing of recycled PEKK–regolith composites for sacrificial structures in lunar in-situ resource utilization",
+    "authors": "Farshad Malekpour, Mehdi Hojjati",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.compositesb.2026.114013",
+    "keywords": [
+      "lunar regolith simulant",
+      "in-situ resource utilization",
+      "material extrusion",
+      "twin-screw extrusion",
+      "annealing",
+      "crystallization behavior",
+      "tensile and flexural properties",
+      "energy absorption",
+      "dimensional stability",
+      "lunar exploration"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-20"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -6977,6 +7000,50 @@
     "added_at": "2026-11-02"
   },
   {
+    "id": "8712f68a-27c1-417a-896a-2c192ed3a880",
+    "title": "CO2 conversion over Martian and Lunar regolith simulants for extraterrestrial applications",
+    "authors": "Arturo Pajares, Pablo Guardia, Vladimir Galvita et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jcou.2024.102729",
+    "keywords": [
+      "CO2 conversion",
+      "Martian regolith simulant",
+      "lunar regolith simulant",
+      "in-situ resource utilization",
+      "water-gas shift reaction",
+      "co-production",
+      "propellant production",
+      "space habitation"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "ee98a5fc-44cb-4d7d-8bc5-96ce689bebc1",
+    "title": "The reactivity of experimentally reduced lunar regolith simulants: Health implications for future crewed missions to the lunar surface",
+    "authors": "Donald A. Hendrix, Tristan Catalano, Hanna Nekvasil et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1111/maps.14228",
+    "keywords": [
+      "lunar regolith simulant",
+      "lunar dust",
+      "space weathering",
+      "hydroxyl radical generation",
+      "oxidative damage",
+      "simulated lung fluid",
+      "artificial lysosomal fluid",
+      "hydrogen reduction",
+      "crewed lunar missions",
+      "Artemis missions"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-20"
+  },
+  {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
     "title": "New Directions in Mineral Processing, Extractive Metallurgy, Recycling and Waste Minimization: An EPD Symposium in Honor of Patrick R. Taylor",
     "authors": null,
@@ -8828,6 +8895,29 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-11-10"
+  },
+  {
+    "id": "1db61ab8-6350-4879-9007-6a95b4132546",
+    "title": "Characterisation of lunar and Martian dust simulants and impacts on thermo-optical properties of space materials",
+    "authors": "A Suarez Kahan, Bruno Delacourt, N Dias et al.",
+    "year": 2023,
+    "url": "https://doi.org/10.1088/1757-899x/1287/1/012036",
+    "keywords": [
+      "lunar dust simulant",
+      "regolith",
+      "thermal conductivity",
+      "solar absorptance",
+      "infrared emissivity",
+      "optical solar reflectors",
+      "dust deposition",
+      "thermo-optical properties",
+      "space materials",
+      "spectral reflectance"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-20"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
