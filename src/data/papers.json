@@ -2527,6 +2527,26 @@
     "added_at": "2026-11-20"
   },
   {
+    "id": "a000eb86-3e01-4ee0-999b-910a705f38ff",
+    "title": "Growth and molecular responses of potato to lunar regolith simulants",
+    "authors": "David Handy, Anika Loeffler, Medora Knudson et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1038/s41526-026-00668-z",
+    "keywords": [
+      "potato",
+      "lunar regolith simulant",
+      "bioregenerative life support",
+      "lunar agriculture",
+      "phytotoxicity",
+      "whole transcriptome profiling",
+      "tuber yield"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-21"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
