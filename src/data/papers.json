@@ -2547,6 +2547,28 @@
     "added_at": "2026-11-21"
   },
   {
+    "id": "01548087-a63c-4123-a3de-d9d36245705b",
+    "title": "Specimen-Mass Sensitivity in Geotechnical Index Testing of MGS-1 Reduced-mass geotechnical characterization testing for Mars Sample Return missions",
+    "authors": "Syver Høysæter Setvik",
+    "year": 2026,
+    "url": "https://hdl.handle.net/11250/5543443",
+    "keywords": [
+      "Mars sample return",
+      "particle size distribution",
+      "dry sieving",
+      "fines content",
+      "moisture content",
+      "particle density",
+      "bulk density"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-22"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
