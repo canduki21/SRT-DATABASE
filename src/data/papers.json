@@ -4942,6 +4942,57 @@
     "added_at": "2026-11-11"
   },
   {
+    "id": "096facf6-d9b1-4cc6-9ff2-fba06368552c",
+    "title": "Impact Experiments to Investigate Impact Cratering Processes in Ice-Bearing Targets",
+    "authors": "Johns Hopkins APL, R. T. Daly, A. M. Stickle et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1130/abs/2025am-8346",
+    "keywords": [
+      "impact cratering",
+      "lunar polar regions",
+      "subsurface water ice",
+      "subzero temperatures",
+      "ejecta curtain",
+      "pumice",
+      "quartz sand",
+      "lunar volatiles"
+    ],
+    "simulants": [
+      "LHS-1E"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-23"
+  },
+  {
+    "id": "499d264f-1280-477a-aaea-7fc52f65f71f",
+    "title": "Thermal and Physical Properties of Solid and Molten Martian Regolith Simulants",
+    "authors": "Alan Whittington, Roger Gaspard, Tzieleah Recla et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1130/abs/2025am-9662",
+    "keywords": [
+      "Martian regolith simulant",
+      "in-situ resource utilization",
+      "melt viscosity",
+      "heat capacity",
+      "heat of fusion",
+      "volatile outgassing",
+      "glass transition",
+      "thermal diffusivity",
+      "thermal conductivity",
+      "quenched glass",
+      "porosity",
+      "particle density"
+    ],
+    "simulants": [
+      "MGS-1",
+      "JEZ-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-23"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
