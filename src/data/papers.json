@@ -2569,6 +2569,42 @@
     "added_at": "2026-11-22"
   },
   {
+    "id": "cfc7e8e0-39c6-4d16-bd2d-ca9ce6c46f9f",
+    "title": "Hybrid Deep Learning Architecture for Temporal Forecasting of Martian Atmospheric Opacity: A Retrospective Validation Study",
+    "authors": "Samet Karakaş",
+    "year": 2026,
+    "url": "https://doi.org/10.1109/IGARSS60577.2026.11731073",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-25"
+  },
+  {
+    "id": "d1b68337-1568-4d2b-87bc-c4f371f02015",
+    "title": "The importance of organics in hydrothermal environments: A synchrotron laboratory study",
+    "authors": "Laura E. Jenkins, Stephen P. Thompson, Eamonn T. Connolly et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1126/sciadv.aei7801",
+    "keywords": [
+      "hydrothermal environments",
+      "Enceladus",
+      "icy satellites",
+      "organic compounds",
+      "mineral reactions",
+      "pyrite dissolution",
+      "melanophlogite",
+      "pyrrhotite",
+      "hydrothermal vents",
+      "astrobiology",
+      "synchrotron X-ray diffraction"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-25"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -4993,6 +5029,27 @@
     "added_at": "2026-11-23"
   },
   {
+    "id": "e59b16de-721f-492c-b4f6-4889b79d7685",
+    "title": "Exploiting biocementation for Martian construction: pathways, challenges, and research gaps",
+    "authors": "Shiva Khoshtinat",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.asr.2025.10.061",
+    "keywords": [
+      "biocementation",
+      "microbially induced calcium carbonate precipitation",
+      "in-situ resource utilization",
+      "Martian regolith simulant",
+      "low-pressure environment",
+      "low-temperature environment",
+      "synthetic biology",
+      "planetary engineering"
+    ],
+    "simulants": [],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-25"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -7135,6 +7192,28 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "e765e851-5d19-4b4e-969d-a65d44a43c97",
+    "title": "Resource-efficiency of cyanobacterium production on Mars: Assessment and paths forward",
+    "authors": "Tiago P. Ramalho, Vincent Baumgartner, Nils Kunst et al.",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.algal.2024.103801",
+    "keywords": [
+      "cyanobacteria",
+      "Mars",
+      "resource efficiency",
+      "bioprocess productivity",
+      "perchlorate",
+      "temperature effects",
+      "breakeven analysis",
+      "in-situ resource utilization",
+      "bioprocess modeling"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-25"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -10292,6 +10371,26 @@
     "category": "asteroid",
     "source": "auto-fetch",
     "added_at": "2026-11-09"
+  },
+  {
+    "id": "f2615b5d-c16a-4a4e-a551-4918e8e71505",
+    "title": "Microbial induced calcite precipitation can consolidate martian and lunar regolith simulants",
+    "authors": "Rashmi Dikshit, Nitin Gupta, Arjun Dey et al.",
+    "year": 2022,
+    "url": "https://doi.org/10.1371/journal.pone.0266415",
+    "keywords": [
+      "microbially induced calcite precipitation",
+      "Sporosarcina pasteurii",
+      "urease",
+      "guar gum",
+      "nickel chloride",
+      "compressive strength",
+      "biocementation"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-25"
   },
   {
     "id": "5c6e6a16-0c85-4cee-820a-f6bbebc6c330",
