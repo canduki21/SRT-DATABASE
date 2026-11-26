@@ -2605,6 +2605,20 @@
     "added_at": "2026-11-25"
   },
   {
+    "id": "7ce94eac-1428-4e78-a6fa-5e2c6de62673",
+    "title": "Lunar Rover Design: Materials and Build Configurations, and Performance Simulation on Lunar Terrain and Regolith",
+    "authors": "Gerald Enrique Nelson Mc Kenzie",
+    "year": 2026,
+    "url": "https://doi.org/10.5281/zenodo.24457165",
+    "keywords": [],
+    "simulants": [
+      "LHS-1E"
+    ],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-26"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -5048,6 +5062,45 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-11-25"
+  },
+  {
+    "id": "a5c4f86c-6d8f-4c22-b8fb-676c9016ec9b",
+    "title": "EXPERIMENTS ON LUNAR REGOLITH SIMULANTS FOR BIOREGENERATIVE SYSTEMS TESTING AND ELECTRO-MAGNETIC PROPERTIES MEASUREMENTS: ISRU ACTIVITIES FOR THE BEATRICE PROJECT",
+    "authors": "DELFINI Andrea, PASTORE Roberto, Paolo Marzioli et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.13009/eucass2025-516",
+    "keywords": [
+      "lunar regolith simulant",
+      "bioregenerative life support",
+      "electromagnetic properties",
+      "in-situ resource utilization",
+      "lunar habitation"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "ea73a1c4-8cb1-4f29-a95a-82870b8a1d95",
+    "title": "3D Tomographic Analysis of Regolith Simulants Enabling Multidimensional Particle-Discrete Characterization",
+    "authors": "Ralf Ditscherlein, Lisa Ditscherlein, Urs Alexander Peuker et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.32865/2346/102670",
+    "keywords": [
+      "lunar regolith simulant",
+      "3D X-ray microtomography",
+      "particle shape",
+      "particle size distribution",
+      "digital twin",
+      "discrete element method",
+      "sample preparation",
+      "image post-processing"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-26"
   },
   {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
