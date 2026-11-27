@@ -2619,6 +2619,41 @@
     "added_at": "2026-11-26"
   },
   {
+    "id": "18e33f15-4634-4265-a7a6-17c21e19d2d6",
+    "title": "Multi-Angle Scattering Smoke Sensor for Spacecraft : Discrimination Between Fire Smoke and Lunar Dust",
+    "authors": "Manabu Dohi, Shiori Suzuki, Yoshiki Omori et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.32865/2346/109003",
+    "keywords": [
+      "smoke detection",
+      "lunar dust",
+      "multi-angle light scattering",
+      "photodiode sensor"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
+  },
+  {
+    "id": "7affac13-39fe-4a7a-8038-ec6442a4b146",
+    "title": "Estimating Lunar Construction: The Master Estimating Theory — System-Based Methods for Absolute Minimum Variance to the Predicted State",
+    "authors": "Paul Martin, Stephen Fehr, Jennifer Taylor et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.5281/zenodo.22879659",
+    "keywords": [
+      "lunar construction",
+      "minimum variance estimation",
+      "cost and schedule overruns",
+      "lunar infrastructure",
+      "return to the Moon"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -5103,6 +5138,50 @@
     "added_at": "2026-11-26"
   },
   {
+    "id": "77705598-a1e8-44ec-95a3-3b1e46875cc3",
+    "title": "PENERAPAN TEKNOLOGI INTERNET OF THINGS (IOT) DALAM INDUSTRI",
+    "authors": "Z. (Zulfahmi) Noor, D. (Dewi) Safitriani, A. (Agi Wihastomo) Nugroho et al.",
+    "year": 2025,
+    "url": "https://repository.pustakainspirasi.com/publications/668690/penerapan-teknologi-internet-of-things-iot-dalam-industri",
+    "keywords": [
+      "Internet of Things",
+      "Industrial Internet of Things",
+      "industrial automation",
+      "remote device control",
+      "human error reduction",
+      "energy efficiency",
+      "environmental sustainability"
+    ],
+    "simulants": [],
+    "category": "general",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
+  },
+  {
+    "id": "f10bd8df-f4a3-46c7-91f8-3b3bb1dd57e1",
+    "title": "Properties of novel LX lunar regolith simulant system - the base simulants: Part 2",
+    "authors": "Joel Patzwald, Rafael Kleba-Ehrhardt, T. Griemsmann et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.14279/depositonce-25511",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
+  },
+  {
+    "id": "4e3fb28f-f11b-419f-89c1-fb19f1929aec",
+    "title": "3D Printing Lunar Regolith Simulant with Microbial-carbonated Magnesium Oxide",
+    "authors": "Han-Long Liu, Yang Xiao, Jin-Quan Shi et al.",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.bgtech.2025.100197",
+    "keywords": [],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
+  },
+  {
     "id": "2dca0802-01f9-4716-b82a-a6aab4ea4efb",
     "title": "Evaluation of a Laser-Dot Grid-Projection System for Lunar Lander Crater-Shape and Ejecta-Sheet Measurements",
     "authors": "Joshua M. Weisberger, P. Danehy, T. Fahringer et al.",
@@ -7267,6 +7346,26 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-11-25"
+  },
+  {
+    "id": "3771afde-15ad-4e60-8738-01cb4f93d69e",
+    "title": "Experimental Analysis of Vibrationally-Induced Fluidization of Lunar Regolith in Hoppers and Closed Containers",
+    "authors": "Peter Watson",
+    "year": 2024,
+    "url": "https://doi.org/10.52202/078356-0027",
+    "keywords": [
+      "lunar regolith",
+      "granular materials",
+      "vibration frequency",
+      "particle size distribution",
+      "convective flow",
+      "lunar resource extraction",
+      "electrostatic effects"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
   },
   {
     "id": "f5d363e1-e4a2-43de-aa87-b57d94f97790",
@@ -12524,6 +12623,26 @@
     "category": "martian",
     "source": "auto-fetch",
     "added_at": "2026-10-04"
+  },
+  {
+    "id": "b1d701eb-0606-4ea9-b499-dd279afcf6c5",
+    "title": "Mars Global Simulant MGS-1: A Rocknest-based open standard for basaltic martian regolith simulants",
+    "authors": "Kevin Cannon, D. T. Britt, Trent Smith et al.",
+    "year": 2018,
+    "url": "https://eartharxiv.org/repository/object/1324/download/3000/",
+    "keywords": [
+      "Martian regolith simulant",
+      "Gale Crater",
+      "open standards",
+      "Mars sample return",
+      "Mars analog materials"
+    ],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-27"
   },
   {
     "id": "bd2eb27a-f337-4ba2-8e74-3933ee186d08",
