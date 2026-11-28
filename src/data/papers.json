@@ -2654,6 +2654,20 @@
     "added_at": "2026-11-27"
   },
   {
+    "id": "18e6a0cd-00fc-4e29-b296-d5eeb1b0aaac",
+    "title": "Survival of Anhydrobiotic Tardigrade Ramazzottius cf. varieornatus after Exposure to Martian Environmental Conditions.",
+    "authors": "C. Bakermans, K. Beblo-Vranesevic, Laura K. Palmer et al.",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/15311074261507683",
+    "keywords": [],
+    "simulants": [
+      "MGS-1"
+    ],
+    "category": "martian",
+    "source": "auto-fetch",
+    "added_at": "2026-11-28"
+  },
+  {
     "id": "04462f63-c408-481f-a6c8-ece438b5ad46",
     "title": "Shallow Subsurface Water at the Base of Europa's Double Ridges",
     "authors": "G. Steinbrügge, G. Patterson",
@@ -9242,6 +9256,27 @@
     "category": "lunar",
     "source": "auto-fetch",
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "89eb6d72-4387-476f-b702-48907db51795",
+    "title": "Protective Use of Regolith for Planetary and Lunar Exploration (PURPLE)",
+    "authors": "Yulia Akisheva",
+    "year": 2023,
+    "url": "https://doi.org/10.70675/3608e477z18b3z4eeaz94c6z8512e5f8badf",
+    "keywords": [
+      "lunar regolith",
+      "radiation shielding",
+      "galactic cosmic rays",
+      "solar energetic particle events",
+      "secondary radiation",
+      "astronaut radiation protection",
+      "lunar habitats",
+      "particle-matter interaction"
+    ],
+    "simulants": [],
+    "category": "lunar",
+    "source": "auto-fetch",
+    "added_at": "2026-11-28"
   },
   {
     "id": "2c95e5b1-d58e-475e-88fb-8819c78df179",
